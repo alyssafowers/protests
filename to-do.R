@@ -13,3 +13,9 @@
 #last comma) and city (after second-to-last comma)
 
 #figure out how what to do with separate topic and position tags in analysis
+
+#AUDIT
+
+#consider spotlight analysis: how disproportionate is the coverage (# of articles)
+#for certain places? of course, this doesn't cover protests that only have one
+#article written about them!

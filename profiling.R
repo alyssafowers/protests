@@ -188,3 +188,5 @@ hist(protest$total_articles)
 summary(protest$total_articles)
 protest[protest$total_articles == 913,]
 View(protest[protest$total_articles >= 100,])
+
+write_csv(profile, "protest_data_profile.csv")
