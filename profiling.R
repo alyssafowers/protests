@@ -63,9 +63,9 @@ profile[profile[,"variable"] == "location","completeness"]<- (nrow(protest) - su
 profile[profile[,"variable"]== "location","unique"]<-length(unique(protest$location))
 
 #are they actually unique? how specific does this get? what am I in for?
-unique(protest$location[str_detect(protest$location, "New York") | str_detect(protest$location, "NYC") | str_detect(protest$location, "New York, NY")])
+unique(protest$location[str_detect(protest$location, "New York") | str_detect(protest$location, "NYC") | str_detect(protest$location, "New York, NY") | str_detect(protest$location, "Manhattan,")])
 unique(protest$location[str_detect(protest$location, "NYC")])
-View(protest[str_detect(protest$location, coll("New York")),] %>% group_by(location) %>% summarize(count = n()) %>% mutate(perc = count/sum(count))%>% arrange(desc(count)))
+View(protest[str_detect(protest$location, coll("New York")) | str_detect(protest$location, coll("NYC")) | str_detect(protest$location, coll("New York, NY")) | str_detect(protest$location, coll("Manhattan")),] %>% group_by(location) %>% summarize(count = n()) %>% mutate(perc = count/sum(count))%>% arrange(desc(count)))
 ##there are 88 different locations that boil down to "new york city," but most of
 ##them are extremely specific neighborhoods within NYC, and about half are written
 ##as simply New York, NY
@@ -152,6 +152,7 @@ tag_num <- apply(tags, 1, sum)
 summary(tag_num)
 hist(tag_num)
 
+protest[tag_num == 8,]
 
 ###curated
 #not sure what "curated" means, but it's completely filled out!
@@ -190,3 +191,9 @@ protest[protest$total_articles == 913,]
 View(protest[protest$total_articles >= 100,])
 
 write_csv(profile, "protest_data_profile.csv")
+
+
+###AUDIT FOR ACCURACY:
+
+audit <- protest[sample(1:nrow(protest), 30),]
+write.csv(audit, "audit.csv")

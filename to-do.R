@@ -19,3 +19,8 @@
 #consider spotlight analysis: how disproportionate is the coverage (# of articles)
 #for certain places? of course, this doesn't cover protests that only have one
 #article written about them!
+
+rand <- sample(1:nrow(protest), 30)
+
+audit <- protest[rand,]
+write.csv(audit, "audit.csv")
