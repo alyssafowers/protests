@@ -112,6 +112,7 @@ county_wgs <- st_transform(county, crs = 4326)
 protest_sf <- st_as_sf(protest, coords = c("longitude", "latitude"))
 st_crs(protest_sf) <- 4326
 
+#sanity checking one state to make sure protests land in it:
 ggplot() + geom_sf(data = filter(county_wgs, STATEFP == 12)) + geom_sf(data = filter(protest_sf, state == "FL"))
 
 protest_county <- st_join(protest_sf, county_wgs, join = st_within)
@@ -183,3 +184,40 @@ sum(is.na(protest_final$population_estimate_2017))
 #I'm not too confident in the precision of the lat/longs I have, and the districts cut
 #through cities--so I might put protests in the wrong district. Maybe merge the 
 #districts that cut through the same statistical areas or boroughs....?
+
+#or, maybe I treat Alaska as one REALLY LARGE COUNTY?
+
+summary(pop_2017$population_estimate_2017)
+
+sum(pop_2017$population_estimate_2017 >= 739786)
+
+#there are 136 counties in the US with more people in them than Alaska... 
+#that's maybe not a terrible idea? especially if the alternative is to leave it
+#out entirely? there were 188 protests in Alaska-the-state, and 10 counties that
+#had more protests than that... don't love it, though.
+
+sum(protest_final$state == "AK")
+nrow(protest_final %>% group_by(state_and_county_fips) %>% summarise(count = n()) %>% filter(count >= 188))
+
+##FOR NOW, going to focus on lower 48+DC. do a special section on protest in
+#hawaii and alaska? or include hawaii and just exclude alaska?
+
+protest_49 <- filter(protest_final, state != "AK" & state != "HI")
+protest_not_alaska <- filter(protest_final, state != "AK")
+
+########################################
+####### Split data into weeks ##########
+########################################
+
+protest_final <- mutate(protest_final, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
+protest_49 <- mutate(protest_49, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
+protest_not_alaska <- mutate(protest_not_alaska, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
+
+
+########################################
+############# Writing out ##############
+########################################
+
+write_csv(protest_49, "data/working/protest_lower_49.csv")
+write_csv(protest_final, "data/working/protest_all_states.csv")
+write_csv(protest_not_alaska, "data/working/protest_not_alaska.csv")
