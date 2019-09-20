@@ -4,6 +4,8 @@ library(tidyverse)
 library(janitor)
 library(stringr)
 library(tigris)
+library(sf)
+library(data.table)
 
 ####################################
 ########### Load in data ###########
@@ -103,12 +105,81 @@ str(county)
 county <- st_as_sf(county)
 
 st_crs(county)
+#I want this in WGS 84 to match the protest data, so:
+county_wgs <- st_transform(county, crs = 4326)
 
-#turning protests into sf with CRS matching county data--WILL UPDATE ONCE I HAVE UPDATE
-#FROM NATHAN AND TOMMY ON ORIGINAL GCS:
-protest_sf <- st_as_sf(protest, coords = c("latitude", "longitude"))
-st_crs(protest_sf) <- st_crs(county)
+#turning protests into sf with WGS 84 coordinate system
+protest_sf <- st_as_sf(protest, coords = c("longitude", "latitude"))
+st_crs(protest_sf) <- 4326
 
+ggplot() + geom_sf(data = filter(county_wgs, STATEFP == 12)) + geom_sf(data = filter(protest_sf, state == "FL"))
 
+protest_county <- st_join(protest_sf, county_wgs, join = st_within)
 
-protest_county <- st_join(protest_sf, county, join = st_within)
+##get down to only the columns that I want:
+protest_final <- select(protest_county, "date", "location", "attendees", 
+                        "event_legacy_see_tags", "tags", "curated", "source",
+                        "total_articles", "state", "short_loc", "geometry", "STATEFP",
+                        "COUNTYFP", "GEOID", "NAME", "NAMELSAD", "CSAFP", "CBSAFP", "ALAND", "AWATER", 
+                        "INTPTLAT", INTPTLON)
+colnames(protest_final) <- c(colnames(protest_final)[1:11], "state_fips", "county_fips",
+                             "state_and_county_fips", "county_name_short",
+                             "county_name_long", "combined_statistical_area", "metro_micro_stat_area", "land_area",
+                             "water_area", "internal_point_latitude", "internal_point_longitude")
+
+#testing out a few of these designations:
+View(protest_final[sample(1:nrow(protest_final), 10),])
+#these all looked correct! however, should note that at least one city (Chapel Hill) was
+#spread across multiple counties. will have to keep this in mind later (maybe look
+#at combined statistical areas or metropolitan areas, which are composed of counties?)
+
+########################################
+##### Adding population information ####
+########################################
+
+pop <- read_csv(file.path(loc, "county_population_data.csv"))
+
+#population data is by town, not by county (???) so have to combine all together:
+pop_2017 <- select(pop, "STATE", "COUNTY", "POPESTIMATE2017")
+
+colnames(pop_2017) <- c("state_fips", "county_fips", "population_estimate_2017")
+
+protest_final <- left_join(protest_final, pop_2017)
+
+########################################
+###### Adding voting information ######
+########################################
+
+pres <- read_csv(file.path(loc, "countypres_2000-2016.csv"))
+
+pres_2016 <- filter(pres, year == 2016)
+
+###calculating percent votes for republican, democrat, and other
+
+vote_perc <- dcast(pres_2016, state_po+county+FIPS+totalvotes~party, value.var = "candidatevotes")
+vote_perc$perc_democrat <- vote_perc$democrat/vote_perc$totalvotes
+vote_perc$perc_republican <- vote_perc$republican/vote_perc$totalvotes
+
+#adding that into protest:
+protest_final$fips_int <- as.integer(protest_final$state_and_county_fips)
+protest_final <- left_join(protest_final, vote_perc[,c("FIPS", "totalvotes", 
+                "perc_democrat", "perc_republican")], by = c("fips_int" = "FIPS"))
+#sanity checking:
+sum(is.na(protest_final$perc_democrat))
+sum(is.na(protest_final$perc_republican))
+sum(is.na(protest_final$population_estimate_2017))
+
+###might not be able to use Alaska for voting data--something real weird going on with the
+#county/FIPS. In the voting data, Alaska has numbered districts with FIPS codes that don't
+#line up to anything in the rest of the data. (apparently because Alaska doesn't actually
+#have counties, and so returns voting information by state legislative voting
+#district instead of by boroughs, which is what the population data is by/what the TIGER/line
+#shapefile gave me in place of counties)
+
+#I think what I need to do is, find a shapefile for Alaskan legislative districts,
+#pull out the Alaskan protests, match them to their corresponding legislative districts,
+#and then match THAT to population data, if I can find population-by-district. It looks
+#like the districts are at least supposed to be equal in population? The problem is,
+#I'm not too confident in the precision of the lat/longs I have, and the districts cut
+#through cities--so I might put protests in the wrong district. Maybe merge the 
+#districts that cut through the same statistical areas or boroughs....?
