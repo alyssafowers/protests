@@ -1,6 +1,6 @@
 Data sources:
 
-County population data: [U.S. Census](https://www.census.gov/data/tables/time-series/demo/popest/2010s-counties-total.html#par_textimage)
+County population data: [U.S. Census](https://www2.census.gov/programs-surveys/popest/datasets/2010-2018/counties/totals/)
 Accessed 9/19/2019
 
 Protests: [Count Love](https://countlove.org/)
