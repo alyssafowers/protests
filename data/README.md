@@ -8,3 +8,6 @@ Protests: [Count Love](https://countlove.org/)
 
 County-level returns for 2016 general election: [MIT Election Lab](https://dataverse.harvard.edu/dataset.xhtml?persistentId=doi:10.7910/DVN/VOQCHQ)
 Accessed 9/19/2019
+
+State capitals: https://people.sc.fsu.edu/~jburkardt/datasets/states/states.html
+Accessed 10/22/2019
