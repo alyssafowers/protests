@@ -14,9 +14,10 @@ protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags.csv")))
 
 place <- clean_names(read_csv(file.path(loc, "all_county_cbsa_summary.csv")))
 
+protest$month_yr <- format(as.Date(protest$date), "%Y-%m")
+
 tag <- untangle(protest, "tags", pattern = ";")
 
-protest$month_yr <- format(as.Date(protest$date), "%Y-%m")
 
 
 #looking at racial justice/white supremacy/etc first:
@@ -148,6 +149,8 @@ ggplot() + geom_polygon(data = usa, aes(x=long, y = lat, group = group)) +
         axis.text.y=element_blank(), axis.ticks = element_blank())+
   coord_map("albers", lat0=30, lat1=40)+ggtitle("Police")
 
+
+
 police_const_test <- police %>% filter(month_yr == "2017-09" | month_yr == "2017-10")
 police_const_test <- find_near_c(police_const_test)
 police_place <- police_const_test %>% group_by(cbsa_name, internal_point_longitude, internal_point_latitude) %>% summarise(count = n())
@@ -232,7 +235,7 @@ ggplot() + geom_polygon(data = usa, aes(x=long, y = lat, group = group)) +
         axis.line = element_blank(), axis.title.x=element_blank(), 
         axis.title.y=element_blank(), axis.text.x=element_blank(), 
         axis.text.y=element_blank(), axis.ticks = element_blank())+
-  coord_map("albers", lat0=30, lat1=40)+ggtitle("Police")
+  coord_map("albers", lat0=30, lat1=40)+ggtitle("Police (polygons beween constellation places that had protests in the same week)")
 
 ##connecting all places with protests in the same week
 pol_const_test <- filter(pol_const_event, week == "2017-08-28")
@@ -308,8 +311,7 @@ pol_comb$id <- 1:nrow(pol_comb)
 
 pol_comb_melt <- pivot_longer(data = pol_comb[,c("location_id_1", 
                    "location_id_2", "id", "week")], c("location_id_1", 
-                   "location_id_2"), values_to = "location_id") %>% arrange(location) %>%
-                    group_by(id, week) %>% summarise(pair = paste(location))
+                   "location_id_2"), values_to = "location_id") 
 
 pol_comb_desc <- pol_comb %>% group_by(location_id_1, location_id_2, long_1, lat_1, long_2, lat_2) %>% summarise(count = n()) %>%
   arrange(desc(count))
@@ -317,13 +319,47 @@ pol_comb_desc <- pol_comb %>% group_by(location_id_1, location_id_2, long_1, lat
 library(cooccur)
 library(udpipe)
 
-pol_comb_cooc <- pol_comb_melt %>% select(id, location_id)
-colnames(pol_comb_cooc) <- c("group", "term")
 
-cooccurrence(pol_comb_melt, group = "id", term = "location_id")
+pol_comb_cooc <- cooccurrence(pol_comb_melt, group = "id", term = "location_id")
+ggplot(pol_comb_cooc, aes(x = cooc))+geom_histogram(binwidth = 1)
+
+
+pol_comb_cooc$term1 <- as.integer(pol_comb_cooc$term1)
+pol_comb_cooc$term2 <- as.integer(pol_comb_cooc$term2)
+
+pol_comb_cooc <- left_join(pol_comb_cooc, pol_const_list[,c("location_id", "internal_point_longitude", "internal_point_latitude")], by = c("term1" = "location_id"))
+colnames(pol_comb_cooc) <- c("location_id_1", "location_id_2", "cooc","long_1", "lat_1")
+pol_comb_cooc <- left_join(pol_comb_cooc, pol_const_list[,c("location_id", "internal_point_longitude", "internal_point_latitude")], by = c("location_id_2" = "location_id"))
+colnames(pol_comb_cooc) <- c("location_id_1", "location_id_2", "cooc","long_1", "lat_1", "long_2", "lat_2")
+
 
 pol_comb_desc_2 <- pol_comb %>% group_by(location_id_2, location_id_1, long_1, lat_1, long_2, lat_2) %>% summarise(count = n()) %>%
   arrange(desc(count))
+
+
+ggplot() + geom_polygon(data = usa, aes(x=long, y = lat, group = group)) +
+  geom_segment(data = pol_comb_cooc, aes(x = long_1, y = lat_1, xend = long_2, yend = lat_2, size = cooc, alpha = cooc), color = "white")+
+  geom_point(data = pol_const_list, aes(x = internal_point_longitude, y = internal_point_latitude, size = protest_count), color = "white")+
+  scale_size_continuous(range = c(.2,3))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+        panel.background = element_rect(fill="#707589", color="#707589"),
+        axis.line = element_blank(), axis.title.x=element_blank(), 
+        axis.title.y=element_blank(), axis.text.x=element_blank(), 
+        axis.text.y=element_blank(), axis.ticks = element_blank())+
+  coord_map("albers", lat0=30, lat1=40)+ggtitle("Police, only connecting constellation places that coocur within the same week")
+
+
+ggplot() + geom_polygon(data = usa, aes(x=long, y = lat, group = group)) +
+  geom_segment(data = filter(pol_comb_cooc, cooc > 1), aes(x = long_1, y = lat_1, xend = long_2, yend = lat_2, size = cooc, alpha = cooc), color = "white")+
+  geom_point(data = pol_const_list, aes(x = internal_point_longitude, y = internal_point_latitude, size = protest_count), color = "white")+
+  scale_size_continuous(range = c(.2,3))+
+  theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
+        panel.background = element_rect(fill="#707589", color="#707589"),
+        axis.line = element_blank(), axis.title.x=element_blank(), 
+        axis.title.y=element_blank(), axis.text.x=element_blank(), 
+        axis.text.y=element_blank(), axis.ticks = element_blank())+
+  coord_map("albers", lat0=30, lat1=40)+ggtitle("Police, only connecting constellation places that coocur more than once in the same week")
+
 
 ggplot(pol_comb_desc, aes(x = count))+geom_histogram(binwidth = 1)
 

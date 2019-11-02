@@ -17,7 +17,7 @@ library(ggrepel)
 loc <- "data/working"
 
 protest <- read_csv(file.path(loc, "protest_additional_tags.csv"))
-protest <- protest %>% clean_names()
+protest <- protest(clean_names(protest))
 
 ####################################
 ########### Getting tags ###########

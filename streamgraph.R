@@ -10,22 +10,23 @@ library(lubridate)
 
 loc <- "data/working"
 
-protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags.csv")))
+protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags_nov1.csv")))
 
 protest$month_yr <- format(as.Date(protest$date), "%Y-%m")
 
-protest$month_yr_bw <- format(as.Date(protest$week), "%Y-%m")
-
+protest$week <- mutate(protest, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
 
 all_tag <- untangle(protest, "tags", pattern = ";")
 
-#### get down to topics (not stances)
+#### get down to topics (not stances--all stance tags begin with "for" or "against")
 
 tag_topic <- all_tag[,!(str_detect(colnames(all_tag), "^for") | str_detect(colnames(all_tag), "^against"))]
 
 topic_start <- which(colnames(tag_topic) == "healthcare")
 
-#had decided that "civil rights" was too broad, so taking that one out, as well as "other":
+#had decided that "civil rights" was too broad (and created some more specific
+#subcategories as a part of preprocessing), so taking that one out, as well as 
+#"other":
 
 tag_topic <- tag_topic[,colnames(tag_topic)!="civil_rights"&colnames(tag_topic) != "other"]
 
@@ -49,15 +50,13 @@ top_10_topics <- topic_tag_frequency[1:10, "rowname"]
 
 sum(apply(tag_topic[top_10_topics], MARGIN = 1, sum) > 0)/nrow(tag_topic)
 
-#top 5? (62%)
+#top 5? (60%)
 
 top_5_topics <- topic_tag_frequency[1:5, "rowname"]
 
 sum(apply(tag_topic[top_5_topics], MARGIN = 1, sum) > 0)/nrow(tag_topic)
 
 ###which topics were the #1 each week?
-
-weeks <- unique(tag_topic$week)
 
 top_week <- data.frame(rowname = character(), V1 = integer(), perc = numeric())
 
