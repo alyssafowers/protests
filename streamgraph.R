@@ -12,9 +12,11 @@ loc <- "data/working"
 
 protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags_nov1.csv")))
 
+protest <- mutate(protest, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
+
 protest$month_yr <- format(as.Date(protest$date), "%Y-%m")
 
-protest$week <- mutate(protest, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
+protest$month_yr_bw <- format(as.Date(protest$week), "%Y-%m")
 
 all_tag <- untangle(protest, "tags", pattern = ";")
 
@@ -60,6 +62,8 @@ sum(apply(tag_topic[top_5_topics], MARGIN = 1, sum) > 0)/nrow(tag_topic)
 
 top_week <- data.frame(rowname = character(), V1 = integer(), perc = numeric())
 
+weeks <- unique(protest$week)
+
 for(i in 1:length(weeks)){
   week_list <- tag_topic[tag_topic$week == weeks[i],topic_start:ncol(tag_topic)] %>% 
     lapply(sum) %>% 
@@ -75,14 +79,18 @@ for(i in 1:length(weeks)){
 View(top_week %>% group_by(rowname) %>% summarise(count = sum(V1), max = max(V1)) %>% 
   arrange(desc(count)))
 
+#which of these are not already in the top 10 topics?
 unique(top_week$rowname[!top_week$rowname %in% top_10_topics])
+#which of the top 10 topics are not included in these?
 unique(top_10_topics[!top_10_topics %in% top_week$rowname])
 
+#which of these are not already in the top 5 topics?
 unique(top_week$rowname[!top_week$rowname %in% top_5_topics])
+#which of the top 5 topics are not included in these?
 unique(top_5_topics[!top_5_topics %in% top_week$rowname])
 
 
-#by month (by week is going to be too chaotic for bump chart or streamgraph)?
+#by month (by week is going to be too chaotic for bump chart or streamgraph)
 
 months <- unique(tag_topic$month_yr)
 
@@ -161,7 +169,7 @@ sum(apply(tag_topic[topics_for_chart], MARGIN = 1, sum) > 0)/nrow(tag_topic)
 
 #adding in "police" and "healthcare" as the next 2 most common topic 
 #tags after the top 10 (because I pulled 2 that were in the top 10).
-#this now covers 82% of protests
+#this now covers 81% of protests
 
 topics_for_chart <- c(topics_for_chart, "healthcare", "police")
 sum(apply(tag_topic[topics_for_chart], MARGIN = 1, sum) > 0)/nrow(tag_topic)
@@ -181,8 +189,9 @@ month_topic <- tag_topic %>% group_by(month_yr) %>% summarise(guns = sum(guns),
                  healthcare = sum(healthcare),
                  police = sum(police), other = sum(chart_other))
 
-#taking out Sept 2019 (cuts off partway through month):
-month_topic <- month_topic[month_topic$month_yr != "2019-09",]
+#taking out Sept 2019 (cuts off partway through month)--no longer need to do
+#this since data updated through Oct 31 2019:
+#month_topic <- month_topic[month_topic$month_yr != "2019-09",]
 
 month_topic_long <- pivot_longer(month_topic, cols = colnames(month_topic)[2:13], names_to = "topic")
 
@@ -205,16 +214,21 @@ write_csv(month_topic_long, file.path(loc, "month_top_topics_long.csv"))
 write_csv(week_topic, file.path(loc, "week_top_topics.csv"))
 write_csv(week_topic_long, file.path(loc, "week_top_topics_long.csv"))
 
+###took these files into RawGraphs to make actual stream graphs
 
 #### what other tags were used during high months of protest for particular tags
 
-tag_topic %>% filter(chart_other == 1) %>% group_by(month_yr) %>% 
+tag_topic %>% filter(education == 1) %>% group_by(month_yr) %>% 
   summarise(count = n()) %>% arrange(desc(count))
 
-filter(all_tag[tag_topic$chart_other == 1,], month_yr == "2019-06")[topic_start:ncol(all_tag)] %>% 
+filter(all_tag[tag_topic$education == 1,], month_yr == "2018-04")[topic_start:ncol(all_tag)] %>% 
   lapply(sum) %>% 
   as.data.frame() %>% 
   t() %>% 
   as.data.frame() %>% 
   tibble::rownames_to_column() %>% filter(V1>0) %>%
   arrange(desc(V1)) %>% mutate(perc = round(V1/nrow(all_tag),4))
+
+View(filter(all_tag[tag_topic$education == 1,], month_yr == "2018-04") %>%
+  group_by(location) %>% summarise(count = n()) %>% arrange(desc(count)))
+  
