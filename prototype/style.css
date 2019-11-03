@@ -1,0 +1,39 @@
+body {
+  background-color: #707589;
+  font-size: 10px;
+  font-family: sans-serif;
+}
+
+main, header {
+  max-width: 50rem;
+  margin: auto;
+  background-color: #ABABB7;
+  padding: 1rem;
+}
+
+h1, h2 {
+  text-align: center;
+  font-size: 2rem;
+}
+
+img{
+ width: 40rem;
+  margin-left: 5rem;
+  margin-right: 5rem;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+  align: center;
+}
+
+p {
+  font-size: 1rem;
+}
+
+.galaxy{
+  width: 50rem;
+  margin-left: 0rem;
+  margin-right: 0rem;
+  margin-top: 0rem;
+  margin-bottom: 0rem;
+  align: center;
+}

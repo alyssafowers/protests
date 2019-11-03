@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <meta charset = "utf-8">
+  <title>D3 Page Template</title>
+  <script type = "text/javascript" src = "d3.js"></script>
+</head>
+<body>
+  <script type = "text/javascript">
+    var w = 800;
+    var h = 400;
+    var width = 5;
+    var padding = 40;
+
+    var dataset, xScale, yScale, xAxis, yAxis;
+
+    var parseTime = d3.timeParse("%Y-%m-%d");
+
+    var rowConverter = function(d) {
+      return{
+        weekgroup: parseTime(d.week),
+        count: parseInt(d.count),
+        weekName: d.week
+      };
+    }
+
+    d3.csv("protest_per_week_usa.csv", rowConverter, function(data){
+
+        var dataset = data;
+
+        console.log(dataset);
+
+
+        xScale = d3.scaleTime()
+        .domain([
+          d3.min(dataset, function(d) {return d.weekgroup;}),
+          d3.max(dataset, function(d) {return d.weekgroup;})
+        ])
+        .range(padding, w);
+
+        yScale = d3.scaleLinear()
+                   .domain([
+                     0, d3.max(dataset, function(d) {return d.count;})
+                   ])
+                   .range(0,h]);
+
+       xAxis = d3.axisBottom()
+                  .scale(xScale);
+
+        yAxis = d3.axisLeft()
+                  .scale(yScale)
+                  .ticks(8);
+
+        var svg = d3.select("body")
+                    .append("svg")
+                    .attr("width", w)
+                    .attr("height", h);
+
+       svg.selectAll("rect")
+           .data(dataset)
+           .enter()
+           .append("rect")
+           .attr("x", function(d){
+             return xScale(d);
+           })
+           .attr("y", function(d){
+             return h - yScale(d);
+           })
+           .attr("width", width)
+           .attr("height", function(d){
+             return yScale(d.count);
+           });
+
+    });
+
+
+  </script>
+</body>
+</html>

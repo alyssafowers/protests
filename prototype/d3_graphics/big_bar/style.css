@@ -1,0 +1,92 @@
+html{
+  font-size: 10px;
+}
+
+body{
+  font-size: 10px;
+}
+
+
+rect:hover{
+  fill: white;
+}
+
+#tooltip{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#tooltip.hidden{
+  display: none;
+}
+
+#tooltip p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+svg{
+  background-color:  #707589;
+}
+
+.axisTitle{
+  font-family: sans-serif;
+  fill: #D1D1D1;
+}
+
+.yAxis .xAxis text {
+  fill: white;
+}
+
+.yAxis .xAxis path, line {
+  stroke: black;
+  fill: black;
+
+}
+
+text{
+  fill: black;
+}
+
+#play-button {
+   background: #f08080;
+   padding-right: 26px;
+   border-radius: 3px;
+   border: none;
+   color: white;
+   margin: 0;
+   padding: 0 12px;
+   width: 60px;
+   cursor: pointer;
+   height: 30px;
+ }
+
+ #play-button:hover {
+   background-color: #696969;
+ }
+
+ .track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
