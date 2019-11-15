@@ -28,4 +28,4 @@ Constellation graphics (prototype below, [function to make current constellation
 
 Interactive d3 version of streamgraph (with detailed bar charts that appear on click)
 
-Maps that play/pause/scrub over time
+Maps that play/pause/scrub over time ([have a version that plays through and is synched with a bar chart](https://github.com/alyssafowers/protests/tree/master/prototype/d3_graphics/map), but no play/pause/scrub yet)
