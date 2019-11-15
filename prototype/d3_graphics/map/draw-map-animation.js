@@ -26,9 +26,9 @@ async function drawMap() {
   //set chart dimensions
 
   let dimensions = {
-    width: window.innerWidth * 0.9,
+    width: window.innerWidth * 0.75,
     margin: {
-      top: 10,
+      top: 5,
       right: 10,
       bottom: 10,
       left: 10,
@@ -85,6 +85,40 @@ function drawProtestLoop(data){
 
   let section = data.filter(function(d) {return d.week_id == wk})
 
+  // bounds.append("text")
+  //   .attr("x", dimensions.width/2)
+  //   .attr("y", 10)
+  //   .style("text-anchor", "middle")
+  //   .text("Week of")
+  //
+  // const label = bounds.selectAll("text")
+  //   .data(section)
+  //   .enter().append("text")
+  //   .attr("x", dimensions.width/2)
+  //   .attr("y", 25)
+  //   .style("text-anchor", "middle")
+  //   .text(d => d.week)
+  //   .attr("id", "label")
+
+  const updateLabel = function(d){
+          // d3.select("#tooltip")
+          // .classed("hidden", false)
+
+        d3.select("#tooltip")
+          .data(section)
+          .select("#week")
+          .text(d => d.week)
+          // .style("color", "gray")
+          // .transition().duration(100)
+          //   .style("color", "black")
+          // .transition().duration(700)
+          //   .style("color", "black")
+          // .transition().duration(200)
+          //   .style("color", "gray")
+        }
+
+  updateLabel()
+
   const dots = bounds.selectAll("circle")
                 .data(section)
   dots
@@ -105,8 +139,8 @@ function drawProtestLoop(data){
   dots.exit()
       .remove()
 
-    dots.exit().remove()
-  }
+
+    }
 
 let protestCycle = function(){for (let counter = 1; counter <= weekMax; counter = counter+1) {
     setTimeout(()=> {
@@ -126,43 +160,6 @@ for(let rep = 0; rep <=5; rep = rep+1){
     wk = 0
   }, 1000*(weekMax+1)*rep)
 }
-
-  //
-  // setTimeout(()=> {
-  //   bounds.selectAll("circle")
-  //     .data(dataset)
-  //     .enter().append("circle")
-  //     .attr("cx", d => projection([latAccessor(d), longAccessor(d)])[0])
-  //     .attr("cy", d => projection([latAccessor(d), longAccessor(d)])[1])
-  //     .attr("fill", "black")
-  //     .attr("r", 1)
-  //     .attr("opacity", .3)
-  //     .transition().duration(500)
-  //       .attr("fill", "white")
-  //   }, 3500)
-
-
-
-
-
-
-
-
-    // const protest = bounds.selectAll("circle")
-    //   .data(dataset)
-    //   .enter()
-    //   .append("circle")
-    //   .filter(function(d) {return d.week_id == 2})
-    //     .attr("cx", d => projection([latAccessor(d), longAccessor(d)])[0])
-    //     .attr("cy", d => projection([latAccessor(d), longAccessor(d)])[1])
-    //     .attr("fill", "white")
-    //     .attr("r", 2)
-    //     .attr("opacity", .3)
-
-
-        //while loop that circles through like this: https://bl.ocks.org/d3noob/bf44061b1d443f455b3f857f82721372
-        //for as long as play is true, have a button that reverses the value of play
-        //whenever clicked
 
 }
 
