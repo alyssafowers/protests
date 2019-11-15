@@ -13,9 +13,11 @@ library(data.table)
 ####################################
 
 loc <- "data/original"
+#loc_2 <- "data/working"
+
 
 protest <- clean_names(read_csv(file.path(loc, "protest_lat_long.csv")))
-#protest <- clean_names(read_csv(file.path(loc, "protest_nov1_download.csv")))
+#protest <- clean_names(read_csv(file.path(loc_2, "protest_additional_tags_nov1.csv")))
 
 ####################################
 ## Narrowing to 50 states plus DC ##
