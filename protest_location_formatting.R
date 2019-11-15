@@ -14,8 +14,8 @@ library(data.table)
 
 loc <- "data/original"
 
-protest <- read_csv(file.path(loc, "protest_lat_long.csv"))
-protest <- protest %>% clean_names()
+protest <- clean_names(read_csv(file.path(loc, "protest_lat_long.csv")))
+#protest <- clean_names(read_csv(file.path(loc, "protest_nov1_download.csv")))
 
 ####################################
 ## Narrowing to 50 states plus DC ##
@@ -95,6 +95,11 @@ shortLoc <- function(x){
 }
 
 protest$short_loc <- shortLoc(protest)
+
+#stopped here when initially processing the nov 1 download, since I didn't have lat and long
+
+#loc_2 <- "data/working"
+#write_csv(protest, file.path(loc_2, "protest_addtltags_nov1_withstate.csv"))
 
 ####################################
 ##### CBSA to County crosswalk #####
