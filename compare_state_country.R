@@ -242,3 +242,73 @@ length(unique(filter(topic_high_low, high_low == "high" | high_low == "low")$sta
 
 View(filter(topic_high_low, percentile > .8) %>% group_by(state) %>% summarise(count_in_80th_perc = n()))
 View(filter(topic_high_low, percentile < .25) %>% group_by(state) %>% summarise(count_in_80th_perc = n()))
+
+View(filter(topic_high_low, percentile > .8 | percentile < .25) %>% arrange(state, desc(percentile)))
+
+#exporting the percentile information
+write_csv(topic_high_low, file.path(loc,"topic_percentile_by_state.csv"))
+
+
+####################################
+#### specific figures for copy ####
+####################################
+
+###environment-related protests per 10,000 residents in Florida, 
+###California, New York, New Jersey, and Hawaii. population info is 
+###as-of 2017 from the US Census
+
+#Florida:
+(sum(filter(main_topic_state, state == "FL", topic == "environment")$count)/20980000)*10000
+filter(main_topic_state, state == "FL", topic == "environment")$count/sum(filter(main_topic_state, state == "FL")$count)
+473192/20980000
+
+#California:
+(sum(filter(main_topic_state, state == "CA", topic == "environment")$count)/39400000)*10000
+filter(main_topic_state, state == "CA", topic == "environment")$count/sum(filter(main_topic_state, state == "CA")$count)
+
+#New York:
+(sum(filter(main_topic_state, state == "NY", topic == "environment")$count)/19590000)*10000
+filter(main_topic_state, state == "NY", topic == "environment")$count/sum(filter(main_topic_state, state == "NY")$count)
+
+#Hawaii:
+(sum(filter(main_topic_state, state == "HI", topic == "environment")$count)/1424000)*10000
+filter(main_topic_state, state == "HI", topic == "environment")$count/sum(filter(main_topic_state, state == "HI")$count)
+
+#New Jersey:
+(sum(filter(main_topic_state, state == "NJ", topic == "environment")$count)/8889000)*10000
+filter(main_topic_state, state == "NJ", topic == "environment")$count/sum(filter(main_topic_state, state == "NJ")$count)
+
+#West Virginia
+(sum(filter(main_topic_state, state == "WV", topic == "environment")$count)/1817000)*10000
+filter(main_topic_state, state == "WV", topic == "environment")$count/sum(filter(main_topic_state, state == "WV")$count)
+
+(sum(filter(main_topic_state, state == "WV", topic == "education")$count)/1817000)*10000
+filter(main_topic_state, state == "WV", topic == "education")$count/sum(filter(main_topic_state, state == "WV")$count)
+
+
+
+#Monroe County, WV:
+(5/13373)*10000
+
+#All US:
+(sum(filter(main_topic_state, topic == "environment")$count)/325700000)*10000
+sum(filter(main_topic_state, topic == "environment")$count)/sum(main_topic_state$count)
+
+(sum(filter(main_topic_state, topic == "education")$count)/325700000)*10000
+sum(filter(main_topic_state, topic == "education")$count)/sum(main_topic_state$count)
+
+
+
+##gun control in Florida vs nationally
+
+ggplot()+geom_density(data=filter(tag, guns == 1, state == "GA"), aes(x = date), fill = "green", alpha = .5)+geom_density(data=filter(tag, guns == 1), aes(x = date), fill = "blue", alpha = .5)+labs(title = "percent of gun protests by date", subtitle = "green is FL, blue is nation")
+filter(main_topic_state, state == "FL", topic == "guns")$count/sum(filter(main_topic_state, topic == "guns")$count)
+
+fl_gunweek <- tag %>% filter(state == "FL", guns == 1) %>% group_by(date) %>% summarise(count = n()) %>% mutate(place = "FL")
+ntl_gundate <- tag %>% filter(guns == 1) %>% group_by(date) %>% summarise(count = n()) %>% mutate(place = "US")
+
+gundate <- rbind(fl_gundate, ntl_gundate)
+ggplot(gundate, aes(x = date, y = count, color = place))+geom_line(alpha = .5)
+
+
+ggplot()+geom_bar(data=filter(tag, guns == 1, state == "GA"), aes(x = date))

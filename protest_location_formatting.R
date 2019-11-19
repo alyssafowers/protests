@@ -1,5 +1,6 @@
-####Creating working data file of protests in lower 48 states plus DC, with CBSA where applicable, county where no CBSA,
-####population information, and voting information
+####Creating final data file of protests in lower 48 states plus DC, with CBSA where applicable, county where no CBSA,
+####population information, and voting information. Adds supplementary
+####tags for analysis.
 
 library(tidyverse)
 library(janitor)
@@ -7,6 +8,7 @@ library(stringr)
 library(tigris)
 library(sf)
 library(data.table)
+library(muckrakr)
 
 ####################################
 ########### Load in data ###########
@@ -16,7 +18,7 @@ loc <- "data/original"
 #loc_2 <- "data/working"
 
 
-protest <- clean_names(read_csv(file.path(loc, "protest_lat_long.csv")))
+protest <- clean_names(read_csv(file.path(loc, "nov_1_latlong.csv")))
 #protest <- clean_names(read_csv(file.path(loc_2, "protest_additional_tags_nov1.csv")))
 
 ####################################
@@ -39,6 +41,10 @@ protest[protest$location == "Panama City, Fl","location"] <- "Panama City, FL"
 
 protest[protest$location == "Wyoming Godfrey-Lee High School, Wyoming, Mi","location"] <- "Wyoming Godfrey-Lee High School, Wyoming, MI"
 #which(protest$location == "Wyoming Godfrey-Lee High School, Wyoming, Mi")
+
+protest[protest$location == "City Hall, Pocatello, iD","location"] <- "City Hall, Pocatello, ID"
+
+protest[protest$location == "Montesano, wA","location"] <- "Montesano, WA"
 
 #looked up lat and long for Fredon Township to figure out where it is--turns out it's in New Jersey
 #as.numeric(protest[protest$location == "Fredon Township",c("latitude", "longitude")])
@@ -118,6 +124,7 @@ cbsa_county_ref <- as.data.frame(county_ref) %>% filter(is.na(CBSAFP) == FALSE) 
 #####################################
 
 county_ref <- st_transform(county_ref, crs = 4326)
+protest$id <- 1:nrow(protest)
 protest_sf <- st_as_sf(protest, coords = c("longitude", "latitude"))
 st_crs(protest_sf) <- 4326
 
@@ -232,7 +239,7 @@ county_no_cbsa <- left_join(county_no_cbsa, as.data.frame(protest_summary)[,c("G
 county_no_cbsa_no_protest <- county_no_cbsa %>% filter(is.na(protest_count)) %>% 
   left_join(no_cbsa_pop[,c("GEOID", "pop")]) %>% left_join(county_vote, by = c("GEOID" = "char_fips"))
 
-#counties without CBSAs, protests, and population counts aren't in the lower 48+DC, clearing them out
+#counties without CBSAs, protests, and population counts aren't in the lower 50 states + DC, clearing them out
 sum(is.na(county_no_cbsa_no_protest$pop))
 View(county_no_cbsa_no_protest[is.na(county_no_cbsa_no_protest$pop),])
 county_no_cbsa_no_protest <- county_no_cbsa_no_protest[! is.na(county_no_cbsa_no_protest$pop),]
@@ -296,33 +303,41 @@ all_place_summary <- rbind(protest_summary, no_protest_summary)
 
 #add location_type, location_summary
 
-protest$location_type <- ""
-protest$location_id <- ""
+protest_county$location_type <- ""
+protest_county$location_id <- ""
 
-for(i in 1:nrow(protest)){
-  if(is.na(protest[i,"metro_micro_stat_area"]) == FALSE){
-    protest[i, "location_id"] <- protest[i, "metro_micro_stat_area"]
-    protest[i, "location_type"] <- "CBSA"
+for(i in 1:nrow(protest_county)){
+  if(is.na(protest_county[i,"CBSAFP"]) == FALSE){
+    protest_county[i, "location_id"] <- protest_county[i, "CBSAFP"]
+    protest_county[i, "location_type"] <- "CBSA"
   } else {
-    protest[i, "location_id"] <- protest[i, "state_and_county_fips"]
-    protest[i, "location_type"] <- "county"
+    protest_county[i, "location_id"] <- protest_county[i, "GEOID"]
+    protest_county[i, "location_type"] <- "county"
   }
 }
 
 #Adding in names for CBSAs and counties
 
-protest <- left_join(protest, cbsa[,c("GEOID", "NAME")], by = c("location_id" = "GEOID"))
-colnames(protest)[which(colnames(protest) == "NAME")] <- "cbsa_name"
+protest_county <- left_join(protest_county, cbsa[,c("GEOID", "NAME")], by = c("location_id" = "GEOID"))
+colnames(protest_county)[which(colnames(protest_county) == "NAME.y")] <- "cbsa_name"
+colnames(protest_county)[which(colnames(protest_county) == "NAMELSAD")] <- "county_name_long"
+colnames(protest_county)[which(colnames(protest_county) == "GEOID")] <- "county_state_fips"
 
-protest$location_name <- ""
+protest_county$location_name <- ""
 
-for(i in 1:nrow(protest)){
-  if(protest[i, "location_type"] == "county"){
-    protest[i, "location_name"] <- protest[i, "county_name_long"]
+protest_county_df <- as.data.frame(protest_county)
+
+for(i in 1:nrow(protest_county_df)){
+  if(protest_county_df[i, "location_type"] == "county"){
+    protest_county_df[i, "location_name"] <- protest_county_df[i, "county_name_long"]
   } else {
-    protest[i, "location_name"] <- protest[i, "cbsa_name"]
+    protest_county_df[i, "location_name"] <- protest_county_df[i, "cbsa_name"]
   }
 }
+
+###moving relevant information over to the clean protest file
+
+protest <- left_join(protest, protest_county_df[,c("id", "county_name_long", "cbsa_name", "county_state_fips", "location_type", "location_id", "location_name")], by = "id")
 
 #################################################
 ## Identifying which places are state capitals ##
@@ -356,13 +371,103 @@ nrow(filter(all_place_summary, include_capital == TRUE))
 all_place_summary[is.na(all_place_summary$include_capital) == TRUE, "include_capital"] <- FALSE
 
 ####################################
+##### Adding additional tags #######
+####################################
+
+###to see how I decided which tags to add, see "topic_analysis.R" script.
+###basically, "civil_rights" was so generic that it was meaningless, so
+###I made some more specific civil rights tags out of the position/context tags.
+
+tag <- untangle(protest, "tags", pattern = ";")
+tag <- clean_names(tag)
+
+tag_start <- which(colnames(tag) == "location_name") + 1
+
+tag$add <- ""
+
+for(i in 1:nrow(tag)){
+  if(sum(tag[i, c("for_racial_justice", "against_white_supremacy", 
+                  "charlottesville", "martin_luther_king_jr", 
+                  "national_anthem", "against_confederate_symbol", 
+                  "for_white_supremacy", "for_confederate_symbol", 
+                  "black_womens_march")]) >= 1){
+    tag[i, "add"] <- "race_confed"
+  }
+  
+  if(sum(tag[i, c("for_womens_rights", "womens_march", "for_abortion_rights",
+                  "against_abortion_rights", "for_planned_parenthood", 
+                  "day_without_a_woman", "against_planned_parenthood", 
+                  "international_womens_day", "against_sexual_domestic_violence", 
+                  "black_womens_march")]) >= 1){
+    if(tag[i, "add"] == ""){
+      tag[i, "add"] <- "women"
+    } else {
+      tag[i, "add"] <- paste(tag[i, "add"], "women", sep = "; ")
+    }
+  }
+  if(sum(tag[i, c("police", "for_criminal_justice", "for_criminal_justice_reform", 
+                  "prisons", "for_supporting_police", "against_police_presence", 
+                  "national_anthem")]) >= 1){
+    if(tag[i, "add"] == ""){
+      tag[i, "add"] <- "police_criminal_justice"
+    } else {
+      tag[i, "add"] <- paste(tag[i, "add"], "police_criminal_justice", sep = "; ")
+    }
+  }
+  
+  if(sum(tag[i, c("pro_lgbtq", "for_transgender_rights", 
+                  "pride", "anti_lgbtq")]) >= 1){
+    if(tag[i, "add"] == ""){
+      tag[i, "add"] <- "lgbtq"
+    } else {
+      tag[i, "add"] <- paste(tag[i, "add"], "lgbtq", sep = "; ")
+    }
+  }
+  
+  if(sum(tag[i, c("national_anthem", "against_invited_speaker", 
+                  "for_freedom_of_speech")]) >= 1){
+    if(tag[i, "add"] == ""){
+      tag[i, "add"] <- "freedom_of_speech"
+    } else {
+      tag[i, "add"] <- paste(tag[i, "add"], "freedom_of_speech", sep = "; ")
+    }
+  }
+  
+  if(sum(tag[i, c("for_religious_tolerance", "anti_muslim")]) >= 1){
+    if(tag[i, "add"] == ""){
+      tag[i, "add"] <- "religion"
+    } else {
+      tag[i, "add"] <- paste(tag[i, "add"], "religion", sep = "; ")
+    }
+  }
+  
+  if(sum(tag[i, c("voting", "for_redistricting")]) >= 1){
+    if(tag[i, "add"] == ""){
+      tag[i, "add"] <- "voting"
+    } else {
+      tag[i, "add"] <- paste(tag[i, "add"], "voting", sep = "; ")
+    }
+  }
+  
+  if(tag[i, "add"] != ""){
+    tag[i, "tags"] <- paste(tag[i, "tags"], tag[i, "add"], sep = "; ")
+  }
+}
+
+##sanity check:
+View(tag %>% filter(add != "") %>% select(tags, add))
+
+protest_new_tags <- select(tag, 1:(tag_start-1))
+
+####################################
 ############ Writing out ###########
 ####################################
 
-write_loc <- "data/working"
+write_loc <- "data/final"
 write_csv(protest_summary, file.path(write_loc, "county_cbsa_protest_summary.csv"))
-write_csv(all_place_summary, file.path(write_loc, "all_county_cbsa_summary.csv"))
-write_csv(no_protest_summary, file.path(write_loc, "county_cbsa_no_protest_summary.csv"))
-write_csv(protest, file.path(write_loc, "protest_all_states.csv"))
-
+write_csv(all_place_summary, file.path(write_loc, "nov1_all_county_cbsa_summary.csv"))
+write_csv(no_protest_summary, file.path(write_loc, "nov1_county_cbsa_no_protest_summary.csv"))
+#wrote this out before I thought to add the tag-wrangling in to this script:
+#write_csv(protest, file.path("data/working", "nov1_protest_latlong.csv"))
+write_csv(protest_new_tags, file.path(write_loc,"protest_nov1_addtl_tags.csv"))
 

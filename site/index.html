@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <meta charset = "utf-8">
+  <link rel = "stylesheet" href = "./style.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap" rel="stylesheet">
+  <title>Constellations of Protest</title>
+</head>
+
+<body>
+  <header>
+    <object type = "image/svg+xml" data = "img/header.svg"></object>
+  </header>
+  <main>
+    <p id = "intro">Americans have taken to the streets in more than twenty thousand protests since the inauguration of President Donald Trump. Some movements, like the Women's March, started at the national level; others, like March For Our Lives, began locally before spreading across the country.</p>
+
+    <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones--for instance, consider the Tea Party protests during Barack Obama’s presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
+
+    <p>Read on to explore protest in America since January 2017, or <a href ="#statecompare">skip ahead to see how your state compares to the rest of the country.</a></p>
+
+    <!-- Playing map and bar chart go here -->
+    <h1>Protests Over Time</h1>
+
+    <p>Watch protest spread week-by-week over the United States.</p>
+    <div id="map-wrapper">
+    </div>
+    <div id = "week-tooltip">
+        <span id = "week-tooltip-text" class = "hidden"><p>Protests during the week of <span id = "week-loop"></span></p></span>
+    </div>
+      <div id = "bar-wrapper">
+        <div id = "bar-tooltip" class = "hidden">
+          <p class = "label">Week of <span id = "week-bar-tooltip"></span></p>
+          <p><span id = "protest-count">100</span> protests</p>
+        </div>
+      </div>
+
+    <h1>What We Protest About</h1>
+    <p>Waves of protest swell in response to current events, sometimes appearing
+      overnight and fading quickly.</p>
+    <object type = "image/svg+xml" data = "img/stream-legend.svg" id = "stream-legend"></object>
+    <div id = "streamgraph">
+    </div>
+    <object type = "image/svg+xml" data = "img/stream-legend.svg" id = "stream-legend"></object>
+
+    <!-- <img src = "img/nov1_update_annotated-01.png"> -->
+    <p>National attention is no guarantee of
+    protest on a national scale. Mass protest movements usually don't happen organically: organizing is key to making protest happen.
+    Minimal protest followed shootings in Las Vegas, Texas First Baptist Church,
+    and Rancho Tehama.  But after the Parkland school shooting in February 2018,
+    students from Parkland organized March For Our Lives,
+    one of the largest street protests in American history, and a series of
+    nationwide school walkouts.</p>
+    <object type = "image/svg+xml" data = "img/gun_per_week.svg"></object>
+
+    <h1>Where We Protest</h1>
+    <p>Focusing on topics at the national level emphasizes coordinated protest campaigns like March For Our Lives and Families Belong Together. But the United States isn’t always unified, and issues like education inspire protest in some states but not others.</p>
+
+    <object type = "image/svg+xml" data = "img/state_protest_topic.svg"></object>
+
+    <p>West Virginia led the nation in education-related protests and began a nationwide wave of education protests and teacher strikes. Teachers in West Virginia held an 8-day strike in 2018, pushing for better pay and reduced healthcare costs. Teachers and parents rallied before the strike, and teachers stood on picket lines as the strike dragged on, for a total of 50 protests in 39 days.</p>
+
+    <object type = "image/svg+xml" data = "img/edu_per_week.svg"></object>
+
+    <p>The strike started on February 22 2018, in defiance of state laws against public employees striking. Union leaders asked teachers to return to work on March 1, but the teachers continued to strike until March 7, when the governor signed a bill authorizing a five percent pay raise. Teacher strikes spread through other states in 2018 and 2019, including Oklahoma and Arizona. This year, teachers in West Virginia only had to strike for a few hours before the West Virginia House of Delegates indefinitely postponed a vote on a bill introducing charter schools and educational vouchers </p>
+
+    <h1>Constellations of local protest</h1>
+
+    <p>States don't always tell the full story, though. Local hotbeds of protest may not be visible at the state level.</p>
+
+      <p>Take the small city of Port St. Lucie, Florida, where residents  protest about environmental issues above and beyond the rest of the state. The state of Florida is on par with the rest of the country when it comes to environmental protests: 6% of all protests in Florida were related to the environment, compared with 6% nationally. But the Port St. Lucie metropolitan area had three times as many environmental protests per person as the state as a whole, and accounted for 9% of the state’s environmental protests despite having only 2% of the state’s population. </p>
+
+    <p>[PUT A CHART HERE THAT TELLS THIS STORY INSTEAD]</p>
+
+    <p>Residents have consistently opposed fracking in Florida and protested the water quality in the St. Lucie River and St. Lucie Estuary, which is subject to toxic algae blooms from Lake Okeechobee’s polluted runoff. WPTV reported one protestor at a 2018 rally saying, <a href = "https://www.wptv.com/news/region-martin-county/residents-protest-toxic-algae-in-stuart">“Our river is basically on life support.”</a></p>
+
+    <p>ENVIRoNMENTAL CoNSTELLATIoN HERE</p>
+
+    <p>Or consider Portland, Oregon, which is a hotbed of protest related to racial justice and white supremacy. </p>
+
+    <object type = "image/svg+xml" data = "img/mockup_race_confed_constellation.svg"></object>
+
+    <p>The following constellations explore protest at the local level, looking at individual metropolitan areas and counties across the country.</p>
+
+
+    <h1 id = "statecompare">How does your state compare?</h1>
+
+    <p>Select your state:</p>
+
+    <object type = "image/svg+xml" data = "img/state_select_mockup.svg"></object>
+
+  </main>
+</body>
+<script src="./d3_v5.js"></script>
+<script src = "graphic-scripts/map-animation-baradd.js"></script>
+<script src = "graphic-scripts/bar_test_click.js"></script>
+
+
+</html>
