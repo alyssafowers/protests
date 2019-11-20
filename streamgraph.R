@@ -8,9 +8,10 @@ library(lubridate)
 
 #### load data
 
-loc <- "data/working"
+loc <- "data/final"
 
-protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags_nov1.csv")))
+protest <- clean_names(read_csv(file.path(loc, "protest_nov1_addtl_tags.csv")))
+protest$date <- as.Date(protest$date, "%m/%d/%y")
 
 protest <- mutate(protest, week=as.Date(cut(date, breaks="week", starts.on.monday=TRUE)))
 

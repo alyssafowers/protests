@@ -9,9 +9,10 @@ library(ggrepel)
 ######### Get data sources #########
 ####################################
 
-loc <- "data/working"
+loc <- "data/final"
 
-protests <- clean_names(read_csv(file.path(loc, "protest_addtltags_nov1_withstate.csv")))
+protests <- clean_names(read_csv(file.path(loc, "protest_nov1_addtl_tags.csv")))
+protests$date <- as.Date(protests$date, "%m/%d/%y")
 protests$month <- month(protests$date)
 
 nation_month_topic <- clean_names(read_csv(file.path(loc, "month_top_topics_long.csv")))
