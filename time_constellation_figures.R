@@ -8,11 +8,12 @@ library(muckrakr)
 library(sf)
 library(nngeo)
 
-loc <- "data/working"
-protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags.csv")))
-#protest <- clean_names(read_csv(file.path(loc, "protest_all_states.csv")))
+loc <- "data/final"
+protest <- clean_names(read_csv(file.path(loc, "protest_nov1_addtl_tags.csv")))
+protest$date <- as.Date(protest$date, "%m/%d/%y")
+protest$week <- as.Date(cut(protest$date, breaks="week", starts.on.monday=TRUE))
 
-place <- clean_names(read_csv(file.path(loc, "all_county_cbsa_summary.csv")))
+place <- clean_names(read_csv(file.path(loc, "nov1_all_county_cbsa_summary.csv")))
 
 protest$month_yr <- format(as.Date(protest$date), "%Y-%m")
 
@@ -29,7 +30,7 @@ race_state_week <- race %>% group_by(state, week) %>% summarise(count = n())
 ggplot(race, aes(y = state, x = date))+geom_point(alpha = .4)
 ggplot(race_state_week, aes(x = week, y = count, color = state))+geom_line()
 
-police <- tag %>% filter(police == 1) %>% select(1:32, "month_yr")
+police <- tag %>% filter(police == 1) %>% select(1:21)
 police_state_week <- police %>% group_by(state, week) %>% summarise(count = n())
 police_state_month <- police %>% group_by(state, month_yr) %>% summarise(count = n())
 
@@ -218,6 +219,29 @@ pol_const_list <- read_csv(file.path(const_loc, "police/police_constellation_pla
 ###events for those places
 
 pol_const_event <- filter(police, location_id %in% pol_const_list$location_id)
+
+###PICK UP AGAIN HERE:
+
+##make matrix of location x week for police constellation protests
+
+##for each location, find OTHER locations that had protests on the same weeks,
+##and sum up how often co-occurrence happened
+
+##look at co-occurrence and decide a threshhold for which places should be
+##connected because they co-occur so often (preferably a percentile so I
+##can use it on other topics)
+
+##create list of connected places: either over the threshhold, or has most
+##co-occurrence.
+
+
+##do any places have NO co-occurrence? if so, find the location that has the
+##CLOSEST co-occurrence (or just leave it in as an isolated star?)
+
+
+
+
+
 
 ###which constellation places had events on the same weeks (or consecutive weeks...?)
 

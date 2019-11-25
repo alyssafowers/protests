@@ -2,30 +2,180 @@
 
 async function stateDot(){
 
-  const dataset = await d3.csv("topic_percentile_by_state.csv")
-  const xAccessor = d => +d.perc_of_state_protest
-  const stateAccessor = d => d.state
+  var topics = ["guns",
+    "immigration",
+    "women",
+    "supreme_court",
+    "environment",
+    "education",
+    "collective_bargaining",
+    "executive",
+    "healthcare",
+    "police",
+    "race_confed",
+    "other"]
 
+  var topicsFull = {
+    guns: {
+      lineLabel: "Guns",
+      captionLabel: "guns"
+    },
+    immigration: {
+      lineLabel: "Immigration",
+      captionLabel: "immigration"
+    },
+    women : {
+      lineLabel: "Women's rights",
+      captionLabel: "women's rights"
+    },
+    supreme_court: {
+      lineLabel: "Supreme Court",
+      captionLabel: "the Supreme Court"
+    },
+    other: {
+      lineLabel: "Other topics",
+      captionLabel: "other topics"
+    },
+    environment: {
+      lineLabel: "Environment",
+      captionLabel: "the environment"
+    },
+    education: {
+      lineLabel: "Education",
+      captionLabel: "education"
+    },
+    collective_bargaining: {
+      lineLabel: "Collective bargaining",
+      captionLabel: "collective bargaining"
+    },
+    executive: {
+      lineLabel: "Executive Branch",
+      captionLabel: "the Executive Branch"
+    },
+    healthcare: {
+      lineLabel: "Healthcare",
+      captionLabel: "healthcare"
+    },
+    police: {
+      lineLabel: "Police",
+      captionLabel: "the police"
+    },
+    race_confed: {
+      //this should be "racial justice or white supremacy," but struggling to get a line break in there
+      lineLabel: "Racial justice",
+      captionLabel: "racial justice or white supremacy"
+    }
+  }
 
-  const width = d3.min([window.innerWidth, 800])
-  const height = width*1.25
+  const fillColors = {
+    supreme_court: "rgb(95, 154, 102)",
+    women: "rgb(35, 77, 78)",
+    police: "rgb(65, 163, 192)",
+    education: "rgb(51, 143, 163)",
+    executive: "rgb(184, 195, 226)",
+    immigration: "rgb(72, 124, 188)",
+    guns: "rgb(107, 69, 152)",
+    race_confed: "rgb(226, 136, 183)",
+    collective_bargaining: "rgb(178, 37, 113)",
+    environment: "rgb(91, 61, 93)",
+    healthcare: "rgb(173, 96, 162)",
+    other: "rgb(113, 118, 137)"
+  }
 
-  var topics = ["guns", "immigration", "women", "supreme_court", "other"]
+  const textColors = {
+    supreme_court: "white",
+    women: "white",
+    police: "white",
+    education: "white",
+    executive: "black",
+    immigration: "white",
+    guns: "white",
+    race_confed: "black",
+    collective_bargaining: "white",
+    environment: "white",
+    healthcare: "white",
+    other: "white"
+  }
 
-  const dimensions = {
-      width: width,
-      margin: {
-        top: 50,
-        bottom: 50,
-        left: 100,
-        right: 10,
-        between: 20
-      },
-      dotHeight: 10,
-      dotMargin: 20
+  const stateNameFull = { AZ: 'Arizona',
+    AL: 'Alabama',
+    AK: 'Alaska',
+    AR: 'Arkansas',
+    CA: 'California',
+    CO: 'Colorado',
+    CT: 'Connecticut',
+    DC: 'Washington, DC',
+    DE: 'Delaware',
+    FL: 'Florida',
+    GA: 'Georgia',
+    HI: 'Hawaii',
+    ID: 'Idaho',
+    IL: 'Illinois',
+    IN: 'Indiana',
+    IA: 'Iowa',
+    KS: 'Kansas',
+    KY: 'Kentucky',
+    LA: 'Louisiana',
+    ME: 'Maine',
+    MD: 'Maryland',
+    MA: 'Massachusetts',
+    MI: 'Michigan',
+    MN: 'Minnesota',
+    MS: 'Mississippi',
+    MO: 'Missouri',
+    MT: 'Montana',
+    NE: 'Nebraska',
+    NV: 'Nevada',
+    NH: 'New Hampshire',
+    NJ: 'New Jersey',
+    NM: 'New Mexico',
+    NY: 'New York',
+    NC: 'North Carolina',
+    ND: 'North Dakota',
+    OH: 'Ohio',
+    OK: 'Oklahoma',
+    OR: 'Oregon',
+    PA: 'Pennsylvania',
+    RI: 'Rhode Island',
+    SC: 'South Carolina',
+    SD: 'South Dakota',
+    TN: 'Tennessee',
+    TX: 'Texas',
+    UT: 'Utah',
+    VT: 'Vermont',
+    VA: 'Virginia',
+    WA: 'Washington state',
+    WV: 'West Virginia',
+    WI: 'Wisconsin',
+    WY: 'Wyoming' }
+
+    const dataset = await d3.csv("topic_percentile_by_state.csv")
+    const xAccessor = d => +d.perc_of_state_protest
+    const stateAccessor = d => d.state
+
+    const highPercentile = dataset.filter(function(d) {return d.percentile > .8})
+    const lowPercentile = dataset.filter(function(d) {return d.percentile < .25})
+
+    const width = d3.min([window.innerWidth, 800])
+    const height = width*1.25
+
+    const dimensions = {
+    width: width,
+    margin: {
+      top: 50,
+      bottom: 50,
+      left: 180,
+      right: 10,
+    },
+    dotHeight: 10,
+    dotMargin: 15
     }
 
-  dimensions.boundedHeight = (dimensions.dotHeight*topics.length)+(dimensions.dotMargin*(topics.length+1))
+
+  dimensions.boundedHeight = (dimensions.dotHeight*(topics.length+1))+(dimensions.dotMargin*(topics.length+4))
+
+  console.log(topics.length)
+  console.log(dimensions.boundedHeight)
 
   dimensions.height = dimensions.boundedHeight+dimensions.margin.top+dimensions.margin.bottom
 
@@ -33,7 +183,7 @@ async function stateDot(){
    -  dimensions.margin.left - dimensions.margin.right
 
 
-   console.log(dimensions)
+   // console.log(dimensions)
 
    const wrapper = d3.select("#state-dotplot")
 
@@ -83,10 +233,6 @@ async function stateDot(){
 
       const topicBounds = dotBounds.append("g")
         .attr("id", topicName)
-        // .style("transform", `0px, ${
-        //     yPosition
-        //   }px)`)
-
 
       const section = dataset.filter(function(d) {return d.topic == topicName})
 
@@ -94,7 +240,7 @@ async function stateDot(){
         //reference for mouse position came from here: https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html
 
         var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
-        var yMousePosition = d3.mouse(this)[1]+dimensions.margin.top-dimensions.dotHeight
+        var yMousePosition = d3.mouse(this)[1]+dimensions.margin.top+(dimensions.dotMargin*13)
 
         d3.select("#tooltip").classed("hidden", false)
 
@@ -103,20 +249,28 @@ async function stateDot(){
           .style("top", yMousePosition + "px")
           .select("#state-percentile")
           .text(formatPercent(xAccessor(d)))
-          .select("#tooltip-state")
-          .text(stateAccessor(d))
+        d3.select("#tooltip-state")
+          .text(stateNameFull[stateAccessor(d)])
+
+          d3.select("#dot-topic")
+          .text(topicsFull[topicName].captionLabel)
+
 
       }
 
       const mouseMove = function(d){
         var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
-        var yPosition = d3.mouse(this)[1]+dimensions.margin.top-dimensions.dotHeight
+        var yPosition = d3.mouse(this)[1]+dimensions.dotMargin*13
 
         d3.select("#tooltip")
         .style("left", xPosition + "px")
         .style("top", yPosition + "px")
+        .select("#state-percentile")
+        .text(formatPercent(xAccessor(d)))
         .select("#tooltip-state")
-        .text(stateAccessor(d))
+        .text(stateNameFull[stateAccessor(d)])
+        .select("#dot-topic")
+        .text(topicName)
 
 
       }
@@ -135,17 +289,11 @@ async function stateDot(){
         .style("stroke-width", ".5")
 
 
-        //to put guidelines all the way to beginning of labels:
 
-        // const guideLine = labelBounds.append("line")
-        //   .attr("x1", 0)
-        //   .attr("x2", xScale(d3.max(dataset, d => d.perc_of_state_protest))+dimensions.margin.left)
-        //   .attr("y1", yPosition)
-        //   .attr("y2", yPosition)
-        //   .style("stroke", "lightgray")
-        //   .style("stroke-width", ".5")
 
         //draw dataset
+
+        var fillColor = fillColors[topicName]
 
         const dots = topicBounds.selectAll("circle")
           .data(section)
@@ -154,8 +302,9 @@ async function stateDot(){
               .attr("cx", d=> xScale(xAccessor(d)))
               .attr("cy", yPosition)
               .attr("r", dimensions.dotHeight/2)
-              .attr("fill", "black")
-              .attr("opacity", ".3")
+              .attr("opacity", ".5")
+              .attr("class", d => stateAccessor(d))
+              .attr("fill", fillColor)
               .on("mouseover", mouseOver)
               .on("mousemove", mouseMove)
               .on("mouseout", mouseOut)
@@ -163,8 +312,11 @@ async function stateDot(){
 
         //add label
 
+        var thisLineLabel = topicsFull[topicName].lineLabel
+
+
         const lineLabel = labelBounds.append("text")
-            .text(topicName)
+            .text(thisLineLabel)
             .attr("fill", "black")
             .attr("x", dimensions.margin.left - 10)
             .attr("y", yPosition+dimensions.dotMargin/4)
@@ -173,32 +325,147 @@ async function stateDot(){
         //got a little help from https://stackoverflow.com/questions/56226717/return-value-based-on-max-min-of-another-value-in-the-same-object
         //if this doesn't work later, remember to include this in the index file: <script src="https://d3js.org/d3-array.v2.min.js"></script>
 
-        var highPerc = d3.max(section, d => d.perc_of_state_protest)
-        var highPercIndex = d3.maxIndex(section, d => d.perc_of_state_protest)
-        var highPercState = section[highPercIndex].state
+        var topPerc = d3.max(section, d => d.perc_of_state_protest)
+        var topPercIndex = d3.maxIndex(section, d => d.perc_of_state_protest)
+        var topPercState = section[topPercIndex].state
 
-      //console.log(highPerc, highPercIndex, highPercState)
-
-    //  console.log(xScale(highPerc))
       const highestState = topicBounds.append("text")
-        .text(highPercState)
+        .text(topPercState)
         .attr("fill", "black")
-        .attr("x", xScale(highPerc)+dimensions.dotHeight)
+        .attr("x", xScale(topPerc)+dimensions.dotHeight)
         .attr("y", yPosition)
+        .attr("class", "highestState")
 
 
       }
 
     var yPosition
+    //Actually draw the chart:
 
   for(i = 0; i < topics.length; i++){
       yPosition = 2 + (i*2*dimensions.dotMargin)
       drawDots(topics[i])
     }
 
+    //selecting Florida for initial page load
+
+    var selectedStateClass = ".FL"
+
+    d3.selectAll(".FL")
+      .attr("opacity", 1)
+      .attr("r", dimensions.dotHeight)
+      .attr("stroke", "white")
+      .raise()
+
+    //Behavior when state is selected:
+
+    var selectedState
+    var selectedStateDots
+
+    d3.select("#stateSelect").on("change", function(){
+
+      d3.selectAll(selectedStateClass)
+        .lower()
+        .attr("opacity", ".5")
+        .attr("r", dimensions.dotHeight/2)
+        .attr("stroke","null")
+
+      selectedState = d3.select(this).property("value")
+      selectedStateClass = "."+selectedState
+
+      d3.select("#state-sentence")
+        .classed("hidden", false)
+
+    selectedStateClass = "."+selectedState
+
+    selectedStateDots = d3.selectAll(selectedStateClass)
+        .attr("opacity", 1)
+        .attr("r", dimensions.dotHeight)
+        .attr("stroke", "white")
+        .raise()
+
+        d3.select("#state-name")
+          .text(stateNameFull[selectedState])
+
+    d3.selectAll(".highestState").classed("hidden", true)
+
+    var highPercentileThisState = highPercentile.filter(function(d) {return d.state == selectedState})
+          .sort(function(x){return d3.descending(x.percentile)})
+
+    var topTopicOne = highPercentileThisState[0].topic
+
+    if (highPercentileThisState.length <2){
+      d3.select("#top-protest-topic-one")
+        .text(topicsFull[topTopicOne].captionLabel)
+        .style("background-color", fillColors[highPercentileThisState[0].topic])
+        .style("color", textColors[highPercentileThisState[0].topic])
+
+      d3.select("#top-protest-topic-bridge")
+        .classed("hidden", true)
+
+      d3.select("#top-protest-topic-two")
+        .classed("hidden", true)
+    } else {
+      var topTopicTwo = highPercentileThisState[1].topic
+
+      d3.select("#top-protest-topic-one")
+        .text(topicsFull[topTopicOne].captionLabel)
+        .style("background-color", fillColors[highPercentileThisState[0].topic])
+        .style("color", textColors[highPercentileThisState[0].topic])
+
+      d3.select("#top-protest-topic-two")
+        .text(topicsFull[topTopicTwo].captionLabel)
+        .style("background-color", fillColors[highPercentileThisState[1].topic])
+        .style("color", textColors[highPercentileThisState[1].topic])
+
+      d3.select("#top-protest-topic-bridge")
+        .classed("hidden", false)
+
+      d3.select("#top-protest-topic-two")
+        .classed("hidden", false)
+    }
+
+    var lowPercentileThisState = lowPercentile.filter(function(d) {return d.state == selectedState})
+          .sort(function(x){return d3.ascending(x.percentile)})
+
+    var bottomTopicOne = lowPercentileThisState[0].topic
+
+    if (lowPercentileThisState.length < 2){
+      d3.select("#bottom-protest-topic-one")
+        .text(topicsFull[bottomTopicOne].captionLabel)
+        .style("background-color", fillColors[lowPercentileThisState[0].topic])
+        .style("color", textColors[lowPercentileThisState[0].topic])
+
+      d3.select("#bottom-protest-topic-bridge")
+        .classed("hidden", true)
+
+      d3.select("#bottom-protest-topic-two")
+        .classed("hidden", true)
+    } else {
+      var bottomTopicTwo = lowPercentileThisState[1].topic
+
+      d3.select("#bottom-protest-topic-one")
+        .text(topicsFull[bottomTopicOne].captionLabel)
+        .style("background-color", fillColors[lowPercentileThisState[0].topic])
+        .style("color", textColors[lowPercentileThisState[0].topic])
+
+      d3.select("#bottom-protest-topic-two")
+        .text(topicsFull[bottomTopicTwo].captionLabel)
+        .style("background-color", fillColors[lowPercentileThisState[1].topic])
+        .style("color", textColors[lowPercentileThisState[1].topic])
+
+      d3.select("#bottom-protest-topic-bridge")
+        .classed("hidden", false)
+
+      d3.select("#bottom-protest-topic-two")
+        .classed("hidden", false)
     }
 
 
+    })
+
+
+    }
 
 
 

@@ -7,16 +7,16 @@ library(muckrakr)
 library(sf)
 library(nngeo)
 
-loc <- "data/working"
-protest <- clean_names(read_csv(file.path(loc, "protest_additional_tags.csv")))
+loc <- "data/final"
+protest <- clean_names(read_csv(file.path(loc, "protest_nov1_addtl_tags.csv")))
 #protest <- clean_names(read_csv(file.path(loc, "protest_all_states.csv")))
 
-place <- clean_names(read_csv(file.path(loc, "all_county_cbsa_summary.csv")))
+place <- clean_names(read_csv(file.path(loc, "nov1_all_county_cbsa_summary.csv")))
 
 constellation <- function(list = protest, place_summary = place, topic, write_loc = "constellations"){
   tag <- untangle(protest, "tags", pattern = ";")
   summary <- tag %>% group_by(location_id, location_name) %>% 
-      summarise(protest_count = n(), topic_protest = sum(get(topic)), internal_point_latitude = mean(internal_point_latitude), internal_point_longitude = mean(internal_point_longitude)) %>%
+      summarise(protest_count = n(), topic_protest = sum(get(topic)), internal_point_latitude = mean(latitude), internal_point_longitude = mean(longitude)) %>%
       mutate(perc_topic = topic_protest/protest_count)
 
   ##adding in population
@@ -26,7 +26,7 @@ constellation <- function(list = protest, place_summary = place, topic, write_lo
   #getting criteria for inclusion in constellation
   t_sum <- filter(summary, topic_protest > 0)
   
-  crit_10k <- unname(quantile(t_sum$topic_per_10k, .25))
+  crit_10k <- unname(quantile(t_sum$topic_per_10k, .4))
   crit_perctopic <- unname(quantile(t_sum$perc_topic, .5))
   crit_count <- unname(quantile(t_sum$topic_protest, .8))
   
@@ -111,26 +111,17 @@ constellation <- function(list = protest, place_summary = place, topic, write_lo
   }
 
 constellation(topic = "collective_bargaining")
-constellation(topic = "guns")
 constellation(topic = "police")
-constellation(topic = "for_white_supremacy")
+constellation(topic = "race_confed")
 constellation(topic = "immigration")
 constellation(topic = "executive")
 constellation(topic = "education")
 constellation(topic = "environment")
 constellation(topic = "healthcare")
-constellation(topic = "charlottesville")
-constellation(topic = "for_racial_justice")
-constellation(topic = "for_abortion_rights")
-constellation(topic = "against_abortion_rights")
-constellation(topic = "lgbtq")
 constellation(topic = "supreme_court")
-constellation(topic = "against_greater_gun_control")
+constellation(topic = "guns")
 constellation(topic = "women")
-constellation(topic = "race_confed")
-constellation(topic = "police_criminal_justice")
-constellation(topic = "freedom_of_speech")
-constellation(topic = "voting")
+constellation(topic = "police")
 
 
 

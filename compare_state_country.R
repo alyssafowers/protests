@@ -1,3 +1,6 @@
+#run through streamgraph.R first to get counts of topic by month for whole
+#country
+
 library(tidyverse)
 library(janitor)
 library(muckrakr)
