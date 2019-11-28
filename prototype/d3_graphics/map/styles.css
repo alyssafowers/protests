@@ -19,8 +19,20 @@ body {
     background-color: gray;
 } */
 
+#trace-line-wrapper{
+  position: absolute;
+  stroke: black;
+}
+
+#trace-line{
+  opacity: 0;
+}
+
+/* #trace-line.hidden{
+  display: none;
+} */
+
 #wrapper{
-  background-color: gray;
   margin-top: 0;
 }
 
@@ -61,4 +73,68 @@ body {
   font-family: sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+#play-button {
+  position: relative;
+  top: 35px;
+  left: 30px;
+  padding-right: 26px;
+  border-radius: 3px;
+  border: none;
+  color: black;
+  margin: 0;
+  padding: 0 12px;
+  width: 50px;
+  cursor: pointer;
+  height: 30px;
+  align-content: center;
+}
+
+rect:hover{
+  fill: white;
+}
+
+
+.ticks {
+  font-size: 10px;
+}
+
+.track,
+.track-inset,
+.track-overlay {
+  stroke-linecap: round;
+}
+
+.track {
+  stroke: #000;
+  stroke-opacity: 0.3;
+  stroke-width: 10px;
+}
+
+.track-inset {
+  stroke: #dcdcdc;
+  stroke-width: 8px;
+}
+
+.track-overlay {
+  pointer-events: stroke;
+  stroke-width: 50px;
+  stroke: transparent;
+  cursor: crosshair;
+}
+
+.handle {
+  fill: #fff;
+  stroke: #000;
+  stroke-opacity: 0.5;
+  stroke-width: 1.25px;
+}
+
+.label{
+  font-size: 1rem;
+}
+
+.parameter-value text{
+  font-size: .8rem;
 }

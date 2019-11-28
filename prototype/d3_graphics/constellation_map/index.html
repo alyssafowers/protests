@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <meta charset = "utf-8">
+  <link rel = "stylesheet" href = "./style.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap" rel="stylesheet">
+  <title>Constellations of Protest</title>
+</head>
+
+<body>
+  <header>
+    <object type = "image/svg+xml" data = "img/header.svg"></object>
+  </header>
+  <main>
+    <form id = "constellation-selector">
+      <button id = "guns">Guns</button>
+      <button id = "immigration">Immigration</button>
+      <button id = "women">Women</button>
+      <button id = "executive">Executive</button>
+      <button id = "race_confed">Racial Justice or White Supremacy</button>
+      <button id = "environment">Environment</button>
+      <button id = "education">Education</button>
+      <button id = "supreme_court">Supreme Court</button>
+      <button id = "police">Police</button>
+      <button id = "healthcare">Healthcare</button>
+      <button id = "collective_bargaining">Collective Bargaining</button>
+
+    </form>
+      <div id = "const-map-wrapper">
+        <div id = "const-map-tooltip" class = "hidden">
+          <p><span id = "const-map-place">Place name</span></p>
+        </div>
+      </div>
+  </main>
+</body>
+<script src="./d3_v5.js"></script>
+<script src = "graphic-scripts/constellation_draw.js"></script>
+
+
+</html>

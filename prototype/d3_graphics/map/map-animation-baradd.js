@@ -88,8 +88,6 @@ async function drawMapAndBar() {
 
   dimensions.bar.boundedTop = dimensions.map.height + dimensions.bar.margin.top
 
-  console.log(dimensions)
-
     //draw canvas
 
     const mapWrapper = d3.select("#map-wrapper")
@@ -115,7 +113,26 @@ async function drawMapAndBar() {
       }px, ${
         dimensions.map.margin.top
       }px)`)
-      .attr("id", "map-group")
+      .attr("id", "map-states-group")
+
+    const bounds_map_background = mapWrapper.append("g")
+      .style("transform", `translate(${
+        dimensions.map.margin.left
+      }px, ${
+        dimensions.map.margin.top
+      }px)`)
+      .attr("id", "map-background-stars")
+
+      const bounds_map_stars = mapWrapper.append("g")
+        .style("transform", `translate(${
+          dimensions.map.margin.left
+        }px, ${
+          dimensions.map.margin.top
+        }px)`)
+        .attr("id", "map-stars-group")
+
+
+
 
   //bar canvas:
 
@@ -139,7 +156,7 @@ async function drawMapAndBar() {
         .range([0, dimensions.bar.boundedHeight])
         .nice()
 
-    //draw data
+    //draw states and background stars
 
     const states = bounds_map.selectAll(".state")
       .data(stateShapes.features)
@@ -147,6 +164,16 @@ async function drawMapAndBar() {
         .attr("class", "state")
         .attr("d", pathGenerator)
         .attr("fill", "black")
+
+    const backgroundStars = bounds_map_background.selectAll("circle")
+        .data(dataset_map)
+        .enter().append("circle")
+        .attr("cx", d => projection([latAccessor(d), longAccessor(d)])[0])
+        .attr("cy", d => projection([latAccessor(d), longAccessor(d)])[1])
+        .attr("fill", "darkgray")
+        .attr("r", .5)
+        .attr("opacity", .2)
+
 
     let wk = 0
 
@@ -286,8 +313,6 @@ function drawProtestLoop(data){
 
   let section_map = data.filter(function(d) {return d.week_id == wk})
   let weekSelector = "#wk"+wk
-  console.log(weekSelector)
-
 
   const updateLabel = function(d){
 
@@ -309,34 +334,49 @@ function drawProtestLoop(data){
       }, 1000)
 
 
-  const dots = bounds_map.selectAll("circle")
+  const dots = bounds_map_stars.selectAll("circle")
                 .data(section_map)
   dots
   .enter().append("circle")
     .merge(dots)
       .attr("cx", d => projection([latAccessor(d), longAccessor(d)])[0])
       .attr("cy", d => projection([latAccessor(d), longAccessor(d)])[1])
-      .attr("fill", "black")
+      .attr("fill", "darkgray")
       .attr("r", 1)
-      .attr("opacity", .7)
+      .attr("opacity", .2)
       .transition().duration(500)
         .attr("fill", "white")
         .attr("r", 2)
+        .attr("opacity", 1)
       .transition().duration(500)
-        .attr("fill", "black")
+        .attr("fill", "darkgray")
         .attr("r", 1)
+        .attr("opacity", .2)
 
   dots.exit()
       .remove()
 
     }
 
+var play = true
+
+var playButton = document.querySelector("#play-button")
+
+playButton.addEventListener("click", function(){
+
+  event.preventDefault()
+  play = !play
+  console.log(play)
+}, false)
+
 let protestCycle = function(){for (let counter = 1; counter <= weekMax; counter = counter+1) {
-    setTimeout(()=> {
-      wk = wk+1
-      drawProtestLoop(dataset_map)
-  //    console.log("counter: " + counter + " week: " + wk)
-    }, 1000*counter)
+    if(play){
+      setTimeout(()=> {
+        wk = wk+1
+        drawProtestLoop(dataset_map)
+    //    console.log("counter: " + counter + " week: " + wk)
+      }, 1000*counter)
+    }
   }
 }
 

@@ -31,12 +31,12 @@ constellation_places <- function(list = protest, place_summary = place, topic, w
   #getting criteria for inclusion in constellation
   t_sum <- filter(summary, topic_protest > 0)
   
-  crit_10k <- unname(quantile(t_sum$topic_per_10k, .8))
-  crit_perctopic <- unname(quantile(t_sum$perc_topic, .8))
+  crit_10k <- unname(quantile(t_sum$topic_per_10k, .9))
+  crit_perctopic <- unname(quantile(t_sum$perc_topic, .9))
   crit_count <- unname(quantile(t_sum$topic_protest, .9))
   
   min_10k <- unname(quantile(t_sum$topic_per_10k, .4))
-  min_perctopic <- unname(quantile(t_sum$perc_topic, .4))
+  min_perctopic <- unname(quantile(t_sum$perc_topic, .5))
   min_count <- unname(quantile(t_sum$topic_protest, .8))
   
   
@@ -211,7 +211,7 @@ const_map <- function(events = tag, topic){
                                                          y = place_1_lat, xend = place_2_long, yend = place_2_lat, alpha = count), 
                  color = "white") +
     geom_point(data = const_place, aes(x = internal_point_longitude, 
-                                       y = internal_point_latitude, size = protest_count), color = "white") +
+                                       y = internal_point_latitude, size = topic_protest), color = "white") +
     scale_size_continuous(range = c(.2,3))+
     theme(panel.grid.major = element_blank(), panel.grid.minor = element_blank(), 
           panel.background = element_rect(fill="#707589", color="#707589"),
@@ -243,5 +243,114 @@ const_map <- function(events = tag, topic){
 const_map(topic = "guns")
 const_map(topic = "women")
 const_map(topic = "supreme_court")
+const_map(topic = "immigration")
+const_map(topic = "education")
+const_map(topic = "environment")
+const_map(topic = "executive")
+const_map(topic = "healthcare")
+const_map(topic = "police")
+const_map(topic = "race_confed")
+const_map(topic = "collective_bargaining")
 
 
+#########################################
+### Making big combined files for D3 ####
+#########################################
+
+setwd("constellations")
+
+###points file
+
+dir_list <- list.dirs(recursive = FALSE)
+
+dir_list <- dir_list[! dir_list %in% c("./second_round", "./first_round")]
+
+all_const_places <- data.frame(location_id = integer(), 
+                               location_name = character(), 
+                               protest_count = integer(), 
+                               topic_protest = integer(), 
+                               internal_point_latitude = numeric(), 
+                               internal_point_longitude = numeric(), 
+                               perc_topic = numeric(), 
+                               pop = integer(), 
+                               topic_per_10k = numeric(),
+                               topic = character())
+
+for(i in 1:length(dir_list)){
+  
+  this_topic <- substr(dir_list[i], start = 3, stop = nchar(dir_list[i]))
+  
+  wd <- getwd()
+  new_wd <- dir_list[i]
+  setwd(new_wd)
+  
+  this_const_place <- read_csv(paste(this_topic, "_constellation_places.csv", sep = ""))
+  
+  this_const_place$topic <- this_topic
+  
+  print(paste(this_topic, "read okay"))
+  
+  all_const_places <- rbind(all_const_places, this_const_place)
+  
+  print(paste(this_topic, "bound ok"))
+  
+  setwd("..")
+  
+  print(paste(this_topic, "reset ok"))
+}
+
+all_const_places$internal_point_latitude <- round(all_const_places$internal_point_latitude, digits = 3)
+all_const_places$internal_point_longitude <- round(all_const_places$internal_point_longitude, digits = 3)
+
+write_csv(all_const_places, "all_constellation_points.csv")
+
+###segments file
+
+all_const_lines <- data.frame(place_1_id = integer(),
+                              place_2_id = integer(),
+                              count = integer(),
+                              place_1_name= character(),
+                              place_1_long = numeric(),
+                              place_1_lat = numeric(),
+                              place_2_name = character(),
+                              place_2_long = numeric(),
+                              place_2_lat = numeric())
+
+for(i in 1:length(dir_list)){
+  
+  this_topic <- substr(dir_list[i], start = 3, stop = nchar(dir_list[i]))
+  
+  wd <- getwd()
+  new_wd <- dir_list[i]
+  setwd(new_wd)
+  
+  this_const_line <- read_csv(paste(this_topic, "_pair_summary.csv", sep = ""))
+  
+  this_const_line$topic <- this_topic
+  
+  print(paste(this_topic, "read okay"))
+  
+  all_const_lines <- rbind(all_const_lines, this_const_line)
+  
+  print(paste(this_topic, "bound ok"))
+  
+  setwd("..")
+  
+  print(paste(this_topic, "reset ok"))
+}
+
+write_csv(all_const_lines, "all_constellation_lines.csv")
+
+###tagged places
+
+setwd("..")
+
+protest_w_tags <- select(tag, date, week, location, attendees, 
+                         latitude, longitude, event, tags, curated, 
+                         source, total_articles, state, short_loc, 
+                         location_type, location_id, location_name,
+                         collective_bargaining, education, environment,
+                         executive, guns, healthcare, immigration,
+                         police, race_confed, supreme_court, women, other)
+
+write_csv(protest_w_tags, file.path(loc, "all_protests_major_tags.csv"))
