@@ -14,7 +14,7 @@ async function mapFromScratch(){
 
   const dimensions = {
     map: {
-      width: width*.66,
+      width: width*.8,
       margin: {
         top: 5,
         right: 30,
@@ -26,7 +26,7 @@ async function mapFromScratch(){
       width: width,
       height: width*.25,
       margin: {
-        top: 10,
+        top: 15,
         bottom: 30,
         left: 70,
         right: 70
@@ -58,7 +58,6 @@ async function mapFromScratch(){
     - dimensions.map.margin.left
     - dimensions.map.margin.right
 
-  dimensions.bar.top = dimensions.slider.height + dimensions.map.height
   dimensions.bar.boundedTop = dimensions.map.height + dimensions.bar.margin.top
 
   dimensions.total.width = width
@@ -79,10 +78,11 @@ async function mapFromScratch(){
     + dimensions.map.margin.bottom
 
   dimensions.total.height = dimensions.bar.height + dimensions.map.height
-
+  dimensions.bar.top = dimensions.slider.height + dimensions.map.height
   dimensions.bar.boundedTop = dimensions.map.height + dimensions.bar.margin.top
 
-  console.log(dimensions)
+  console.log("dimensions.bar.top = " + dimensions.bar.top + " from dimensions.bar.height " + dimensions.bar.height + " and dimensions.map.height " + dimensions.map.height)
+
 
   const mapWrapper = d3.select("#map-wrapper")
     .append("svg")
@@ -213,8 +213,10 @@ async function mapFromScratch(){
   const mouseOver = function(d){
     //reference for mouse position came from here: https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html
 
-    var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left + 125;
-    var yPosition = d3.mouse(this)[1]+ dimensions.bar.margin.top + dimensions.bar.top + 150;
+    var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left+100  ;
+    // var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left+(dimensions.bar.width*.17)  ;
+
+    var yPosition = d3.mouse(this)[1]+ dimensions.bar.margin.top + dimensions.bar.top + 125;
     // console.log("xPosition "+xPosition+" = "+parseFloat(d3.select(this).attr("x"))+"+"+dimensions.bar.margin.left+"+"+"125")
 
     d3.select("#bar-tooltip").classed("hidden", false)
@@ -232,7 +234,7 @@ async function mapFromScratch(){
 
   const mouseMove = function(d){
     var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left+(dimensions.bar.width*.17)  ;
-    var yPosition = d3.mouse(this)[1] + dimensions.bar.margin.top + dimensions.bar.top + 100;
+    var yPosition = d3.mouse(this)[1] + dimensions.bar.margin.top + dimensions.bar.top + 125;
 
     d3.select("#bar-tooltip")
       .style("left", xPosition + "px")
@@ -249,6 +251,8 @@ async function mapFromScratch(){
     d3.select("#bar-tooltip")
       .classed("hidden", true)
   }
+
+console.log(dimensions)
 
   const bar = bounds_bar.selectAll("rect")
     .data(dataset_bar)
@@ -350,8 +354,8 @@ async function mapFromScratch(){
 
       starsOn = false
 
-      console.log("drawStars occurred")
-      console.log(data)
+      // console.log("drawStars occurred")
+      // console.log(data)
 
     }
 
@@ -378,7 +382,7 @@ async function mapFromScratch(){
 
         starsOn = true
 
-console.log("starStay occurred")
+// console.log("starStay occurred")
    }
 
     var firstStarDate = d3.min(dataset_map, mapWeekAccessor)
@@ -445,7 +449,7 @@ console.log("starStay occurred")
       drawStars(starsData)
 
       sliderTime.value(sliderNewVal)
-      console.log("playWeekChange seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
+      // console.log("playWeekChange seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
 
 
       }
@@ -493,7 +497,7 @@ console.log("starStay occurred")
         .style("opacity", "0")
         .attr("transform")
 
-    console.log("sliderEnd seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
+    // console.log("sliderEnd seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
 
 
 
@@ -546,7 +550,7 @@ console.log("starStay occurred")
 
       counter = (((sliderNewVal - startDate)/86400000)/7)
 
-  console.log("clickBar seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
+  // console.log("clickBar seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
 
       // sliderTime.value()
     }
