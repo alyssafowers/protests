@@ -6,18 +6,30 @@
         <title>My Map</title>
     </head>
     <body>
-        <div id="wrapper" class="wrapper">
-          <div id = "tooltip">
-            <p>Week of <span id = "week"></span></p>
-          </div>
-        <!-- <div id="tooltip" class="tooltip">
-            <div class="tooltip-country" id="country"></div>
-            <div class="tooltip-value">
-                <span id="value"></span> population change
-            </div> -->
+        <div id="map-wrapper">
         </div>
+        <div id = "week-tooltip">
+            <span id = "week-tooltip-text" class = "hidden"><p>Protests during the week of <span id = "week-loop"></span></p></span>
+        </div>
+        <div id = "full-bar-wrapper">
+          <svg width = 10 id = "trace-line-wrapper">
+            <line x1 = "0" y1 = "0" x2 = "0" y2 = "200" id = "trace-line"></line>
+          </svg>
+          <div id = "bar-control">
+              <button id = "play-button">Pause</button>
+            <div id="slider-time"></div>
+          </div>
+          <div id = "bar-plot-wrapper"></div>
+          <div id = "bar-tooltip" class = "hidden">
+            <p>Week of <span id = "week-bar-tooltip"></span></p>
+            <p><span id = "protest-count">100</span> protests</p>
+          </div>
+        </div>
+      </div>
 
         <script src="./../d3_v5.js"></script>
-        <script src="./draw-map-animation.js"></script>
+        <script src="./../d3-simple-slider.js"></script>
+
+        <script src="./map-from-scratch-argh.js"></script>
     </body>
 </html>

@@ -212,11 +212,13 @@ async function timerTry(){
 
 ////function to draw highlight bars
 
+      //bug here I can't figure out how to fix: make highlight bars clickable so that
+      //slider can jump back in time by clicking on bars, not just forward in time
+
     const drawHighlight = function(data) {
 
       var highlights = bounds_bar_highlighting.selectAll(".highlight")
             .data(data)
-
       ///append new bars
 
       highlights.enter()
@@ -320,13 +322,13 @@ async function timerTry(){
       d3.select("#trace-line-wrapper")
         .attr("transform", "translate(" + (leftTransform + dimensions.slider.margin.left) + ","+ (dimensions.slider.margin.top+40)+")")
         .attr("height", dimensions.total.height+55)
-        .attr("width", 3)
+        .attr("width", barWidth)
 
         d3.select("#trace-line")
-          .style("opacity", 1)
-          .attr("y2", dimensions.total.height - (dimensions.slider.margin.top+35))
+          .style("opacity", .5)
+          .attr("y2", dimensions.total.height - (dimensions.slider.margin.top+30))
           .style("stroke", "white")
-          .style("stroke-weight", "3")
+          .style("stroke-width", barWidth)
 
       console.log(leftTransform)
 
