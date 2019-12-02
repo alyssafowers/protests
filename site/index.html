@@ -40,11 +40,14 @@
   </div>
 
   <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones--for instance, consider the Tea Party protests during Barack Obama’s presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
+  <p>This project uses data from CountLove.org, which catalogues protests in America by scraping news stories about protests. The data begin on January 15, 2017, so it isn’t possible to compare protests during the Trump presidency to protests during previous administrations. However, the CountLove data give us a rich look into nearly three years of American protest.</p>
 
+    <h1>Constellations: Where We Are Connected By Protest</h1>
 
-    <h1>Where Americans Protest About...</h1>
+    <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Each place is connected to other places that tended to protest about the same topics at the same time. For instance, San Diego-Carlsbad, CA tended to protest about immigration at the same time as El Paso, TX, so they are connected in the immigration constellation. The small gray dots show every place where protests about this topic took place.</p>
 
     <form id = "constellation-selector">
+      <p>Choose a topic:</p>
       <button id = "guns">Guns</button>
       <button id = "immigration">Immigration</button>
       <button id = "women">Women</button>
@@ -58,6 +61,8 @@
       <button id = "collective_bargaining">Collective Bargaining</button>
 
     </form>
+    <h2>Where Americans protest about <span id = "constellation topic">guns</span></h2>
+
       <div id = "const-map-wrapper">
         <div id = "const-map-tooltip" class = "hidden">
           <p><span id = "const-map-place">Place name</span></p>
@@ -173,6 +178,7 @@
         <div id = "tooltip" class = "hidden">
           <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> are about <span id = "dot-topic">topic</span></p>
       </div>
+    </div>
     <div id = "methods">
       <h2>Methods</h2>
       <h3>Data source</h3>
@@ -191,8 +197,14 @@
 
 
   </main>
+<footer>
+  <div class = "footer"><p>Project by <a href = "www.alyssafowers.com">Alyssa Fowers</a></p>
+  <p><a href = "https://github.com/alyssafowers/protests">GitHub repository for Constellations of Protest</a></p>
+  <p>Data from <a href = "countlove.org">Count Love</a></p>
+</div>
+</footer>
 </body>
-<footer>Project by <a href = "www.alyssafowers.com">Alyssa Fowers</a><br><a href = "https://github.com/alyssafowers/protests">GitHub repository for Constellations of Protest</a><br>Data from <a href = "countlove.org">Count Love</a>
+
 <script src="./d3_v5.js"></script>
 <script src="./d3-simple-slider.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>

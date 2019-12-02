@@ -20,6 +20,17 @@ header{
   font-family: 'Titillium Web', sans-serif;
 }
 
+footer {
+  position: relative;
+  width: 80%;
+  text-align: left;
+}
+
+footer p {
+  font-size: .8rem;
+  margin: .25;
+}
+
 main{
   max-width: 50rem;
   margin: auto;
@@ -107,7 +118,7 @@ p.label{
   align-content: center;
 }
 
-rect:hover{
+#main-chart-bounds rect:hover{
   fill: white;
 }
 
@@ -205,4 +216,22 @@ rect:hover{
   font-family: sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+#methods{
+  background-color: white;
+  padding: 1rem;
+}
+
+#methods h2{
+  font-size: 1.5rem;
+  padding-top: 0;
+}
+
+#methods h3{
+  font-size: 1rem;
+}
+
+#methods p{
+  font-size: .8rem;
 }

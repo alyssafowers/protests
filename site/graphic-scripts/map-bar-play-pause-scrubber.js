@@ -452,6 +452,13 @@ async function mapAndBar(){
 
     setInterval(playWeekChange, 500)
 
+    function sliderClick(){
+      play = false;
+      d3.select(playButton)
+              .text("Pause")
+      console.log("animation paused")
+    }
+
     var traceLine = document.getElementById("trace-line")
     var leftTransform
     // console.log(traceLine)
@@ -480,6 +487,7 @@ async function mapAndBar(){
 
     // console.log("sliderEnd seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
 
+    sliderClick()
 
 
     }
@@ -499,6 +507,8 @@ async function mapAndBar(){
           .attr("y2", dimensions.total.height - (dimensions.slider.margin.top+30))
           .style("stroke", "white")
           .style("stroke-width", barWidth)
+
+      sliderClick()
 
     }
 
@@ -524,6 +534,8 @@ async function mapAndBar(){
 
       counter = (((sliderNewVal - startDate)/86400000)/7)
 
+      sliderClick()
+
   // console.log("clickBar seconds of sliderNewVal for " + sliderNewVal + " = "+sliderNewVal.getTime())
 
       // sliderTime.value()
@@ -535,6 +547,9 @@ async function mapAndBar(){
 
     bar
       .on("click", clickBar)
+
+    highlights
+      .on("click", clickBar)
 
 
 
