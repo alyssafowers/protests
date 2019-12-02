@@ -1,6 +1,9 @@
 @import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap');
 
 body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   font-family: 'Roboto', sans-serif;
   font-size: 10px;
   background-color: #ABABB7;
@@ -68,6 +71,7 @@ p.label{
   pointer-events: none;
 }
 
+
 #barWrapper.hidden{
   display: none;
 }
@@ -77,10 +81,126 @@ p.label{
 }
 
 #week-tooltip-text.hidden{
-  opacity: 0;
+  display: none;
 }
 
 #bar-tooltip p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#play-button {
+  position: relative;
+  top: 35px;
+  left: 30px;
+  padding-right: 26px;
+  border-radius: 3px;
+  border: none;
+  color: black;
+  margin: 0;
+  padding: 0 12px;
+  width: 50px;
+  cursor: pointer;
+  height: 30px;
+  align-content: center;
+}
+
+rect:hover{
+  fill: white;
+}
+
+.hidden{
+  display: none;
+}
+
+#trace-line-wrapper{
+  position: absolute;
+  stroke: black;
+}
+
+#trace-line{
+  opacity: 0;
+}
+
+.parameter-value text{
+  font-size: 1rem;
+}
+
+#map-wrapper svg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#tooltip{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  margin: 2px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#dotBounds  circle:hover {
+  fill: white;
+  opacity: 1;
+}
+
+#state-name {
+  background-color: white;
+}
+
+#top-protest-topic-one {
+  background-color: rgb(107, 69, 152);
+  color: white;
+}
+
+#top-protest-topic-two {
+  background-color: rgb(184, 195, 226);
+  color: black;
+}
+
+
+#bottom-protest-topic-one {
+  background-color: rgb(35, 77, 78);
+  color: white;
+}
+
+#bottom-protest-topic-two {
+  background-color: rgb(173, 96, 162);
+  color: white;
+}
+
+#const-map-wrapper{
+  /* position: absolute; */
+  padding-bottom: 100px;
+}
+
+#const-map-tooltip{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#const-map-tooltip p{
   margin: 0;
   font-family: sans-serif;
   font-size: 16px;

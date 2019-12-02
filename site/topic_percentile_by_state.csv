@@ -1,0 +1,595 @@
+topic,count,perc_of_state_protest,state,percentile,high_low,state_name
+women,57,0.2923,AK,1,high,Alaska
+executive,45,0.2308,AK,1,high,Alaska
+race_confed,32,0.2148,AL,1,high,Alabama
+healthcare,7,0.0875,AR,1,high,Arkansas
+supreme_court,33,0.0878,DC,1,high,"Washington, DC"
+guns,87,0.2605,GA,1,high,Georgia
+other,58,0.4793,HI,1,high,Hawaii
+collective_bargaining,71,0.1177,IL,1,high,Illinois
+police,49,0.126,MO,1,high,Missouri
+immigration,242,0.2674,TX,1,high,Texas
+environment,41,0.199,VT,1,high,Vermont
+education,57,0.2969,WV,1,high,West Virginia
+other,16,0.2,AR,0.980392157,high,Arkansas
+executive,85,0.2261,DC,0.980392157,high,"Washington, DC"
+guns,38,0.2517,KS,0.980392157,high,Kansas
+immigration,57,0.2385,NM,0.980392157,high,New Mexico
+healthcare,15,0.0781,WV,0.980392157,high,West Virginia
+women,18,0.2338,WY,0.980392157,high,Wyoming
+race_confed,18,0.2069,MS,0.98,high,Mississippi
+environment,9,0.1552,SD,0.98,high,South Dakota
+education,73,0.2062,KY,0.979591837,high,Kentucky
+police,16,0.0982,LA,0.979591837,high,Louisiana
+collective_bargaining,66,0.0898,MA,0.979166667,high,Massachusetts
+supreme_court,10,0.0485,VT,0.976190476,high,Vermont
+immigration,74,0.2196,AZ,0.960784314,high,Arizona
+guns,250,0.2363,FL,0.960784314,high,Florida
+women,15,0.2308,ND,0.960784314,high,North Dakota
+healthcare,5,0.0769,ND,0.960784314,high,North Dakota
+executive,27,0.1517,NV,0.960784314,high,Nevada
+other,288,0.1915,NY,0.960784314,high,New York
+race_confed,122,0.2061,NC,0.96,high,North Carolina
+environment,63,0.1273,VA,0.96,high,Virginia
+police,47,0.0979,MN,0.959183673,high,Minnesota
+education,35,0.1989,OK,0.959183673,high,Oklahoma
+collective_bargaining,218,0.0871,CA,0.958333333,high,California
+supreme_court,8,0.041,AK,0.952380952,high,Alaska
+healthcare,20,0.0685,IA,0.941176471,high,Iowa
+other,31,0.1902,LA,0.941176471,high,Louisiana
+women,36,0.1818,MT,0.941176471,high,Montana
+executive,9,0.1385,ND,0.941176471,high,North Dakota
+guns,56,0.2353,SC,0.941176471,high,South Carolina
+immigration,15,0.1948,WY,0.941176471,high,Wyoming
+environment,57,0.1188,MN,0.94,high,Minnesota
+race_confed,71,0.204,TN,0.94,high,Tennessee
+education,55,0.1632,AZ,0.93877551,high,Arizona
+police,30,0.0898,GA,0.93877551,high,Georgia
+collective_bargaining,66,0.086,MI,0.9375,high,Michigan
+supreme_court,11,0.0369,ME,0.928571429,high,Maine
+other,26,0.1722,KS,0.921568627,high,Kansas
+healthcare,10,0.0662,KS,0.921568627,high,Kansas
+guns,36,0.2338,NE,0.921568627,high,Nebraska
+women,27,0.1753,NE,0.921568627,high,Nebraska
+executive,19,0.1195,NH,0.921568627,high,New Hampshire
+immigration,104,0.1867,NJ,0.921568627,high,New Jersey
+environment,26,0.1171,UT,0.92,high,Utah
+race_confed,96,0.1939,VA,0.92,high,Virginia
+education,10,0.1149,MS,0.918367347,high,Mississippi
+police,78,0.0809,PA,0.918367347,high,Pennsylvania
+collective_bargaining,46,0.0826,NJ,0.916666667,high,New Jersey
+supreme_court,3,0.0345,MS,0.904761905,high,Mississippi
+women,25,0.1678,AL,0.901960784,high,Alabama
+immigration,467,0.1865,CA,0.901960784,high,California
+guns,18,0.2278,DE,0.901960784,high,Delaware
+other,13,0.1646,DE,0.901960784,high,Delaware
+healthcare,8,0.0635,ID,0.901960784,high,Idaho
+executive,35,0.1174,ME,0.901960784,high,Maine
+race_confed,64,0.1916,GA,0.9,middle,Georgia
+environment,22,0.1146,WV,0.9,middle,West Virginia
+education,13,0.1032,ID,0.897959184,middle,Idaho
+police,14,0.0795,OK,0.897959184,middle,Oklahoma
+collective_bargaining,8,0.0792,RI,0.895833333,middle,Rhode Island
+healthcare,21,0.0593,KY,0.882352941,middle,Kentucky
+women,14,0.1609,MS,0.882352941,middle,Mississippi
+other,26,0.1635,NH,0.882352941,middle,New Hampshire
+guns,125,0.2193,OH,0.882352941,middle,Ohio
+immigration,72,0.1856,WI,0.882352941,middle,Wisconsin
+executive,9,0.1169,WY,0.882352941,middle,Wyoming
+supreme_court,11,0.0326,AZ,0.880952381,middle,Arizona
+environment,20,0.1026,AK,0.88,middle,Alaska
+race_confed,30,0.184,LA,0.88,middle,Louisiana
+police,25,0.0742,AZ,0.87755102,middle,Arizona
+education,11,0.0909,HI,0.87755102,middle,Hawaii
+collective_bargaining,58,0.0784,WA,0.875,middle,Washington State
+immigration,53,0.1815,IA,0.862745098,middle,Iowa
+women,20,0.1587,ID,0.862745098,middle,Idaho
+other,118,0.1605,MA,0.862745098,middle,Massachusetts
+executive,16,0.1039,NE,0.862745098,middle,Nebraska
+guns,34,0.2138,NH,0.862745098,middle,New Hampshire
+healthcare,33,0.0579,OH,0.862745098,middle,Ohio
+immigration,110,0.1815,OR,0.862745098,middle,Oregon
+environment,74,0.1007,MA,0.86,middle,Massachusetts
+environment,30,0.1007,ME,0.86,middle,Maine
+race_confed,67,0.1722,MO,0.86,middle,Missouri
+police,11,0.0738,AL,0.857142857,middle,Alabama
+education,33,0.0833,CT,0.857142857,middle,Connecticut
+supreme_court,7,0.0315,UT,0.857142857,middle,Utah
+collective_bargaining,31,0.0783,CT,0.854166667,middle,Connecticut
+executive,108,0.1021,FL,0.843137255,middle,Florida
+guns,128,0.2123,IL,0.843137255,middle,Illinois
+women,25,0.1572,NH,0.843137255,middle,New Hampshire
+healthcare,9,0.0566,NH,0.843137255,middle,New Hampshire
+other,16,0.1584,RI,0.843137255,middle,Rhode Island
+race_confed,34,0.1429,SC,0.84,middle,South Carolina
+education,8,0.0792,RI,0.836734694,middle,Rhode Island
+police,27,0.0696,WI,0.836734694,middle,Wisconsin
+collective_bargaining,9,0.0744,HI,0.833333333,middle,Hawaii
+supreme_court,3,0.0238,ID,0.833333333,middle,Idaho
+executive,50,0.0994,CO,0.823529412,middle,Colorado
+healthcare,21,0.0559,DC,0.823529412,middle,"Washington, DC"
+guns,26,0.2063,ID,0.823529412,middle,Idaho
+women,60,0.1542,MO,0.823529412,middle,Missouri
+immigration,271,0.1802,NY,0.823529412,middle,New York
+other,90,0.1579,OH,0.823529412,middle,Ohio
+race_confed,53,0.1355,IN,0.82,middle,Indiana
+environment,16,0.1006,NH,0.82,middle,New Hampshire
+police,16,0.0653,MD,0.816326531,middle,Maryland
+education,47,0.0776,OR,0.816326531,middle,Oregon
+collective_bargaining,13,0.073,NV,0.8125,middle,Nevada
+supreme_court,4,0.0225,NV,0.80952381,middle,Nevada
+guns,16,0.2,AR,0.803921569,middle,Arkansas
+other,61,0.154,CT,0.803921569,middle,Connecticut
+women,8,0.1379,SD,0.803921569,middle,South Dakota
+healthcare,12,0.0541,UT,0.803921569,middle,Utah
+immigration,37,0.1796,VT,0.803921569,middle,Vermont
+executive,19,0.099,WV,0.803921569,middle,West Virginia
+race_confed,130,0.1349,PA,0.8,middle,Pennsylvania
+environment,73,0.0986,WA,0.8,middle,Washington State
+education,50,0.068,MA,0.795918367,middle,Massachusetts
+police,36,0.0632,OH,0.795918367,middle,Ohio
+collective_bargaining,68,0.0705,PA,0.791666667,middle,Pennsylvania
+supreme_court,13,0.022,NC,0.785714286,middle,North Carolina
+other,379,0.1514,CA,0.784313725,middle,California
+immigration,131,0.1782,MA,0.784313725,middle,Massachusetts
+guns,48,0.1959,MD,0.784313725,middle,Maryland
+immigration,18,0.1782,RI,0.784313725,middle,Rhode Island
+executive,23,0.0966,SC,0.784313725,middle,South Carolina
+healthcare,3,0.0517,SD,0.784313725,middle,South Dakota
+women,30,0.1351,UT,0.784313725,middle,Utah
+race_confed,62,0.1292,MN,0.78,middle,Minnesota
+environment,23,0.0962,NM,0.78,middle,New Mexico
+education,11,0.0675,LA,0.775510204,middle,Louisiana
+police,14,0.0631,UT,0.775510204,middle,Utah
+collective_bargaining,37,0.0649,OH,0.770833333,middle,Ohio
+women,16,0.1322,HI,0.764705882,middle,Hawaii
+healthcare,20,0.0512,IN,0.764705882,middle,Indiana
+executive,19,0.096,MT,0.764705882,middle,Montana
+other,36,0.1513,SC,0.764705882,middle,South Carolina
+guns,75,0.1933,WI,0.764705882,middle,Wisconsin
+supreme_court,4,0.0208,WV,0.761904762,middle,West Virginia
+environment,12,0.0952,ID,0.76,middle,Idaho
+race_confed,116,0.1282,TX,0.76,middle,Texas
+police,5,0.0625,AR,0.755102041,middle,Arkansas
+education,12,0.0606,MT,0.755102041,middle,Montana
+collective_bargaining,25,0.0643,MO,0.75,middle,Missouri
+other,58,0.1483,IN,0.745098039,middle,Indiana
+healthcare,15,0.0503,ME,0.745098039,middle,Maine
+immigration,136,0.1773,MI,0.745098039,middle,Michigan
+women,62,0.1292,MN,0.745098039,middle,Minnesota
+executive,139,0.0924,NY,0.745098039,middle,New York
+guns,11,0.1897,SD,0.745098039,middle,South Dakota
+race_confed,29,0.1184,MD,0.74,middle,Maryland
+environment,18,0.0909,MT,0.74,middle,Montana
+supreme_court,3,0.0201,AL,0.738095238,middle,Alabama
+police,36,0.0597,IL,0.734693878,middle,Illinois
+education,21,0.0603,TN,0.734693878,middle,Tennessee
+collective_bargaining,13,0.0631,VT,0.729166667,middle,Vermont
+executive,31,0.092,AZ,0.725490196,middle,Arizona
+healthcare,25,0.0497,CO,0.725490196,middle,Colorado
+immigration,70,0.1768,CT,0.725490196,middle,Connecticut
+executive,8,0.092,MS,0.725490196,middle,Mississippi
+guns,33,0.1854,NV,0.725490196,middle,Nevada
+other,32,0.1441,UT,0.725490196,middle,Utah
+women,95,0.1284,WA,0.725490196,middle,Washington State
+environment,45,0.0895,CO,0.72,middle,Colorado
+race_confed,44,0.1111,CT,0.72,middle,Connecticut
+police,149,0.0595,CA,0.714285714,middle,California
+supreme_court,3,0.0195,NE,0.714285714,middle,Nebraska
+education,14,0.0588,SC,0.714285714,middle,South Carolina
+collective_bargaining,30,0.0625,MN,0.708333333,middle,Minnesota
+women,42,0.1246,AZ,0.705882353,middle,Arizona
+guns,12,0.1846,ND,0.705882353,middle,North Dakota
+immigration,27,0.1753,NE,0.705882353,middle,Nebraska
+other,131,0.1359,PA,0.705882353,middle,Pennsylvania
+healthcare,5,0.0495,RI,0.705882353,middle,Rhode Island
+race_confed,117,0.1106,FL,0.7,middle,Florida
+environment,49,0.0809,OR,0.7,middle,Oregon
+police,23,0.0588,IN,0.693877551,middle,Indiana
+education,14,0.0586,NM,0.693877551,middle,New Mexico
+supreme_court,7,0.0177,CT,0.69047619,middle,Connecticut
+collective_bargaining,11,0.0573,WV,0.6875,middle,West Virginia
+women,48,0.1228,IN,0.68627451,middle,Indiana
+guns,141,0.1838,MI,0.68627451,middle,Michigan
+other,104,0.1356,MI,0.68627451,middle,Michigan
+healthcare,19,0.0488,MO,0.68627451,middle,Missouri
+immigration,10,0.1724,SD,0.68627451,middle,South Dakota
+executive,20,0.0901,UT,0.68627451,middle,Utah
+guns,91,0.1838,VA,0.68627451,middle,Virginia
+environment,44,0.079,NJ,0.68,middle,New Jersey
+race_confed,65,0.1073,OR,0.68,middle,Oregon
+education,11,0.0564,AK,0.673469388,middle,Alaska
+police,21,0.053,CT,0.673469388,middle,Connecticut
+supreme_court,5,0.0171,IA,0.666666667,middle,Iowa
+executive,54,0.0896,IL,0.666666667,middle,Illinois
+collective_bargaining,20,0.0565,KY,0.666666667,middle,Kentucky
+immigration,40,0.1633,MD,0.666666667,middle,Maryland
+women,93,0.1213,MI,0.666666667,middle,Michigan
+healthcare,4,0.046,MS,0.666666667,middle,Mississippi
+other,24,0.1348,NV,0.666666667,middle,Nevada
+collective_bargaining,85,0.0565,NY,0.666666667,middle,New York
+environment,28,0.0745,DC,0.66,middle,"Washington, DC"
+race_confed,8,0.1039,WY,0.66,middle,Wyoming
+education,10,0.0562,NV,0.653061224,middle,Nevada
+police,45,0.0497,TX,0.653061224,middle,Texas
+other,20,0.1342,AL,0.647058824,middle,Alabama
+guns,90,0.1789,CO,0.647058824,middle,Colorado
+executive,26,0.089,IA,0.647058824,middle,Iowa
+immigration,20,0.1587,ID,0.647058824,middle,Idaho
+other,40,0.1342,ME,0.647058824,middle,Maine
+women,35,0.1174,ME,0.647058824,middle,Maine
+healthcare,9,0.0455,MT,0.647058824,middle,Montana
+supreme_court,6,0.0155,WI,0.642857143,middle,Wisconsin
+environment,71,0.0737,PA,0.64,middle,Pennsylvania
+race_confed,40,0.1031,WI,0.64,middle,Wisconsin
+education,28,0.0557,CO,0.632653061,middle,Colorado
+police,29,0.049,NC,0.632653061,middle,North Carolina
+immigration,59,0.1569,DC,0.62745098,middle,"Washington, DC"
+healthcare,10,0.0408,MD,0.62745098,middle,Maryland
+guns,98,0.1759,NJ,0.62745098,middle,New Jersey
+executive,48,0.0842,OH,0.62745098,middle,Ohio
+women,45,0.116,WI,0.62745098,middle,Wisconsin
+collective_bargaining,19,0.0546,TN,0.625,middle,Tennessee
+environment,21,0.0719,IA,0.62,middle,Iowa
+race_confed,61,0.1012,IL,0.62,middle,Illinois
+supreme_court,6,0.0153,IN,0.619047619,middle,Indiana
+police,51,0.0482,FL,0.612244898,middle,Florida
+education,12,0.0541,UT,0.612244898,middle,Utah
+education,21,0.0541,WI,0.612244898,middle,Wisconsin
+women,58,0.1153,CO,0.607843137,middle,Colorado
+other,63,0.1312,MN,0.607843137,middle,Minnesota
+immigration,91,0.1537,NC,0.607843137,middle,North Carolina
+executive,80,0.083,PA,0.607843137,middle,Pennsylvania
+healthcare,13,0.0374,TN,0.607843137,middle,Tennessee
+guns,127,0.1716,WA,0.607843137,middle,Washington State
+collective_bargaining,15,0.0514,IA,0.604166667,middle,Iowa
+environment,17,0.0694,MD,0.6,middle,Maryland
+race_confed,56,0.1005,NJ,0.6,middle,New Jersey
+supreme_court,8,0.0132,OR,0.595238095,middle,Oregon
+police,16,0.046,TN,0.591836735,middle,Tennessee
+healthcare,7,0.0359,AK,0.588235294,middle,Alaska
+women,9,0.1139,DE,0.588235294,middle,Delaware
+other,51,0.1311,MO,0.588235294,middle,Missouri
+executive,45,0.0808,NJ,0.588235294,middle,New Jersey
+guns,30,0.1705,OK,0.588235294,middle,Oklahoma
+executive,40,0.0808,VA,0.588235294,middle,Virginia
+immigration,113,0.1527,WA,0.588235294,middle,Washington State
+collective_bargaining,20,0.0512,IN,0.583333333,middle,Indiana
+race_confed,8,0.1,AR,0.58,middle,Arkansas
+race_confed,57,0.1,OH,0.58,middle,Ohio
+environment,24,0.0619,WI,0.58,middle,Wisconsin
+education,28,0.0503,NJ,0.571428571,middle,New Jersey
+police,8,0.0449,NV,0.571428571,middle,Nevada
+supreme_court,1,0.013,WY,0.571428571,middle,Wyoming
+other,79,0.131,IL,0.568627451,middle,Illinois
+immigration,45,0.151,ME,0.568627451,middle,Maine
+healthcare,21,0.0355,NC,0.568627451,middle,North Carolina
+guns,40,0.1674,NM,0.568627451,middle,New Mexico
+women,68,0.1122,OR,0.568627451,middle,Oregon
+collective_bargaining,30,0.0495,OR,0.5625,middle,Oregon
+environment,4,0.0615,ND,0.56,middle,North Dakota
+education,12,0.049,MD,0.551020408,middle,Maryland
+education,29,0.049,NC,0.551020408,middle,North Carolina
+police,23,0.0413,NJ,0.551020408,middle,New Jersey
+healthcare,5,0.0336,AL,0.549019608,middle,Alabama
+guns,97,0.1639,NC,0.549019608,middle,North Carolina
+immigration,51,0.1466,TN,0.549019608,middle,Tennessee
+executive,28,0.0805,TN,0.549019608,middle,Tennessee
+women,23,0.1117,VT,0.549019608,middle,Vermont
+other,49,0.1263,WI,0.549019608,middle,Wisconsin
+supreme_court,2,0.0126,NH,0.547619048,middle,New Hampshire
+supreme_court,3,0.0126,SC,0.547619048,middle,South Carolina
+collective_bargaining,4,0.046,MS,0.541666667,middle,Mississippi
+environment,10,0.0613,LA,0.54,middle,Louisiana
+race_confed,29,0.0973,ME,0.54,middle,Maine
+police,29,0.0392,WA,0.530612245,middle,Washington State
+immigration,22,0.1457,KS,0.529411765,middle,Kansas
+executive,31,0.0797,MO,0.529411765,middle,Missouri
+women,63,0.1105,OH,0.529411765,middle,Ohio
+guns,99,0.1634,OR,0.529411765,middle,Oregon
+other,76,0.1254,OR,0.529411765,middle,Oregon
+healthcare,32,0.0332,PA,0.529411765,middle,Pennsylvania
+collective_bargaining,17,0.0438,WI,0.520833333,middle,Wisconsin
+environment,64,0.0605,FL,0.52,middle,Florida
+race_confed,20,0.0971,VT,0.52,middle,Vermont
+police,3,0.038,DE,0.510204082,middle,Delaware
+education,6,0.039,NE,0.510204082,middle,Nebraska
+healthcare,11,0.0326,AZ,0.509803922,middle,Arizona
+immigration,56,0.1432,IN,0.509803922,middle,Indiana
+other,19,0.1234,NE,0.509803922,middle,Nebraska
+executive,48,0.0792,OR,0.509803922,middle,Oregon
+women,11,0.1089,RI,0.509803922,middle,Rhode Island
+guns,32,0.1553,VT,0.509803922,middle,Vermont
+collective_bargaining,6,0.0403,AL,0.5,middle,Alabama
+supreme_court,9,0.0122,MA,0.5,middle,Massachusetts
+collective_bargaining,12,0.0403,ME,0.5,middle,Maine
+race_confed,23,0.0962,NM,0.5,middle,New Mexico
+environment,85,0.0565,NY,0.5,middle,New York
+immigration,71,0.1412,CO,0.490196078,middle,Colorado
+women,40,0.1064,DC,0.490196078,middle,"Washington, DC"
+guns,60,0.1535,IN,0.490196078,middle,Indiana
+healthcare,23,0.0313,MA,0.490196078,middle,Massachusetts
+other,8,0.1231,ND,0.490196078,middle,North Dakota
+executive,16,0.0777,VT,0.490196078,middle,Vermont
+education,96,0.0383,CA,0.489795918,middle,California
+police,19,0.0378,CO,0.489795918,middle,Colorado
+race_confed,32,0.095,AZ,0.48,middle,Arizona
+environment,21,0.0537,IN,0.48,middle,Indiana
+supreme_court,6,0.0119,CO,0.476190476,middle,Colorado
+guns,60,0.1515,CT,0.470588235,middle,Connecticut
+healthcare,12,0.0303,CT,0.470588235,middle,Connecticut
+other,30,0.1224,MD,0.470588235,middle,Maryland
+executive,59,0.0769,MI,0.470588235,middle,Michigan
+immigration,129,0.1338,PA,0.470588235,middle,Pennsylvania
+women,95,0.105,TX,0.470588235,middle,Texas
+healthcare,15,0.0303,VA,0.470588235,middle,Virginia
+education,3,0.038,DE,0.469387755,middle,Delaware
+police,53,0.0352,NY,0.469387755,middle,New York
+environment,134,0.0535,CA,0.46,middle,California
+race_confed,72,0.0939,MI,0.46,middle,Michigan
+collective_bargaining,3,0.038,DE,0.458333333,middle,Delaware
+supreme_court,11,0.0114,PA,0.452380952,middle,Pennsylvania
+guns,43,0.1473,IA,0.450980392,middle,Iowa
+women,63,0.1045,IL,0.450980392,middle,Illinois
+executive,18,0.0753,NM,0.450980392,middle,New Mexico
+immigration,23,0.1307,OK,0.450980392,middle,Oklahoma
+other,7,0.1207,SD,0.450980392,middle,South Dakota
+other,42,0.1207,TN,0.450980392,middle,Tennessee
+police,3,0.0345,MS,0.448979592,middle,Mississippi
+education,57,0.0379,NY,0.448979592,middle,New York
+police,2,0.0345,SD,0.448979592,middle,South Dakota
+race_confed,231,0.0923,CA,0.44,middle,California
+environment,4,0.0519,WY,0.44,middle,Wyoming
+collective_bargaining,39,0.0369,FL,0.4375,middle,Florida
+women,17,0.1043,LA,0.431372549,middle,Louisiana
+healthcare,23,0.03,MI,0.431372549,middle,Michigan
+executive,44,0.0743,NC,0.431372549,middle,North Carolina
+immigration,29,0.1306,UT,0.431372549,middle,Utah
+guns,11,0.1429,WY,0.431372549,middle,Wyoming
+education,6,0.0377,NH,0.428571429,middle,New Hampshire
+supreme_court,8,0.0108,WA,0.428571429,middle,Washington State
+environment,4,0.0506,DE,0.42,middle,Delaware
+environment,9,0.0506,NV,0.42,middle,Nevada
+race_confed,67,0.0905,WA,0.42,middle,Washington State
+collective_bargaining,9,0.0367,MD,0.416666667,middle,Maryland
+executive,185,0.0739,CA,0.411764706,middle,California
+other,40,0.1198,GA,0.411764706,middle,Georgia
+women,30,0.1027,IA,0.411764706,middle,Iowa
+immigration,21,0.1288,LA,0.411764706,middle,Louisiana
+guns,136,0.1411,PA,0.411764706,middle,Pennsylvania
+healthcare,27,0.0298,TX,0.411764706,middle,Texas
+police,26,0.0339,MI,0.408163265,middle,Michigan
+education,34,0.0376,TX,0.408163265,middle,Texas
+supreme_court,6,0.0105,OH,0.404761905,middle,Ohio
+race_confed,34,0.0904,DC,0.4,middle,"Washington, DC"
+collective_bargaining,7,0.0359,AK,0.395833333,middle,Alaska
+guns,21,0.1409,AL,0.392156863,middle,Alabama
+immigration,19,0.1275,AL,0.392156863,middle,Alabama
+women,254,0.1014,CA,0.392156863,middle,California
+executive,26,0.0734,KY,0.392156863,middle,Kentucky
+other,107,0.1182,TX,0.392156863,middle,Texas
+healthcare,6,0.0291,VT,0.392156863,middle,Vermont
+police,19,0.0314,OR,0.387755102,middle,Oregon
+education,27,0.0365,WA,0.387755102,middle,Washington State
+supreme_court,2,0.0101,MT,0.380952381,middle,Montana
+environment,6,0.0496,HI,0.38,middle,Hawaii
+race_confed,20,0.0901,UT,0.38,middle,Utah
+collective_bargaining,12,0.0319,DC,0.375,middle,"Washington, DC"
+other,23,0.1179,AK,0.37254902,middle,Alaska
+guns,349,0.1394,CA,0.37254902,middle,California
+executive,29,0.0732,CT,0.37254902,middle,Connecticut
+immigration,134,0.1267,FL,0.37254902,middle,Florida
+healthcare,43,0.0286,NY,0.37254902,middle,New York
+women,49,0.099,VA,0.37254902,middle,Virginia
+education,38,0.0359,FL,0.367346939,middle,Florida
+police,19,0.0259,MA,0.367346939,middle,Massachusetts
+race_confed,15,0.0852,OK,0.36,middle,Oklahoma
+environment,5,0.0495,RI,0.36,middle,Rhode Island
+supreme_court,15,0.01,NY,0.357142857,middle,New York
+collective_bargaining,2,0.0308,ND,0.354166667,middle,North Dakota
+immigration,10,0.1266,DE,0.352941176,middle,Delaware
+executive,9,0.0714,ID,0.352941176,middle,Idaho
+guns,49,0.1384,KY,0.352941176,middle,Kentucky
+other,65,0.1167,NJ,0.352941176,middle,New Jersey
+healthcare,5,0.0281,NV,0.352941176,middle,Nevada
+women,17,0.0966,OK,0.352941176,middle,Oklahoma
+education,14,0.0358,IN,0.346938776,middle,Indiana
+police,9,0.0254,KY,0.346938776,middle,Kentucky
+environment,19,0.048,CT,0.34,middle,Connecticut
+race_confed,29,0.0819,KY,0.34,middle,Kentucky
+supreme_court,22,0.0088,CA,0.333333333,middle,California
+other,123,0.1163,FL,0.333333333,middle,Florida
+women,32,0.0958,GA,0.333333333,middle,Georgia
+healthcare,9,0.0269,GA,0.333333333,middle,Georgia
+collective_bargaining,5,0.0307,LA,0.333333333,middle,Louisiana
+guns,26,0.1313,MT,0.333333333,middle,Montana
+immigration,30,0.1261,SC,0.333333333,middle,South Carolina
+executive,4,0.069,SD,0.333333333,middle,South Dakota
+education,21,0.0348,IL,0.326530612,middle,Illinois
+police,6,0.0252,SC,0.326530612,middle,South Carolina
+environment,7,0.0455,NE,0.32,middle,Nebraska
+race_confed,8,0.0792,RI,0.32,middle,Rhode Island
+immigration,10,0.125,AR,0.31372549,middle,Arkansas
+executive,23,0.0689,GA,0.31372549,middle,Georgia
+healthcare,16,0.0265,IL,0.31372549,middle,Illinois
+guns,51,0.1311,MO,0.31372549,middle,Missouri
+other,23,0.1162,MT,0.31372549,middle,Montana
+women,56,0.0946,NC,0.31372549,middle,North Carolina
+collective_bargaining,6,0.0303,MT,0.3125,middle,Montana
+supreme_court,3,0.0086,TN,0.30952381,middle,Tennessee
+police,8,0.0213,DC,0.306122449,middle,"Washington, DC"
+education,17,0.0343,VA,0.306122449,middle,Virginia
+race_confed,57,0.0776,MA,0.3,middle,Massachusetts
+environment,26,0.0439,NC,0.3,middle,North Carolina
+women,14,0.0927,KS,0.294117647,middle,Kansas
+guns,39,0.1309,ME,0.294117647,middle,Maine
+other,10,0.1149,MS,0.294117647,middle,Mississippi
+healthcare,4,0.026,NE,0.294117647,middle,Nebraska
+immigration,19,0.1195,NH,0.294117647,middle,New Hampshire
+executive,62,0.0685,TX,0.294117647,middle,Texas
+collective_bargaining,7,0.0293,NM,0.291666667,middle,New Mexico
+police,5,0.0209,NM,0.285714286,middle,New Mexico
+supreme_court,2,0.0084,NM,0.285714286,middle,New Mexico
+education,7,0.034,VT,0.285714286,middle,Vermont
+environment,17,0.0437,MO,0.28,middle,Missouri
+race_confed,116,0.0771,NY,0.28,middle,New York
+executive,32,0.0667,MN,0.274509804,middle,Minnesota
+women,22,0.0921,NM,0.274509804,middle,New Mexico
+guns,29,0.1306,UT,0.274509804,middle,Utah
+immigration,59,0.1192,VA,0.274509804,middle,Virginia
+other,84,0.1135,WA,0.274509804,middle,Washington State
+healthcare,10,0.0258,WI,0.274509804,middle,Wisconsin
+collective_bargaining,26,0.0287,TX,0.270833333,middle,Texas
+education,5,0.0336,AL,0.265306122,middle,Alabama
+police,4,0.0202,MT,0.265306122,middle,Montana
+police,10,0.0202,VA,0.265306122,middle,Virginia
+supreme_court,4,0.0083,MN,0.261904762,middle,Minnesota
+race_confed,37,0.0736,CO,0.26,middle,Colorado
+environment,24,0.0398,IL,0.26,middle,Illinois
+environment,7,0.0398,OK,0.26,middle,Oklahoma
+women,22,0.0898,MD,0.254901961,middle,Maryland
+healthcare,12,0.025,MN,0.254901961,middle,Minnesota
+other,27,0.113,NM,0.254901961,middle,New Mexico
+immigration,21,0.118,NV,0.254901961,middle,Nevada
+guns,115,0.1271,TX,0.254901961,middle,Texas
+executive,49,0.0662,WA,0.254901961,middle,Washington State
+collective_bargaining,4,0.026,NE,0.25,middle,Nebraska
+education,5,0.0331,KS,0.244897959,middle,Kansas
+race_confed,11,0.0728,KS,0.24,middle,Kansas
+supreme_court,4,0.0081,VA,0.238095238,middle,Virginia
+other,14,0.1111,ID,0.235294118,middle,Idaho
+healthcare,4,0.0245,LA,0.235294118,middle,Louisiana
+immigration,55,0.1146,MN,0.235294118,middle,Minnesota
+guns,191,0.127,NY,0.235294118,middle,New York
+women,31,0.0891,TN,0.235294118,middle,Tennessee
+executive,25,0.0644,WI,0.235294118,middle,Wisconsin
+collective_bargaining,4,0.0252,NH,0.229166667,middle,New Hampshire
+education,11,0.0329,GA,0.224489796,middle,Georgia
+police,2,0.0198,RI,0.224489796,middle,Rhode Island
+environment,30,0.0391,MI,0.22,middle,Michigan
+race_confed,13,0.0657,MT,0.22,middle,Montana
+executive,25,0.0639,IN,0.215686275,middle,Indiana
+other,39,0.1102,KY,0.215686275,middle,Kentucky
+women,64,0.0871,MA,0.215686275,middle,Massachusetts
+executive,47,0.0639,MA,0.215686275,middle,Massachusetts
+guns,60,0.125,MN,0.215686275,middle,Minnesota
+immigration,64,0.1123,OH,0.215686275,middle,Ohio
+healthcare,4,0.0227,OK,0.215686275,middle,Oklahoma
+women,84,0.0871,PA,0.215686275,middle,Pennsylvania
+supreme_court,3,0.0077,MO,0.214285714,middle,Missouri
+collective_bargaining,12,0.0239,CO,0.208333333,middle,Colorado
+education,13,0.0271,MN,0.204081633,middle,Minnesota
+police,4,0.0194,VT,0.204081633,middle,Vermont
+race_confed,5,0.0633,DE,0.2,middle,Delaware
+environment,34,0.0376,TX,0.2,middle,Texas
+guns,40,0.1187,AZ,0.196078431,middle,Arizona
+healthcare,50,0.02,CA,0.196078431,middle,California
+immigration,37,0.1108,GA,0.196078431,middle,Georgia
+other,64,0.1081,NC,0.196078431,middle,North Carolina
+supreme_court,6,0.0066,TX,0.19047619,middle,Texas
+collective_bargaining,3,0.0238,ID,0.1875,middle,Idaho
+police,3,0.0189,NH,0.183673469,middle,New Hampshire
+education,26,0.027,PA,0.183673469,middle,Pennsylvania
+environment,11,0.0329,GA,0.18,middle,Georgia
+race_confed,15,0.0514,IA,0.18,middle,Iowa
+women,91,0.086,FL,0.176470588,middle,Florida
+healthcare,21,0.0198,FL,0.176470588,middle,Florida
+guns,19,0.1166,LA,0.176470588,middle,Louisiana
+executive,10,0.0613,LA,0.176470588,middle,Louisiana
+immigration,7,0.1077,ND,0.176470588,middle,North Dakota
+other,19,0.108,OK,0.176470588,middle,Oklahoma
+supreme_court,1,0.0061,LA,0.166666667,middle,Louisiana
+collective_bargaining,11,0.0222,VA,0.166666667,middle,Virginia
+education,10,0.0266,DC,0.163265306,middle,"Washington, DC"
+police,5,0.0171,IA,0.163265306,middle,Iowa
+environment,11,0.0311,KY,0.16,middle,Kentucky
+race_confed,3,0.0462,ND,0.16,middle,North Dakota
+other,54,0.1074,CO,0.156862745,middle,Colorado
+guns,82,0.1116,MA,0.156862745,middle,Massachusetts
+executive,15,0.0612,MD,0.156862745,middle,Maryland
+immigration,21,0.1061,MT,0.156862745,middle,Montana
+women,15,0.0843,NV,0.156862745,middle,Nevada
+healthcare,4,0.0168,SC,0.156862745,middle,South Carolina
+collective_bargaining,7,0.0208,AZ,0.145833333,middle,Arizona
+supreme_court,6,0.0057,FL,0.142857143,middle,Florida
+police,2,0.0165,HI,0.142857143,middle,Hawaii
+education,15,0.0263,OH,0.142857143,middle,Ohio
+race_confed,6,0.0377,NH,0.14,middle,New Hampshire
+environment,16,0.0281,OH,0.14,middle,Ohio
+guns,21,0.1077,AK,0.137254902,middle,Alaska
+executive,7,0.0579,HI,0.137254902,middle,Hawaii
+immigration,61,0.1012,IL,0.137254902,middle,Illinois
+women,46,0.0826,NJ,0.137254902,middle,New Jersey
+healthcare,10,0.0135,WA,0.137254902,middle,Washington State
+other,20,0.1042,WV,0.137254902,middle,West Virginia
+collective_bargaining,3,0.0199,KS,0.125,middle,Kansas
+education,10,0.0257,MO,0.12244898,middle,Missouri
+police,1,0.0154,ND,0.12244898,middle,North Dakota
+environment,9,0.0259,TN,0.12,middle,Tennessee
+race_confed,7,0.0365,WV,0.12,middle,West Virginia
+supreme_court,3,0.0054,NJ,0.119047619,middle,New Jersey
+immigration,8,0.092,MS,0.117647059,middle,Mississippi
+women,122,0.0811,NY,0.117647059,middle,New York
+executive,10,0.0568,OK,0.117647059,middle,Oklahoma
+healthcare,8,0.0132,OR,0.117647059,middle,Oregon
+guns,36,0.1034,TN,0.117647059,middle,Tennessee
+other,8,0.1039,WY,0.117647059,middle,Wyoming
+collective_bargaining,6,0.018,GA,0.104166667,middle,Georgia
+education,7,0.024,IA,0.102040816,middle,Iowa
+police,2,0.0104,WV,0.102040816,middle,West Virginia
+environment,2,0.025,AR,0.1,middle,Arkansas
+race_confed,6,0.0337,NV,0.1,middle,Nevada
+executive,4,0.0506,DE,0.098039216,low,Delaware
+other,30,0.1027,IA,0.098039216,low,Iowa
+immigration,31,0.0876,KY,0.098039216,low,Kentucky
+guns,10,0.099,RI,0.098039216,low,Rhode Island
+women,18,0.0756,SC,0.098039216,low,South Carolina
+healthcare,1,0.013,WY,0.098039216,low,Wyoming
+supreme_court,4,0.0052,MI,0.095238095,low,Michigan
+collective_bargaining,3,0.0126,SC,0.083333333,low,South Carolina
+police,2,0.0103,AK,0.081632653,low,Alaska
+education,18,0.0235,MI,0.081632653,low,Michigan
+environment,8,0.0237,AZ,0.08,low,Arizona
+race_confed,5,0.0325,NE,0.08,low,Nebraska
+executive,4,0.05,AR,0.078431373,low,Arkansas
+healthcare,1,0.0127,DE,0.078431373,low,Delaware
+women,25,0.0706,KY,0.078431373,low,Kentucky
+immigration,30,0.0771,MO,0.078431373,low,Missouri
+guns,7,0.0805,MS,0.078431373,low,Mississippi
+other,48,0.097,VA,0.078431373,low,Virginia
+supreme_court,3,0.005,IL,0.071428571,low,Illinois
+collective_bargaining,7,0.0118,NC,0.0625,low,North Carolina
+police,2,0.0067,ME,0.06122449,low,Maine
+education,6,0.0201,ME,0.06122449,low,Maine
+race_confed,4,0.0205,AK,0.06,low,Alaska
+environment,5,0.021,SC,0.06,low,South Carolina
+women,26,0.0657,CT,0.058823529,low,Connecticut
+other,31,0.0824,DC,0.058823529,low,"Washington, DC"
+immigration,7,0.0579,HI,0.058823529,low,Hawaii
+healthcare,7,0.0126,NJ,0.058823529,low,New Jersey
+healthcare,3,0.0126,NM,0.058823529,low,New Mexico
+executive,5,0.0495,RI,0.058823529,low,Rhode Island
+guns,15,0.0781,WV,0.058823529,low,West Virginia
+supreme_court,1,0.003,GA,0.047619048,low,Georgia
+collective_bargaining,2,0.0114,OK,0.041666667,low,Oklahoma
+police,1,0.0066,KS,0.040816327,low,Kansas
+education,1,0.013,WY,0.040816327,low,Wyoming
+environment,2,0.0132,KS,0.04,low,Kansas
+race_confed,1,0.0172,SD,0.04,low,South Dakota
+immigration,8,0.041,AK,0.039215686,low,Alaska
+executive,7,0.047,AL,0.039215686,low,Alabama
+women,4,0.05,AR,0.039215686,low,Arkansas
+guns,27,0.0718,DC,0.039215686,low,"Washington, DC"
+other,16,0.0777,VT,0.039215686,low,Vermont
+supreme_court,1,0.0028,KY,0.023809524,low,Kentucky
+collective_bargaining,2,0.009,UT,0.020833333,low,Utah
+education,1,0.0125,AR,0.020408163,low,Arkansas
+police,1,0.0065,NE,0.020408163,low,Nebraska
+environment,1,0.0067,AL,0.02,low,Alabama
+race_confed,2,0.0159,ID,0.02,low,Idaho
+other,23,0.0682,AZ,0.019607843,low,Arizona
+guns,7,0.0579,HI,0.019607843,low,Hawaii
+healthcare,1,0.0083,HI,0.019607843,low,Hawaii
+executive,4,0.0265,KS,0.019607843,low,Kansas
+immigration,7,0.0365,WV,0.019607843,low,West Virginia
+women,9,0.0469,WV,0.019607843,low,West Virginia

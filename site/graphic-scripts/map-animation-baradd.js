@@ -96,8 +96,11 @@ async function drawMapAndBar() {
       .append("svg")
         .attr("width", dimensions.map.width)
         .attr("height", dimensions.map.height)
-        .style("margin-left", (window.innerWidth - dimensions.map.width)/2)
-        .style("margin-right", (window.innerWidth - dimensions.map.width)/2)
+        .style("transform", `translate(${
+          (window.innerWidth - dimensions.map.width)/2
+        }px,0px)`)
+        // .style("margin-left", (window.innerWidth - dimensions.map.width)/2)
+        // .style("margin-right", (window.innerWidth - dimensions.map.width)/2)
 
     const barWrapper = d3.select("#bar-wrapper")
       .append("svg")

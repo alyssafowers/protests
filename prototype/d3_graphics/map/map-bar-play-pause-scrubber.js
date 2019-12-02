@@ -359,32 +359,6 @@ console.log(dimensions)
 
     }
 
-    const starStay = function(data){
-
-  stars = bounds_map_stars.selectAll(".star")
-               .data(drawStars)
-
-         stars.enter()
-           .append("circle")
-           .attr("cx", d => projection([latAccessor(d), longAccessor(d)])[0])
-           .attr("cy", d => projection([latAccessor(d), longAccessor(d)])[1])
-           .attr("fill", "darkgray")
-           .attr("r", 1)
-           .attr("opacity", .2)
-           .transition().duration(250)
-             .attr("fill", "white")
-             .attr("r", 1.5)
-             .attr("opacity", .9)
-           .transition().duration(249)
-             .attr("fill", "lightgray")
-             .attr("r", 1.5)
-             .attr("opacity", 1)
-
-        starsOn = true
-
-// console.log("starStay occurred")
-   }
-
     var firstStarDate = d3.min(dataset_map, mapWeekAccessor)
 
     firstStarDate = firstStarDate.getTime()
@@ -519,7 +493,6 @@ console.log(dimensions)
           .style("stroke", "white")
           .style("stroke-width", barWidth)
 
-
     }
 
     var xClickPosition
@@ -541,12 +514,6 @@ console.log(dimensions)
 
       drawHighlight(highlightData)
       drawStars(starsData)
-
-//       if(play == true){
-//         drawStars(starsData)
-//       } else {
-//       starStay(starsData)
-//     }
 
       counter = (((sliderNewVal - startDate)/86400000)/7)
 

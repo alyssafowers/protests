@@ -239,8 +239,11 @@ async function stateDot(){
       const mouseOver = function(d){
         //reference for mouse position came from here: https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html
 
-        var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
-        var yMousePosition = d3.mouse(this)[1]+dimensions.margin.top+(dimensions.dotMargin*13)
+        // var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
+        // var yMousePosition = d3.mouse(this)[1]+dimensions.margin.top+(dimensions.dotMargin*13)
+
+        var xPosition = parseFloat(d3.select(this).attr("cx"))
+        var yMousePosition = d3.mouse(this)[1]
 
         d3.select("#tooltip").classed("hidden", false)
 
@@ -259,8 +262,11 @@ async function stateDot(){
       }
 
       const mouseMove = function(d){
-        var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
+        // var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
         var yPosition = d3.mouse(this)[1]+dimensions.dotMargin*13
+
+        var xPosition = parseFloat(d3.select(this).attr("cx"))
+        // var yMousePosition = d3.mouse(this)[1]
 
         d3.select("#tooltip")
         .style("left", xPosition + "px")
