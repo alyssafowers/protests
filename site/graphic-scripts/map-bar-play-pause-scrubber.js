@@ -7,7 +7,7 @@ async function mapAndBar(){
 
   const latAccessor = d => +d.longitude
   const longAccessor = d => +d.latitude
-  const mapParseTime = d3.timeParse("%Y-%m-%d")
+  const mapParseTime = d3.timeParse("%m/%d/%y")
   const mapWeekAccessor = d => mapParseTime(d.week)
 
 //   const width = window.innerWidth * 0.75
@@ -139,7 +139,7 @@ async function mapAndBar(){
 
     const dataset_bar = await d3.csv("./../protest_per_week_usa.csv")
     // console.log(dataset_bar)
-    const parseTime = d3.timeParse("%Y-%m-%d")
+    const parseTime = d3.timeParse("%m/%d/%y")
     const formatDate = d3.timeFormat("%m/%d/%y")
     const yAccessor = d => +d.count
     const xAccessor = d => parseTime(d.week)
@@ -291,9 +291,12 @@ async function mapAndBar(){
     const yAxisGenerator = d3.axisLeft()
       .scale(yAxisScale)
 
+
     const yAxis = bounds_bar.append("g")
       .call(yAxisGenerator)
       .attr("id", "bar-y-axis")
+      .attr("transform", "translate(-5,0)")
+
 
     const yAxisLabel = yAxis.append("text")
       .attr("y", 0)

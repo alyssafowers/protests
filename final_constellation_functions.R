@@ -351,6 +351,15 @@ protest_w_tags <- select(tag, date, week, location, attendees,
                          location_type, location_id, location_name,
                          collective_bargaining, education, environment,
                          executive, guns, healthcare, immigration,
-                         police, race_confed, supreme_court, women, other)
+                         police, race_confed, supreme_court, women)
+
+protest_w_tags$topic_sum <- apply(protest_w_tags[,c("collective_bargaining", "education", "environment", "executive", 
+                                "guns", "healthcare", "immigration", "police", "race_confed", "supreme_court", 
+                                "women")], MARGIN = 1, sum)
+
+protest_w_tags <- protest_w_tags %>% select(-topic_sum) %>% filter(date >= as.Date("2017-01-16"))
+
+protest_w_tags[protest_w_tags$topic_sum < 1, "other"] <- 1
+protest_w_tags[protest_w_tags$topic_sum >= 1, "other"] <- 0
 
 write_csv(protest_w_tags, file.path(loc, "all_protests_major_tags.csv"))

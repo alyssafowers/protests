@@ -2,7 +2,7 @@ async function oneFunctionToRuleThemAll(){
 
   const dataset_const_segment = await d3.csv("all_constellation_lines.csv")
   const dataset_const_points = await d3.csv("all_constellation_points.csv")
-  const dataset_all_points = await d3.csv("all_protests_major_tags.csv")
+  const dataset_all_points = await d3.csv("constellation_background_condensed.csv")
 
   async function stateDraw(){
     const stateShapes = await d3.json("us-states.json")
@@ -59,7 +59,7 @@ async function oneFunctionToRuleThemAll(){
 
   }
 
-  async function constellationDraw(focus){
+  async function constellationDraw(focus, name){
 
     //if the function has been called before, clearing out the g elements
     //so I can write a new constellation:
@@ -190,9 +190,9 @@ async function oneFunctionToRuleThemAll(){
       .append("circle")
       .attr("cx", d => projection([backgroundLongAccessor(d), backgroundLatAccessor(d)])[0])
       .attr("cy", d => projection([backgroundLongAccessor(d), backgroundLatAccessor(d)])[1])
-      .attr("fill", "darkgray")
+      .attr("fill", "gray")
       .attr("r", 1)
-      .attr("opacity", .2)
+      .attr("opacity", .8)
 
     const constLines = boundsBackground.selectAll("line")
       .data(section_const_segment)
@@ -232,6 +232,9 @@ async function oneFunctionToRuleThemAll(){
       .on("mousemove",mouseMove)
       .on("mouseout", mouseOut)
 
+      d3.select("#constellation-topic")
+        .text(name)
+
   }
 
   async function chooseConstellation(){
@@ -241,7 +244,7 @@ async function oneFunctionToRuleThemAll(){
     const dataset_const_points = await d3.csv("all_constellation_points.csv")
     const dataset_all_points = await d3.csv("all_protests_major_tags.csv")
 
-    constellationDraw("guns")
+    constellationDraw("guns", "guns")
 
 
 
@@ -251,8 +254,10 @@ async function oneFunctionToRuleThemAll(){
 
       event.preventDefault()
       focus = event.target.id
-      console.log
-      constellationDraw(focus)
+      console.log(event.target)
+      name = event.target.attributes.label.nodeValue
+      console.log(name)
+      constellationDraw(focus, name)
     }, false)
 
 

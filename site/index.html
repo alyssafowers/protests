@@ -47,20 +47,20 @@
 
     <form id = "constellation-selector">
       <p>Choose a topic:</p>
-      <button id = "guns">Guns</button>
-      <button id = "immigration">Immigration</button>
-      <button id = "women">Women</button>
-      <button id = "executive">Executive</button>
-      <button id = "race_confed">Racial Justice or White Supremacy</button>
-      <button id = "environment">Environment</button>
-      <button id = "education">Education</button>
-      <button id = "supreme_court">Supreme Court</button>
-      <button id = "police">Police</button>
-      <button id = "healthcare">Healthcare</button>
-      <button id = "collective_bargaining">Collective Bargaining</button>
+      <button id = "guns" label = "guns">Guns</button>
+      <button id = "immigration" label = "immigration">Immigration</button>
+      <button id = "women" label = "women's rights">Women's Rights</button>
+      <button id = "executive" label = "the executive branch">The Executive Branch</button>
+      <button id = "race_confed" label = "racial justice or white supremacy">Racial Justice or White Supremacy</button>
+      <button id = "environment" label = "the environment">Environment</button>
+      <button id = "education" label = "education">Education</button>
+      <button id = "supreme_court" label = "the Supreme Court">Supreme Court</button>
+      <button id = "police" label = "the police">Police</button>
+      <button id = "healthcare" label = "healthcare">Healthcare</button>
+      <button id = "collective_bargaining" label = "collective bargaining">Collective Bargaining</button>
 
     </form>
-    <h2>Where Americans protest about <span id = "constellation topic">guns</span></h2>
+    <h2>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
 
       <div id = "const-map-wrapper">
         <div id = "const-map-tooltip" class = "hidden">
@@ -166,7 +166,7 @@
       <h3>Places</h3>
         <p>Latitude and longitude for each protest were provided by Nathan Perkins and Tommy Leung. “Places” in this graphic are metropolitan statistical areas, micropolitan statistical areas, and counties. Metropolitan and micropolitan statistical areas contain at least one urban area surrounded by areas with close social and economic ties to that urban area (U.S. Census: https://www.census.gov/topics/housing/housing-patterns/about/core-based-statistical-areas.html). Protests that occurred outside metropolitan/micropolitan areas were grouped by county.</p>
       <h3>Topics</h3>
-        <p>Topics are based on CountLove’s tagging system. Topics do not imply an ideological stance: for instance, “guns” includes protests for and against gun control. The topics “racial justice or white supremacy,” “police,” and “women’s rights” were created by combining sub-tags within “civil rights.” Many protests are tagged in more than one topic, and are counted once within each of those topics.</p>
+        Topics are based on CountLove’s tagging system. Topics do not imply an ideological stance: for instance, “guns” includes protests for and against gun control. The topics “racial justice or white supremacy,” “police,” and “women’s rights” were created by combining sub-tags within “civil rights.” “Other topics” refers to protests that were not about the twelve main topics above, not the “other” tag used by Count Love. Many protests are tagged in more than one topic, and are counted once within each of those topics.  </p>
       <h3>Creating constellations</h3>
         <p>Constellations were designed to highlight places with unusually high amounts of protests about a topic, given the place’s population and overall number of protests in that place. To be included in a constellation, a place had to have a high number of protests about the topic and a high number of protests per person about the topic. Additionally, a large percentage of all protests in that area needed to be about the topic. Each place within a constellation is connected to the place that most often protested about the same topic on the same weeks. For instance, San Diego-Carlsbad, CA tended to protest about immigration at the same time as El Paso, TX, so they are connected in the immigration constellation. A pair of places is also connected if it is in the 98th percentile of co-occurrence for that topic. El Paso is also connected to Austin-Round Rock TX, and Portland-Vancouver-Hillsboro, OR-WA because they very frequently protest about immigration at the same time. The white dots for each place within a constellation are scaled based on the number of protests in that place, while the weight and opacity of the connections are scaled based on the number of weeks both places protested about the same topic. Places that protested in </p>
       <h3>Top topics by state</h3>
