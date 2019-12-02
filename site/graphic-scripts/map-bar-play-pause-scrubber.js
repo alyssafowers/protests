@@ -81,7 +81,7 @@ async function mapAndBar(){
     + dimensions.map.margin.bottom
 
   dimensions.total.height = dimensions.bar.height + dimensions.map.height
-  dimensions.bar.top = dimensions.slider.height + dimensions.map.height
+  dimensions.bar.top = dimensions.slider.height
   dimensions.bar.boundedTop = dimensions.map.height + dimensions.bar.margin.top
 
   // console.log("dimensions.bar.top = " + dimensions.bar.top + " from dimensions.bar.height " + dimensions.bar.height + " and dimensions.map.height " + dimensions.map.height)
@@ -220,11 +220,8 @@ async function mapAndBar(){
   const mouseOver = function(d){
     //reference for mouse position came from here: https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html
 
-    var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left+100  ;
-    // var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left+(dimensions.bar.width*.17)  ;
-
-    var yPosition = d3.mouse(this)[1]+ dimensions.bar.margin.top + dimensions.bar.top + 125;
-    // console.log("xPosition "+xPosition+" = "+parseFloat(d3.select(this).attr("x"))+"+"+dimensions.bar.margin.left+"+"+"125")
+    var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left + 40;
+    var yPosition = d3.mouse(this)[1] + dimensions.bar.top - 15;
 
     d3.select("#bar-tooltip").classed("hidden", false)
 
@@ -235,13 +232,18 @@ async function mapAndBar(){
       .text(yAccessor(d))
 
     d3.select("#week-bar-tooltip")
-      .text(d.week)
+        .text(formatDate(xAccessor(d)))
+
+
+    //  .text(d.week)
   }
 
 
   const mouseMove = function(d){
-    var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left+(dimensions.bar.width*.17)  ;
-    var yPosition = d3.mouse(this)[1] + dimensions.bar.margin.top + dimensions.bar.top + 125;
+    var xPosition = parseFloat(d3.select(this).attr("x")) + dimensions.bar.margin.left + 40;
+//     var yPosition = d3.mouse(this)[1] + dimensions.bar.margin.top + dimensions.bar.top + 125;
+     var yPosition = d3.mouse(this)[1] + dimensions.bar.top - 15;
+
 
     d3.select("#bar-tooltip")
       .style("left", xPosition + "px")
@@ -547,13 +549,6 @@ async function mapAndBar(){
 
     bar
       .on("click", clickBar)
-
-    highlights
-      .on("click", clickBar)
-
-
-
-
 
 }
 

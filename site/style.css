@@ -10,7 +10,6 @@ body{
   margin: 0;
 }
 
-
 header{
   margin-left: 0;
   margin-right: 0;
@@ -145,10 +144,22 @@ p.label{
   font-size: 1rem;
 }
 
+#map-wrapper{
+  position: relative;
+}
+
 #map-wrapper svg{
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#full-bar-wrapper {
+  position: relative;
+}
+
+#bar-tooltip {
+  position: absolute;
 }
 
 #tooltip{
