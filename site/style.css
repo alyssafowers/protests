@@ -209,7 +209,7 @@ p.label{
 
 
 #bottom-protest-topic-one {
-  background-color: rgb(35, 77, 78);
+  background-color: rgb(95, 154, 102);
   color: white;
 }
 
@@ -272,4 +272,8 @@ p.label{
 #methods p{
   font-size: .8rem;
   opacity: 1;
+}
+
+#dotWrapper text {
+  font-size: .8rem;
 }

@@ -162,10 +162,10 @@ async function stateDot(){
     const dimensions = {
     width: width,
     margin: {
-      top: 50,
-      bottom: 50,
+      top: 30,
+      bottom: 60,
       left: 180,
-      right: 10,
+      right: 20,
     },
     dotHeight: 10,
     dotMargin: 15
@@ -210,17 +210,29 @@ async function stateDot(){
 
           var formatPercent = d3.format(".0%")
 
-          const xAxisGenerator = d3.axisTop()
+          const xAxisGenerator = d3.axisBottom()
               .scale(xScale)
               .tickFormat(formatPercent)
 
          const xAxis = dotWrapper.append("g")
-              .call(xAxisGenerator)
+
+         xAxis.call(xAxisGenerator)
               .style("transform", `translate(${
                   dimensions.margin.left
                 }px, ${
-                  dimensions.margin.top/2
+                  dimensions.boundedHeight + dimensions.dotHeight+dimensions.dotMargin
                 }px)`)
+
+         const xAxisLabel = xAxis.append("text")
+               .attr("y",50)
+               .attr("x", dimensions.boundedWidth/2)
+               .attr("fill", "black")
+               .style("text-anchor", "middle")
+               .text("Percent of protests in each state about topic")
+
+
+        // const xAxisLabel = dotWrapper.append("text")
+        //   .text("Percent of protests about topic in state")
 
 
     async function drawDots(topicName){
@@ -323,6 +335,8 @@ async function stateDot(){
         var topPercIndex = d3.maxIndex(section, d => d.perc_of_state_protest)
         var topPercState = section[topPercIndex].state
 
+    //this would add a label to the dot for the state with the highest percentila, but ultimately found it distracting & removed
+
       // const highestState = topicBounds.append("text")
       //   .text(topPercState)
       //   .attr("fill", "black")
@@ -334,6 +348,7 @@ async function stateDot(){
       }
 
     var yPosition
+    var lowestTopic
     //Actually draw the chart:
 
   for(i = 0; i < topics.length; i++){
@@ -421,7 +436,10 @@ async function stateDot(){
     var lowPercentileThisState = lowPercentile.filter(function(d) {return d.state == selectedState})
           .sort(function(x){return d3.ascending(x.percentile)})
 
-    var bottomTopicOne = lowPercentileThisState[0].topic
+    var bottomTopic = lowPercentileThisState.length - 1
+    var secondBottomTopic = lowPercentileThisState.length - 2
+
+    var bottomTopicOne = lowPercentileThisState[bottomTopic].topic
 
     if (lowPercentileThisState.length < 2){
       d3.select("#bottom-protest-topic-one")
@@ -435,17 +453,17 @@ async function stateDot(){
       d3.select("#bottom-protest-topic-two")
         .classed("hidden", true)
     } else {
-      var bottomTopicTwo = lowPercentileThisState[1].topic
+      var bottomTopicTwo = lowPercentileThisState[secondBottomTopic].topic
 
       d3.select("#bottom-protest-topic-one")
         .text(topicsFull[bottomTopicOne].captionLabel)
-        .style("background-color", fillColors[lowPercentileThisState[0].topic])
-        .style("color", textColors[lowPercentileThisState[0].topic])
+        .style("background-color", fillColors[lowPercentileThisState[bottomTopic].topic])
+        .style("color", textColors[lowPercentileThisState[bottomTopic].topic])
 
       d3.select("#bottom-protest-topic-two")
         .text(topicsFull[bottomTopicTwo].captionLabel)
-        .style("background-color", fillColors[lowPercentileThisState[1].topic])
-        .style("color", textColors[lowPercentileThisState[1].topic])
+        .style("background-color", fillColors[lowPercentileThisState[secondBottomTopic].topic])
+        .style("color", textColors[lowPercentileThisState[secondBottomTopic].topic])
 
       d3.select("#bottom-protest-topic-bridge")
         .classed("hidden", false)
