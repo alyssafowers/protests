@@ -144,7 +144,7 @@ async function stateDot(){
     UT: 'Utah',
     VT: 'Vermont',
     VA: 'Virginia',
-    WA: 'Washington state',
+    WA: 'Washington State',
     WV: 'West Virginia',
     WI: 'Wisconsin',
     WY: 'Wyoming' }
@@ -174,16 +174,10 @@ async function stateDot(){
 
   dimensions.boundedHeight = (dimensions.dotHeight*(topics.length+1))+(dimensions.dotMargin*(topics.length+4))
 
-  console.log(topics.length)
-  console.log(dimensions.boundedHeight)
-
   dimensions.height = dimensions.boundedHeight+dimensions.margin.top+dimensions.margin.bottom
 
   dimensions.boundedWidth = dimensions.width
    -  dimensions.margin.left - dimensions.margin.right
-
-
-   // console.log(dimensions)
 
    const wrapper = d3.select("#state-dotplot")
 
@@ -236,18 +230,17 @@ async function stateDot(){
 
       const section = dataset.filter(function(d) {return d.topic == topicName})
 
-      const mouseOver = function(d){
+      const mouseOverStateDot = function(d){
         //reference for mouse position came from here: https://www.d3-graph-gallery.com/graph/interactivity_tooltip.html
 
         // var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
         // var yMousePosition = d3.mouse(this)[1]+dimensions.margin.top+(dimensions.dotMargin*13)
-
         var xPosition = parseFloat(d3.select(this).attr("cx"))
-        var yMousePosition = d3.mouse(this)[1]
+        var yMousePosition = d3.mouse(this)[1]-dimensions.dotHeight
 
-        d3.select("#tooltip").classed("hidden", false)
+        d3.select("#state-dot-tooltip").classed("hidden", false)
 
-        d3.select("#tooltip")
+        d3.select("#state-dot-tooltip")
           .style("left", xPosition + "px")
           .style("top", yMousePosition + "px")
           .select("#state-percentile")
@@ -257,18 +250,17 @@ async function stateDot(){
 
           d3.select("#dot-topic")
           .text(topicsFull[topicName].captionLabel)
-
-
       }
 
-      const mouseMove = function(d){
+      const mouseMoveStateDot = function(d){
         // var xPosition = parseFloat(d3.select(this).attr("cx"))+dimensions.margin.left*2
-        var yPosition = d3.mouse(this)[1]+dimensions.dotMargin*13
+
+        var yPosition = d3.mouse(this)[1]+dimensions.margin.top-dimensions.dotHeight
 
         var xPosition = parseFloat(d3.select(this).attr("cx"))
         // var yMousePosition = d3.mouse(this)[1]
 
-        d3.select("#tooltip")
+        d3.select("#state-dot-tooltip")
         .style("left", xPosition + "px")
         .style("top", yPosition + "px")
         .select("#state-percentile")
@@ -278,11 +270,10 @@ async function stateDot(){
         .select("#dot-topic")
         .text(topicName)
 
-
       }
 
-      const mouseOut = function(d){
-        d3.select("#tooltip")
+      const mouseOutStateDot = function(d){
+        d3.select("#state-dot-tooltip")
           .classed("hidden", true)
       }
 
@@ -293,9 +284,6 @@ async function stateDot(){
         .attr("y2", yPosition)
         .style("stroke", "lightgray")
         .style("stroke-width", ".5")
-
-
-
 
         //draw dataset
 
@@ -311,9 +299,9 @@ async function stateDot(){
               .attr("opacity", ".5")
               .attr("class", d => stateAccessor(d))
               .attr("fill", fillColor)
-              .on("mouseover", mouseOver)
-              .on("mousemove", mouseMove)
-              .on("mouseout", mouseOut)
+              .on("mouseover", mouseOverStateDot)
+              .on("mousemove", mouseMoveStateDot)
+              .on("mouseout", mouseOutStateDot)
 
 
         //add label
@@ -335,12 +323,12 @@ async function stateDot(){
         var topPercIndex = d3.maxIndex(section, d => d.perc_of_state_protest)
         var topPercState = section[topPercIndex].state
 
-      const highestState = topicBounds.append("text")
-        .text(topPercState)
-        .attr("fill", "black")
-        .attr("x", xScale(topPerc)+dimensions.dotHeight)
-        .attr("y", yPosition)
-        .attr("class", "highestState")
+      // const highestState = topicBounds.append("text")
+      //   .text(topPercState)
+      //   .attr("fill", "black")
+      //   .attr("x", xScale(topPerc)+dimensions.dotHeight)
+      //   .attr("y", yPosition)
+      //   .attr("class", "highestState")
 
 
       }
@@ -396,8 +384,6 @@ async function stateDot(){
     d3.selectAll(".highestState").classed("hidden", true)
 
     var highPercentileThisState = highPercentile.filter(function(d) {return d.state == selectedState})
-          console.log(selectedState)
-          console.log(highPercentileThisState)
 
     var topTopicOne = highPercentileThisState[0].topic
 

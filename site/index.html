@@ -16,6 +16,8 @@
     <h1>POSITIONING BRANCH TESTING</h1>
     <p id = "intro">Americans have taken to the streets in more than twenty thousand protests since the inauguration of President Donald Trump. Some movements, like the Women's March, started at the national level; others, like March For Our Lives, began locally before spreading across the country.</p>
 
+    <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones: the conservative Tea Party protests pushed legislators to the right during Barack Obama's presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
+
     <p>Read on to explore protest in America since January 2017, or <a href ="#statecompare">skip ahead to see how your state compares to the rest of the country.</a></p>
 
     <!-- Playing map and bar chart go here -->
@@ -38,9 +40,7 @@
         <p><span id = "protest-count">100</span> protests</p>
       </div>
     </div>
-
-    <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones--for instance, consider the Tea Party protests during Barack Obama’s presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
-    <p>This project uses data from CountLove.org, which catalogues protests in America by scraping news stories about protests. The data begin on January 15, 2017, so it isn’t possible to compare protests during the Trump presidency to protests during previous administrations. However, the CountLove data give us a rich look into nearly three years of American protest.</p>
+    <p>This project uses data from CountLove.org, which catalogues protests in America by scraping news stories about protests. The data begin on January 15, 2017, so it isn’t possible to compare protests during Donald Trump's presidency to protests during previous administrations. However, the CountLove data give us a rich look into nearly three years of American protest.</p>
 
     <h1>Places Connected By Protest</h1>
 
@@ -77,7 +77,6 @@
     </div>
     <object type = "image/svg+xml" data = "img/stream-legend.svg" id = "stream-legend"></object>
 
-    <!-- <img src = "img/nov1_update_annotated-01.png"> -->
     <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen.</p>
     <p>Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
     students from Parkland organized March For Our Lives,
@@ -158,8 +157,8 @@
 
       <div id = "state-dotplot">
         <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the executive branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">women's rights</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
-        <div id = "tooltip" class = "hidden">
-          <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> are about <span id = "dot-topic">topic</span></p>
+        <div id = "state-dot-tooltip" class = "hidden">
+          <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> were about <span id = "dot-topic">topic</span></p>
       </div>
     </div>
     <div id = "methods">
