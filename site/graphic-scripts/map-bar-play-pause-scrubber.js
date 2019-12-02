@@ -80,7 +80,6 @@ async function mapAndBar(){
     + dimensions.map.margin.top
     + dimensions.map.margin.bottom
 
-  dimensions.total.height = dimensions.bar.height + dimensions.map.height
   dimensions.bar.top = dimensions.slider.height
   dimensions.bar.boundedTop = dimensions.map.height + dimensions.bar.margin.top
 
@@ -501,12 +500,12 @@ async function mapAndBar(){
 
       d3.select("#trace-line-wrapper")
         .attr("transform", "translate(" + (leftTransform + dimensions.slider.margin.left) + ","+ (dimensions.slider.margin.top+40)+")")
-        .attr("height", dimensions.total.height+55)
+        .attr("height", dimensions.total.height - (dimensions.slider.height/2))
         .attr("width", barWidth)
 
         d3.select("#trace-line")
           .style("opacity", .5)
-          .attr("y2", dimensions.total.height - (dimensions.slider.margin.top+30))
+          .attr("y2", dimensions.total.height - (dimensions.slider.height/2))
           .style("stroke", "white")
           .style("stroke-width", barWidth)
 
