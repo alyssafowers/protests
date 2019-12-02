@@ -89,7 +89,7 @@ async function streamClick(){
 
 //Bringing in the streamgraph SVG
 
-   const stream = await d3.xml('img/plain_stream.svg')
+   const stream = await d3.xml('img/vertical-streamgraph-for-site.svg')
       .then(data => {
      streamBounds.node().append(data.documentElement)
      })

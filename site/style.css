@@ -60,6 +60,14 @@ p {
   font-size: 1.2rem;
 }
 
+a {
+  color: rgb(73, 76, 91);
+}
+
+a:hover{
+  color: white;
+}
+
 #intro{
   font-size: 1.5rem;
 }

@@ -71,11 +71,8 @@
     <h1>Protest Over Time</h1>
     <p>Waves of protest swell in response to current events, sometimes appearing
       overnight and fading quickly.</p>
-    <object type = "image/svg+xml" data = "img/stream-legend.svg" id = "stream-legend"></object>
     <div id = "streamgraph">
     </div>
-    <object type = "image/svg+xml" data = "img/stream-legend.svg" id = "stream-legend"></object>
-
     <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen.</p>
     <p>Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
     students from Parkland organized March For Our Lives,
@@ -155,7 +152,7 @@
     </form>
 
       <div id = "state-dotplot">
-        <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the executive branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">women's rights</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
+        <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the executive branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">the Supreme Court</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
         <div id = "state-dot-tooltip" class = "hidden">
           <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> were about <span id = "dot-topic">topic</span></p>
       </div>
@@ -190,7 +187,7 @@
 <script src="./d3-simple-slider.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
 <script src = "./graphic-scripts/map-bar-play-pause-scrubber.js"></script>
-<script src = "./graphic-scripts/bar_test_click.js"></script>
+<script src = "./graphic-scripts/streamgraph_click.js"></script>
 <script src = "./graphic-scripts/constellation_draw.js"></script>
 <!-- can't get state dots to load from within graphic-scripts, even though it is DEFINITELY THERE and loads in other directories -->
 <script src = "./state_dot.js"></script>

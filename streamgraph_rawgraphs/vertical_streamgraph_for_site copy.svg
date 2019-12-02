@@ -41,64 +41,65 @@
 	.st35{opacity:0.57;fill:#D6D6D6;stroke:#FFFFFF;stroke-width:0.9643;stroke-miterlimit:10;enable-background:new    ;}
 	.st36{fill:#42A3C2;}
 	.st37{enable-background:new    ;}
-	.st39{display:inline;}
-	.st40{font-size:14px;}
-	.st41{fill:none;stroke:#000000;stroke-width:4.0908;stroke-miterlimit:10;}
-	.st42{font-size:12px;}
-	.st43{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
-	.st44{font-size:17px;}
-	.st45{fill:#CFCFD6;stroke:#000000;stroke-width:1.6683;stroke-miterlimit:10;}
-	.st46{fill:none;stroke:#000000;stroke-miterlimit:10;}
-	.st47{fill:#CFCFD6;stroke:#000000;stroke-width:1.298;stroke-miterlimit:10;}
-	.st48{fill:#318EA4;stroke:#00738E;stroke-miterlimit:10;}
-	.st49{fill:#E386B7;stroke:#000000;stroke-miterlimit:10;}
-	.st50{font-size:15px;}
-	.st51{fill:#CFCFD6;stroke:#000000;stroke-width:1.3124;stroke-miterlimit:10;}
-	.st52{fill:none;stroke:#000000;stroke-width:1.2297;stroke-miterlimit:10;}
-	.st53{fill-rule:evenodd;clip-rule:evenodd;fill:#707589;}
-	.st54{fill-rule:evenodd;clip-rule:evenodd;fill:#42A3C2;stroke:#0076AD;stroke-miterlimit:10;}
-	.st55{fill:#42A3C2;stroke:#0076AD;stroke-miterlimit:10;}
-	.st56{fill:#CFCFD6;stroke:#000000;stroke-width:1.4429;stroke-miterlimit:10;}
-	.st57{fill:#CFCFD6;stroke:#000000;stroke-width:0.9695;stroke-miterlimit:10;}
-	.st58{fill:#CFCFD6;stroke:#000000;stroke-width:0.9755;stroke-miterlimit:10;}
-	.st59{fill-rule:evenodd;clip-rule:evenodd;fill:#B8C3E4;stroke:#000000;stroke-miterlimit:10;}
-	.st60{fill:#B8C3E4;stroke:#000000;stroke-miterlimit:10;}
-	.st61{fill:#CFCFD6;stroke:#000000;stroke-width:1.2466;stroke-miterlimit:10;}
-	.st62{fill:#CFCFD6;stroke:#000000;stroke-width:0.9963;stroke-miterlimit:10;}
-	.st63{fill:#CFCFD6;stroke:#000000;stroke-width:1.3022;stroke-miterlimit:10;}
-	.st64{fill:#CFCFD6;stroke:#000000;stroke-width:1.2533;stroke-miterlimit:10;}
-	.st65{fill-rule:evenodd;clip-rule:evenodd;fill:#B21F71;}
-	.st66{fill-rule:evenodd;clip-rule:evenodd;fill:#AF5DA3;}
-	.st67{fill:#CFCFD6;stroke:#000000;stroke-miterlimit:10;}
-	.st68{font-size:13px;}
-	.st69{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
-	.st70{fill:none;stroke:#FFFFFF;stroke-width:1.0127;stroke-miterlimit:10;}
-	.st71{fill:#CFCFD6;stroke:#000000;stroke-width:1.0463;stroke-miterlimit:10;}
-	.st72{fill:#CFCFD6;stroke:#000000;stroke-width:1.6222;stroke-miterlimit:10;}
-	.st73{fill:#CFCFD6;stroke:#000000;stroke-width:1.0162;stroke-miterlimit:10;}
-	.st74{fill:#CFCFD6;stroke:#000000;stroke-width:1.0338;stroke-miterlimit:10;}
-	.st75{fill:#CFCFD6;stroke:#000000;stroke-width:1.1622;stroke-miterlimit:10;}
-	.st76{fill:#CFCFD6;stroke:#000000;stroke-width:1.2672;stroke-miterlimit:10;}
-	.st77{fill:#CFCFD6;stroke:#000000;stroke-width:1.2194;stroke-miterlimit:10;}
-	.st78{fill:#CFCFD6;stroke:#000000;stroke-width:1.486;stroke-miterlimit:10;}
-	.st79{fill:none;stroke:#000000;stroke-width:0.8978;stroke-miterlimit:10;}
-	.st80{fill:none;stroke:#FFFFFF;stroke-width:0.8978;stroke-miterlimit:10;}
-	.st81{fill:#CFCFD6;stroke:#000000;stroke-width:1.1856;stroke-miterlimit:10;}
-	.st82{fill:#CFCFD6;stroke:#000000;stroke-width:0.9226;stroke-miterlimit:10;}
-	.st83{fill:#CFCFD6;stroke:#000000;stroke-width:0.874;stroke-miterlimit:10;}
-	.st84{fill:#CFCFD6;stroke:#000000;stroke-width:1.4469;stroke-miterlimit:10;}
-	.st85{fill:#CFCFD6;stroke:#000000;stroke-width:1.7103;stroke-miterlimit:10;}
-	.st86{fill:#CFCFD6;stroke:#000000;stroke-width:1.7989;stroke-miterlimit:10;}
-	.st87{fill:#CFCFD6;stroke:#000000;stroke-width:1.7317;stroke-miterlimit:10;}
-	.st88{fill:#CFCFD6;stroke:#000000;stroke-width:1.409;stroke-miterlimit:10;}
-	.st89{fill:#CFCFD6;stroke:#000000;stroke-width:1.3283;stroke-miterlimit:10;}
-	.st90{fill-rule:evenodd;clip-rule:evenodd;fill:#5E9A63;}
-	.st91{fill:#CFCFD6;stroke:#000000;stroke-width:0.795;stroke-miterlimit:10;}
-	.st92{fill:#CFCFD6;stroke:#000000;stroke-width:0.8501;stroke-miterlimit:10;}
-	.st93{fill:#CFCFD6;stroke:#000000;stroke-width:0.9334;stroke-miterlimit:10;}
-	.st94{font-size:20px;}
+	.st38{font-size:14px;}
+	.st39{fill:none;stroke:#000000;stroke-width:4.0908;stroke-miterlimit:10;}
+	.st40{font-size:12px;}
+	.st41{fill:none;stroke:#FFFFFF;stroke-miterlimit:10;}
+	.st42{font-size:17px;}
+	.st43{fill:#CFCFD6;stroke:#000000;stroke-width:1.6683;stroke-miterlimit:10;}
+	.st44{fill:none;stroke:#000000;stroke-miterlimit:10;}
+	.st45{fill:#CFCFD6;stroke:#000000;stroke-width:1.298;stroke-miterlimit:10;}
+	.st46{fill:#318EA4;stroke:#00738E;stroke-miterlimit:10;}
+	.st47{fill:#E386B7;stroke:#000000;stroke-miterlimit:10;}
+	.st48{font-size:15px;}
+	.st49{fill:#CFCFD6;stroke:#000000;stroke-width:1.3124;stroke-miterlimit:10;}
+	.st50{fill:none;stroke:#000000;stroke-width:1.2297;stroke-miterlimit:10;}
+	.st51{fill-rule:evenodd;clip-rule:evenodd;fill:#707589;}
+	.st52{fill-rule:evenodd;clip-rule:evenodd;fill:#42A3C2;stroke:#0076AD;stroke-miterlimit:10;}
+	.st53{fill:#42A3C2;stroke:#0076AD;stroke-miterlimit:10;}
+	.st54{fill:#CFCFD6;stroke:#000000;stroke-width:1.4429;stroke-miterlimit:10;}
+	.st55{fill:#CFCFD6;stroke:#000000;stroke-width:0.9695;stroke-miterlimit:10;}
+	.st56{fill:#CFCFD6;stroke:#000000;stroke-width:0.9755;stroke-miterlimit:10;}
+	.st57{fill-rule:evenodd;clip-rule:evenodd;fill:#B8C3E4;stroke:#000000;stroke-miterlimit:10;}
+	.st58{fill:#B8C3E4;stroke:#000000;stroke-miterlimit:10;}
+	.st59{fill:#CFCFD6;stroke:#000000;stroke-width:1.2466;stroke-miterlimit:10;}
+	.st60{fill:#CFCFD6;stroke:#000000;stroke-width:0.9963;stroke-miterlimit:10;}
+	.st61{fill:#CFCFD6;stroke:#000000;stroke-width:1.3022;stroke-miterlimit:10;}
+	.st62{fill:#CFCFD6;stroke:#000000;stroke-width:1.2533;stroke-miterlimit:10;}
+	.st63{fill-rule:evenodd;clip-rule:evenodd;fill:#B21F71;}
+	.st64{fill-rule:evenodd;clip-rule:evenodd;fill:#AF5DA3;}
+	.st65{fill:#CFCFD6;stroke:#000000;stroke-miterlimit:10;}
+	.st66{font-size:13px;}
+	.st67{fill:none;stroke:#000000;stroke-width:2;stroke-miterlimit:10;}
+	.st68{fill:none;stroke:#FFFFFF;stroke-width:1.0127;stroke-miterlimit:10;}
+	.st69{fill:#CFCFD6;stroke:#000000;stroke-width:1.0463;stroke-miterlimit:10;}
+	.st70{fill:#CFCFD6;stroke:#000000;stroke-width:1.6222;stroke-miterlimit:10;}
+	.st71{fill:#CFCFD6;stroke:#000000;stroke-width:1.0162;stroke-miterlimit:10;}
+	.st72{fill:#CFCFD6;stroke:#000000;stroke-width:1.0338;stroke-miterlimit:10;}
+	.st73{fill:#CFCFD6;stroke:#000000;stroke-width:1.1622;stroke-miterlimit:10;}
+	.st74{fill:#CFCFD6;stroke:#000000;stroke-width:1.2672;stroke-miterlimit:10;}
+	.st75{fill:#CFCFD6;stroke:#000000;stroke-width:1.2194;stroke-miterlimit:10;}
+	.st76{fill:#CFCFD6;stroke:#000000;stroke-width:1.486;stroke-miterlimit:10;}
+	.st77{fill:none;stroke:#000000;stroke-width:0.8978;stroke-miterlimit:10;}
+	.st78{fill:none;stroke:#FFFFFF;stroke-width:0.8978;stroke-miterlimit:10;}
+	.st79{fill:#CFCFD6;stroke:#000000;stroke-width:1.1856;stroke-miterlimit:10;}
+	.st80{fill:#CFCFD6;stroke:#000000;stroke-width:0.9226;stroke-miterlimit:10;}
+	.st81{fill:#CFCFD6;stroke:#000000;stroke-width:0.874;stroke-miterlimit:10;}
+	.st82{fill:#CFCFD6;stroke:#000000;stroke-width:1.4469;stroke-miterlimit:10;}
+	.st83{fill:#CFCFD6;stroke:#000000;stroke-width:1.7103;stroke-miterlimit:10;}
+	.st84{fill:#CFCFD6;stroke:#000000;stroke-width:1.7989;stroke-miterlimit:10;}
+	.st85{fill:#CFCFD6;stroke:#000000;stroke-width:1.7317;stroke-miterlimit:10;}
+	.st86{fill:#CFCFD6;stroke:#000000;stroke-width:1.409;stroke-miterlimit:10;}
+	.st87{fill:#CFCFD6;stroke:#000000;stroke-width:1.3283;stroke-miterlimit:10;}
+	.st88{fill-rule:evenodd;clip-rule:evenodd;fill:#5E9A63;}
+	.st89{fill:#CFCFD6;stroke:#000000;stroke-width:0.795;stroke-miterlimit:10;}
+	.st90{fill:#CFCFD6;stroke:#000000;stroke-width:0.8501;stroke-miterlimit:10;}
+	.st91{fill:#CFCFD6;stroke:#000000;stroke-width:0.9334;stroke-miterlimit:10;}
+	.st92{font-size:20px;}
 </style>
-<g id="grid">
+<g id="background">
+</g>
+<g id="grid_1_">
 	<g transform="translate(0,480)">
 		<path class="st0" d="M23.3-278.8h3.8v615.9"/>
 		<path class="st0" d="M517.3-278.8h3.8v615.9"/>
@@ -520,7 +521,7 @@
 			<rect x="209.9" y="749.7" class="st3" width="53.7" height="22.8"/>
 			<text transform="matrix(1 0 0 1 223.6905 757.212)" class="st4 st5 st8">Family </text>
 			<text transform="matrix(1 0 0 1 210.2304 769.212)" class="st4 st5 st8">separation</text>
-
+			
 				<rect x="247.3" y="293.2" transform="matrix(1.770154e-02 -0.9998 0.9998 1.770154e-02 -81.6782 592.045)" class="st3" width="26.4" height="88.8"/>
 			<g>
 				<rect x="175.6" y="704.9" class="st3" width="50.4" height="26.4"/>
@@ -531,7 +532,7 @@
 			<rect x="172" y="203.4" class="st3" width="51.1" height="26.8"/>
 			<text transform="matrix(1 0 0 1 183.3936 209.9067)" class="st4 st5 st8">Women’s </text>
 			<text transform="matrix(1 0 0 1 174.0122 220.9067)" class="st4 st5 st8">March</text>
-
+			
 				<rect x="191.9" y="643.7" transform="matrix(0.6939 -0.72 0.72 0.6939 -408.7805 355.8291)" class="st3" width="44.5" height="30.1"/>
 			<rect x="291.8" y="245.8" class="st3" width="44.5" height="35.1"/>
 			<text transform="matrix(1 0 0 1 295.7701 253.3513)" class="st4 st5 st8">March for  </text>
@@ -546,11 +547,11 @@
 			<rect x="203.6" y="230.2" class="st3" width="28.9" height="22.9"/>
 			<text transform="matrix(1 0 0 1 214.1484 237.7505)" class="st25 st5 st8">Tax </text>
 			<text transform="matrix(1 0 0 1 204.2314 249.7505)" class="st25 st5 st8">March</text>
-
+			
 				<rect x="205.1" y="598.2" transform="matrix(1 -6.164341e-03 6.164341e-03 1 -3.7537 1.4561)" class="st3" width="58.4" height="22.9"/>
 			<text transform="matrix(1 6.160000e-03 -6.160000e-03 1 228.989 607.5156)" class="st25 st5 st26">#Protect</text>
 			<text transform="matrix(1 6.160000e-03 -6.160000e-03 1 220.1185 617.5156)" class="st25 st5 st26">  Mueller</text>
-
+			
 				<rect x="237.3" y="222.1" transform="matrix(0.7715 -0.6362 0.6362 0.7715 -84.2601 223.466)" class="st3" width="63.3" height="13.8"/>
 			<text transform="matrix(0.8508 -0.5255 0.5255 0.8508 250.0087 238.1842)" class="st4 st5 st8">Muslim bans</text>
 			<g>
@@ -565,13 +566,13 @@
 			</g>
 			<rect x="74.7" y="568.8" class="st3" width="71.9" height="52.5"/>
 			<rect x="67.9" y="570.2" class="st27" width="82.6" height="52.3"/>
-
+			
 				<rect x="72.5" y="572.4" transform="matrix(-1 -4.490642e-11 4.490642e-11 -1 220.0596 1155.8738)" class="st9" width="75.1" height="11.1"/>
 			<text transform="matrix(1 0 0 1 76.0508 581.3469)" class="st4 st28 st8">Supreme Court,</text>
 			<text transform="matrix(1 0 0 1 76.7148 593.3469)" class="st10 st28 st8">women’s rights:</text>
 			<text transform="matrix(1 0 0 1 94.625 605.3469)" class="st29 st5 st8">Kavanaugh </text>
 			<text transform="matrix(1 0 0 1 96.251 617.3469)" class="st29 st5 st8">nomination</text>
-
+			
 				<rect x="204.5" y="316.2" transform="matrix(0.6335 -0.7737 0.7737 0.6335 -192.392 294.2386)" class="st3" width="19.8" height="68.1"/>
 			<text transform="matrix(0.7546 0.6561 -0.6561 0.7546 195.5438 332.3369)" class="st4 st5 st30">Defend DACA</text>
 			<line class="st31" x1="149.6" y1="593.8" x2="165.2" y2="593.8"/>
@@ -604,7 +605,7 @@
 			<text transform="matrix(1 0 0 1 88.9857 658.7561)"><tspan x="0" y="0" class="st5 st33">Women’s March, </tspan><tspan x="11.7" y="12" class="st5 st33">March for Life</tspan></text>
 		</g>
 	</g>
-	<g id="legend">
+	<g id="legend_1_">
 		<text transform="matrix(1 0 0 1 123.7294 170.383)" class="st5 st7">Click on a color or stream to see more detail.</text>
 		<g>
 			<g>
@@ -732,54 +733,54 @@
 		<text transform="matrix(1 0 0 1 27.14 832.8104)" class="st4 st5 st8">Protests per month</text>
 	</g>
 </g>
-<g id="bar-charts">
-	<g id="return">
-		<rect id="return_button_1" x="209.7" y="118" class="st4" width="135.2" height="24.8"/>
-		<text id="return_button_text_1" transform="matrix(1 0 0 1 219.6844 135.2902)" class="st5 st40">Return to full chart</text>
-		<rect id="return_button_2" x="209.7" y="878.6" class="st4" width="135.2" height="24.8"/>
-		<text id="return_button_text_2" transform="matrix(1 0 0 1 219.6844 895.8366)" class="st5 st40">Return to full chart</text>
-		<polyline id="return_icon" class="st41" points="48.1,54.5 32.5,43.9 48.1,32.6 		"/>
-		<g id="bar-axis-label-bottom">
-			<text transform="matrix(1 0 0 1 21.9997 872.6036)" class="st4 st5 st42">Protests per month</text>
+<g id="bar-charts_1_">
+	<g id="return_7_">
+		<rect id="return_6_" x="209.7" y="118" class="st4" width="135.2" height="24.8"/>
+		<text id="return" transform="matrix(1 0 0 1 219.6844 135.2902)" class="st5 st38">Return to full chart</text>
+		<rect id="return_9_" x="209.7" y="878.6" class="st4" width="135.2" height="24.8"/>
+		<text id="return_3_" transform="matrix(1 0 0 1 219.6844 895.8366)" class="st5 st38">Return to full chart</text>
+		<polyline id="return_4_" class="st39" points="48.1,54.5 32.5,43.9 48.1,32.6 		"/>
+		<g id="return_2_">
+			<text transform="matrix(1 0 0 1 21.9997 872.6036)" class="st4 st5 st40">Protests per month</text>
 		</g>
-		<g id="bar-axis-label-top">
-			<text transform="matrix(1 0 0 1 23.9997 156.5391)" class="st4 st5 st42">Protests per month</text>
+		<g id="return_1_">
+			<text transform="matrix(1 0 0 1 23.9997 156.5391)" class="st4 st5 st40">Protests per month</text>
 		</g>
 	</g>
 	<g id="women-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4824)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 97.605 852.4824)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 179.6133 852.4824)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 261.6226 852.4824)" class="st4 st5 st40">300</text>
-					<text transform="matrix(1 0 0 1 343.6318 852.4824)" class="st4 st5 st40">400</text>
-					<text transform="matrix(1 0 0 1 425.6406 852.4824)" class="st4 st5 st40">500</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4824)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 97.605 852.4824)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 179.6133 852.4824)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 261.6226 852.4824)" class="st4 st5 st38">300</text>
+					<text transform="matrix(1 0 0 1 343.6318 852.4824)" class="st4 st5 st38">400</text>
+					<text transform="matrix(1 0 0 1 425.6406 852.4824)" class="st4 st5 st38">500</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 176.1092)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 97.605 176.1092)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 179.6133 176.1092)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 261.6226 176.1092)" class="st4 st5 st40">300</text>
-					<text transform="matrix(1 0 0 1 343.6318 176.1092)" class="st4 st5 st40">400</text>
-					<text transform="matrix(1 0 0 1 425.6406 176.1092)" class="st4 st5 st40">500</text>
+					<text transform="matrix(1 0 0 1 23.457 176.1092)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 97.605 176.1092)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 179.6133 176.1092)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 261.6226 176.1092)" class="st4 st5 st38">300</text>
+					<text transform="matrix(1 0 0 1 343.6318 176.1092)" class="st4 st5 st38">400</text>
+					<text transform="matrix(1 0 0 1 425.6406 176.1092)" class="st4 st5 st38">500</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
-						<line class="st43" x1="109.4" y1="834.3" x2="109.4" y2="818.5"/>
-						<line class="st43" x1="191.4" y1="834.3" x2="191.4" y2="818.5"/>
-						<line class="st43" x1="273.4" y1="834.3" x2="273.4" y2="818.5"/>
-						<line class="st43" x1="355.4" y1="834.3" x2="355.4" y2="818.5"/>
-						<line class="st43" x1="437.4" y1="834.3" x2="437.4" y2="818.5"/>
-						<line class="st43" x1="109.4" y1="200.1" x2="109.4" y2="184.2"/>
-						<line class="st43" x1="27.3" y1="200.1" x2="27.3" y2="184.2"/>
-						<line class="st43" x1="191.4" y1="200.1" x2="191.4" y2="184.2"/>
-						<line class="st43" x1="273.4" y1="200.1" x2="273.4" y2="184.2"/>
-						<line class="st43" x1="355.4" y1="200.1" x2="355.4" y2="184.2"/>
-						<line class="st43" x1="437.4" y1="200.1" x2="437.4" y2="184.2"/>
+						<line class="st41" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
+						<line class="st41" x1="109.4" y1="834.3" x2="109.4" y2="818.5"/>
+						<line class="st41" x1="191.4" y1="834.3" x2="191.4" y2="818.5"/>
+						<line class="st41" x1="273.4" y1="834.3" x2="273.4" y2="818.5"/>
+						<line class="st41" x1="355.4" y1="834.3" x2="355.4" y2="818.5"/>
+						<line class="st41" x1="437.4" y1="834.3" x2="437.4" y2="818.5"/>
+						<line class="st41" x1="109.4" y1="200.1" x2="109.4" y2="184.2"/>
+						<line class="st41" x1="27.3" y1="200.1" x2="27.3" y2="184.2"/>
+						<line class="st41" x1="191.4" y1="200.1" x2="191.4" y2="184.2"/>
+						<line class="st41" x1="273.4" y1="200.1" x2="273.4" y2="184.2"/>
+						<line class="st41" x1="355.4" y1="200.1" x2="355.4" y2="184.2"/>
+						<line class="st41" x1="437.4" y1="200.1" x2="437.4" y2="184.2"/>
 					</g>
 					<g>
 					</g>
@@ -840,65 +841,65 @@
 			</g>
 		</g>
 		<rect x="22.8" y="71.9" class="st10" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 91.3705 95.2247)" class="st4 st5 st44">When Americans protested about women’s rights</text>
+		<text transform="matrix(1 0 0 1 91.3705 95.2247)" class="st4 st5 st42">When Americans protested about women’s rights</text>
 		<g id="women-annotations">
 			<text transform="matrix(1 0 0 1 31.5163 205.45)" class="st4 st5 st8">First Women’s March (note: data collection began after 2017 March for Life)</text>
 			<text transform="matrix(1 0 0 1 31.5163 429.4498)" class="st4 st5 st8">March for Life, Women’s March</text>
 			<text transform="matrix(1 0 0 1 31.5163 652.7859)" class="st4 st5 st8">Women’s March, March for Life</text>
 			<text transform="matrix(1 0 0 1 31.5163 726.8287)" class="st4 st5 st8">Abortion restrictions reach state legislatures</text>
-			<rect x="123.7" y="563.1" class="st45" width="309.7" height="16.3"/>
-			<line class="st46" x1="112.7" y1="571.2" x2="123.7" y2="571.2"/>
+			<rect x="123.7" y="563.1" class="st43" width="309.7" height="16.3"/>
+			<line class="st44" x1="112.7" y1="571.2" x2="123.7" y2="571.2"/>
 			<text transform="matrix(1 0 0 1 127.1894 575.3058)" class="st5 st8">Supreme Court nominee Brett Kavanaugh accused of sexual assault</text>
-			<rect x="160" y="585.9" class="st47" width="187.5" height="16.3"/>
-			<line class="st46" x1="149" y1="594" x2="160" y2="594"/>
+			<rect x="160" y="585.9" class="st45" width="187.5" height="16.3"/>
+			<line class="st44" x1="149" y1="594" x2="160" y2="594"/>
 			<text transform="matrix(1 0 0 1 163.502 598.1058)" class="st5 st8">Kavanaugh confirmed to Supreme Court</text>
 		</g>
 	</g>
-	<g id="education-bar" class="st39">
-		<rect x="22.8" y="71.9" class="st48" width="509" height="35.2"/>
+	<g id="education-bar">
+		<rect x="22.8" y="71.9" class="st46" width="509" height="35.2"/>
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 87.8672 852.4834)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 156.208 852.4834)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 224.5488 852.4834)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 292.8896 852.4834)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">120</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 87.8672 852.4834)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 156.208 852.4834)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 224.5488 852.4834)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 292.8896 852.4834)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">120</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 182.1648)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 87.8672 182.1648)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 156.208 182.1648)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 224.5488 182.1648)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 292.8896 182.1648)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 357.2998 182.1648)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 425.6416 182.1648)" class="st4 st5 st40">120</text>
+					<text transform="matrix(1 0 0 1 23.457 182.1648)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 87.8672 182.1648)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 156.208 182.1648)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 224.5488 182.1648)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 292.8896 182.1648)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 357.2998 182.1648)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 425.6416 182.1648)" class="st4 st5 st38">120</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
-						<line class="st43" x1="95.7" y1="826.3" x2="95.7" y2="810.5"/>
-						<line class="st43" x1="164.1" y1="826.3" x2="164.1" y2="810.5"/>
-						<line class="st43" x1="232.4" y1="826.3" x2="232.4" y2="810.5"/>
-						<line class="st43" x1="300.8" y1="826.3" x2="300.8" y2="810.5"/>
-						<line class="st43" x1="369.1" y1="826.3" x2="369.1" y2="810.5"/>
-						<line class="st43" x1="437.4" y1="826.3" x2="437.4" y2="810.5"/>
+						<line class="st41" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
+						<line class="st41" x1="95.7" y1="826.3" x2="95.7" y2="810.5"/>
+						<line class="st41" x1="164.1" y1="826.3" x2="164.1" y2="810.5"/>
+						<line class="st41" x1="232.4" y1="826.3" x2="232.4" y2="810.5"/>
+						<line class="st41" x1="300.8" y1="826.3" x2="300.8" y2="810.5"/>
+						<line class="st41" x1="369.1" y1="826.3" x2="369.1" y2="810.5"/>
+						<line class="st41" x1="437.4" y1="826.3" x2="437.4" y2="810.5"/>
 					</g>
 					<g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="208" x2="27.4" y2="192.1"/>
-						<line class="st43" x1="95.7" y1="208" x2="95.7" y2="192.1"/>
-						<line class="st43" x1="164.1" y1="208" x2="164.1" y2="192.1"/>
-						<line class="st43" x1="232.4" y1="208" x2="232.4" y2="192.1"/>
-						<line class="st43" x1="300.8" y1="208" x2="300.8" y2="192.1"/>
-						<line class="st43" x1="369.1" y1="208" x2="369.1" y2="192.1"/>
-						<line class="st43" x1="437.4" y1="208" x2="437.4" y2="192.1"/>
+						<line class="st41" x1="27.4" y1="208" x2="27.4" y2="192.1"/>
+						<line class="st41" x1="95.7" y1="208" x2="95.7" y2="192.1"/>
+						<line class="st41" x1="164.1" y1="208" x2="164.1" y2="192.1"/>
+						<line class="st41" x1="232.4" y1="208" x2="232.4" y2="192.1"/>
+						<line class="st41" x1="300.8" y1="208" x2="300.8" y2="192.1"/>
+						<line class="st41" x1="369.1" y1="208" x2="369.1" y2="192.1"/>
+						<line class="st41" x1="437.4" y1="208" x2="437.4" y2="192.1"/>
 					</g>
 					<g>
 					</g>
@@ -916,40 +917,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st48" width="3.4" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st48" width="44.4" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st48" width="146.9" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st48" width="92.3" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st48" width="133.3" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st48" width="58.1" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st48" width="51.3" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st48" width="30.8" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st48" width="78.6" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st48" width="92.3" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st48" width="47.8" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st48" width="37.6" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st48" width="78.6" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st48" width="263.1" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st48" width="263.1" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st48" width="396.4" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st48" width="153.8" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st48" width="44.4" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st48" width="17.1" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st48" width="71.8" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st48" width="88.8" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st48" width="112.8" height="13.4"/>
-						<rect x="27.4" y="605" class="st48" width="61.5" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st48" width="58.1" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st48" width="88.8" height="13.4"/>
-						<rect x="27.4" y="661" class="st48" width="95.7" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st48" width="164" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st48" width="242.6" height="13.4"/>
-						<rect x="27.4" y="717" class="st48" width="276.8" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st48" width="109.3" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st48" width="30.8" height="13.4"/>
-						<rect x="27.4" y="773" class="st48" width="34.2" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st48" width="105.9" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st48" width="78.6" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st46" width="3.4" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st46" width="44.4" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st46" width="146.9" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st46" width="92.3" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st46" width="133.3" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st46" width="58.1" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st46" width="51.3" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st46" width="30.8" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st46" width="78.6" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st46" width="92.3" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st46" width="47.8" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st46" width="37.6" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st46" width="78.6" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st46" width="263.1" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st46" width="263.1" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st46" width="396.4" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st46" width="153.8" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st46" width="44.4" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st46" width="17.1" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st46" width="71.8" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st46" width="88.8" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st46" width="112.8" height="13.4"/>
+						<rect x="27.4" y="605" class="st46" width="61.5" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st46" width="58.1" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st46" width="88.8" height="13.4"/>
+						<rect x="27.4" y="661" class="st46" width="95.7" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st46" width="164" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st46" width="242.6" height="13.4"/>
+						<rect x="27.4" y="717" class="st46" width="276.8" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st46" width="109.3" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st46" width="30.8" height="13.4"/>
+						<rect x="27.4" y="773" class="st46" width="34.2" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st46" width="105.9" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st46" width="78.6" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -958,7 +959,7 @@
 				</g>
 			</g>
 		</g>
-		<text transform="matrix(1 0 0 1 111.5493 95.2247)" class="st4 st5 st44">When Americans protested about education</text>
+		<text transform="matrix(1 0 0 1 111.5493 95.2247)" class="st4 st5 st42">When Americans protested about education</text>
 		<g id="education-annotations">
 			<text transform="matrix(1 0 0 1 30.5162 446.9498)" class="st4 st5 st8">Teacher protests in West Virginia</text>
 			<text transform="matrix(1 0 0 1 30.5162 464.9001)" class="st4 st5 st8">Teacher strikes in West Virginia, protests in Kentucky</text>
@@ -971,39 +972,39 @@
 			<text transform="matrix(1 0 0 1 29.5163 818.6211)" class="st4 st5 st8">IL teacher strikes</text>
 		</g>
 	</g>
-	<g id="race_confed-bar" class="st39">
-		<rect x="21.8" y="70.9" class="st49" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 53.7563 94.2246)" class="st5 st50">When Americans protested about racial justice or white supremacy</text>
+	<g id="race_x5F_confed-bar">
+		<rect x="21.8" y="70.9" class="st47" width="509" height="35.2"/>
+		<text transform="matrix(1 0 0 1 53.7563 94.2246)" class="st5 st48">When Americans protested about racial justice or white supremacy</text>
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 83.9365 852.4834)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 152.2773 852.4834)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 220.6182 852.4834)" class="st4 st5 st40">300</text>
-					<text transform="matrix(1 0 0 1 288.959 852.4834)" class="st4 st5 st40">400</text>
-					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st40">500</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">600</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 83.9365 852.4834)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 152.2773 852.4834)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 220.6182 852.4834)" class="st4 st5 st38">300</text>
+					<text transform="matrix(1 0 0 1 288.959 852.4834)" class="st4 st5 st38">400</text>
+					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st38">500</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">600</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 177.4071)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 83.9365 177.4071)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 152.2773 177.4071)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 220.6182 177.4071)" class="st4 st5 st40">300</text>
-					<text transform="matrix(1 0 0 1 288.959 177.4071)" class="st4 st5 st40">400</text>
-					<text transform="matrix(1 0 0 1 357.2998 177.4071)" class="st4 st5 st40">500</text>
-					<text transform="matrix(1 0 0 1 425.6416 177.4071)" class="st4 st5 st40">600</text>
+					<text transform="matrix(1 0 0 1 23.457 177.4071)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 83.9365 177.4071)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 152.2773 177.4071)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 220.6182 177.4071)" class="st4 st5 st38">300</text>
+					<text transform="matrix(1 0 0 1 288.959 177.4071)" class="st4 st5 st38">400</text>
+					<text transform="matrix(1 0 0 1 357.2998 177.4071)" class="st4 st5 st38">500</text>
+					<text transform="matrix(1 0 0 1 425.6416 177.4071)" class="st4 st5 st38">600</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="201.3" x2="27.4" y2="185.4"/>
-						<line class="st43" x1="95.7" y1="201.3" x2="95.7" y2="185.4"/>
-						<line class="st43" x1="164.1" y1="201.3" x2="164.1" y2="185.4"/>
-						<line class="st43" x1="232.4" y1="201.3" x2="232.4" y2="185.4"/>
-						<line class="st43" x1="300.8" y1="201.3" x2="300.8" y2="185.4"/>
-						<line class="st43" x1="369.1" y1="201.3" x2="369.1" y2="185.4"/>
-						<line class="st43" x1="437.4" y1="201.3" x2="437.4" y2="185.4"/>
+						<line class="st41" x1="27.4" y1="201.3" x2="27.4" y2="185.4"/>
+						<line class="st41" x1="95.7" y1="201.3" x2="95.7" y2="185.4"/>
+						<line class="st41" x1="164.1" y1="201.3" x2="164.1" y2="185.4"/>
+						<line class="st41" x1="232.4" y1="201.3" x2="232.4" y2="185.4"/>
+						<line class="st41" x1="300.8" y1="201.3" x2="300.8" y2="185.4"/>
+						<line class="st41" x1="369.1" y1="201.3" x2="369.1" y2="185.4"/>
+						<line class="st41" x1="437.4" y1="201.3" x2="437.4" y2="185.4"/>
 					</g>
 					<g>
 					</g>
@@ -1021,40 +1022,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st49" width="4.1" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st49" width="16.4" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st49" width="25.3" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st49" width="22.6" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st49" width="40.3" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st49" width="30.1" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st49" width="23.2" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st49" width="344.4" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st49" width="116.9" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st49" width="94.3" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st49" width="53.3" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st49" width="19.1" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st49" width="74.5" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st49" width="31.4" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st49" width="33.5" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st49" width="44.4" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st49" width="25.3" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st49" width="29.4" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st49" width="24.6" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st49" width="52.6" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st49" width="36.2" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st49" width="33.5" height="13.4"/>
-						<rect x="27.4" y="605" class="st49" width="25.3" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st49" width="11.6" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st49" width="84.1" height="13.4"/>
-						<rect x="27.4" y="661" class="st49" width="27.3" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st49" width="27.3" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st49" width="26" height="13.4"/>
-						<rect x="27.4" y="717" class="st49" width="33.5" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st49" width="18.5" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st49" width="24.6" height="13.4"/>
-						<rect x="27.4" y="773" class="st49" width="32.8" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st49" width="21.2" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st49" width="28.7" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st47" width="4.1" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st47" width="16.4" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st47" width="25.3" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st47" width="22.6" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st47" width="40.3" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st47" width="30.1" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st47" width="23.2" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st47" width="344.4" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st47" width="116.9" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st47" width="94.3" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st47" width="53.3" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st47" width="19.1" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st47" width="74.5" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st47" width="31.4" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st47" width="33.5" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st47" width="44.4" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st47" width="25.3" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st47" width="29.4" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st47" width="24.6" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st47" width="52.6" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st47" width="36.2" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st47" width="33.5" height="13.4"/>
+						<rect x="27.4" y="605" class="st47" width="25.3" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st47" width="11.6" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st47" width="84.1" height="13.4"/>
+						<rect x="27.4" y="661" class="st47" width="27.3" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st47" width="27.3" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st47" width="26" height="13.4"/>
+						<rect x="27.4" y="717" class="st47" width="33.5" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st47" width="18.5" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st47" width="24.6" height="13.4"/>
+						<rect x="27.4" y="773" class="st47" width="32.8" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st47" width="21.2" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st47" width="28.7" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -1065,61 +1066,61 @@
 		</g>
 		<g id="race-annotations">
 			<text transform="matrix(1 0 0 1 29.7352 335.75)" class="st5 st8">Unite the Right rally in Charlottesville, VA</text>
-			<rect x="178" y="342.8" class="st51" width="173.8" height="55"/>
+			<rect x="178" y="342.8" class="st49" width="173.8" height="55"/>
 			<rect x="183.9" y="348.7" class="st3" width="161" height="49.1"/>
 			<text transform="matrix(1 0 0 1 183.9016 356.2318)"><tspan x="0" y="0" class="st5 st8">St. Louis police officer acquitted in </tspan><tspan x="0" y="12" class="st5 st8">shooting of black man; athletes take </tspan><tspan x="0" y="24" class="st5 st8">a knee during national anthem to </tspan><tspan x="0" y="36" class="st5 st8">protest racial inequality</tspan></text>
-			<line class="st52" x1="176.9" y1="350.5" x2="160.7" y2="350.5"/>
-			<polyline class="st52" points="151.2,341.7 159.6,341.7 159.6,378.9 151.2,378.9 			"/>
+			<line class="st50" x1="176.9" y1="350.5" x2="160.7" y2="350.5"/>
+			<polyline class="st50" points="151.2,341.7 159.6,341.7 159.6,378.9 151.2,378.9 			"/>
 			<text transform="matrix(1 0 0 1 29.5164 428.45)" class="st5 st8">MLK Day March</text>
 			<text transform="matrix(1 0 0 1 29.5164 652.7856)" class="st5 st8">MLK Day March</text>
 		</g>
 	</g>
-	<g id="environment-bar" class="st39">
+	<g id="environment-bar">
 		<rect x="22.8" y="72" class="st18" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 87.7093 95.3086)" class="st4 st5 st44">When Americans protested about the environment</text>
+		<text transform="matrix(1 0 0 1 87.7093 95.3086)" class="st4 st5 st42">When Americans protested about the environment</text>
 		<g>
-			<line class="st43" x1="86.1" y1="834.6" x2="86.1" y2="818.8"/>
-			<line class="st43" x1="27.3" y1="834.6" x2="27.3" y2="818.8"/>
-			<line class="st43" x1="144.9" y1="834.6" x2="144.9" y2="818.8"/>
-			<line class="st43" x1="203.7" y1="834.6" x2="203.7" y2="818.8"/>
-			<line class="st43" x1="262.6" y1="834.6" x2="262.6" y2="818.8"/>
-			<line class="st43" x1="321.4" y1="834.6" x2="321.4" y2="818.8"/>
-			<line class="st43" x1="439" y1="834.6" x2="439" y2="818.8"/>
-			<line class="st43" x1="380.2" y1="834.6" x2="380.2" y2="818.8"/>
+			<line class="st41" x1="86.1" y1="834.6" x2="86.1" y2="818.8"/>
+			<line class="st41" x1="27.3" y1="834.6" x2="27.3" y2="818.8"/>
+			<line class="st41" x1="144.9" y1="834.6" x2="144.9" y2="818.8"/>
+			<line class="st41" x1="203.7" y1="834.6" x2="203.7" y2="818.8"/>
+			<line class="st41" x1="262.6" y1="834.6" x2="262.6" y2="818.8"/>
+			<line class="st41" x1="321.4" y1="834.6" x2="321.4" y2="818.8"/>
+			<line class="st41" x1="439" y1="834.6" x2="439" y2="818.8"/>
+			<line class="st41" x1="380.2" y1="834.6" x2="380.2" y2="818.8"/>
 		</g>
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.5571 852.8594)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 78.2041 852.8594)" class="st4 st5 st40">50</text>
-					<text transform="matrix(1 0 0 1 132.8516 852.8594)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 191.4292 852.8594)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 250.0068 852.8594)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 308.585 852.8594)" class="st4 st5 st40">250</text>
-					<text transform="matrix(1 0 0 1 367.1621 852.8594)" class="st4 st5 st40">300</text>
-					<text transform="matrix(1 0 0 1 425.7412 852.8594)" class="st4 st5 st40">350</text>
+					<text transform="matrix(1 0 0 1 23.5571 852.8594)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 78.2041 852.8594)" class="st4 st5 st38">50</text>
+					<text transform="matrix(1 0 0 1 132.8516 852.8594)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 191.4292 852.8594)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 250.0068 852.8594)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 308.585 852.8594)" class="st4 st5 st38">250</text>
+					<text transform="matrix(1 0 0 1 367.1621 852.8594)" class="st4 st5 st38">300</text>
+					<text transform="matrix(1 0 0 1 425.7412 852.8594)" class="st4 st5 st38">350</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.5571 179.3951)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 78.2041 179.3951)" class="st4 st5 st40">50</text>
-					<text transform="matrix(1 0 0 1 132.8516 179.3951)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 191.4292 179.3951)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 250.0068 179.3951)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 308.585 179.3951)" class="st4 st5 st40">250</text>
-					<text transform="matrix(1 0 0 1 367.1621 179.3951)" class="st4 st5 st40">300</text>
-					<text transform="matrix(1 0 0 1 425.7412 179.3951)" class="st4 st5 st40">350</text>
+					<text transform="matrix(1 0 0 1 23.5571 179.3951)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 78.2041 179.3951)" class="st4 st5 st38">50</text>
+					<text transform="matrix(1 0 0 1 132.8516 179.3951)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 191.4292 179.3951)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 250.0068 179.3951)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 308.585 179.3951)" class="st4 st5 st38">250</text>
+					<text transform="matrix(1 0 0 1 367.1621 179.3951)" class="st4 st5 st38">300</text>
+					<text transform="matrix(1 0 0 1 425.7412 179.3951)" class="st4 st5 st38">350</text>
 				</g>
 				<line class="st3" x1="27.5" y1="826.7" x2="437.5" y2="826.7"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.5" y1="202" x2="27.5" y2="186.1"/>
-						<line class="st43" x1="86.1" y1="202" x2="86.1" y2="186.1"/>
-						<line class="st43" x1="144.6" y1="202" x2="144.6" y2="186.1"/>
-						<line class="st43" x1="203.2" y1="202" x2="203.2" y2="186.1"/>
-						<line class="st43" x1="261.8" y1="202" x2="261.8" y2="186.1"/>
-						<line class="st43" x1="320.4" y1="202" x2="320.4" y2="186.1"/>
-						<line class="st43" x1="379" y1="202" x2="379" y2="186.1"/>
-						<line class="st43" x1="437.5" y1="202" x2="437.5" y2="186.1"/>
+						<line class="st41" x1="27.5" y1="202" x2="27.5" y2="186.1"/>
+						<line class="st41" x1="86.1" y1="202" x2="86.1" y2="186.1"/>
+						<line class="st41" x1="144.6" y1="202" x2="144.6" y2="186.1"/>
+						<line class="st41" x1="203.2" y1="202" x2="203.2" y2="186.1"/>
+						<line class="st41" x1="261.8" y1="202" x2="261.8" y2="186.1"/>
+						<line class="st41" x1="320.4" y1="202" x2="320.4" y2="186.1"/>
+						<line class="st41" x1="379" y1="202" x2="379" y2="186.1"/>
+						<line class="st41" x1="437.5" y1="202" x2="437.5" y2="186.1"/>
 					</g>
 					<g>
 					</g>
@@ -1185,37 +1186,37 @@
 			<text transform="matrix(1 0 0 1 30.7349 802.9498)" class="st4 st5 st8">Climate Strike</text>
 		</g>
 	</g>
-	<g id="other-bar" class="st39">
+	<g id="other-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 87.8672 852.4834)" class="st4 st5 st40">50</text>
-					<text transform="matrix(1 0 0 1 152.2773 852.4834)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 220.6182 852.4834)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 288.959 852.4834)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st40">250</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">300</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 87.8672 852.4834)" class="st4 st5 st38">50</text>
+					<text transform="matrix(1 0 0 1 152.2773 852.4834)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 220.6182 852.4834)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 288.959 852.4834)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st38">250</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">300</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 182.1142)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 87.8672 182.1142)" class="st4 st5 st40">50</text>
-					<text transform="matrix(1 0 0 1 152.2773 182.1142)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 220.6182 182.1142)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 288.959 182.1142)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 357.2998 182.1142)" class="st4 st5 st40">250</text>
-					<text transform="matrix(1 0 0 1 425.6416 182.1142)" class="st4 st5 st40">300</text>
+					<text transform="matrix(1 0 0 1 23.457 182.1142)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 87.8672 182.1142)" class="st4 st5 st38">50</text>
+					<text transform="matrix(1 0 0 1 152.2773 182.1142)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 220.6182 182.1142)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 288.959 182.1142)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 357.2998 182.1142)" class="st4 st5 st38">250</text>
+					<text transform="matrix(1 0 0 1 425.6416 182.1142)" class="st4 st5 st38">300</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
-						<line class="st43" x1="95.7" y1="826.3" x2="95.7" y2="810.5"/>
-						<line class="st43" x1="164.1" y1="826.3" x2="164.1" y2="810.5"/>
-						<line class="st43" x1="232.4" y1="826.3" x2="232.4" y2="810.5"/>
-						<line class="st43" x1="300.8" y1="826.3" x2="300.8" y2="810.5"/>
-						<line class="st43" x1="369.1" y1="826.3" x2="369.1" y2="810.5"/>
-						<line class="st43" x1="437.4" y1="826.3" x2="437.4" y2="810.5"/>
+						<line class="st41" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
+						<line class="st41" x1="95.7" y1="826.3" x2="95.7" y2="810.5"/>
+						<line class="st41" x1="164.1" y1="826.3" x2="164.1" y2="810.5"/>
+						<line class="st41" x1="232.4" y1="826.3" x2="232.4" y2="810.5"/>
+						<line class="st41" x1="300.8" y1="826.3" x2="300.8" y2="810.5"/>
+						<line class="st41" x1="369.1" y1="826.3" x2="369.1" y2="810.5"/>
+						<line class="st41" x1="437.4" y1="826.3" x2="437.4" y2="810.5"/>
 					</g>
 					<g>
 					</g>
@@ -1230,13 +1231,13 @@
 					</g>
 				</g>
 			</g>
-			<line class="st43" x1="95.7" y1="207.5" x2="95.7" y2="191.6"/>
-			<line class="st43" x1="27.5" y1="207.5" x2="27.5" y2="191.6"/>
-			<line class="st43" x1="164.1" y1="207.5" x2="164.1" y2="191.6"/>
-			<line class="st43" x1="232.4" y1="207.5" x2="232.4" y2="191.6"/>
-			<line class="st43" x1="300.8" y1="207.5" x2="300.8" y2="191.6"/>
-			<line class="st43" x1="369.1" y1="207.5" x2="369.1" y2="191.6"/>
-			<line class="st43" x1="437.4" y1="207.5" x2="437.4" y2="191.6"/>
+			<line class="st41" x1="95.7" y1="207.5" x2="95.7" y2="191.6"/>
+			<line class="st41" x1="27.5" y1="207.5" x2="27.5" y2="191.6"/>
+			<line class="st41" x1="164.1" y1="207.5" x2="164.1" y2="191.6"/>
+			<line class="st41" x1="232.4" y1="207.5" x2="232.4" y2="191.6"/>
+			<line class="st41" x1="300.8" y1="207.5" x2="300.8" y2="191.6"/>
+			<line class="st41" x1="369.1" y1="207.5" x2="369.1" y2="191.6"/>
+			<line class="st41" x1="437.4" y1="207.5" x2="437.4" y2="191.6"/>
 			<g>
 				<line class="st3" x1="27.4" y1="207.5" x2="27.4" y2="190.4"/>
 				<g>
@@ -1249,40 +1250,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st53" width="5.5" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st53" width="149" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st53" width="176.3" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st53" width="358.1" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st53" width="112.1" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st53" width="210.5" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st53" width="155.8" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st53" width="161.3" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st53" width="129.8" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st53" width="158.6" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st53" width="170.9" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st53" width="185.9" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st53" width="76.5" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st53" width="118.9" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st53" width="143.5" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st53" width="211.9" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st53" width="206.4" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st53" width="168.1" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st53" width="118.9" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st53" width="108" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st53" width="95.7" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st53" width="194.1" height="13.4"/>
-						<rect x="27.4" y="605" class="st53" width="127.1" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st53" width="84.7" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st53" width="138" height="13.4"/>
-						<rect x="27.4" y="661" class="st53" width="158.6" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st53" width="184.5" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st53" width="199.6" height="13.4"/>
-						<rect x="27.4" y="717" class="st53" width="175" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st53" width="210.5" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st53" width="162.7" height="13.4"/>
-						<rect x="27.4" y="773" class="st53" width="155.8" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st53" width="180.4" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st53" width="213.2" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st51" width="5.5" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st51" width="149" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st51" width="176.3" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st51" width="358.1" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st51" width="112.1" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st51" width="210.5" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st51" width="155.8" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st51" width="161.3" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st51" width="129.8" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st51" width="158.6" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st51" width="170.9" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st51" width="185.9" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st51" width="76.5" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st51" width="118.9" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st51" width="143.5" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st51" width="211.9" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st51" width="206.4" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st51" width="168.1" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st51" width="118.9" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st51" width="108" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st51" width="95.7" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st51" width="194.1" height="13.4"/>
+						<rect x="27.4" y="605" class="st51" width="127.1" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st51" width="84.7" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st51" width="138" height="13.4"/>
+						<rect x="27.4" y="661" class="st51" width="158.6" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st51" width="184.5" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st51" width="199.6" height="13.4"/>
+						<rect x="27.4" y="717" class="st51" width="175" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st51" width="210.5" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st51" width="162.7" height="13.4"/>
+						<rect x="27.4" y="773" class="st51" width="155.8" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st51" width="180.4" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st51" width="213.2" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -1292,7 +1293,7 @@
 			</g>
 		</g>
 		<rect x="22.8" y="71.9" class="st20" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 103.9047 95.2247)" class="st4 st5 st44">When Americans protested about other topics</text>
+		<text transform="matrix(1 0 0 1 103.9047 95.2247)" class="st4 st5 st42">When Americans protested about other topics</text>
 		<g id="other-annotations">
 			<text transform="matrix(1 0 0 1 30.7347 260.85)" class="st4 st5 st8">March for Science</text>
 			<text transform="matrix(1 0 0 1 30.7347 483.8499)" class="st4 st5 st8">March for Science</text>
@@ -1305,46 +1306,46 @@
 			<text transform="matrix(1 0 0 1 30.7347 353.3815)" class="st4 st5 st8">Higher minimum wage</text>
 		</g>
 	</g>
-	<g id="police-bar" class="st39">
+	<g id="police-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 852.4834)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 183.5439 852.4834)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 265.5532 852.4834)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 347.5625 852.4834)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">100</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 852.4834)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 183.5439 852.4834)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 265.5532 852.4834)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 347.5625 852.4834)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">100</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 183.4597)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 183.4597)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 183.5439 183.4597)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 265.5532 183.4597)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 347.5625 183.4597)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 425.6416 183.4597)" class="st4 st5 st40">100</text>
+					<text transform="matrix(1 0 0 1 23.457 183.4597)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 183.4597)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 183.5439 183.4597)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 265.5532 183.4597)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 347.5625 183.4597)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 425.6416 183.4597)" class="st4 st5 st38">100</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
-						<line class="st43" x1="109.4" y1="826.3" x2="109.4" y2="810.5"/>
-						<line class="st43" x1="191.4" y1="826.3" x2="191.4" y2="810.5"/>
-						<line class="st43" x1="273.4" y1="826.3" x2="273.4" y2="810.5"/>
-						<line class="st43" x1="355.4" y1="826.3" x2="355.4" y2="810.5"/>
-						<line class="st43" x1="437.4" y1="826.3" x2="437.4" y2="810.5"/>
+						<line class="st41" x1="27.4" y1="826.3" x2="27.4" y2="810.5"/>
+						<line class="st41" x1="109.4" y1="826.3" x2="109.4" y2="810.5"/>
+						<line class="st41" x1="191.4" y1="826.3" x2="191.4" y2="810.5"/>
+						<line class="st41" x1="273.4" y1="826.3" x2="273.4" y2="810.5"/>
+						<line class="st41" x1="355.4" y1="826.3" x2="355.4" y2="810.5"/>
+						<line class="st41" x1="437.4" y1="826.3" x2="437.4" y2="810.5"/>
 					</g>
 					<g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="209.2" x2="27.4" y2="193.4"/>
-						<line class="st43" x1="109.4" y1="209.2" x2="109.4" y2="193.4"/>
-						<line class="st43" x1="191.4" y1="209.2" x2="191.4" y2="193.4"/>
-						<line class="st43" x1="273.4" y1="209.2" x2="273.4" y2="193.4"/>
-						<line class="st43" x1="355.4" y1="209.2" x2="355.4" y2="193.4"/>
-						<line class="st43" x1="437.4" y1="209.2" x2="437.4" y2="193.4"/>
+						<line class="st41" x1="27.4" y1="209.2" x2="27.4" y2="193.4"/>
+						<line class="st41" x1="109.4" y1="209.2" x2="109.4" y2="193.4"/>
+						<line class="st41" x1="191.4" y1="209.2" x2="191.4" y2="193.4"/>
+						<line class="st41" x1="273.4" y1="209.2" x2="273.4" y2="193.4"/>
+						<line class="st41" x1="355.4" y1="209.2" x2="355.4" y2="193.4"/>
+						<line class="st41" x1="437.4" y1="209.2" x2="437.4" y2="193.4"/>
 					</g>
 					<g>
 					</g>
@@ -1362,40 +1363,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st54" width="0" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st54" width="24.6" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st54" width="61.5" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st54" width="69.7" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st54" width="106.6" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st54" width="90.2" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st54" width="77.9" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st54" width="114.8" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st54" width="373.1" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st54" width="352.6" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st54" width="180.4" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st54" width="69.7" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st54" width="65.6" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st54" width="102.5" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st54" width="143.5" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st54" width="168.1" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st54" width="114.8" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st54" width="164" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st54" width="151.7" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st54" width="176.3" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st54" width="159.9" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st54" width="131.2" height="13.4"/>
-						<rect x="27.4" y="605" class="st54" width="61.5" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st54" width="61.5" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st54" width="102.5" height="13.4"/>
-						<rect x="27.4" y="661" class="st54" width="102.5" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st54" width="131.2" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st54" width="127.1" height="13.4"/>
-						<rect x="27.4" y="717" class="st54" width="110.7" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st54" width="123" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st54" width="102.5" height="13.4"/>
-						<rect x="27.4" y="773" class="st54" width="131.2" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st54" width="94.3" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st54" width="90.2" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st52" width="0" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st52" width="24.6" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st52" width="61.5" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st52" width="69.7" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st52" width="106.6" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st52" width="90.2" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st52" width="77.9" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st52" width="114.8" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st52" width="373.1" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st52" width="352.6" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st52" width="180.4" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st52" width="69.7" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st52" width="65.6" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st52" width="102.5" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st52" width="143.5" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st52" width="168.1" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st52" width="114.8" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st52" width="164" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st52" width="151.7" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st52" width="176.3" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st52" width="159.9" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st52" width="131.2" height="13.4"/>
+						<rect x="27.4" y="605" class="st52" width="61.5" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st52" width="61.5" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st52" width="102.5" height="13.4"/>
+						<rect x="27.4" y="661" class="st52" width="102.5" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st52" width="131.2" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st52" width="127.1" height="13.4"/>
+						<rect x="27.4" y="717" class="st52" width="110.7" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st52" width="123" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st52" width="102.5" height="13.4"/>
+						<rect x="27.4" y="773" class="st52" width="131.2" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st52" width="94.3" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st52" width="90.2" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -1404,63 +1405,63 @@
 				</g>
 			</g>
 		</g>
-		<rect x="22.8" y="71.9" class="st55" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 112.2221 95.2247)" class="st4 st5 st44">When Americans protested about the police</text>
+		<rect x="22.8" y="71.9" class="st53" width="509" height="35.2"/>
+		<text transform="matrix(1 0 0 1 112.2221 95.2247)" class="st4 st5 st42">When Americans protested about the police</text>
 		<g id="police-annotations">
-			<rect x="416.4" y="295.9" class="st56" width="91.6" height="126.1"/>
+			<rect x="416.4" y="295.9" class="st54" width="91.6" height="126.1"/>
 			<rect x="421.3" y="299.6" class="st3" width="83.3" height="123.4"/>
 			<text transform="matrix(1 0 0 1 421.3208 307.0604)"><tspan x="0" y="0" class="st5 st8">St. Louis police </tspan><tspan x="0" y="12" class="st5 st8">officer acquitted </tspan><tspan x="0" y="24" class="st5 st8">in shooting of </tspan><tspan x="0" y="36" class="st5 st8">black man; </tspan><tspan x="0" y="48" class="st5 st8">athletes take a </tspan><tspan x="0" y="60" class="st5 st8">knee during </tspan><tspan x="0" y="72" class="st5 st8">national anthem </tspan><tspan x="0" y="84" class="st5 st8">to protest police </tspan><tspan x="0" y="96" class="st5 st8">brutality and racial </tspan><tspan x="0" y="108" class="st5 st8">inequality.</tspan></text>
-			<line class="st52" x1="416.4" y1="360.1" x2="408.2" y2="360.1"/>
-			<polyline class="st52" points="391.4,338.2 408.2,338.2 408.2,381 391.4,381 			"/>
-			<polygon class="st57" points="224.4,541 402,541 403,571.4 225.4,571.4 			"/>
+			<line class="st50" x1="416.4" y1="360.1" x2="408.2" y2="360.1"/>
+			<polyline class="st50" points="391.4,338.2 408.2,338.2 408.2,381 391.4,381 			"/>
+			<polygon class="st55" points="224.4,541 402,541 403,571.4 225.4,571.4 			"/>
 			<rect x="229.3" y="544.7" class="st3" width="174.9" height="22.7"/>
 			<text transform="matrix(1 0 0 1 229.3438 552.1915)"><tspan x="0" y="0" class="st5 st8">Off-duty Dallas police officer shoots a </tspan><tspan x="0" y="12" class="st5 st8">black man in his own apartment.</tspan></text>
-			<line class="st52" x1="201.7" y1="463.3" x2="172.1" y2="463.3"/>
-			<line class="st52" x1="224.4" y1="556" x2="204.2" y2="556"/>
-			<rect x="201.7" y="444.6" class="st58" width="179.8" height="29.4"/>
+			<line class="st50" x1="201.7" y1="463.3" x2="172.1" y2="463.3"/>
+			<line class="st50" x1="224.4" y1="556" x2="204.2" y2="556"/>
+			<rect x="201.7" y="444.6" class="st56" width="179.8" height="29.4"/>
 			<rect x="206.6" y="448.3" class="st3" width="174.9" height="22.7"/>
 			<text transform="matrix(1 0 0 1 206.6461 455.7914)"><tspan x="0" y="0" class="st5 st8">Sacramento police shoot young black </tspan><tspan x="0" y="12" class="st5 st8">man in his grandmother’s backyard.</tspan></text>
 		</g>
 	</g>
-	<g id="executive-bar" class="st39">
+	<g id="executive-bar">
 		<g>
-			<line class="st43" x1="109.9" y1="833.6" x2="109.9" y2="817.8"/>
-			<line class="st43" x1="27.3" y1="833.6" x2="27.3" y2="817.8"/>
-			<line class="st43" x1="193.2" y1="833.6" x2="193.2" y2="817.8"/>
-			<line class="st43" x1="274.3" y1="833.6" x2="274.3" y2="817.8"/>
-			<line class="st43" x1="354.9" y1="833.6" x2="354.9" y2="817.8"/>
-			<line class="st43" x1="439" y1="833.6" x2="439" y2="817.8"/>
+			<line class="st41" x1="109.9" y1="833.6" x2="109.9" y2="817.8"/>
+			<line class="st41" x1="27.3" y1="833.6" x2="27.3" y2="817.8"/>
+			<line class="st41" x1="193.2" y1="833.6" x2="193.2" y2="817.8"/>
+			<line class="st41" x1="274.3" y1="833.6" x2="274.3" y2="817.8"/>
+			<line class="st41" x1="354.9" y1="833.6" x2="354.9" y2="817.8"/>
+			<line class="st41" x1="439" y1="833.6" x2="439" y2="817.8"/>
 		</g>
 		<g>
-			<line class="st43" x1="27.3" y1="201.2" x2="27.3" y2="185.3"/>
+			<line class="st41" x1="27.3" y1="201.2" x2="27.3" y2="185.3"/>
 		</g>
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 852.4834)" class="st4 st5 st40">50</text>
-					<text transform="matrix(1 0 0 1 179.6133 852.4834)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 261.6226 852.4834)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 343.6318 852.4834)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">250</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 852.4834)" class="st4 st5 st38">50</text>
+					<text transform="matrix(1 0 0 1 179.6133 852.4834)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 261.6226 852.4834)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 343.6318 852.4834)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">250</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 178.8909)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 178.8909)" class="st4 st5 st40">50</text>
-					<text transform="matrix(1 0 0 1 179.6133 178.8909)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 261.6226 178.8909)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 343.6318 178.8909)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 425.6416 178.8909)" class="st4 st5 st40">250</text>
+					<text transform="matrix(1 0 0 1 23.457 178.8909)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 178.8909)" class="st4 st5 st38">50</text>
+					<text transform="matrix(1 0 0 1 179.6133 178.8909)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 261.6226 178.8909)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 343.6318 178.8909)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 425.6416 178.8909)" class="st4 st5 st38">250</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="200.9" x2="27.4" y2="185"/>
-						<line class="st43" x1="109.4" y1="200.9" x2="109.4" y2="185"/>
-						<line class="st43" x1="191.4" y1="200.9" x2="191.4" y2="185"/>
-						<line class="st43" x1="273.4" y1="200.9" x2="273.4" y2="185"/>
-						<line class="st43" x1="355.4" y1="200.9" x2="355.4" y2="185"/>
-						<line class="st43" x1="437.4" y1="200.9" x2="437.4" y2="185"/>
+						<line class="st41" x1="27.4" y1="200.9" x2="27.4" y2="185"/>
+						<line class="st41" x1="109.4" y1="200.9" x2="109.4" y2="185"/>
+						<line class="st41" x1="191.4" y1="200.9" x2="191.4" y2="185"/>
+						<line class="st41" x1="273.4" y1="200.9" x2="273.4" y2="185"/>
+						<line class="st41" x1="355.4" y1="200.9" x2="355.4" y2="185"/>
+						<line class="st41" x1="437.4" y1="200.9" x2="437.4" y2="185"/>
 					</g>
 					<g>
 					</g>
@@ -1478,40 +1479,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st59" width="54.1" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st59" width="219.8" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st59" width="275.6" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st59" width="232.9" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st59" width="54.1" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st59" width="127.9" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st59" width="68.9" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st59" width="73.8" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st59" width="31.2" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st59" width="36.1" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st59" width="52.5" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st59" width="11.5" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st59" width="49.2" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st59" width="19.7" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st59" width="27.9" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st59" width="13.1" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st59" width="18" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st59" width="39.4" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st59" width="91.9" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st59" width="57.4" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st59" width="162.4" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st59" width="208.3" height="13.4"/>
-						<rect x="27.4" y="605" class="st59" width="336.2" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st59" width="3.3" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st59" width="123" height="13.4"/>
-						<rect x="27.4" y="661" class="st59" width="16.4" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st59" width="26.2" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st59" width="67.2" height="13.4"/>
-						<rect x="27.4" y="717" class="st59" width="19.7" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st59" width="86.9" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st59" width="82" height="13.4"/>
-						<rect x="27.4" y="773" class="st59" width="64" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st59" width="26.2" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st59" width="144.3" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st57" width="54.1" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st57" width="219.8" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st57" width="275.6" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st57" width="232.9" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st57" width="54.1" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st57" width="127.9" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st57" width="68.9" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st57" width="73.8" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st57" width="31.2" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st57" width="36.1" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st57" width="52.5" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st57" width="11.5" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st57" width="49.2" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st57" width="19.7" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st57" width="27.9" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st57" width="13.1" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st57" width="18" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st57" width="39.4" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st57" width="91.9" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st57" width="57.4" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st57" width="162.4" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st57" width="208.3" height="13.4"/>
+						<rect x="27.4" y="605" class="st57" width="336.2" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st57" width="3.3" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st57" width="123" height="13.4"/>
+						<rect x="27.4" y="661" class="st57" width="16.4" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st57" width="26.2" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st57" width="67.2" height="13.4"/>
+						<rect x="27.4" y="717" class="st57" width="19.7" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st57" width="86.9" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st57" width="82" height="13.4"/>
+						<rect x="27.4" y="773" class="st57" width="64" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st57" width="26.2" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st57" width="144.3" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -1520,72 +1521,72 @@
 				</g>
 			</g>
 		</g>
-		<rect x="22.8" y="71.9" class="st60" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 70.9086 95.2247)" class="st5 st44">When Americans protested about the executive branch</text>
+		<rect x="22.8" y="71.9" class="st58" width="509" height="35.2"/>
+		<text transform="matrix(1 0 0 1 70.9086 95.2247)" class="st5 st42">When Americans protested about the executive branch</text>
 		<g id="executive-annotations">
-			<rect x="380.6" y="579.8" class="st61" width="121.1" height="71.2"/>
+			<rect x="380.6" y="579.8" class="st59" width="121.1" height="71.2"/>
 			<rect x="388.3" y="587" class="st3" width="101.4" height="62.6"/>
 			<text transform="matrix(1 0 0 1 388.3243 594.5329)"><tspan x="0" y="0" class="st5 st8">Jeff Sessions resigns </tspan><tspan x="0" y="12" class="st5 st8">as Attorney General, </tspan><tspan x="0" y="24" class="st5 st8">raising fears of </tspan><tspan x="0" y="36" class="st5 st8">executive interference </tspan><tspan x="0" y="48" class="st5 st8">in Russia investigation</tspan></text>
-			<rect x="180.9" y="276.1" class="st62" width="121.1" height="45.5"/>
-			<rect x="129.7" y="525.3" class="st63" width="188.7" height="16.3"/>
+			<rect x="180.9" y="276.1" class="st60" width="121.1" height="45.5"/>
+			<rect x="129.7" y="525.3" class="st61" width="188.7" height="16.3"/>
 			<rect x="185.2" y="282.4" class="st3" width="113.2" height="36.8"/>
 			<text transform="matrix(1 0 0 1 185.23 289.9287)"><tspan x="0" y="0" class="st5 st8">March For Truth pushes </tspan><tspan x="0" y="12" class="st5 st8">for investigation of </tspan><tspan x="0" y="24" class="st5 st8">Trump’s ties to Russia</tspan></text>
-			<line class="st46" x1="363.6" y1="609.7" x2="380.6" y2="609.7"/>
+			<line class="st44" x1="363.6" y1="609.7" x2="380.6" y2="609.7"/>
 			<text transform="matrix(1 0 0 1 32.3 614.9)" class="st5 st8">#ProtectMueller demonstrations</text>
 			<text transform="matrix(1 0 0 1 32.3 820.2496)" class="st5 st8">Pro &amp; anti impeachment rallies</text>
 			<text transform="matrix(1 0 0 1 32.3 260.8497)" class="st5 st8">Tax March pressures Trump to release tax returns</text>
 			<text transform="matrix(1 0 0 1 32.5165 241.3501)" class="st5 st8">Pro-Trump rallies and counter-protests</text>
 			<text transform="matrix(1 0 0 1 32.5165 222.95)" class="st5 st8">Protests against cabinet nominees</text>
-			<line class="st46" x1="156.1" y1="297" x2="180.9" y2="297"/>
-			<line class="st46" x1="119.7" y1="533.4" x2="129.7" y2="533.4"/>
+			<line class="st44" x1="156.1" y1="297" x2="180.9" y2="297"/>
+			<line class="st44" x1="119.7" y1="533.4" x2="129.7" y2="533.4"/>
 			<text transform="matrix(1 0 0 1 133.1821 537.5061)" class="st5 st8">Kavanaugh nominated to Supreme Court</text>
-			<rect x="198.9" y="563.1" class="st64" width="174.8" height="16.3"/>
-			<line class="st46" x1="188.9" y1="571.2" x2="198.9" y2="571.2"/>
+			<rect x="198.9" y="563.1" class="st62" width="174.8" height="16.3"/>
+			<line class="st44" x1="188.9" y1="571.2" x2="198.9" y2="571.2"/>
 			<text transform="matrix(1 0 0 1 202.358 575.3058)" class="st5 st8">Kavanaugh accused of sexual assault</text>
 			<text transform="matrix(1 0 0 1 32.5166 653.05)" class="st5 st8">Government shutdown</text>
 			<text transform="matrix(1 0 0 1 30.5164 596.45)" class="st5 st8">Kavanaugh confirmed to Supreme Court</text>
 		</g>
 	</g>
-	<g id="collective_bargaining-bar" class="st39">
+	<g id="collective_x5F_bargaining-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 852.4834)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 183.5439 852.4834)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 265.5532 852.4834)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 347.5625 852.4834)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">100</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 852.4834)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 183.5439 852.4834)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 265.5532 852.4834)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 347.5625 852.4834)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">100</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 178.1434)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 178.1434)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 183.5439 178.1434)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 265.5532 178.1434)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 347.5625 178.1434)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 425.6416 178.1434)" class="st4 st5 st40">100</text>
+					<text transform="matrix(1 0 0 1 23.457 178.1434)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 178.1434)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 183.5439 178.1434)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 265.5532 178.1434)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 347.5625 178.1434)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 425.6416 178.1434)" class="st4 st5 st38">100</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.4" y1="833" x2="27.4" y2="817.1"/>
-						<line class="st43" x1="109.4" y1="833" x2="109.4" y2="817.1"/>
-						<line class="st43" x1="191.4" y1="833" x2="191.4" y2="817.1"/>
-						<line class="st43" x1="273.4" y1="833" x2="273.4" y2="817.1"/>
-						<line class="st43" x1="355.4" y1="833" x2="355.4" y2="817.1"/>
-						<line class="st43" x1="437.4" y1="833" x2="437.4" y2="817.1"/>
+						<line class="st41" x1="27.4" y1="833" x2="27.4" y2="817.1"/>
+						<line class="st41" x1="109.4" y1="833" x2="109.4" y2="817.1"/>
+						<line class="st41" x1="191.4" y1="833" x2="191.4" y2="817.1"/>
+						<line class="st41" x1="273.4" y1="833" x2="273.4" y2="817.1"/>
+						<line class="st41" x1="355.4" y1="833" x2="355.4" y2="817.1"/>
+						<line class="st41" x1="437.4" y1="833" x2="437.4" y2="817.1"/>
 					</g>
 					<g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<line class="st43" x1="27.5" y1="201.3" x2="27.5" y2="185.4"/>
-						<line class="st43" x1="109.5" y1="201.3" x2="109.5" y2="185.4"/>
-						<line class="st43" x1="191.5" y1="201.3" x2="191.5" y2="185.4"/>
-						<line class="st43" x1="273.5" y1="201.3" x2="273.5" y2="185.4"/>
-						<line class="st43" x1="355.5" y1="201.3" x2="355.5" y2="185.4"/>
-						<line class="st43" x1="437.5" y1="201.3" x2="437.5" y2="185.4"/>
+						<line class="st41" x1="27.5" y1="201.3" x2="27.5" y2="185.4"/>
+						<line class="st41" x1="109.5" y1="201.3" x2="109.5" y2="185.4"/>
+						<line class="st41" x1="191.5" y1="201.3" x2="191.5" y2="185.4"/>
+						<line class="st41" x1="273.5" y1="201.3" x2="273.5" y2="185.4"/>
+						<line class="st41" x1="355.5" y1="201.3" x2="355.5" y2="185.4"/>
+						<line class="st41" x1="437.5" y1="201.3" x2="437.5" y2="185.4"/>
 					</g>
 					<g>
 					</g>
@@ -1603,40 +1604,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st65" width="0" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st65" width="8.2" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st65" width="90.2" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st65" width="98.4" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st65" width="139.4" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st65" width="90.2" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st65" width="49.2" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st65" width="94.3" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st65" width="131.2" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st65" width="94.3" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st65" width="123" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st65" width="82" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st65" width="53.3" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st65" width="250.1" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st65" width="114.8" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st65" width="102.5" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st65" width="123" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st65" width="151.7" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st65" width="131.2" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st65" width="205" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st65" width="221.4" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st65" width="369" height="13.4"/>
-						<rect x="27.4" y="605" class="st65" width="73.8" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st65" width="123" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st65" width="114.8" height="13.4"/>
-						<rect x="27.4" y="661" class="st65" width="94.3" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st65" width="172.2" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st65" width="164" height="13.4"/>
-						<rect x="27.4" y="717" class="st65" width="278.8" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st65" width="246" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st65" width="200.9" height="13.4"/>
-						<rect x="27.4" y="773" class="st65" width="184.5" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st65" width="213.2" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st65" width="241.9" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st63" width="0" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st63" width="8.2" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st63" width="90.2" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st63" width="98.4" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st63" width="139.4" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st63" width="90.2" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st63" width="49.2" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st63" width="94.3" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st63" width="131.2" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st63" width="94.3" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st63" width="123" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st63" width="82" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st63" width="53.3" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st63" width="250.1" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st63" width="114.8" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st63" width="102.5" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st63" width="123" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st63" width="151.7" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st63" width="131.2" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st63" width="205" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st63" width="221.4" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st63" width="369" height="13.4"/>
+						<rect x="27.4" y="605" class="st63" width="73.8" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st63" width="123" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st63" width="114.8" height="13.4"/>
+						<rect x="27.4" y="661" class="st63" width="94.3" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st63" width="172.2" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st63" width="164" height="13.4"/>
+						<rect x="27.4" y="717" class="st63" width="278.8" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st63" width="246" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st63" width="200.9" height="13.4"/>
+						<rect x="27.4" y="773" class="st63" width="184.5" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st63" width="213.2" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st63" width="241.9" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -1646,58 +1647,58 @@
 			</g>
 		</g>
 		<rect x="22.8" y="71.9" class="st17" width="509" height="35.2"/>
-		<g id="collective_bargaining-annotations">
-			<text transform="matrix(1 0 0 1 71.1078 95.2247)" class="st4 st5 st44">When Americans protested about collective bargaining</text>
+		<g id="collective_x5F_bargaining-annotations">
+			<text transform="matrix(1 0 0 1 71.1078 95.2247)" class="st4 st5 st42">When Americans protested about collective bargaining</text>
 			<text transform="matrix(1 0 0 1 32.5163 446.9498)" class="st4 st5 st8">Supreme Court hears case about union dues</text>
 			<text transform="matrix(1 0 0 1 32.5163 596.0001)" class="st4 st5 st8">Airport protests for higher wages; postal workers protest proposed privatization</text>
 			<text transform="matrix(1 0 0 1 32.5163 726.829)" class="st4 st5 st8">McDonald’s workers strike for $15 minimum wage</text>
 			<text transform="matrix(1 0 0 1 32.5163 820.2499)" class="st4 st5 st8">Chicago teachers’ strikes</text>
 		</g>
 	</g>
-	<g id="healthcare-bar" class="st39">
+	<g id="healthcare-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 87.8672 852.4834)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 156.208 852.4834)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 224.5488 852.4834)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 292.8896 852.4834)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">120</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 87.8672 852.4834)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 156.208 852.4834)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 224.5488 852.4834)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 292.8896 852.4834)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 357.2998 852.4834)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">120</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 178.6129)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 87.8672 178.6129)" class="st4 st5 st40">20</text>
-					<text transform="matrix(1 0 0 1 156.208 178.6129)" class="st4 st5 st40">40</text>
-					<text transform="matrix(1 0 0 1 224.5488 178.6129)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 292.8896 178.6129)" class="st4 st5 st40">80</text>
-					<text transform="matrix(1 0 0 1 357.2998 178.6129)" class="st4 st5 st40">100</text>
-					<text transform="matrix(1 0 0 1 425.6416 178.6129)" class="st4 st5 st40">120</text>
+					<text transform="matrix(1 0 0 1 23.457 178.6129)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 87.8672 178.6129)" class="st4 st5 st38">20</text>
+					<text transform="matrix(1 0 0 1 156.208 178.6129)" class="st4 st5 st38">40</text>
+					<text transform="matrix(1 0 0 1 224.5488 178.6129)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 292.8896 178.6129)" class="st4 st5 st38">80</text>
+					<text transform="matrix(1 0 0 1 357.2998 178.6129)" class="st4 st5 st38">100</text>
+					<text transform="matrix(1 0 0 1 425.6416 178.6129)" class="st4 st5 st38">120</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.6" y1="833" x2="27.6" y2="817.1"/>
-						<line class="st43" x1="95.9" y1="833" x2="95.9" y2="817.1"/>
-						<line class="st43" x1="164.3" y1="833" x2="164.3" y2="817.1"/>
-						<line class="st43" x1="232.6" y1="833" x2="232.6" y2="817.1"/>
-						<line class="st43" x1="301" y1="833" x2="301" y2="817.1"/>
-						<line class="st43" x1="369.3" y1="833" x2="369.3" y2="817.1"/>
-						<line class="st43" x1="437.6" y1="833" x2="437.6" y2="817.1"/>
+						<line class="st41" x1="27.6" y1="833" x2="27.6" y2="817.1"/>
+						<line class="st41" x1="95.9" y1="833" x2="95.9" y2="817.1"/>
+						<line class="st41" x1="164.3" y1="833" x2="164.3" y2="817.1"/>
+						<line class="st41" x1="232.6" y1="833" x2="232.6" y2="817.1"/>
+						<line class="st41" x1="301" y1="833" x2="301" y2="817.1"/>
+						<line class="st41" x1="369.3" y1="833" x2="369.3" y2="817.1"/>
+						<line class="st41" x1="437.6" y1="833" x2="437.6" y2="817.1"/>
 					</g>
 					<g>
 					</g>
 				</g>
 				<g>
 					<g>
-						<line class="st43" x1="27.6" y1="201" x2="27.6" y2="185.1"/>
-						<line class="st43" x1="95.9" y1="201" x2="95.9" y2="185.1"/>
-						<line class="st43" x1="164.3" y1="201" x2="164.3" y2="185.1"/>
-						<line class="st43" x1="232.6" y1="201" x2="232.6" y2="185.1"/>
-						<line class="st43" x1="301" y1="201" x2="301" y2="185.1"/>
-						<line class="st43" x1="369.3" y1="201" x2="369.3" y2="185.1"/>
-						<line class="st43" x1="437.6" y1="201" x2="437.6" y2="185.1"/>
+						<line class="st41" x1="27.6" y1="201" x2="27.6" y2="185.1"/>
+						<line class="st41" x1="95.9" y1="201" x2="95.9" y2="185.1"/>
+						<line class="st41" x1="164.3" y1="201" x2="164.3" y2="185.1"/>
+						<line class="st41" x1="232.6" y1="201" x2="232.6" y2="185.1"/>
+						<line class="st41" x1="301" y1="201" x2="301" y2="185.1"/>
+						<line class="st41" x1="369.3" y1="201" x2="369.3" y2="185.1"/>
+						<line class="st41" x1="437.6" y1="201" x2="437.6" y2="185.1"/>
 					</g>
 					<g>
 					</g>
@@ -1715,40 +1716,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st66" width="13.7" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st66" width="164" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st66" width="266.5" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st66" width="47.8" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st66" width="266.5" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st66" width="228.9" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st66" width="386.1" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st66" width="58.1" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st66" width="68.3" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st66" width="20.5" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st66" width="20.5" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st66" width="23.9" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st66" width="27.3" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st66" width="41" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st66" width="30.8" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st66" width="23.9" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st66" width="82" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st66" width="34.2" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st66" width="10.3" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st66" width="37.6" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st66" width="58.1" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st66" width="20.5" height="13.4"/>
-						<rect x="27.4" y="605" class="st66" width="20.5" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st66" width="10.3" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st66" width="20.5" height="13.4"/>
-						<rect x="27.4" y="661" class="st66" width="44.4" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st66" width="44.4" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st66" width="20.5" height="13.4"/>
-						<rect x="27.4" y="717" class="st66" width="61.5" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st66" width="30.8" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st66" width="27.3" height="13.4"/>
-						<rect x="27.4" y="773" class="st66" width="37.6" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st66" width="6.8" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st66" width="64.9" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st64" width="13.7" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st64" width="164" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st64" width="266.5" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st64" width="47.8" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st64" width="266.5" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st64" width="228.9" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st64" width="386.1" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st64" width="58.1" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st64" width="68.3" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st64" width="20.5" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st64" width="20.5" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st64" width="23.9" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st64" width="27.3" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st64" width="41" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st64" width="30.8" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st64" width="23.9" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st64" width="82" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st64" width="34.2" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st64" width="10.3" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st64" width="37.6" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st64" width="58.1" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st64" width="20.5" height="13.4"/>
+						<rect x="27.4" y="605" class="st64" width="20.5" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st64" width="10.3" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st64" width="20.5" height="13.4"/>
+						<rect x="27.4" y="661" class="st64" width="44.4" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st64" width="44.4" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st64" width="20.5" height="13.4"/>
+						<rect x="27.4" y="717" class="st64" width="61.5" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st64" width="30.8" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st64" width="27.3" height="13.4"/>
+						<rect x="27.4" y="773" class="st64" width="37.6" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st64" width="6.8" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st64" width="64.9" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -1759,61 +1760,61 @@
 		</g>
 		<rect x="22.8" y="71.9" class="st19" width="509" height="35.2"/>
 		<g id="healthcare-annotations">
-			<text transform="matrix(1 0 0 1 109.2006 95.2247)" class="st4 st5 st44">When Americans protested about healthcare</text>
+			<text transform="matrix(1 0 0 1 109.2006 95.2247)" class="st4 st5 st42">When Americans protested about healthcare</text>
 			<text transform="matrix(1 0 0 1 32.5163 241.1585)" class="st4 st5 st26">American Health Care Act announced to repeal and replace ACA</text>
 			<text transform="matrix(1 0 0 1 32.5163 278.5498)" class="st4 st5 st26">AHCA passes the House of Representatives</text>
 			<text transform="matrix(1 0 0 1 32.5163 315.6291)" class="st4 st5 st26">Health Care Freedom Act fails to pass in the Senate</text>
-			<rect x="435.4" y="267" class="st67" width="77.9" height="71.2"/>
-			<rect x="124.9" y="333.9" class="st67" width="178.2" height="33.2"/>
+			<rect x="435.4" y="267" class="st65" width="77.9" height="71.2"/>
+			<rect x="124.9" y="333.9" class="st65" width="178.2" height="33.2"/>
 			<rect x="443.2" y="272.3" class="st3" width="72.3" height="67.9"/>
-			<text transform="matrix(1 0 0 1 443.1562 282.0315)"><tspan x="0" y="0" class="st5 st68">Affordable </tspan><tspan x="0" y="15.6" class="st5 st68">Care Act </tspan><tspan x="0" y="31.2" class="st5 st68">repeal </tspan><tspan x="0" y="46.8" class="st5 st68">efforts</tspan></text>
+			<text transform="matrix(1 0 0 1 443.1562 282.0315)"><tspan x="0" y="0" class="st5 st66">Affordable </tspan><tspan x="0" y="15.6" class="st5 st66">Care Act </tspan><tspan x="0" y="31.2" class="st5 st66">repeal </tspan><tspan x="0" y="46.8" class="st5 st66">efforts</tspan></text>
 			<rect x="136.6" y="339.4" class="st3" width="165.6" height="22.4"/>
 			<text transform="matrix(1 0 0 1 136.6371 346.8763)"><tspan x="0" y="0" class="st5 st8">AHCA amended, but allowed to die </tspan><tspan x="0" y="12" class="st5 st8">before a vote in the Senate</tspan></text>
-			<polyline class="st69" points="386.7,229.4 421.8,229.4 421.8,366 386.7,366 			"/>
-			<line class="st46" x1="95.2" y1="350.5" x2="124.9" y2="350.5"/>
-			<line class="st46" x1="421.6" y1="302.6" x2="435.4" y2="302.6"/>
+			<polyline class="st67" points="386.7,229.4 421.8,229.4 421.8,366 386.7,366 			"/>
+			<line class="st44" x1="95.2" y1="350.5" x2="124.9" y2="350.5"/>
+			<line class="st44" x1="421.6" y1="302.6" x2="435.4" y2="302.6"/>
 		</g>
 	</g>
-	<g id="guns-bar" class="st39">
+	<g id="guns-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.335 852.0016)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 97.4814 852.0016)" class="st4 st5 st40">500</text>
-					<text transform="matrix(1 0 0 1 175.5586 852.0016)" class="st4 st5 st40">1000</text>
-					<text transform="matrix(1 0 0 1 257.5669 852.0016)" class="st4 st5 st40">1500</text>
-					<text transform="matrix(1 0 0 1 339.5742 852.0016)" class="st4 st5 st40">2000</text>
-					<text transform="matrix(1 0 0 1 421.582 852.0016)" class="st4 st5 st40">2500</text>
+					<text transform="matrix(1 0 0 1 23.335 852.0016)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 97.4814 852.0016)" class="st4 st5 st38">500</text>
+					<text transform="matrix(1 0 0 1 175.5586 852.0016)" class="st4 st5 st38">1000</text>
+					<text transform="matrix(1 0 0 1 257.5669 852.0016)" class="st4 st5 st38">1500</text>
+					<text transform="matrix(1 0 0 1 339.5742 852.0016)" class="st4 st5 st38">2000</text>
+					<text transform="matrix(1 0 0 1 421.582 852.0016)" class="st4 st5 st38">2500</text>
 				</g>
 				<line class="st3" x1="27.3" y1="826.3" x2="437.3" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st46" x1="27.3" y1="826.3" x2="27.3" y2="810.4"/>
-						<line class="st43" x1="109.3" y1="832.3" x2="109.3" y2="819.4"/>
-						<line class="st43" x1="27.1" y1="832.3" x2="27.1" y2="819.4"/>
-						<line class="st43" x1="191.3" y1="832.3" x2="191.3" y2="819.4"/>
-						<line class="st43" x1="273.3" y1="832.3" x2="273.3" y2="819.4"/>
-						<line class="st43" x1="355.3" y1="832.3" x2="355.3" y2="819.4"/>
-						<line class="st43" x1="437.3" y1="832.3" x2="437.3" y2="819.4"/>
+						<line class="st44" x1="27.3" y1="826.3" x2="27.3" y2="810.4"/>
+						<line class="st41" x1="109.3" y1="832.3" x2="109.3" y2="819.4"/>
+						<line class="st41" x1="27.1" y1="832.3" x2="27.1" y2="819.4"/>
+						<line class="st41" x1="191.3" y1="832.3" x2="191.3" y2="819.4"/>
+						<line class="st41" x1="273.3" y1="832.3" x2="273.3" y2="819.4"/>
+						<line class="st41" x1="355.3" y1="832.3" x2="355.3" y2="819.4"/>
+						<line class="st41" x1="437.3" y1="832.3" x2="437.3" y2="819.4"/>
 						<g>
-							<text transform="matrix(1 0 0 1 23.335 180.5675)" class="st4 st5 st40">0</text>
-							<text transform="matrix(1 0 0 1 97.4814 180.5675)" class="st4 st5 st40">500</text>
-							<text transform="matrix(1 0 0 1 175.5586 180.5675)" class="st4 st5 st40">1000</text>
-							<text transform="matrix(1 0 0 1 257.5669 180.5675)" class="st4 st5 st40">1500</text>
-							<text transform="matrix(1 0 0 1 339.5742 180.5675)" class="st4 st5 st40">2000</text>
-							<text transform="matrix(1 0 0 1 421.582 180.5675)" class="st4 st5 st40">2500</text>
+							<text transform="matrix(1 0 0 1 23.335 180.5675)" class="st4 st5 st38">0</text>
+							<text transform="matrix(1 0 0 1 97.4814 180.5675)" class="st4 st5 st38">500</text>
+							<text transform="matrix(1 0 0 1 175.5586 180.5675)" class="st4 st5 st38">1000</text>
+							<text transform="matrix(1 0 0 1 257.5669 180.5675)" class="st4 st5 st38">1500</text>
+							<text transform="matrix(1 0 0 1 339.5742 180.5675)" class="st4 st5 st38">2000</text>
+							<text transform="matrix(1 0 0 1 421.582 180.5675)" class="st4 st5 st38">2500</text>
 						</g>
-						<line class="st43" x1="109.3" y1="199.6" x2="109.3" y2="186.8"/>
-						<line class="st43" x1="27.1" y1="199.6" x2="27.1" y2="186.8"/>
-						<line class="st43" x1="191.3" y1="199.6" x2="191.3" y2="186.8"/>
-						<line class="st43" x1="273.3" y1="199.6" x2="273.3" y2="186.8"/>
-						<line class="st43" x1="355.3" y1="199.6" x2="355.3" y2="186.8"/>
-						<line class="st43" x1="437.3" y1="199.6" x2="437.3" y2="186.8"/>
+						<line class="st41" x1="109.3" y1="199.6" x2="109.3" y2="186.8"/>
+						<line class="st41" x1="27.1" y1="199.6" x2="27.1" y2="186.8"/>
+						<line class="st41" x1="191.3" y1="199.6" x2="191.3" y2="186.8"/>
+						<line class="st41" x1="273.3" y1="199.6" x2="273.3" y2="186.8"/>
+						<line class="st41" x1="355.3" y1="199.6" x2="355.3" y2="186.8"/>
+						<line class="st41" x1="437.3" y1="199.6" x2="437.3" y2="186.8"/>
 					</g>
 				</g>
 			</g>
 			<g>
-				<line class="st70" x1="27.3" y1="826.3" x2="27.3" y2="192.3"/>
+				<line class="st68" x1="27.3" y1="826.3" x2="27.3" y2="192.3"/>
 				<g>
 					<g>
 						<line class="st3" x1="27.3" y1="817" x2="37.5" y2="817"/>
@@ -1896,77 +1897,77 @@
 		</g>
 		<g id="gun-annotations">
 			<rect x="22.8" y="71.9" class="st15" width="509" height="35.2"/>
-			<text transform="matrix(1 0 0 1 130.4545 95.2247)" class="st4 st5 st44">When Americans protested about guns</text>
-			<rect x="79.9" y="433.4" class="st71" width="121.8" height="16.3"/>
-			<line class="st46" x1="69" y1="444.5" x2="79.9" y2="444.5"/>
+			<text transform="matrix(1 0 0 1 130.4545 95.2247)" class="st4 st5 st42">When Americans protested about guns</text>
+			<rect x="79.9" y="433.4" class="st69" width="121.8" height="16.3"/>
+			<line class="st44" x1="69" y1="444.5" x2="79.9" y2="444.5"/>
 			<text transform="matrix(1 0 0 1 83.4191 445.6058)" class="st5 st8">Parkland school shooting</text>
-			<rect x="39.8" y="342.1" class="st71" width="121.8" height="16.3"/>
-			<line class="st46" x1="28.8" y1="350.2" x2="39.8" y2="350.2"/>
+			<rect x="39.8" y="342.1" class="st69" width="121.8" height="16.3"/>
+			<line class="st44" x1="28.8" y1="350.2" x2="39.8" y2="350.2"/>
 			<text transform="matrix(1 0 0 1 43.2691 354.3058)" class="st5 st8">Las Vegas mass shooting</text>
-			<rect x="39" y="379.9" class="st72" width="292.9" height="16.3"/>
-			<line class="st46" x1="28" y1="388" x2="39" y2="388"/>
+			<rect x="39" y="379.9" class="st70" width="292.9" height="16.3"/>
+			<line class="st44" x1="28" y1="388" x2="39" y2="388"/>
 			<text transform="matrix(1 0 0 1 42.4464 392.1504)" class="st5 st8">Texas First Baptist Church and Rancho Tehama mass shootings</text>
-			<rect x="121.4" y="475.9" class="st73" width="114.9" height="16.3"/>
-			<line class="st46" x1="110.4" y1="481" x2="121.4" y2="481"/>
+			<rect x="121.4" y="475.9" class="st71" width="114.9" height="16.3"/>
+			<line class="st44" x1="110.4" y1="481" x2="121.4" y2="481"/>
 			<text transform="matrix(1 0 0 1 124.919 488.1057)" class="st5 st8">National School Walkout</text>
-			<rect x="45.5" y="496.1" class="st74" width="118.9" height="16.3"/>
-			<line class="st46" x1="33.5" y1="500.2" x2="45.5" y2="500.2"/>
+			<rect x="45.5" y="496.1" class="st72" width="118.9" height="16.3"/>
+			<line class="st44" x1="33.5" y1="500.2" x2="45.5" y2="500.2"/>
 			<text transform="matrix(1 0 0 1 48.998 508.3058)" class="st5 st8">Santa Fe school shooting</text>
-			<rect x="41" y="585.1" class="st75" width="150.3" height="16.3"/>
-			<line class="st46" x1="29" y1="594.2" x2="41" y2="594.2"/>
+			<rect x="41" y="585.1" class="st73" width="150.3" height="16.3"/>
+			<line class="st44" x1="29" y1="594.2" x2="41" y2="594.2"/>
 			<text transform="matrix(1 0 0 1 44.4929 597.3058)" class="st5 st8">Tree of Life synagogue shooting</text>
-			<rect x="41" y="604.8" class="st76" width="178.7" height="16.3"/>
-			<line class="st46" x1="29" y1="612.9" x2="41" y2="612.9"/>
+			<rect x="41" y="604.8" class="st74" width="178.7" height="16.3"/>
+			<line class="st44" x1="29" y1="612.9" x2="41" y2="612.9"/>
 			<text transform="matrix(1 0 0 1 44.4929 617.0057)" class="st5 st8">Borderline Bar and Grill mass shooting</text>
-			<rect x="41" y="752.9" class="st77" width="165.5" height="16.3"/>
-			<line class="st46" x1="29" y1="762" x2="41" y2="762"/>
+			<rect x="41" y="752.9" class="st75" width="165.5" height="16.3"/>
+			<line class="st44" x1="29" y1="762" x2="41" y2="762"/>
 			<text transform="matrix(1 0 0 1 44.4929 765.1058)" class="st5 st8">Gilroy Garlic Festival mass shooting</text>
-			<rect x="59" y="775.9" class="st78" width="245.7" height="16.3"/>
-			<line class="st46" x1="47" y1="780" x2="59" y2="780"/>
+			<rect x="59" y="775.9" class="st76" width="245.7" height="16.3"/>
+			<line class="st44" x1="47" y1="780" x2="59" y2="780"/>
 			<text transform="matrix(1 0 0 1 62.4691 788.153)" class="st5 st8">El Paso, Dayton, and Odessa-Midland mass shootings</text>
 			<text transform="matrix(1 0 0 1 31.7 466.35)" class="st4 st5 st8">#Enough! School Walkout and March For Our Lives</text>
 		</g>
 	</g>
-	<g id="immigration-bar" class="st39">
+	<g id="immigration-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.335 851.0016)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 97.4814 851.0016)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 179.4893 851.0016)" class="st4 st5 st40">400</text>
-					<text transform="matrix(1 0 0 1 261.4971 851.0016)" class="st4 st5 st40">600</text>
-					<text transform="matrix(1 0 0 1 343.5049 851.0016)" class="st4 st5 st40">800</text>
-					<text transform="matrix(1 0 0 1 421.582 851.0016)" class="st4 st5 st40">1000</text>
+					<text transform="matrix(1 0 0 1 23.335 851.0016)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 97.4814 851.0016)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 179.4893 851.0016)" class="st4 st5 st38">400</text>
+					<text transform="matrix(1 0 0 1 261.4971 851.0016)" class="st4 st5 st38">600</text>
+					<text transform="matrix(1 0 0 1 343.5049 851.0016)" class="st4 st5 st38">800</text>
+					<text transform="matrix(1 0 0 1 421.582 851.0016)" class="st4 st5 st38">1000</text>
 				</g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.335 174.7148)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 97.4814 174.7148)" class="st4 st5 st40">200</text>
-					<text transform="matrix(1 0 0 1 179.4893 174.7148)" class="st4 st5 st40">400</text>
-					<text transform="matrix(1 0 0 1 261.4971 174.7148)" class="st4 st5 st40">600</text>
-					<text transform="matrix(1 0 0 1 343.5049 174.7148)" class="st4 st5 st40">800</text>
-					<text transform="matrix(1 0 0 1 421.582 174.7148)" class="st4 st5 st40">1000</text>
+					<text transform="matrix(1 0 0 1 23.335 174.7148)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 97.4814 174.7148)" class="st4 st5 st38">200</text>
+					<text transform="matrix(1 0 0 1 179.4893 174.7148)" class="st4 st5 st38">400</text>
+					<text transform="matrix(1 0 0 1 261.4971 174.7148)" class="st4 st5 st38">600</text>
+					<text transform="matrix(1 0 0 1 343.5049 174.7148)" class="st4 st5 st38">800</text>
+					<text transform="matrix(1 0 0 1 421.582 174.7148)" class="st4 st5 st38">1000</text>
 				</g>
 				<line class="st3" x1="27.3" y1="826.3" x2="437.3" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st79" x1="27.3" y1="826.3" x2="27.3" y2="810.4"/>
-						<line class="st80" x1="109.3" y1="833.3" x2="109.3" y2="821.4"/>
-						<line class="st80" x1="191.3" y1="833.3" x2="191.3" y2="821.4"/>
-						<line class="st80" x1="273.3" y1="833.3" x2="273.3" y2="821.4"/>
-						<line class="st80" x1="355.3" y1="833.3" x2="355.3" y2="821.4"/>
-						<line class="st80" x1="437.3" y1="833.3" x2="437.3" y2="821.4"/>
-						<line class="st80" x1="27.5" y1="833.3" x2="27.5" y2="821.4"/>
-						<line class="st80" x1="109.3" y1="194.1" x2="109.3" y2="182.2"/>
-						<line class="st80" x1="191.3" y1="194.1" x2="191.3" y2="182.2"/>
-						<line class="st80" x1="273.3" y1="194.1" x2="273.3" y2="182.2"/>
-						<line class="st80" x1="355.3" y1="194.1" x2="355.3" y2="182.2"/>
-						<line class="st80" x1="437.3" y1="194.1" x2="437.3" y2="182.2"/>
-						<line class="st80" x1="27.5" y1="194.1" x2="27.5" y2="182.2"/>
+						<line class="st77" x1="27.3" y1="826.3" x2="27.3" y2="810.4"/>
+						<line class="st78" x1="109.3" y1="833.3" x2="109.3" y2="821.4"/>
+						<line class="st78" x1="191.3" y1="833.3" x2="191.3" y2="821.4"/>
+						<line class="st78" x1="273.3" y1="833.3" x2="273.3" y2="821.4"/>
+						<line class="st78" x1="355.3" y1="833.3" x2="355.3" y2="821.4"/>
+						<line class="st78" x1="437.3" y1="833.3" x2="437.3" y2="821.4"/>
+						<line class="st78" x1="27.5" y1="833.3" x2="27.5" y2="821.4"/>
+						<line class="st78" x1="109.3" y1="194.1" x2="109.3" y2="182.2"/>
+						<line class="st78" x1="191.3" y1="194.1" x2="191.3" y2="182.2"/>
+						<line class="st78" x1="273.3" y1="194.1" x2="273.3" y2="182.2"/>
+						<line class="st78" x1="355.3" y1="194.1" x2="355.3" y2="182.2"/>
+						<line class="st78" x1="437.3" y1="194.1" x2="437.3" y2="182.2"/>
+						<line class="st78" x1="27.5" y1="194.1" x2="27.5" y2="182.2"/>
 					</g>
 				</g>
 			</g>
 			<g>
-				<line class="st80" x1="27.3" y1="826.3" x2="27.3" y2="192.3"/>
+				<line class="st78" x1="27.3" y1="826.3" x2="27.3" y2="192.3"/>
 				<g>
 					<g>
 						<line class="st3" x1="27.3" y1="817" x2="37.5" y2="817"/>
@@ -2048,72 +2049,72 @@
 			</g>
 		</g>
 		<rect x="22.8" y="71.9" class="st14" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 103.311 95.2247)" class="st4 st5 st44">When Americans protested about immigration</text>
-		<g id="immigration-annotations">
-			<rect x="105.1" y="189.9" class="st81" width="156.4" height="16.3"/>
-			<line class="st46" x1="94.1" y1="201" x2="105.1" y2="201"/>
+		<text transform="matrix(1 0 0 1 103.311 95.2247)" class="st4 st5 st42">When Americans protested about immigration</text>
+		<g id="immigration-annotation">
+			<rect x="105.1" y="189.9" class="st79" width="156.4" height="16.3"/>
+			<line class="st44" x1="94.1" y1="201" x2="105.1" y2="201"/>
 			<text transform="matrix(1 0 0 1 108.5691 202.1058)" class="st5 st8">First Muslim ban, airport protests</text>
-			<rect x="68.4" y="230.8" class="st82" width="94.7" height="16.3"/>
-			<line class="st46" x1="57.4" y1="237.9" x2="68.4" y2="237.9"/>
+			<rect x="68.4" y="230.8" class="st80" width="94.7" height="16.3"/>
+			<line class="st44" x1="57.4" y1="237.9" x2="68.4" y2="237.9"/>
 			<text transform="matrix(1 0 0 1 71.8601 243.0058)" class="st5 st8">Second Muslim ban</text>
-			<rect x="49.4" y="305.4" class="st83" width="85" height="16.3"/>
-			<line class="st46" x1="38.4" y1="312.5" x2="49.4" y2="312.5"/>
+			<rect x="49.4" y="305.4" class="st81" width="85" height="16.3"/>
+			<line class="st44" x1="38.4" y1="312.5" x2="49.4" y2="312.5"/>
 			<text transform="matrix(1 0 0 1 52.8691 317.6058)" class="st5 st8">Third Muslim ban</text>
-			<rect x="57.1" y="324" class="st84" width="233" height="16.3"/>
-			<line class="st46" x1="46.1" y1="331.1" x2="57.1" y2="331.1"/>
+			<rect x="57.1" y="324" class="st82" width="233" height="16.3"/>
+			<line class="st44" x1="46.1" y1="331.1" x2="57.1" y2="331.1"/>
 			<text transform="matrix(1 0 0 1 60.5731 336.2058)" class="st5 st8">Jeff Sessions announces intended repeal of DACA</text>
-			<rect x="55.1" y="492.9" class="st85" width="325.5" height="16.3"/>
-			<line class="st46" x1="44.1" y1="500" x2="55.1" y2="500"/>
+			<rect x="55.1" y="492.9" class="st83" width="325.5" height="16.3"/>
+			<line class="st44" x1="44.1" y1="500" x2="55.1" y2="500"/>
 			<text transform="matrix(1 0 0 1 58.573 505.1058)" class="st5 st8">Trump begins zero-tolerance policy, which separates immigrant families</text>
-			<rect x="95.3" y="662" class="st86" width="360.1" height="16.3"/>
-			<line class="st46" x1="84.3" y1="669.1" x2="95.3" y2="669.1"/>
+			<rect x="95.3" y="662" class="st84" width="360.1" height="16.3"/>
+			<line class="st44" x1="84.3" y1="669.1" x2="95.3" y2="669.1"/>
 			<text transform="matrix(1 0 0 1 98.7691 674.2058)" class="st5 st8">Trump declares national emergency, diverts military funding to build border wall</text>
-			<rect x="55.1" y="733.4" class="st87" width="333.7" height="16.3"/>
-			<line class="st46" x1="44.1" y1="743.5" x2="55.1" y2="743.5"/>
+			<rect x="55.1" y="733.4" class="st85" width="333.7" height="16.3"/>
+			<line class="st44" x1="44.1" y1="743.5" x2="55.1" y2="743.5"/>
 			<text transform="matrix(1 0 0 1 58.5691 745.6057)" class="st5 st8">Lawyers report on inhumane conditions in shelters for immigrant children</text>
 			<text transform="matrix(1 0 0 1 31.5162 522.1498)" class="st4 st5 st8">Families Belong Together protests against immigrant family separation</text>
 			<text transform="matrix(1 0 0 1 31.5162 764.1714)" class="st4 st5 st8">Lights for Liberty protests</text>
 			<text transform="matrix(1 0 0 1 30.9999 354.6498)" class="st4 st5 st8">Pro-DACA protests</text>
-			<rect x="93.4" y="268.1" class="st88" width="220.9" height="16.3"/>
-			<line class="st46" x1="82.5" y1="275.2" x2="93.4" y2="275.2"/>
+			<rect x="93.4" y="268.1" class="st86" width="220.9" height="16.3"/>
+			<line class="st44" x1="82.5" y1="275.2" x2="93.4" y2="275.2"/>
 			<text transform="matrix(1 0 0 1 96.9191 280.3058)" class="st5 st8">May Day workers’ protests focus on immigrants</text>
-			<rect x="148.6" y="208.6" class="st89" width="196.3" height="16.3"/>
-			<line class="st46" x1="137.6" y1="219.8" x2="148.6" y2="219.8"/>
+			<rect x="148.6" y="208.6" class="st87" width="196.3" height="16.3"/>
+			<line class="st44" x1="137.6" y1="219.8" x2="148.6" y2="219.8"/>
 			<text transform="matrix(1 0 0 1 152.0691 220.8928)" class="st5 st8">Airport protests, Day Without An Immigrant</text>
 		</g>
 	</g>
-	<g id="supreme_court-bar" class="st39">
+	<g id="supreme_x5F_court-bar">
 		<g>
 			<g>
 				<g>
-					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 101.5356 175.5513)" class="st4 st5 st40">30</text>
-					<text transform="matrix(1 0 0 1 101.5356 852.535)" class="st4 st5 st40">30</text>
-					<text transform="matrix(1 0 0 1 183.5439 852.4834)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 265.5532 852.4834)" class="st4 st5 st40">90</text>
-					<text transform="matrix(1 0 0 1 343.6318 852.4834)" class="st4 st5 st40">120</text>
-					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st40">150</text>
-					<text transform="matrix(1 0 0 1 23.457 176.765)" class="st4 st5 st40">0</text>
-					<text transform="matrix(1 0 0 1 183.5439 176.765)" class="st4 st5 st40">60</text>
-					<text transform="matrix(1 0 0 1 265.5532 176.765)" class="st4 st5 st40">90</text>
-					<text transform="matrix(1 0 0 1 343.6318 176.765)" class="st4 st5 st40">120</text>
-					<text transform="matrix(1 0 0 1 425.6416 176.765)" class="st4 st5 st40">150</text>
+					<text transform="matrix(1 0 0 1 23.457 852.4834)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 101.5356 175.5513)" class="st4 st5 st38">30</text>
+					<text transform="matrix(1 0 0 1 101.5356 852.535)" class="st4 st5 st38">30</text>
+					<text transform="matrix(1 0 0 1 183.5439 852.4834)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 265.5532 852.4834)" class="st4 st5 st38">90</text>
+					<text transform="matrix(1 0 0 1 343.6318 852.4834)" class="st4 st5 st38">120</text>
+					<text transform="matrix(1 0 0 1 425.6416 852.4834)" class="st4 st5 st38">150</text>
+					<text transform="matrix(1 0 0 1 23.457 176.765)" class="st4 st5 st38">0</text>
+					<text transform="matrix(1 0 0 1 183.5439 176.765)" class="st4 st5 st38">60</text>
+					<text transform="matrix(1 0 0 1 265.5532 176.765)" class="st4 st5 st38">90</text>
+					<text transform="matrix(1 0 0 1 343.6318 176.765)" class="st4 st5 st38">120</text>
+					<text transform="matrix(1 0 0 1 425.6416 176.765)" class="st4 st5 st38">150</text>
 				</g>
 				<line class="st3" x1="27.4" y1="826.3" x2="437.4" y2="826.3"/>
 				<g>
 					<g>
-						<line class="st43" x1="27.6" y1="833.2" x2="27.6" y2="817.3"/>
-						<line class="st43" x1="109.7" y1="199.7" x2="109.7" y2="183.8"/>
-						<line class="st43" x1="191.6" y1="833.2" x2="191.6" y2="817.3"/>
-						<line class="st43" x1="273.6" y1="833.2" x2="273.6" y2="817.3"/>
-						<line class="st43" x1="355.6" y1="833.2" x2="355.6" y2="817.3"/>
-						<line class="st43" x1="437.6" y1="833.2" x2="437.6" y2="817.3"/>
-						<line class="st43" x1="191.6" y1="201.2" x2="191.6" y2="185.3"/>
-						<line class="st43" x1="273.6" y1="201.2" x2="273.6" y2="185.3"/>
-						<line class="st43" x1="355.6" y1="201.2" x2="355.6" y2="185.3"/>
-						<line class="st43" x1="437.6" y1="201.2" x2="437.6" y2="185.3"/>
-						<line class="st43" x1="109.7" y1="833.4" x2="109.7" y2="817.6"/>
-						<line class="st43" x1="27.6" y1="201.5" x2="27.6" y2="185.7"/>
+						<line class="st41" x1="27.6" y1="833.2" x2="27.6" y2="817.3"/>
+						<line class="st41" x1="109.7" y1="199.7" x2="109.7" y2="183.8"/>
+						<line class="st41" x1="191.6" y1="833.2" x2="191.6" y2="817.3"/>
+						<line class="st41" x1="273.6" y1="833.2" x2="273.6" y2="817.3"/>
+						<line class="st41" x1="355.6" y1="833.2" x2="355.6" y2="817.3"/>
+						<line class="st41" x1="437.6" y1="833.2" x2="437.6" y2="817.3"/>
+						<line class="st41" x1="191.6" y1="201.2" x2="191.6" y2="185.3"/>
+						<line class="st41" x1="273.6" y1="201.2" x2="273.6" y2="185.3"/>
+						<line class="st41" x1="355.6" y1="201.2" x2="355.6" y2="185.3"/>
+						<line class="st41" x1="437.6" y1="201.2" x2="437.6" y2="185.3"/>
+						<line class="st41" x1="109.7" y1="833.4" x2="109.7" y2="817.6"/>
+						<line class="st41" x1="27.6" y1="201.5" x2="27.6" y2="185.7"/>
 					</g>
 					<g>
 					</g>
@@ -2131,40 +2132,40 @@
 			<g>
 				<g>
 					<g>
-						<rect x="27.4" y="194.6" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="213.2" class="st90" width="2.7" height="13.4"/>
-						<rect x="27.4" y="231.9" class="st90" width="8.2" height="13.4"/>
-						<rect x="27.4" y="250.5" class="st90" width="2.7" height="13.4"/>
-						<rect x="27.4" y="269.2" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="287.8" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="306.5" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="325.2" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="343.8" class="st90" width="2.7" height="13.4"/>
-						<rect x="27.4" y="362.5" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="381.1" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="399.8" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="418.5" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="437.1" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="455.8" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="474.4" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="493.1" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="511.7" class="st90" width="2.7" height="13.4"/>
-						<rect x="27.4" y="530.4" class="st90" width="41" height="13.4"/>
-						<rect x="27.4" y="549.1" class="st90" width="57.4" height="13.4"/>
-						<rect x="27.4" y="567.7" class="st90" width="278.8" height="13.4"/>
-						<rect x="27.4" y="586.4" class="st90" width="344.4" height="13.4"/>
-						<rect x="27.4" y="605" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="623.7" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="642.3" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="661" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="679.7" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="698.3" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="717" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="735.6" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="754.3" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="773" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="791.6" class="st90" width="0" height="13.4"/>
-						<rect x="27.4" y="810.3" class="st90" width="0" height="13.4"/>
+						<rect x="27.4" y="194.6" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="213.2" class="st88" width="2.7" height="13.4"/>
+						<rect x="27.4" y="231.9" class="st88" width="8.2" height="13.4"/>
+						<rect x="27.4" y="250.5" class="st88" width="2.7" height="13.4"/>
+						<rect x="27.4" y="269.2" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="287.8" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="306.5" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="325.2" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="343.8" class="st88" width="2.7" height="13.4"/>
+						<rect x="27.4" y="362.5" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="381.1" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="399.8" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="418.5" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="437.1" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="455.8" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="474.4" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="493.1" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="511.7" class="st88" width="2.7" height="13.4"/>
+						<rect x="27.4" y="530.4" class="st88" width="41" height="13.4"/>
+						<rect x="27.4" y="549.1" class="st88" width="57.4" height="13.4"/>
+						<rect x="27.4" y="567.7" class="st88" width="278.8" height="13.4"/>
+						<rect x="27.4" y="586.4" class="st88" width="344.4" height="13.4"/>
+						<rect x="27.4" y="605" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="623.7" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="642.3" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="661" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="679.7" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="698.3" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="717" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="735.6" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="754.3" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="773" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="791.6" class="st88" width="0" height="13.4"/>
+						<rect x="27.4" y="810.3" class="st88" width="0" height="13.4"/>
 					</g>
 				</g>
 			</g>
@@ -2174,32 +2175,32 @@
 			</g>
 		</g>
 		<rect x="22.8" y="71.9" class="st9" width="509" height="35.2"/>
-		<text transform="matrix(1 0 0 1 78.2631 95.2247)" class="st4 st5 st44">When Americans protested about the Supreme Court</text>
-		<g id="supreme_court-annotation">
-			<rect x="46.1" y="198.1" class="st91" width="200" height="18.7"/>
+		<text transform="matrix(1 0 0 1 78.2631 95.2247)" class="st4 st5 st42">When Americans protested about the Supreme Court</text>
+		<g id="supreme_x5F_court-annotation">
+			<rect x="46.1" y="198.1" class="st89" width="200" height="18.7"/>
 			<rect x="50.6" y="203.6" class="st3" width="195.5" height="22.4"/>
 			<text transform="matrix(1 0 0 1 50.5532 211.0775)" class="st5 st8">Neil Gorsuch nominated to Supreme Court</text>
-			<line class="st46" x1="27.5" y1="201.3" x2="46.1" y2="201.3"/>
-			<rect x="57.1" y="247.3" class="st92" width="228.6" height="18.7"/>
+			<line class="st44" x1="27.5" y1="201.3" x2="46.1" y2="201.3"/>
+			<rect x="57.1" y="247.3" class="st90" width="228.6" height="18.7"/>
 			<rect x="61.6" y="252.8" class="st3" width="220.4" height="13.5"/>
 			<text transform="matrix(1 0 0 1 61.5534 260.3262)" class="st5 st8">Neil Gorsuch confirmed as Supreme Court justice</text>
-			<line class="st46" x1="30.5" y1="256.5" x2="57.1" y2="256.5"/>
-			<rect x="43.1" y="505.6" class="st93" width="275.6" height="18.7"/>
+			<line class="st44" x1="30.5" y1="256.5" x2="57.1" y2="256.5"/>
+			<rect x="43.1" y="505.6" class="st91" width="275.6" height="18.7"/>
 			<rect x="47.5" y="511.1" class="st3" width="278.6" height="13.5"/>
 			<text transform="matrix(1 0 0 1 47.5404 518.6075)" class="st5 st8">Justice Kennedy announces retirement from Supreme Court</text>
-			<line class="st46" x1="29.5" y1="518.8" x2="43.1" y2="518.8"/>
-			<rect x="82.9" y="527.9" class="st92" width="228.6" height="18.7"/>
+			<line class="st44" x1="29.5" y1="518.8" x2="43.1" y2="518.8"/>
+			<rect x="82.9" y="527.9" class="st90" width="228.6" height="18.7"/>
 			<rect x="87.4" y="533.4" class="st3" width="220.4" height="13.5"/>
 			<text transform="matrix(1 0 0 1 87.3549 540.9075)" class="st5 st8">Brett Kavanaugh nominated to Supreme Court</text>
 			<rect x="29.5" y="570.4" class="st3" width="220.4" height="13.5"/>
 			<text transform="matrix(1 0 0 1 29.4747 577.863)" class="st4 st5 st8">Kavanaugh accused of sexual assault</text>
 			<rect x="29.5" y="589.7" class="st3" width="220.4" height="13.5"/>
 			<text transform="matrix(1 0 0 1 29.4747 597.213)" class="st4 st5 st8">Kavanaugh confirmed as Supreme Court justice</text>
-			<line class="st46" x1="68.3" y1="537.1" x2="82.9" y2="537.1"/>
+			<line class="st44" x1="68.3" y1="537.1" x2="82.9" y2="537.1"/>
 		</g>
 	</g>
 </g>
 <g id="title">
-	<text transform="matrix(1 0 0 1 113.3579 50.5024)" class="st5 st94">When Americans Protested About...</text>
+	<text transform="matrix(1 0 0 1 113.3579 50.5024)" class="st5 st92">When Americans Protested About...</text>
 </g>
 </svg>
