@@ -49,6 +49,12 @@ h1{
   font-size: 2.5rem;
 }
 
+h2{
+  font-size: 2rem;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+}
+
 
 p {
   font-family: 'Roboto', sans-serif;
@@ -220,18 +226,25 @@ p.label{
 
 #methods{
   background-color: white;
+  opacity: .5;
   padding: 1rem;
 }
 
 #methods h2{
   font-size: 1.5rem;
   padding-top: 0;
+  opacity: 1;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
 }
 
 #methods h3{
   font-size: 1rem;
+  opacity: 1;
 }
 
 #methods p{
   font-size: .8rem;
+  opacity: 1;
 }
