@@ -68,17 +68,17 @@ async function stateDot(){
   }
 
   const fillColors = {
-    supreme_court: "rgb(95, 154, 102)",
-    women: "rgb(35, 77, 78)",
-    police: "rgb(65, 163, 192)",
-    education: "rgb(51, 143, 163)",
-    executive: "rgb(184, 195, 226)",
-    immigration: "rgb(72, 124, 188)",
-    guns: "rgb(107, 69, 152)",
-    race_confed: "rgb(226, 136, 183)",
-    collective_bargaining: "rgb(178, 37, 113)",
-    environment: "rgb(91, 61, 93)",
-    healthcare: "rgb(173, 96, 162)",
+    supreme_court: "rgb(157, 106, 118)",
+    women: "rgb(5, 69, 81)",
+    police: "rgb(86, 25, 74)",
+    education: "rgb(3, 3, 4)",
+    executive: "rgb(243, 227, 211)",
+    immigration: "rgb(97, 135, 150)",
+    guns: "rgb(20, 67, 127)",
+    race_confed: "rgb(124, 105, 164)",
+    collective_bargaining: "rgb(15, 41, 90)",
+    environment: "rgb(25, 101, 91)",
+    healthcare: "rgb(73, 49, 118)",
     other: "rgb(113, 118, 137)"
   }
 
@@ -90,7 +90,7 @@ async function stateDot(){
     executive: "black",
     immigration: "white",
     guns: "white",
-    race_confed: "black",
+    race_confed: "white",
     collective_bargaining: "white",
     environment: "white",
     healthcare: "white",

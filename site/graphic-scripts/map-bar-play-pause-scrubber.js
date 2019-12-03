@@ -459,7 +459,7 @@ async function mapAndBar(){
     function sliderClick(){
       play = false;
       d3.select(playButton)
-              .text("Pause")
+              .text("Play")
       console.log("animation paused")
     }
 

@@ -34,7 +34,7 @@ async function streamClick(){
         dimensions.margin.top*.25
       }px)`)
 
-  const stream = await d3.xml('img/vertical_streamgraph_for_site copy.svg')
+  const stream = await d3.xml('img/vertical_streamgraph_for_site_redo.svg')
       .then(data => {
           bounds.node().append(data.documentElement)
         })
@@ -42,6 +42,7 @@ async function streamClick(){
   // const barCharts = d3.selectAll("#bar-charts")
 
   const barCharts = d3.selectAll("#bar-charts g").attr("opacity", "0")
+
   console.log(barCharts)
 
   async function drawBar(topicName){
@@ -58,8 +59,15 @@ async function streamClick(){
     d3.selectAll("#annotations")
       .attr("opacity", "0")
 
+    d3.selectAll("#stream-grid")
+      .attr("opacity", "0")
+
+      d3.selectAll(".bar-grid")
+        .attr("opacity", "1")
+
     d3.select(topicStream)
       .attr("opacity", ".3")
+      .lower()
 
     d3.selectAll(streamNotSelected)
       .attr("opacity", "0")
@@ -114,17 +122,23 @@ async function streamClick(){
 
         d3.selectAll("#title")
           .attr("opacity", "1")
+
+      d3.selectAll("#stream-grid")
+        .attr("opacity", "1")
+
+        d3.selectAll(".bar-grid")
+          .attr("opacity", "0")
     }
 
     function legendClick(legendName){
 
       //going to need to muck around with the structure of the legend section so that I'm selecting the groups with legend blocks within them, instead of just the rectangles
 
-      let legendID = "#"+this.id
-      let legendEnd = legendID.length-7
-      topic = legendID.substring(1, legendEnd)
+      let legendClass = "."+this.id
+      let legendEnd = legendClass.length-7
+      topic = legendClass.substring(1, legendEnd)
 
-      console.log(legendID)
+      console.log(legendClass)
       console.log(topic)
 
       drawBar(topic)
