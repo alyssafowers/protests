@@ -137,7 +137,7 @@ async function mapAndBar(){
     ///bar setup////
 
 
-    const dataset_bar = await d3.csv("./../protest_per_week_usa.csv")
+    const dataset_bar = await d3.csv("./protest_per_week_usa.csv")
     // console.log(dataset_bar)
     const parseTime = d3.timeParse("%m/%d/%y")
     const formatDate = d3.timeFormat("%m/%d/%y")
