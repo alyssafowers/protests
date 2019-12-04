@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+<head>
 <html lang = "en">
   <meta charset = "utf-8">
   <link rel = "stylesheet" href = "./style.css"></link>
@@ -45,22 +46,26 @@
 
     <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p>
 
-    <form id = "constellation-selector">
+    <div id = "constellation-selector">
       <p>Choose a topic:</p>
-      <button id = "guns" label = "guns">Guns</button>
-      <button id = "immigration" label = "immigration">Immigration</button>
-      <button id = "women" label = "women's rights">Women's Rights</button>
-      <button id = "executive" label = "the executive branch">The Executive Branch</button>
-      <button id = "race_confed" label = "racial justice or white supremacy">Racial Justice or White Supremacy</button>
-      <button id = "environment" label = "the environment">Environment</button>
-      <button id = "education" label = "education">Education</button>
-      <button id = "supreme_court" label = "the Supreme Court">Supreme Court</button>
-      <button id = "police" label = "the police">Police</button>
-      <button id = "healthcare" label = "healthcare">Healthcare</button>
-      <button id = "collective_bargaining" label = "collective bargaining">Collective Bargaining</button>
+      <div id="const-button-row-1">
+        <button id = "collective_bargaining" label = "collective bargaining" class="const-button"></button>
+        <button id = "education" label = "education" class="const-button"></button>
+        <button id = "environment" label = "the environment" class="const-button"></button>
+        <button id = "executive" label = "the executive branch" class="const-button"></button>
+        <button id = "guns" label = "guns" class="const-button" class="const-button"></button>
+        <button id = "healthcare" label = "healthcare" class="const-button"></button>
+      </div>
+      <div id ="const-button-row-2">
+        <button id = "immigration" label = "immigration" class="const-button"></button>
+        <button id = "police" label = "the police" class="const-button"></button>
+        <button id = "race_confed" label = "racial justice or white supremacy" class="const-button"></button>
+        <button id = "supreme_court" label = "the Supreme Court" class="const-button"></button>
+        <button id = "women" label = "women's rights" class="const-button"></button>
+      </div>
 
-    </form>
-    <h2>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
+    </div>
+    <h2>Where Americans protest<br>about <span id = "constellation-topic">guns</span></h2>
 
       <div id = "const-map-wrapper">
         <div id = "const-map-tooltip" class = "hidden">
