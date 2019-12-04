@@ -1,0 +1,537 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap');
+
+body{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-family: 'Roboto', sans-serif;
+  font-size: 10px;
+  background-color: #ABABB7;
+  margin: 0;
+}
+
+header{
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+  font-family: 'Titillium Web', sans-serif;
+}
+
+footer {
+  position: relative;
+  width: 80%;
+  text-align: left;
+}
+
+footer p {
+  font-size: .8rem;
+  margin: .25;
+}
+
+main{
+  max-width: 50rem;
+  margin: auto;
+  padding: 1rem;
+}
+
+img{
+  max-width: 50rem;
+  margin-left: 0;
+  margin-right: 0;
+}
+
+h1{
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  font-size: 2.5rem;
+}
+
+h2{
+  font-size: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+  text-align: center;
+  margin-bottom: 0;
+}
+
+
+p {
+  font-family: 'Roboto', sans-serif;
+  font-size: 1.2rem;
+}
+
+a {
+  color: rgb(73, 76, 91);
+}
+
+a:hover{
+  color: white;
+}
+
+#intro{
+  font-size: 1.5rem;
+}
+
+p.label{
+  font-size: 1rem;
+}
+
+#week-tooltip {
+  text-align: center;
+}
+
+#bar-tooltip{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+
+#barWrapper.hidden{
+  display: none;
+}
+
+#state-dot-tooltip.hidden{
+  display: none;
+}
+
+#bar-tooltip.hidden{
+  display: none;
+}
+
+#week-tooltip-text.hidden{
+  display: none;
+}
+
+#bar-tooltip p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#play-button {
+  position: relative;
+  top: 35px;
+  left: 30px;
+  padding-right: 26px;
+  border-radius: 3px;
+  border: none;
+  color: black;
+  margin: 0;
+  padding: 0 12px;
+  width: 50px;
+  cursor: pointer;
+  height: 30px;
+  align-content: center;
+}
+
+#main-chart-bounds rect:hover{
+  fill: white;
+}
+
+.hidden{
+  display: none;
+}
+
+#trace-line-wrapper{
+  position: absolute;
+  stroke: black;
+}
+
+#trace-line{
+  opacity: 0;
+}
+
+.parameter-value text{
+  font-size: 1rem;
+}
+
+#map-wrapper{
+  position: relative;
+}
+
+#map-wrapper svg{
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#full-bar-wrapper {
+  position: relative;
+}
+
+#bar-tooltip {
+  position: absolute;
+}
+
+#state-dot-tooltip{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding-left: 10px;
+  padding-right: 10px;
+  padding-top: 0;
+  padding-bottom: 0;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#state-dotplot{
+  position: relative;
+}
+
+#dotBounds  circle:hover {
+  fill: white;
+  opacity: 1;
+}
+
+#state-name {
+  background-color: white;
+}
+
+#top-protest-topic-one {
+  background-color: rgb(20, 67, 127);
+  color: white;
+}
+
+#top-protest-topic-two {
+  background-color: rgb(243, 227, 211);
+  color: black;
+}
+
+
+#bottom-protest-topic-one {
+  background-color: rgb(157, 106, 118);
+  color: white;
+}
+
+#bottom-protest-topic-two {
+  background-color: rgb(73, 49, 118);
+  color: white;
+}
+
+#const-map-wrapper{
+  position: relative;
+  padding-bottom: 100px;
+  z-index: 1;
+}
+
+#const-map-tooltip{
+  position: absolute;
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: white;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
+  box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
+  pointer-events: none;
+}
+
+#const-map-tooltip.hidden{
+  display: none;
+}
+
+#const-map-tooltip p{
+  margin: 0;
+  font-family: sans-serif;
+  font-size: 16px;
+  line-height: 20px;
+}
+
+#const-map-wrapper circle:hover{
+  fill: lightgray;
+}
+
+#constellation-section{
+  display: grid;
+  grid-template-rows: 450px 170px;
+  grid-column-gap: 20px;
+}
+
+#constellation-selector{
+  display: grid;
+  grid-template-rows: 30px 50px 50px;
+  grid-row-gap: 10px;
+  justify-content: center;
+  z-index: 2;
+}
+
+#constellation-selector p{
+  text-align: center;
+  /* margin-bottom: 10px; */
+  margin-top: 0;
+  font-family: 'Titillium Web', sans-serif;
+  font-weight: bold;
+}
+
+#const-button-row-1{
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px 110px 110px;
+  grid-template-rows: 45px;
+  justify-content: center;
+  grid-column-gap: 10px;
+}
+
+#const-button-row-2{
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px 110px;
+  grid-template-rows: 45px;
+  grid-column-gap: 10px;
+  justify-content: center;
+}
+
+#const-button-col-3{
+  display: grid;
+  grid-template-columns: 110px 110px 110px 110px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
+  grid-row-gap: 10px;
+  align-content: top;
+}
+
+#constellation-visual{
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  justify-content: center;
+}
+
+.const-button{
+  background-color: rgb(113, 118, 137);
+  border-radius: 4px;
+  background-repeat: no-repeat;
+  background-origin: content-box;
+  border: none;
+  padding: 2px;
+  background-position: center;
+}
+button.const-button{
+  box-shadow: 4px 2px 1px gray;
+}
+
+#police{
+  background-image: url(/icons/police-icon.svg);
+  /* line-height: 100px; */
+}
+
+#education{
+  background-image: url(/icons/education-icon.svg);
+}
+
+#collective_bargaining{
+  background-image: url(/icons/collective_bargaining-icon.svg);
+}
+
+#environment{
+  background-image: url(/icons/environment-icon.svg);
+}
+
+#executive{
+  background-image: url(/icons/executive-icon.svg);
+}
+
+#guns{
+  background-image: url(/icons/guns-icon.svg);
+}
+
+#healthcare{
+  background-image: url(/icons/healthcare-icon.svg);
+}
+
+#immigration{
+  background-image: url(/icons/immigration-icon.svg);
+}
+
+#race_confed{
+  background-image: url(/icons/race_confed-icon.svg);
+}
+
+#supreme_court{
+  background-image: url(/icons/supreme_court-icon.svg);
+}
+
+#women{
+  background-image: url(/icons/women-icon.svg);
+}
+
+
+div{
+  /* margin: 5px; */
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-left: 0;
+  padding-right: 0;
+  font-size: .7rem;
+  position: inline;
+}
+
+div.const-button img{
+  margin-bottom: 5px;
+  width: 90%;
+}
+
+.const-button{
+  text-align: center;
+  color: white;
+}
+
+.const-button:hover{
+  background-color: black;
+  color: white;
+}
+
+#methods{
+  background-color: white;
+  opacity: .5;
+  padding: 1rem;
+}
+
+#methods h2{
+  font-size: 1.3rem;
+  padding-top: 0;
+  opacity: 1;
+  text-align: left;
+  margin-top: 0;
+  margin-bottom: 1rem;
+}
+
+#methods h3{
+  font-size: 1rem;
+  opacity: 1;
+}
+
+#methods p{
+  font-size: .8rem;
+  opacity: 1;
+}
+
+#dotWrapper text {
+  font-size: .8rem;
+}
+
+#stream-bar-topic{
+  background-color: rgb(157, 106, 118);
+  color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#stream-legend{
+  text-align: center;
+}
+
+#stream-legend p{
+  margin: 5px;
+  text-align: center;
+}
+
+#stream-or-bar button{
+  box-shadow: 4px 2px 1px gray;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  background-position: center;
+  font-size:1.2rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+.stream-button{
+  box-shadow: 4px 2px 1px gray;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  background-position: center;
+  font-size:.8rem;
+  margin-left: 5px;
+  margin-right: 5px;
+
+}
+
+#supreme_court-stream {
+  background-color: rgb(157, 106, 118);
+  color: white;
+}
+
+#women-stream {
+  background-color: rgb(5, 69, 81);
+  color: white;
+}
+
+#police-stream {
+  background-color: rgb(86, 25, 74);
+  color: white;
+}
+
+#education-stream {
+  background-color: rgb(3, 3, 4);
+  color: white;
+}
+
+#executive-stream {
+  background-color: rgb(243, 227, 211);
+  color: black;
+}
+
+#immigration-stream {
+  background-color: rgb(97, 135, 150);
+  color: white;
+}
+
+#guns-stream {
+  background-color: rgb(20, 67, 127);
+  color: white;
+}
+
+#race_confed-stream {
+  background-color: rgb(124, 105, 164);
+  color: white;
+}
+
+#collective_bargaining-stream {
+  background-color: rgb(15, 41, 90);
+  color: white;
+}
+
+#environment-stream {
+  background-color: rgb(25, 101, 91);
+  color: white;
+}
+
+#healthcare-stream {
+  background-color: rgb(73, 49, 118);
+  color: white;
+}
+
+#other-stream {
+  background-color: rgb(113, 118, 137);
+  color: white;
+}
+
+#stream-legend .stream-button:hover{
+  background-color: black;
+  color: white;
+}
+
+#stream-legend .stream-button:active {
+  background-color: gray;
+}

@@ -204,27 +204,39 @@ p.label{
 
 #state-name {
   background-color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+
 }
 
 #top-protest-topic-one {
   background-color: rgb(20, 67, 127);
   color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+
 }
 
 #top-protest-topic-two {
   background-color: rgb(243, 227, 211);
   color: black;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 
 #bottom-protest-topic-one {
   background-color: rgb(157, 106, 118);
   color: white;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 #bottom-protest-topic-two {
   background-color: rgb(73, 49, 118);
   color: white;
+  padding-left: 4px;
+  padding-right: 4px;
 }
 
 #const-map-wrapper{
@@ -329,7 +341,7 @@ button.const-button{
 }
 
 #police{
-  background-image: url(/icons/police-icon.svg);
+  background-image: url(icons/police-icon.svg);
   /* line-height: 100px; */
 }
 
