@@ -45,10 +45,18 @@
     <h1>Places Connected By Protest</h1>
 
     <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p>
-
-    <div id = "constellation-selector">
-      <p>Choose a topic:</p>
-      <div id="const-button-row-1">
+    <div id = "constellation-section">
+      <div id = "constellation-visual">
+        <h2>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
+          <div id = "const-map-wrapper">
+          <div id = "const-map-tooltip" class = "hidden">
+          <p><span id = "const-map-place">Place name</span></p>
+        </div>
+      </div>
+      </div>
+      <div id="constellation-selector">
+        <p>Choose a topic:</p>
+        <div id="const-button-row-1">
         <button id = "collective_bargaining" label = "collective bargaining" class="const-button"></button>
         <button id = "education" label = "education" class="const-button"></button>
         <button id = "environment" label = "the environment" class="const-button"></button>
@@ -56,22 +64,15 @@
         <button id = "guns" label = "guns" class="const-button" class="const-button"></button>
         <button id = "healthcare" label = "healthcare" class="const-button"></button>
       </div>
-      <div id ="const-button-row-2">
+      <div id="const-button-row-2">
         <button id = "immigration" label = "immigration" class="const-button"></button>
         <button id = "police" label = "the police" class="const-button"></button>
         <button id = "race_confed" label = "racial justice or white supremacy" class="const-button"></button>
         <button id = "supreme_court" label = "the Supreme Court" class="const-button"></button>
         <button id = "women" label = "women's rights" class="const-button"></button>
       </div>
-
     </div>
-    <h2>Where Americans protest<br>about <span id = "constellation-topic">guns</span></h2>
-
-      <div id = "const-map-wrapper">
-        <div id = "const-map-tooltip" class = "hidden">
-          <p><span id = "const-map-place">Place name</span></p>
-        </div>
-      </div>
+    </div>
 
     <h1>Protest Over Time</h1>
     <p>Waves of protest swell in response to current events, sometimes appearing

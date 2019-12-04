@@ -6,8 +6,8 @@ async function oneFunctionToRuleThemAll(){
 
   async function stateDraw(){
     const stateShapes = await d3.json("us-states.json")
-    const width = 600
-    // const width = window.innerWidth*.5
+    const width = 700
+    // const width = window.innerWidth*.9
 
     const dimensions = {
       width: width,
@@ -32,6 +32,7 @@ async function oneFunctionToRuleThemAll(){
     const [[x0, y0], [x1, y1]] = pathGenerator.bounds(sphere)
 
     dimensions.boundedHeight = y1
+    // dimensions.boundedHeight = 400;
     dimensions.height = dimensions.boundedHeight
       + dimensions.margin.top
       + dimensions.margin.bottom
@@ -94,7 +95,7 @@ async function oneFunctionToRuleThemAll(){
     const section_all_points = dataset_all_points.filter(function(d) {return d[focus] == 1})
 
 
-    const width = 600
+    const width = 700
 
     const dimensions = {
       width: width,
@@ -119,6 +120,7 @@ async function oneFunctionToRuleThemAll(){
     const [[x0, y0], [x1, y1]] = pathGenerator.bounds(sphere)
 
     dimensions.boundedHeight = y1
+    // dimensions.boundedHeight = 430;
     dimensions.height = dimensions.boundedHeight
       + dimensions.margin.top
       + dimensions.margin.bottom
