@@ -291,7 +291,6 @@ async function mapAndBar(){
     const yAxisGenerator = d3.axisLeft()
       .scale(yAxisScale)
 
-
     const yAxis = bounds_bar.append("g")
       .call(yAxisGenerator)
       .attr("id", "bar-y-axis")

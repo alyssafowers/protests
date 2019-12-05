@@ -76,11 +76,14 @@
     <h1>Protest Over Time</h1>
     <p>Waves of protest swell in response to current events, sometimes appearing
       overnight and fading quickly.</p>
-      <div id="stream-or-bar"><button id="stream-all">All Protests</button><button id="stream-topic">By Topic</button></div>
-      <form id="stream-legend">
-        <p>Topics:</p>
+      <!-- <div id="stream-or-bar" class="btn-group"><button id="stream-all">All Protests</button><button id="stream-topic">One Topic</button></div> -->
+      <img src="img/hflip_for_site_haslegend.svg"/>
+
+      <!-- <form id="stream-legend" class="hidden"> -->
+        <form id="stream-legend">
+        <p>Choose a topic for more detail:</p>
         <div id = "stream-legend-row-1">
-          <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button">Supreme Court</button>
+          <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button" type="button">Supreme Court</button>
           <button id = "women-stream" label = "women's rights" class="stream-button">Women's Rights</button>
           <button id = "police-stream" label = "the police" class="stream-button">Police</button>
           <button id = "education-stream" label = "education" class="stream-button">Education</button>
@@ -97,7 +100,7 @@
       </div>
       </form>
     <div id = "streamgraph">
-      <h2 id="stream-bar-title" class = "hidden">When Americans protested about <span id="stream-bar-topic">the Supreme Court</span></h2>
+      <h2 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">the Supreme Court</span></h2>
     </div>
     <!-- <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen.</p>
     <p>Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
@@ -212,7 +215,7 @@
 <script src="./d3_v5.js"></script>
 <script src="./d3-simple-slider.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
-<script src="./graphic-scripts/horizontal_stream_click.js"></script>
+<script src="./graphic-scripts/just_bar_after_stream.js"></script>
 <!-- <script src = "./graphic-scripts/map-bar-play-pause-scrubber.js"></script>
 <script src = "./graphic-scripts/streamgraph_click.js"></script>
 <script src = "./graphic-scripts/constellation_draw.js"></script> -->

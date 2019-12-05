@@ -9,20 +9,20 @@
 
 </head>
 
-<body onLoad="document.getElementById('stateSelect').options[9].selected = 'selected';">
+<body>
   <header>
     <object type = "image/svg+xml" data = "img/header.svg"></object>
   </header>
   <main>
-    <p>Americans have taken to the streets in more than twenty thousand protests since the inauguration of President Donald Trump. Some movements, like the Women's March, started at the national level; others, like March For Our Lives, began locally before spreading across the country.</p>
+    <!-- <p id = "intro">Americans have taken to the streets in more than twenty thousand protests since the inauguration of President Donald Trump. Some movements, like the Women's March, started at the national level; others, like March For Our Lives, began locally before spreading across the country.</p>
 
     <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones: the conservative Tea Party protests pushed legislators to the right during Barack Obama's presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
 
-    <!-- Playing map and bar chart go here -->
-    <h3>Watch protest spread, week by week</h3>
-    <p>Each dot on the map is a protest that took place during a particular week. The total number of protests in a week are shown in the bar graph below.</p>
+    <p>Read on to explore protest in America since January 2017, or <a href ="#statecompare">skip ahead to see how your state compares to the rest of the country.</a></p>
 
-    <!-- <p>Watch protest spread over the United States from January 17, 2016 to October 31, 2019.</p> -->
+    <h1>Protests Over Time</h1>
+
+    <p>Watch protest spread week-by-week over the United States.</p>
     <div id="map-wrapper">
     </div>
     <div id = "full-bar-wrapper">
@@ -39,17 +39,14 @@
         <p><span id = "protest-count">100</span> protests</p>
       </div>
     </div>
-
     <p>This project uses data from <a href = "countlove.org">Count Love</a>, which catalogues protests in America by scraping news stories about protests. The data begin on January 15, 2017, so it isn’t possible to compare protests during Donald Trump's presidency to protests during previous administrations. However, the CountLove data give us a rich look into nearly three years of American protest.</p>
-
-    <p>Read on to explore protest in America since January 2017, or <a href ="#statecompare">skip ahead to see how your state compares to the rest of the country.</a></p>
 
     <h1>Places Connected By Protest</h1>
 
     <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p>
-    <h2>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
     <div id = "constellation-section">
       <div id = "constellation-visual">
+        <h2>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
           <div id = "const-map-wrapper">
           <div id = "const-map-tooltip" class = "hidden">
           <p><span id = "const-map-place">Place name</span></p>
@@ -57,56 +54,60 @@
       </div>
       </div>
       <div id="constellation-selector">
-        <p>Choose another topic and see more connections:</p>
+        <p>Choose another topic:</p>
         <div id="const-button-row-1">
-        <button id = "collective_bargaining" label = "collective bargaining" class="const-button">Collective bargaining</button>
-        <button id = "education" label = "education" class="const-button">Education</button>
-        <button id = "environment" label = "the environment" class="const-button">Environment</button>
-        <button id = "executive" label = "the executive branch" class="const-button">The executive branch</button>
-        <button id = "guns" label = "guns" class="const-button" class="const-button">Guns</button>
-        <button id = "healthcare" label = "healthcare" class="const-button">Healthcare</button>
+        <button id = "collective_bargaining" label = "collective bargaining" class="const-button"></button>
+        <button id = "education" label = "education" class="const-button"></button>
+        <button id = "environment" label = "the environment" class="const-button"></button>
+        <button id = "executive" label = "the executive branch" class="const-button"></button>
+        <button id = "guns" label = "guns" class="const-button" class="const-button"></button>
+        <button id = "healthcare" label = "healthcare" class="const-button"></button>
       </div>
       <div id="const-button-row-2">
-        <button id = "immigration" label = "immigration" class="const-button">Immigration</button>
-        <button id = "police" label = "the police" class="const-button">Police</button>
-        <button id = "race_confed" label = "racial justice or white supremacy" class="const-button">Racial justice or white supremacy</button>
-        <button id = "supreme_court" label = "the Supreme Court" class="const-button">The Supreme Court</button>
-        <button id = "women" label = "women's rights" class="const-button">Women's rights</button>
+        <button id = "immigration" label = "immigration" class="const-button"></button>
+        <button id = "police" label = "the police" class="const-button"></button>
+        <button id = "race_confed" label = "racial justice or white supremacy" class="const-button"></button>
+        <button id = "supreme_court" label = "the Supreme Court" class="const-button"></button>
+        <button id = "women" label = "women's rights" class="const-button"></button>
       </div>
     </div>
-    </div>
+    </div> -->
 
     <h1>Protest Over Time</h1>
     <p>Waves of protest swell in response to current events, sometimes appearing
       overnight and fading quickly.</p>
-      <h3>Crisis and scandal drive Americans to the street</h3>
+      <!-- <div id="stream-or-bar" class="btn-group"><button id="stream-all">All Protests</button><button id="stream-topic">One Topic</button></div> -->
       <img src="img/hflip_for_site_haslegend.svg"/>
-      <form id="stream-legend">
-      <h3>Choose a topic for more detail:</h3>
-      <div id = "stream-legend-row-1">
-        <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button" type="button">Supreme Court</button>
-        <button id = "women-stream" label = "women's rights" class="stream-button">Women's Rights</button>
-        <button id = "police-stream" label = "the police" class="stream-button">Police</button>
-        <button id = "education-stream" label = "education" class="stream-button">Education</button>
-        <button id = "executive-stream" label = "the executive branch" class="stream-button">Executive branch</button>
-        <button id = "immigration-stream" label = "immigration" class="stream-button">Immigration</button>
+
+      <!-- <form id="stream-legend" class="hidden"> -->
+        <form id="stream-legend">
+
+        <p>Choose a topic:</p>
+        <div id = "stream-legend-row-1">
+          <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button" type="button">Supreme Court</button>
+          <button id = "women-stream" label = "women's rights" class="stream-button">Women's Rights</button>
+          <button id = "police-stream" label = "the police" class="stream-button">Police</button>
+          <button id = "education-stream" label = "education" class="stream-button">Education</button>
+          <button id = "executive-stream" label = "the executive branch" class="stream-button">Executive branch</button>
+          <button id = "immigration-stream" label = "immigration" class="stream-button">Immigration</button>
+        </div>
+        <div id="stream-legend-row-2">
+          <button id = "guns-stream" label = "guns" class="stream-button">Guns</button>
+          <button id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button">Racial justice or white supremacy</button>
+          <button id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button">Collective bargaining</button>
+          <button id = "environment-stream" label = "the environment" class="stream-button">Environment</button>
+          <button id = "healthcare-stream" label = "healthcare" class="stream-button">Healthcare</button>
+          <button id = "other-stream" label = "other topics" class="stream-button">Other</button>
       </div>
-      <div id="stream-legend-row-2">
-        <button id = "guns-stream" label = "guns" class="stream-button">Guns</button>
-        <button id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button">Racial justice or white supremacy</button>
-        <button id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button">Collective bargaining</button>
-        <button id = "environment-stream" label = "the environment" class="stream-button">Environment</button>
-        <button id = "healthcare-stream" label = "healthcare" class="stream-button">Healthcare</button>
-        <button id = "other-stream" label = "other topics" class="stream-button">Other</button>
-    </div>
-    </form>
+      </form>
     <div id = "streamgraph">
-      <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">the Supreme Court</span></h2>
+      <h2 id="stream-bar-title" class = "hidden">When Americans protested about <span id="stream-bar-topic">the Supreme Court</span></h2>
     </div>
-    <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen. Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
-    students from Parkland organized a series of nationawide school walkouts and March For Our Lives,
-    one of the largest street protests in American history.
-    <h3>Gun-related protests spike after Parkland, then fade</h3>
+    <!-- <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen.</p>
+    <p>Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
+    students from Parkland organized March For Our Lives,
+    one of the largest street protests in American history, and a series of
+    nationwide school walkouts.</p>
     <object type = "image/svg+xml" data = "img/gun_per_week.svg"></object>
 
     <h1>Where We Protest</h1>
@@ -114,18 +115,16 @@
 
     <p>West Virginia led the nation in education-related protests and began a nationwide wave of education protests and teacher strikes. Teachers defied West Virginia state law to hold an 8-day strike in 2018, pushing for better pay and reduced healthcare costs. Teachers and parents rallied before the strike, and teachers stood on picket lines as the strike dragged on for a total of 50 protests in 39 days. The strike ended on March 7, when the governor of West Virginia signed a bill authorizing a five percent pay raise.</p>
 
-    <h3>West Virginia leads wave of strikes and educational protests</h3>
-
     <object type = "image/svg+xml" data = "img/edu_per_week.svg"></object>
 
     <p>Teacher strikes spread through other states in 2018 and 2019, including Oklahoma and Arizona. This year, teachers in West Virginia only had to strike for a few hours before the West Virginia House of Delegates indefinitely postponed a vote on a bill introducing charter schools and educational vouchers </p>
 
-    <!-- <object type = "image/svg+xml" data = "img/state_protest_topic.svg"></object> -->
+    <object type = "image/svg+xml" data = "img/state_protest_topic.svg"></object>
 
-    <h1 id = "statecompare">What inspires protest in your state?</h1>
+    <h1 id = "statecompare">How does your state compare?</h1>
 
     <form>
-      <label>Choose your state:</label>
+      <label>Choose your state:
         <select name = "states" id = "stateSelect">
           <option value= "AL">Alabama</option>
           <option value= "AK">Alaska</option>
@@ -197,12 +196,12 @@
       <h3>Places</h3>
         <p>Latitude and longitude for each protest were provided by Nathan Perkins and Tommy Leung. “Places” in this graphic are metropolitan statistical areas, micropolitan statistical areas, and counties. Metropolitan and micropolitan statistical areas contain at least one urban area surrounded by areas with close social and economic ties to that urban area (U.S. Census: https://www.census.gov/topics/housing/housing-patterns/about/core-based-statistical-areas.html). Protests that occurred outside metropolitan/micropolitan areas were grouped by county.</p>
       <h3>Topics</h3>
-        <p>Topics are based on CountLove’s tagging system. Topics do not imply an ideological stance: for instance, “guns” includes protests for and against gun control. The topics “racial justice or white supremacy,” “police,” and “women’s rights” were created by combining sub-tags within “civil rights.” “Other topics” refers to protests that were not about the twelve main topics above, not the “other” tag used by Count Love. Many protests are tagged in more than one topic, and are counted once within each of those topics.  </p>
+        Topics are based on CountLove’s tagging system. Topics do not imply an ideological stance: for instance, “guns” includes protests for and against gun control. The topics “racial justice or white supremacy,” “police,” and “women’s rights” were created by combining sub-tags within “civil rights.” “Other topics” refers to protests that were not about the twelve main topics above, not the “other” tag used by Count Love. Many protests are tagged in more than one topic, and are counted once within each of those topics.  </p>
       <h3>Creating constellations</h3>
         <p>Constellations were designed to highlight places with unusually high amounts of protests about a topic, given the place’s population and overall number of protests in that place. To be included in a constellation, a place had to have a high number of protests about the topic and a high number of protests per person about the topic. Additionally, a large percentage of all protests in that area needed to be about the topic. Each place within a constellation is connected to the place that most often protested about the same topic on the same weeks. For instance, San Diego-Carlsbad, CA tended to protest about immigration at the same time as El Paso, TX, so they are connected in the immigration constellation. A pair of places is also connected if it is in the 98th percentile of co-occurrence for that topic. El Paso is also connected to Austin-Round Rock TX, and Portland-Vancouver-Hillsboro, OR-WA because they very frequently protest about immigration at the same time. The white dots for each place within a constellation are scaled based on the number of protests in that place, while the weight and opacity of the connections are scaled based on the number of weeks both places protested about the same topic. Places that protested in </p>
       <h3>Top topics by state</h3>
       <p>“Percent of protest in each state” is calculated by dividing the number of protests in a state about a topic by the total number of protests in that state. Topics are highlighted as particularly common or uncommon for each state if the percent of protests in that state were in the 80th percentile  among all states, or in the bottom 25th percentile. If a state was in the 80th or 25th percentile more than two times, the top or bottom two topics were chosen.</p>
-    </div>
+    </div> -->
 
 
   </main>
@@ -217,11 +216,12 @@
 <script src="./d3_v5.js"></script>
 <script src="./d3-simple-slider.js"></script>
 <script src="https://d3js.org/d3-array.v2.min.js"></script>
-<script src = "./graphic-scripts/map-bar-play-pause-scrubber.js"></script>
 <script src="./graphic-scripts/just_bar_after_stream.js"></script>
-<script src = "./graphic-scripts/constellation_draw.js"></script>
+<!-- <script src = "./graphic-scripts/map-bar-play-pause-scrubber.js"></script>
+<script src = "./graphic-scripts/streamgraph_click.js"></script>
+<script src = "./graphic-scripts/constellation_draw.js"></script> -->
 <!-- can't get state dots to load from within graphic-scripts, even though it is DEFINITELY THERE and loads in other directories -->
-<script src = "./state_dot.js"></script>
+<!-- <script src = "./state_dot.js"></script> -->
 
 
 </html>

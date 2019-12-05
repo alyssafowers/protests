@@ -44,19 +44,25 @@ img{
 
 h1{
   font-family: 'Titillium Web', sans-serif;
-  text-align: center;
+  /* text-align: center; */
   font-size: 2.5rem;
 }
 
 h2{
   font-size: 1.5rem;
   font-family: 'Titillium Web', sans-serif;
-  text-align: center;
+  /* text-align: center; */
   margin-bottom: 0;
 }
 
+h3{
+  font-size: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+  /* text-align: center; */
+}
 
-p {
+
+p, label {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
 }
@@ -322,9 +328,7 @@ p.label{
 }
 
 #constellation-visual{
-  display: grid;
-  grid-template-rows: 40px 1fr;
-  justify-content: center;
+  text-align: center;
 }
 
 .const-button{
@@ -339,12 +343,12 @@ p.label{
 button.const-button{
   box-shadow: 4px 2px 1px gray;
 }
-
+/*
 #police{
   background-image: url(icons/police-icon.svg);
   /* line-height: 100px; */
 }
-
+/*
 #education{
   background-image: url(/icons/education-icon.svg);
 }
@@ -383,10 +387,10 @@ button.const-button{
 
 #women{
   background-image: url(/icons/women-icon.svg);
-}
+} */ 
 
 
-div{
+div.const-button{
   /* margin: 5px; */
   padding-top: 5px;
   padding-bottom: 5px;
@@ -438,4 +442,157 @@ div.const-button img{
 
 #dotWrapper text {
   font-size: .8rem;
+}
+
+
+#stream-bar-topic{
+  background-color: rgb(157, 106, 118);
+  color: white;
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
+#stream-legend{
+  text-align: center;
+}
+
+#stream-legend p{
+  margin: 5px;
+  text-align: center;
+}
+
+#stream-or-bar {
+  text-align: center;
+  border-radius: 4px;
+
+}
+
+#stream-or-bar button {
+  border: 1px solid black;
+  color: white;
+  padding: 10px 24px;
+  cursor: pointer;
+  /* float: left; */
+  font-size: 1rem;
+}
+
+#stream-or-bar button:not(:last-child) {
+  border-right: none; /* Prevent double borders */
+}
+
+#bar-y-axis line, #bar-x-axis path{
+  stroke: white;
+  color: white
+}
+
+#bar-x-axis line, #bar-x-axis path{
+  stroke: white;
+  color: white
+}
+
+#bar-y-axis, #bar-x-axis text{
+  color: white;
+  font-size: .8rem;
+}
+
+#stream-all{
+  border-radius: 10px 0px 0px 10px;
+  -moz-box-shadow:    inset 0 0 5px #000000;
+  -webkit-box-shadow: inset 0 0 5px #000000;
+  box-shadow:         inset 0 0 5px #000000;
+  background-color: rgb(113, 118, 137);
+
+}
+
+#stream-topic{
+  border-radius: 0px 10px 10px 0px;
+  background-color: #ABABB7;
+}
+
+.stream-button{
+  box-shadow: 4px 2px 1px gray;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  background-position: center;
+  font-size:.8rem;
+  margin-left: 5px;
+  margin-right: 5px;
+}
+
+#stream-legend-row-1{
+  margin-bottom: 10px;
+}
+
+#supreme_court-stream {
+  background-color: rgb(157, 106, 118);
+  color: white;
+}
+
+#women-stream {
+  background-color: rgb(5, 69, 81);
+  color: white;
+}
+
+#police-stream {
+  background-color: rgb(86, 25, 74);
+  color: white;
+}
+
+#education-stream {
+  background-color: rgb(3, 3, 4);
+  color: white;
+}
+
+#executive-stream {
+  background-color: rgb(243, 227, 211);
+  color: black;
+}
+
+#immigration-stream {
+  background-color: rgb(97, 135, 150);
+  color: white;
+}
+
+#guns-stream {
+  background-color: rgb(20, 67, 127);
+  color: white;
+}
+
+#race_confed-stream {
+  background-color: rgb(124, 105, 164);
+  color: white;
+}
+
+#collective_bargaining-stream {
+  background-color: rgb(15, 41, 90);
+  color: white;
+}
+
+#environment-stream {
+  background-color: rgb(25, 101, 91);
+  color: white;
+}
+
+#healthcare-stream {
+  background-color: rgb(73, 49, 118);
+  color: white;
+}
+
+#other-stream {
+  background-color: rgb(113, 118, 137);
+  color: white;
+}
+
+#stream-legend .stream-button:hover{
+  background-color: black;
+  color: white;
+}
+
+#stream-legend .stream-button:active {
+  background-color: gray;
+}
+
+#streamgraph h2{
+  text-align: left;
 }

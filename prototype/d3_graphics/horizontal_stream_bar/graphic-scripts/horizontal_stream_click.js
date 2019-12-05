@@ -25,7 +25,7 @@ async function streamEverythingFunction(){
     bar: {
       height: width*.5,
       margin: {
-        top: 80,
+        top: 90,
         bottom: 30,
         left: 60,
         right: 30
@@ -53,6 +53,8 @@ async function streamEverythingFunction(){
     .style("transform", `translate(${
         dimensions.bar.margin.left
       }px,.8rem)`)
+    .attr("fill", "white")
+    .attr("font-size", ".8rem")
 
   const streamBounds = streamWrapper.append("g")
     .attr("id", "stream-bounds")
@@ -105,6 +107,7 @@ async function streamEverythingFunction(){
 
     barWrapper.classed("hidden", true)
     streamBounds.classed("hidden", false)
+    d3.select("#stream-legend").classed("hidden", true)
 
     showStream = true
 
@@ -120,7 +123,7 @@ async function streamEverythingFunction(){
       //function to highlight a stream when moused over goes here
     }
 
-    const stream = await d3.xml('img/hflip_for_site.svg')
+    const stream = await d3.xml('img/hflip_for_site_haslegend.svg')
         .then(data => {
             streamBounds.node().append(data.documentElement)
           })
@@ -173,6 +176,7 @@ async function streamEverythingFunction(){
 
         const yAxisGenerator = d3.axisLeft()
               .scale(yAxisScale)
+              .ticks(5)
 
         const yAxis = barBounds.append("g")
           .call(yAxisGenerator)
@@ -200,6 +204,8 @@ async function streamEverythingFunction(){
     streamBounds.classed("hidden", true)
 
     barWrapper.classed("hidden", false)
+    d3.select("#stream-legend").classed("hidden", false)
+
 
     d3.select("#bar-wrapper")
       .transition()
@@ -210,9 +216,9 @@ async function streamEverythingFunction(){
       .classed("hidden", false)
       .style("text-align", "left")
 
-    showStream=false
-
     function drawBarTopic(focus, label){
+
+      showStream=false
 
       section = dataset_bar.filter(function(d){ return d.topic == focus})
 
@@ -265,7 +271,12 @@ async function streamEverythingFunction(){
           let focusEnd = stream.length - 7
           let focus = stream.substring(0, focusEnd)
           drawBarTopic(focus, label)
+          console.log(showStream)
+      } else {
+        console.log("i read that click")
+        d3.select(stream).attr("fill", "purple")
       }
+      console.log(showStream)
 
     }, false)
 
@@ -278,7 +289,21 @@ async function streamEverythingFunction(){
     barWrapper.transition()
       .duration(500)
       .attr("opacity", "0")
+      showStream = true
+      d3.select("#stream-all")
+        .style("background-color", "rgb(113, 118, 137)")
+        .style("-moz-box-shadow", "inset 0 0 5px #000000")
+        .style("-webkit-box-shadow", "inset 0 0 5px #000000")
+        .style("box-shadow", "inset 0 0 5px #000000")
+
+        d3.select("#stream-topic")
+          .style("background-color", "#ABABB7")
+          .style("-moz-box-shadow", "none")
+          .style("-webkit-box-shadow", "none")
+          .style("box-shadow", "none")
+
     barWrapper.classed("hidden", true)
+    d3.select("#stream-legend").classed("hidden", true)
     d3.select("#stream-bar-title").classed("hidden", true)
     streamBounds.classed("hidden", false)
     streamWrapper.transition()
@@ -288,6 +313,20 @@ async function streamEverythingFunction(){
   })
 
   barchartButton.addEventListener("click", function(){
+    showStream = false
+
+    d3.select("#stream-topic")
+      .style("background-color", "rgb(113, 118, 137)")
+      .style("-moz-box-shadow", "inset 0 0 5px #000000")
+      .style("-webkit-box-shadow", "inset 0 0 5px #000000")
+      .style("box-shadow", "inset 0 0 5px #000000")
+
+      d3.select("#stream-all")
+        .style("background-color", "#ABABB7")
+        .style("-moz-box-shadow", "none")
+        .style("-webkit-box-shadow", "none")
+        .style("box-shadow", "none")
+
     drawBar()
     event.preventDefault()
   })
