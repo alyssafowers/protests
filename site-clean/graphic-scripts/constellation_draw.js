@@ -252,12 +252,14 @@ async function oneFunctionToRuleThemAll(){
 
       d3.select("#constellation-topic")
         .text(name)
-        .style("opacity", "1")
         .style("background-color", fillColors[focus])
         .style("color", textColors[focus])
+        .transition().duration(300)
+          .style("opacity", "1")
+
 
       setTimeout(function(){
-        constPlaces.transition().duration(200)
+        constPlaces.transition().duration(300)
         .attr("opacity", 1)
       },200)
 
@@ -276,7 +278,7 @@ async function oneFunctionToRuleThemAll(){
           .transition()
             .duration(200)
             .attr("opacity", function(d){return opacityScale(pairAccessorWeight(d))})
-      },500)
+      },200)
 
   }
 
@@ -302,6 +304,10 @@ async function oneFunctionToRuleThemAll(){
       .transition()
       .duration(500)
         .attr("opacity", 0)
+
+        d3.select("#constellation-topic")
+          .transition().duration(300)
+            .style("opacity", "0")
 
 
       event.preventDefault()
