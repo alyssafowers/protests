@@ -282,7 +282,6 @@ p.label{
 
 #const-map-wrapper{
   position: relative;
-  padding-bottom: 100px;
   z-index: 1;
 }
 
@@ -299,6 +298,10 @@ p.label{
   -moz-box-shadow: 4px 4px 10px rgba(0, 0, 0,  0.4);
   box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.4);
   pointer-events: none;
+}
+
+#const-map-tooltip p{
+  marginL 0;
 }
 
 #const-map-tooltip.hidden{
@@ -318,66 +321,49 @@ p.label{
 
 #constellation-section{
   display: grid;
-  grid-template-rows: 450px 170px;
+  grid-template-rows: 450px;
   grid-column-gap: 20px;
 }
 
+
 #constellation-selector{
-  display: grid;
-  grid-template-rows: 30px 50px 50px;
-  grid-row-gap: 10px;
-  justify-content: center;
-  z-index: 2;
+  text-align: center;
 }
 
 #constellation-selector p{
+  margin: 5px;
   text-align: center;
-  /* margin-bottom: 10px; */
-  margin-top: 0;
-  font-family: 'Titillium Web', sans-serif;
-  font-weight: bold;
 }
 
 #const-button-row-1{
-  display: grid;
-  grid-template-columns: 110px 110px 110px 110px 110px 110px;
-  grid-template-rows: 45px;
-  justify-content: center;
-  grid-column-gap: 10px;
+  margin-bottom: 10px;
 }
 
-#const-button-row-2{
-  display: grid;
-  grid-template-columns: 110px 110px 110px 110px 110px;
-  grid-template-rows: 45px;
-  grid-column-gap: 10px;
-  justify-content: center;
+#constellation-selector .const-button:hover{
+  background-color: black;
+  color: white;
 }
 
-#const-button-col-3{
-  display: grid;
-  grid-template-columns: 110px 110px 110px 110px;
-  grid-template-rows: 50px 50px 50px 50px 50px 50px;
-  grid-row-gap: 10px;
-  align-content: top;
+#constellation-selector .const-button:active {
+  background-color: gray;
 }
+
 
 #constellation-visual{
   text-align: center;
 }
 
 .const-button{
-  background-color: rgb(113, 118, 137);
-  border-radius: 4px;
-  background-repeat: no-repeat;
-  background-origin: content-box;
-  border: none;
-  padding: 2px;
-  background-position: center;
-}
-button.const-button{
   box-shadow: 4px 2px 1px gray;
+  border-radius: 4px;
+  border: none;
+  padding: 5px;
+  background-position: center;
+  font-size:.8rem;
+  margin-left: 5px;
+  margin-right: 5px;
 }
+
 /*
 #police{
   background-image: url(icons/police-icon.svg);
@@ -450,6 +436,11 @@ div.const-button img{
   color: white;
 }
 
+#constellation-topic{
+  padding-left: 4px;
+  padding-right: 4px;
+}
+
 #methods{
   background-color: white;
   opacity: .5;
@@ -485,15 +476,6 @@ div.const-button img{
   color: white;
   padding-left: 4px;
   padding-right: 4px;
-}
-
-#stream-legend{
-  text-align: center;
-}
-
-#stream-legend p{
-  margin: 5px;
-  text-align: center;
 }
 
 #stream-or-bar {
@@ -555,68 +537,78 @@ div.const-button img{
   margin-right: 5px;
 }
 
-#stream-legend-row-1{
-  margin-bottom: 10px;
-}
 
-#supreme_court-stream {
-  background-color: rgb(157, 106, 118);
+.supreme_court {
+  background-color: #9d6a76;
   color: white;
 }
 
-#women-stream {
+.women {
   background-color: rgb(5, 69, 81);
   color: white;
 }
 
-#police-stream {
+.police {
   background-color: rgb(86, 25, 74);
   color: white;
 }
 
-#education-stream {
+.education {
   background-color: rgb(3, 3, 4);
   color: white;
 }
 
-#executive-stream {
+.executive {
   background-color: rgb(243, 227, 211);
   color: black;
 }
 
-#immigration-stream {
+.immigration {
   background-color: rgb(97, 135, 150);
   color: white;
 }
 
-#guns-stream {
+.guns {
   background-color: rgb(20, 67, 127);
   color: white;
 }
 
-#race_confed-stream {
+.race_confed {
   background-color: rgb(124, 105, 164);
   color: white;
 }
 
-#collective_bargaining-stream {
+.collective_bargaining {
   background-color: rgb(15, 41, 90);
   color: white;
 }
 
-#environment-stream {
+.environment {
   background-color: rgb(25, 101, 91);
   color: white;
 }
 
-#healthcare-stream {
+.healthcare {
   background-color: rgb(73, 49, 118);
   color: white;
 }
 
-#other-stream {
+.other {
   background-color: rgb(113, 118, 137);
   color: white;
+}
+
+#stream-legend{
+  text-align: center;
+}
+
+#stream-legend p{
+  margin: 5px;
+  text-align: center;
+}
+
+#stream-legend-row-1{
+  margin-bottom: 10px;
 }
 
 #stream-legend .stream-button:hover{

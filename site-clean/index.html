@@ -26,12 +26,13 @@
       <div id="map-wrapper">
       </div>
         <div id = "full-bar-wrapper" >
-          <svg width = 10 id = "trace-line-wrapper">
-            <line x1 = "0" y1 = "0" x2 = "0" y2 = "200" id = "trace-line"></line>
-          </svg>
           <div id = "bar-control">
               <button id = "play-button">Pause</button>
-            <div id="slider-time"></div>
+            <div id="slider-time">
+              <svg width = 10 id = "trace-line-wrapper" class = "hidden">
+                <line x1 = "0" y1 = "0" x2 = "0" y2 = "200" id = "trace-line" class="hidden"></line>
+              </svg>
+            </div>
           </div>
           <div id = "bar-plot-wrapper"></div>
           <div id = "bar-tooltip" class = "hidden">
@@ -48,7 +49,27 @@
     <h1>Places Connected By Protest</h1>
 
     <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p></div>
-    <div class = "graphic"><h3>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
+    <div class = "graphic">
+      <div id="constellation-selector">
+        <p>Choose a topic:</p>
+          <div id="const-button-row-1">
+            <button id = "women" label = "women's rights" class="const-button women">Women's rights</button>
+            <button id = "police" label = "the police" class="const-button police">Police</button>
+            <button id = "education" label = "education" class="const-button education">Education</button>
+            <button id = "executive" label = "the executive branch" class="const-button executive">The Executive Branch</button>
+            <button id = "immigration" label = "immigration" class="const-button immigration">Immigration</button>
+            <button id = "guns" label = "guns" class="const-button guns">Guns</button>
+            <button id = "supreme_court" label = "the Supreme Court" class="const-button supreme_court">The Supreme Court</button>
+          </div>
+          <div id="const-button-row-2">
+            <button id = "race_confed" label = "racial justice or white supremacy" class="const-button race_confed">Racial justice or white supremacy</button>
+            <button id = "collective_bargaining" label = "collective bargaining" class="const-button collective_bargaining">Collective bargaining</button>
+            <button id = "environment" label = "the environment" class="const-button environment">Environment</button>
+            <button id = "healthcare" label = "healthcare" class="const-button healthcare">Healthcare</button>
+
+          </div>
+        </div>
+      <h3>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
       <div id = "constellation-section">
         <div id = "constellation-visual">
             <div id = "const-map-wrapper">
@@ -57,24 +78,6 @@
           </div>
         </div>
         </div>
-        <div id="constellation-selector">
-          <p>Choose another topic and see more connections:</p>
-            <div id="const-button-row-1">
-              <button id = "collective_bargaining" label = "collective bargaining" class="const-button">Collective bargaining</button>
-              <button id = "education" label = "education" class="const-button">Education</button>
-              <button id = "environment" label = "the environment" class="const-button">Environment</button>
-              <button id = "executive" label = "the executive branch" class="const-button">The executive branch</button>
-              <button id = "guns" label = "guns" class="const-button" class="const-button">Guns</button>
-              <button id = "healthcare" label = "healthcare" class="const-button">Healthcare</button>
-            </div>
-            <div id="const-button-row-2">
-              <button id = "immigration" label = "immigration" class="const-button">Immigration</button>
-              <button id = "police" label = "the police" class="const-button">Police</button>
-              <button id = "race_confed" label = "racial justice or white supremacy" class="const-button">Racial justice or white supremacy</button>
-              <button id = "supreme_court" label = "the Supreme Court" class="const-button">The Supreme Court</button>
-              <button id = "women" label = "women's rights" class="const-button">Women's rights</button>
-            </div>
-          </div>
       </div>
   </div>
 
@@ -84,26 +87,26 @@
     </div>
     <div class="graphic static">
       <h3>Crisis and scandal drive Americans to the street</h3>
-      <img src="img/hflip_for_site_haslegend.svg"/>
+      <img src="img/streamgraph_hflip_shorter.svg"/>
     </div>
       <form id="stream-legend">
     <div class = "graphic">
       <h3>Choose a topic for more detail:</h3>
       <div id = "stream-legend-row-1">
-        <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button" type="button">Supreme Court</button>
-        <button id = "women-stream" label = "women's rights" class="stream-button">Women's Rights</button>
-        <button id = "police-stream" label = "the police" class="stream-button">Police</button>
-        <button id = "education-stream" label = "education" class="stream-button">Education</button>
-        <button id = "executive-stream" label = "the executive branch" class="stream-button">Executive branch</button>
-        <button id = "immigration-stream" label = "immigration" class="stream-button">Immigration</button>
+        <button id = "women-stream" label = "women's rights" class="stream-button women">Women's Rights</button>
+        <button id = "police-stream" label = "the police" class="stream-button police">Police</button>
+        <button id = "education-stream" label = "education" class="stream-button education">Education</button>
+        <button id = "executive-stream" label = "the executive branch" class="stream-button executive">The Executive Branch</button>
+        <button id = "immigration-stream" label = "immigration" class="stream-button immigration">Immigration</button>
+        <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button supreme_court" type="button">The Supreme Court</button>
       </div>
       <div id="stream-legend-row-2">
-        <button id = "guns-stream" label = "guns" class="stream-button">Guns</button>
-        <button id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button">Racial justice or white supremacy</button>
-        <button id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button">Collective bargaining</button>
-        <button id = "environment-stream" label = "the environment" class="stream-button">Environment</button>
-        <button id = "healthcare-stream" label = "healthcare" class="stream-button">Healthcare</button>
-        <button id = "other-stream" label = "other topics" class="stream-button">Other</button>
+        <button id = "guns-stream" label = "guns" class="stream-button guns">Guns</button>
+        <button id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button race_confed">Racial justice or white supremacy</button>
+        <button id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button collective_bargaining">Collective bargaining</button>
+        <button id = "environment-stream" label = "the environment" class="stream-button environment">Environment</button>
+        <button id = "healthcare-stream" label = "healthcare" class="stream-button healthcare">Healthcare</button>
+        <button id = "other-stream" label = "other topics" class="stream-button other">Other</button>
       </div>
       </form>
       <div id = "streamgraph">
@@ -191,7 +194,7 @@
           </select>
         </form>
         <div id = "state-dotplot">
-          <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the executive branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">the Supreme Court</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
+          <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the Executive Branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">the Supreme Court</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
           <div id = "state-dot-tooltip" class = "hidden">
             <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> were about <span id = "dot-topic">topic</span></p>
         </div>

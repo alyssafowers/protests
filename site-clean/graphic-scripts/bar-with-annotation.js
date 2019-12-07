@@ -3,8 +3,15 @@
 async function streamEverythingFunction(){
   var whichTopic = document.querySelector("#stream-legend")
 
-    const width = d3.min([window.innerWidth, 800])
-    const height = width*.9
+  var width
+
+  if(window.innerWidth < 800){
+    width = d3.max([375, window.innerWidth*.7]) - 30
+  } else {
+    width = d3.min([800, window.innerWidth*.7]) - 30
+  }
+
+  const height = width*.9
 
     const dimensions = {
       width: width,
@@ -188,6 +195,8 @@ async function streamEverythingFunction(){
         .attr("font-size", d => (.7*d.size)+"rem")
 
       function drawBarTopic(focus, label){
+
+        console.log(focus)
 
         section = dataset_bar.filter(function(d){ return d.topic == focus})
         section_annotate = annotation.filter(function(d){ return d.topic == focus})

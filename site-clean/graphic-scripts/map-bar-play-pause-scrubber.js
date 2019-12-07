@@ -1,3 +1,5 @@
+//something is broken with the time slider, argh
+
 async function mapAndBar(){
 
 ////map setup///

@@ -68,7 +68,10 @@ async function oneFunctionToRuleThemAll(){
     var boundsBackgroundExists = document.getElementById("bounds-background")
     var boundsConstExists = document.getElementById("bounds-const")
 
+
+
     if(boundsBackgroundExists){
+
       boundsBackgroundExists.remove()
       boundsConstExists.remove()
     }
@@ -110,6 +113,36 @@ async function oneFunctionToRuleThemAll(){
     dimensions.boundedWidth = dimensions.width
       - dimensions.margin.left
       - dimensions.margin.right
+
+      const fillColors = {
+        supreme_court: "rgb(157, 106, 118)",
+        women: "rgb(5, 69, 81)",
+        police: "rgb(86, 25, 74)",
+        education: "rgb(3, 3, 4)",
+        executive: "rgb(243, 227, 211)",
+        immigration: "rgb(97, 135, 150)",
+        guns: "rgb(20, 67, 127)",
+        race_confed: "rgb(124, 105, 164)",
+        collective_bargaining: "rgb(15, 41, 90)",
+        environment: "rgb(25, 101, 91)",
+        healthcare: "rgb(73, 49, 118)",
+        other: "rgb(113, 118, 137)"
+      }
+
+      const textColors = {
+        supreme_court: "white",
+        women: "white",
+        police: "white",
+        education: "white",
+        executive: "black",
+        immigration: "white",
+        guns: "white",
+        race_confed: "white",
+        collective_bargaining: "white",
+        environment: "white",
+        healthcare: "white",
+        other: "white"
+      }
 
     const sphere = ({type: "Sphere"})
 
@@ -194,32 +227,14 @@ async function oneFunctionToRuleThemAll(){
       .attr("cy", d => projection([backgroundLongAccessor(d), backgroundLatAccessor(d)])[1])
       .attr("fill", "gray")
       .attr("r", 1)
-      .attr("opacity", .8)
-
-    const constLines = boundsBackground.selectAll("line")
-      .data(section_const_segment)
-      .enter()
-      .append("line")
-      .attr("x1", d => projection([pairAccessorLat1(d), pairAccessorLong1(d)])[0])
-      .attr("y1", d => projection([pairAccessorLat1(d), pairAccessorLong1(d)])[1])
-      .attr("x2", d => projection([pairAccessorLat2(d), pairAccessorLong2(d)])[0])
-      .attr("y2", d => projection([pairAccessorLat2(d), pairAccessorLong2(d)])[1])
-      .attr("stroke", "white")
-      .attr("stroke-width", function(d){return weightScale(pairAccessorWeight(d))})
-      .attr("opacity", function(d){return opacityScale(pairAccessorWeight(d))})
+      .attr("opacity", 0)
+      .transition()
+        .duration(300)
+        .attr("opacity", .8)
 
 
     //Would prefer to have the connections as arcs/curves instead of straight lines,
     //but trying to get it that way is a time sink. Try again later.
-
-    // const constLines = bounds.selectAll("path")
-    //   .data(dataset_const_segment)
-    //   .enter()
-    //   .append("path")
-    //   .attr("d", "C " + (d => projection([pairAccessorLat1(d), pairAccessorLong1(d)])[0]) + " " + (d => projection([pairAccessorLat1(d), pairAccessorLong1(d)])[1]) + ", " + (d => projection([pairAccessorLat2(d), pairAccessorLong2(d)])[0]) + " " + (d => projection([pairAccessorLat2(d), pairAccessorLong2(d)])[1]), ", 10 10")
-    //   .attr("stroke", "white")
-    //   .attr("stroke-width", function(d){return weightScale(pairAccessorWeight(d))})
-    //   .attr("opacity", function(d){return weightScale(pairAccessorWeight(d))})
 
 
     const constPlaces = boundsConst.selectAll("circle")
@@ -229,13 +244,39 @@ async function oneFunctionToRuleThemAll(){
       .attr("cy", d => projection([pointLatAccessor(d), pointLongAccessor(d)])[1])
       .attr("fill", "white")
       .attr("r", function(d){ return circleScale(pointSizeAccessor(d))})
-      .attr("opacity", 1)
+      .attr("opacity", 0)
+      // .attr("opacity", 1)
       .on("mouseover",mouseOver)
       .on("mousemove",mouseMove)
       .on("mouseout", mouseOut)
 
       d3.select("#constellation-topic")
         .text(name)
+        .style("opacity", "1")
+        .style("background-color", fillColors[focus])
+        .style("color", textColors[focus])
+
+      setTimeout(function(){
+        constPlaces.transition().duration(200)
+        .attr("opacity", 1)
+      },200)
+
+      setTimeout(function(){
+        const constLines = boundsBackground.selectAll("line")
+          .data(section_const_segment)
+          .enter()
+          .append("line")
+          .attr("x1", d => projection([pairAccessorLat1(d), pairAccessorLong1(d)])[0])
+          .attr("y1", d => projection([pairAccessorLat1(d), pairAccessorLong1(d)])[1])
+          .attr("x2", d => projection([pairAccessorLat2(d), pairAccessorLong2(d)])[0])
+          .attr("y2", d => projection([pairAccessorLat2(d), pairAccessorLong2(d)])[1])
+          .attr("stroke", "white")
+          .attr("stroke-width", function(d){return weightScale(pairAccessorWeight(d))})
+          .attr("opacity", 0)
+          .transition()
+            .duration(200)
+            .attr("opacity", function(d){return opacityScale(pairAccessorWeight(d))})
+      },500)
 
   }
 
@@ -248,20 +289,31 @@ async function oneFunctionToRuleThemAll(){
 
     constellationDraw("guns", "guns")
 
-
-
     var constSelect = document.querySelector("#constellation-selector")
 
     constSelect.addEventListener("click", function(){
+
+      var starFade = d3.select("#wrapper").selectAll("circle")
+        .transition()
+        .duration(300)
+          .attr("opacity", 0)
+
+      var connectionFade = d3.select("#wrapper").selectAll("line")
+      .transition()
+      .duration(500)
+        .attr("opacity", 0)
+
 
       event.preventDefault()
       focus = event.target.id
       console.log(event.target)
       name = event.target.attributes.label.nodeValue
       console.log(name)
-      constellationDraw(focus, name)
-    }, false)
 
+      setTimeout(function(){
+        constellationDraw(focus, name)
+      },500)
+    }, false)
 
   }
 
