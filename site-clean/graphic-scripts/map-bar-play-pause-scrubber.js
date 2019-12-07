@@ -356,6 +356,94 @@ async function mapAndBar(){
       .text("Protests per week")
       .style("text-anchor", "start")
 
+    ///labelling important events:
+
+    var fontSize = ((width/800)*.7)+"rem"
+
+    var lineGap = 150*(width/800)
+
+    console.log(fontSize)
+
+    bounds_bar.append("text")
+      .text("March for Our Lives")
+      .attr("x", xBarScale(parseTime("3/19/18"))+5)
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(1300+lineGap*2))
+      .attr("font-size", fontSize)
+
+    bounds_bar.append("text")
+      .text("and school walkouts")
+      .attr("x", xBarScale(parseTime("3/19/18"))+5)
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(1300 +lineGap))
+      .attr("font-size", fontSize)
+
+    bounds_bar.append("text")
+      .text("for gun control")
+      .attr("x", xBarScale(parseTime("3/19/18"))+5)
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(1300 ))
+      .attr("font-size", fontSize)
+
+    bounds_bar.append("text")
+      .text("Climate")
+      .attr("x", xBarScale(parseTime("9/16/19"))+5)
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(370))
+      .attr("font-size", fontSize)
+
+    bounds_bar.append("text")
+      .text("Strike")
+      .attr("x", xBarScale(parseTime("9/16/19"))+5)
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(370-lineGap))
+      .attr("font-size", fontSize)
+
+
+      bounds_bar.append("text")
+        .text("Women's")
+        .attr("x", xBarScale(parseTime("1/16/17"))+10)
+        .attr("y", dimensions.bar.boundedHeight - yBarScale(490))
+        .attr("font-size", fontSize)
+
+
+      bounds_bar.append("text")
+        .text("March")
+        .attr("x", xBarScale(parseTime("1/16/17"))+10)
+        .attr("y", dimensions.bar.boundedHeight - yBarScale(490-lineGap))
+        .attr("font-size", fontSize)
+
+
+        bounds_bar.append("text")
+          .text("Families Belong Together")
+          .attr("x", xBarScale(parseTime("6/25/18"))+10)
+          .attr("y", dimensions.bar.boundedHeight - yBarScale(800))
+          .attr("font-size", fontSize)
+
+      bounds_bar.append("text")
+        .text("against immigrant")
+        .attr("x", xBarScale(parseTime("6/25/18"))+10)
+        .attr("y", dimensions.bar.boundedHeight - yBarScale(800-lineGap))
+        .attr("font-size", fontSize)
+
+        bounds_bar.append("text")
+          .text("family separation")
+          .attr("x", xBarScale(parseTime("6/25/18"))+10)
+          .attr("y", dimensions.bar.boundedHeight - yBarScale(800-lineGap*2))
+          .attr("font-size", fontSize)
+
+
+
+
+
+
+
+      // const barAnnotate = annotationBounds.selectAll("text")
+      //   .data(section_annotate)
+      //   .enter()
+      //   .append("text")
+      //   .text(d => d.annotation1)
+      //   .attr("x", d => xBarScale(anDateAccessor(d))+(xAdjustAccessor(d)*barWidth))
+      //   .attr("y", d => dimensions.bar.boundedHeight - yBarScale(yAdjustAccessor(d)))
+      //   .attr("fill", d => d.fill)
+      //   .attr("text-anchor", d => d.align)
+      //   .attr("font-size", d => (.7*d.size)+"rem")
+
       ////function to draw highlight bars
 
       //bug here I can't figure out how to fix: make highlight bars clickable so that

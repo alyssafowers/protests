@@ -164,7 +164,7 @@ async function stateDot(){
     margin: {
       top: 30,
       bottom: 60,
-      left: 180,
+      left: 150,
       right: 20,
     },
     dotHeight: 10,
