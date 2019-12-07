@@ -13,74 +13,81 @@
     <object type = "image/svg+xml" data = "img/header.svg"></object>
   </header>
   <main>
-    <p>Americans have taken to the streets in more than twenty thousand protests since the inauguration of President Donald Trump. Some movements, like the Women's March, started at the national level; others, like March For Our Lives, began locally before spreading across the country.</p>
+    <div class = "text-block">
+      <p>Americans have taken to the streets in more than twenty thousand protests since the inauguration of President Donald Trump. Some movements, like the Women's March, started at the national level; others, like March For Our Lives, began locally before spreading across the country.</p>
 
-    <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones: the conservative Tea Party protests pushed legislators to the right during Barack Obama's presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
+      <p>Protest doesn’t belong to coastal cities, college towns, or liberal causes. Rather, protest is a tool that can be used to create pressure and force change. It’s just as useful for conservative causes as liberal ones: the conservative Tea Party protests pushed legislators to the right during Barack Obama's presidency. And protest is a powerful response to local issues, not just sweeping national causes.</p>
 
-    <!-- Playing map and bar chart go here -->
     <h3>Watch protest spread, week by week</h3>
     <p>Each dot on the map is a protest that took place during a particular week. The total number of protests in a week are shown in the bar graph below.</p>
+  </div>
 
-    <!-- <p>Watch protest spread over the United States from January 17, 2016 to October 31, 2019.</p> -->
-    <div id="map-wrapper">
-    </div>
-    <div id = "full-bar-wrapper">
-      <svg width = 10 id = "trace-line-wrapper">
-        <line x1 = "0" y1 = "0" x2 = "0" y2 = "200" id = "trace-line"></line>
-      </svg>
-      <div id = "bar-control">
-          <button id = "play-button">Pause</button>
-        <div id="slider-time"></div>
+    <div class="graphic">
+      <div id="map-wrapper">
       </div>
-      <div id = "bar-plot-wrapper"></div>
-      <div id = "bar-tooltip" class = "hidden">
-        <p>Week of <span id = "week-bar-tooltip"></span></p>
-        <p><span id = "protest-count">100</span> protests</p>
+        <div id = "full-bar-wrapper" >
+          <svg width = 10 id = "trace-line-wrapper">
+            <line x1 = "0" y1 = "0" x2 = "0" y2 = "200" id = "trace-line"></line>
+          </svg>
+          <div id = "bar-control">
+              <button id = "play-button">Pause</button>
+            <div id="slider-time"></div>
+          </div>
+          <div id = "bar-plot-wrapper"></div>
+          <div id = "bar-tooltip" class = "hidden">
+            <p>Week of <span id = "week-bar-tooltip"></span></p>
+            <p><span id = "protest-count">100</span> protests</p>
+        </div>
       </div>
     </div>
 
-    <p>This project uses data from <a href = "http://countlove.org">Count Love</a>, which catalogues protests in America by scraping news stories about protests. The data begin on January 15, 2017, so it isn’t possible to compare protests during Donald Trump's presidency to protests during previous administrations. However, the Count Love data give us a rich look into nearly three years of American protest.</p>
+    <div class = "text-block"><p>This project uses data from <a href = "http://countlove.org">Count Love</a>, which catalogues protests in America by scraping news stories about protests. The data begin on January 15, 2017, so it isn’t possible to compare protests during Donald Trump's presidency to protests during previous administrations. However, the Count Love data give us a rich look into nearly three years of American protest.</p>
 
     <p>Read on to explore protest in America since January 2017, or <a href ="#statecompare">skip ahead to see how your state compares to the rest of the country.</a></p>
 
     <h1>Places Connected By Protest</h1>
 
-    <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p>
-    <h2>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
-    <div id = "constellation-section">
-      <div id = "constellation-visual">
-          <div id = "const-map-wrapper">
-          <div id = "const-map-tooltip" class = "hidden">
-          <p><span id = "const-map-place">Place name</span></p>
+    <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p></div>
+    <div class = "graphic"><h3>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
+      <div id = "constellation-section">
+        <div id = "constellation-visual">
+            <div id = "const-map-wrapper">
+            <div id = "const-map-tooltip" class = "hidden">
+            <p><span id = "const-map-place">Place name</span></p>
+          </div>
         </div>
+        </div>
+        <div id="constellation-selector">
+          <p>Choose another topic and see more connections:</p>
+            <div id="const-button-row-1">
+              <button id = "collective_bargaining" label = "collective bargaining" class="const-button">Collective bargaining</button>
+              <button id = "education" label = "education" class="const-button">Education</button>
+              <button id = "environment" label = "the environment" class="const-button">Environment</button>
+              <button id = "executive" label = "the executive branch" class="const-button">The executive branch</button>
+              <button id = "guns" label = "guns" class="const-button" class="const-button">Guns</button>
+              <button id = "healthcare" label = "healthcare" class="const-button">Healthcare</button>
+            </div>
+            <div id="const-button-row-2">
+              <button id = "immigration" label = "immigration" class="const-button">Immigration</button>
+              <button id = "police" label = "the police" class="const-button">Police</button>
+              <button id = "race_confed" label = "racial justice or white supremacy" class="const-button">Racial justice or white supremacy</button>
+              <button id = "supreme_court" label = "the Supreme Court" class="const-button">The Supreme Court</button>
+              <button id = "women" label = "women's rights" class="const-button">Women's rights</button>
+            </div>
+          </div>
       </div>
-      </div>
-      <div id="constellation-selector">
-        <p>Choose another topic and see more connections:</p>
-        <div id="const-button-row-1">
-        <button id = "collective_bargaining" label = "collective bargaining" class="const-button">Collective bargaining</button>
-        <button id = "education" label = "education" class="const-button">Education</button>
-        <button id = "environment" label = "the environment" class="const-button">Environment</button>
-        <button id = "executive" label = "the executive branch" class="const-button">The executive branch</button>
-        <button id = "guns" label = "guns" class="const-button" class="const-button">Guns</button>
-        <button id = "healthcare" label = "healthcare" class="const-button">Healthcare</button>
-      </div>
-      <div id="const-button-row-2">
-        <button id = "immigration" label = "immigration" class="const-button">Immigration</button>
-        <button id = "police" label = "the police" class="const-button">Police</button>
-        <button id = "race_confed" label = "racial justice or white supremacy" class="const-button">Racial justice or white supremacy</button>
-        <button id = "supreme_court" label = "the Supreme Court" class="const-button">The Supreme Court</button>
-        <button id = "women" label = "women's rights" class="const-button">Women's rights</button>
-      </div>
-    </div>
-    </div>
+  </div>
 
-    <h1>Protest Over Time</h1>
-    <p>Waves of protest swell in response to current events, sometimes appearing
-      overnight and fading quickly.</p>
+    <div class = "text-block">
+      <h1>Protest Over Time</h1>
+      <p>Waves of protest swell in response to current events, sometimes appearing overnight and fading quickly.</p>
+    </div>
+    <div class="graphic static">
       <h3>Crisis and scandal drive Americans to the street</h3>
       <img src="img/hflip_for_site_haslegend.svg"/>
+    </div>
       <form id="stream-legend">
+    <div class = "graphic">
       <h3>Choose a topic for more detail:</h3>
       <div id = "stream-legend-row-1">
         <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button" type="button">Supreme Court</button>
@@ -97,97 +104,100 @@
         <button id = "environment-stream" label = "the environment" class="stream-button">Environment</button>
         <button id = "healthcare-stream" label = "healthcare" class="stream-button">Healthcare</button>
         <button id = "other-stream" label = "other topics" class="stream-button">Other</button>
-    </div>
-    </form>
-    <div id = "streamgraph">
-      <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
-    </div>
-    <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen. Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
-    students from Parkland organized a series of nationwide school walkouts and March For Our Lives,
-    one of the largest street protests in American history.
-    <h3>Gun-related protests spike after Parkland, then fade</h3>
-    <object type = "image/svg+xml" data = "img/gun_per_week.svg"></object>
-
-    <h1>Where We Protest</h1>
-    <p>Focusing on topics at the national level emphasizes coordinated protest campaigns like March For Our Lives and Families Belong Together. But the United States isn’t always unified, and issues like education inspire protest in some states but not others.</p>
-
-    <p>West Virginia led the nation in education-related protests and began a nationwide wave of education protests and teacher strikes. Teachers defied West Virginia state law to hold an 8-day strike in 2018, pushing for better pay and reduced healthcare costs. Teachers and parents rallied before the strike, and teachers stood on picket lines as the strike dragged on for a total of 50 protests in 39 days. The strike ended on March 7, when the governor of West Virginia signed a bill authorizing a five percent pay raise.</p>
-
-    <h3>West Virginia leads wave of strikes and educational protests</h3>
-
-    <object type = "image/svg+xml" data = "img/edu_per_week.svg"></object>
-
-    <p>Teacher strikes spread through other states in 2018 and 2019, including Oklahoma and Arizona. This year, teachers in West Virginia only had to strike for a few hours before the West Virginia House of Delegates indefinitely postponed a vote on a bill introducing charter schools and educational vouchers.</p>
-
-    <!-- <object type = "image/svg+xml" data = "img/state_protest_topic.svg"></object> -->
-
-    <h1 id = "statecompare">What inspires protest in your state?</h1>
-
-    <form>
-      <label>Choose your state:</label>
-        <select name = "states" id = "stateSelect">
-          <option value= "AL">Alabama</option>
-          <option value= "AK">Alaska</option>
-          <option value= "AZ">Arizona</option>
-          <option value= "AR">Arkansas</option>
-          <option value= "CA">California</option>
-          <option value= "CO">Colorado</option>
-          <option value= "CT">Connecticut</option>
-          <option value= "DE">Delaware</option>
-          <option value= "DC">District of Columbia</option>
-          <option value= "FL" selected default>Florida</option>
-          <option value= "GA">Georgia</option>
-          <option value= "HI">Hawaii</option>
-          <option value= "ID">Idaho</option>
-          <option value= "IL">Illinois</option>
-          <option value= "IN">Indiana</option>
-          <option value= "IA">Iowa</option>
-          <option value= "KS">Kansas</option>
-          <option value= "KY">Kentucky</option>
-          <option value= "LA">Louisiana</option>
-          <option value= "ME">Maine</option>
-          <option value= "MD">Maryland</option>
-          <option value= "MA">Massachusetts</option>
-          <option value= "MI">Michigan</option>
-          <option value= "MN">Minnesota</option>
-          <option value= "MS">Mississippi</option>
-          <option value= "MO">Missouri</option>
-          <option value= "MT">Montana</option>
-          <option value= "NE">Nebraska</option>
-          <option value= "NV">Nevada</option>
-          <option value= "NH">New Hampshire</option>
-          <option value= "NJ">New Jersey</option>
-          <option value= "NM">New Mexico</option>
-          <option value= "NY">New York</option>
-          <option value= "NC">North Carolina</option>
-          <option value= "ND">North Dakota</option>
-          <option value= "OH">Ohio</option>
-          <option value= "OK">Oklahoma</option>
-          <option value= "OR">Oregon</option>
-          <option value= "PA">Pennsylvania</option>
-          <option value= "RI">Rhode Island</option>
-          <option value= "SC">South Carolina</option>
-          <option value= "SD">South Dakota</option>
-          <option value= "TN">Tennessee</option>
-          <option value= "TX">Texas</option>
-          <option value= "UT">Utah</option>
-          <option value= "VT">Vermont</option>
-          <option value= "VI">Virginia</option>
-          <option value= "WA">Washington State</option>
-          <option value= "WV">West Virginia</option>
-          <option value= "WI">Wisconsin</option>
-          <option value= "WY">Wyoming</option>
-        </select>
-    </label>
-    </form>
-
-      <div id = "state-dotplot">
-        <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the executive branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">the Supreme Court</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
-        <div id = "state-dot-tooltip" class = "hidden">
-          <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> were about <span id = "dot-topic">topic</span></p>
+      </div>
+      </form>
+      <div id = "streamgraph">
+        <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
       </div>
     </div>
-    <div id = "methods">
+    <div class="text-block">
+      <p>National attention is no guarantee of protest on a national scale. Organizing is key to making protest happen. Consider protests about guns. Minimal protest followed shootings in Las Vegas, Texas First Baptist Church, and Rancho Tehama.  But after the Parkland school shooting in February 2018,
+      students from Parkland organized a series of nationwide school walkouts and March For Our Lives,
+      one of the largest street protests in American history.
+    </div>
+    <div class = "graphic">
+      <h3>Gun-related protests spike after Parkland, then fade</h3>
+      <object type = "image/svg+xml" data = "img/gun_per_week.svg"></object>
+    </div>
+    <div class = "text-block">
+      <h1>Where We Protest</h1>
+      <p>Focusing on topics at the national level emphasizes coordinated protest campaigns like March For Our Lives and Families Belong Together. But the United States isn’t always unified, and issues like education inspire protest in some states but not others.</p>
+
+      <p>West Virginia led the nation in education-related protests and began a nationwide wave of education protests and teacher strikes. Teachers defied West Virginia state law to hold an 8-day strike in 2018, pushing for better pay and reduced healthcare costs. Teachers and parents rallied before the strike, and teachers stood on picket lines as the strike dragged on for a total of 50 protests in 39 days. The strike ended on March 7, when the governor of West Virginia signed a bill authorizing a five percent pay raise.</p>
+    </div>
+    <div class = "graphic">
+      <h3>West Virginia leads wave of strikes and educational protests</h3>
+      <object type = "image/svg+xml" data = "img/edu_per_week.svg"></object>
+    </div>
+    <div class = "text-block">
+      <p>Teacher strikes spread through other states in 2018 and 2019, including Oklahoma and Arizona. This year, teachers in West Virginia only had to strike for a few hours before the West Virginia House of Delegates indefinitely postponed a vote on a bill introducing charter schools and educational vouchers.</p>
+    </div>
+    <div class = "graphic">
+      <h1 id = "statecompare">What inspires protest in your state?</h1>
+      <form>
+        <label>Choose your state:</label>
+          <select name = "states" id = "stateSelect">
+            <option value= "AL">Alabama</option>
+            <option value= "AK">Alaska</option>
+            <option value= "AZ">Arizona</option>
+            <option value= "AR">Arkansas</option>
+            <option value= "CA">California</option>
+            <option value= "CO">Colorado</option>
+            <option value= "CT">Connecticut</option>
+            <option value= "DE">Delaware</option>
+            <option value= "DC">District of Columbia</option>
+            <option value= "FL" selected default>Florida</option>
+            <option value= "GA">Georgia</option>
+            <option value= "HI">Hawaii</option>
+            <option value= "ID">Idaho</option>
+            <option value= "IL">Illinois</option>
+            <option value= "IN">Indiana</option>
+            <option value= "IA">Iowa</option>
+            <option value= "KS">Kansas</option>
+            <option value= "KY">Kentucky</option>
+            <option value= "LA">Louisiana</option>
+            <option value= "ME">Maine</option>
+            <option value= "MD">Maryland</option>
+            <option value= "MA">Massachusetts</option>
+            <option value= "MI">Michigan</option>
+            <option value= "MN">Minnesota</option>
+            <option value= "MS">Mississippi</option>
+            <option value= "MO">Missouri</option>
+            <option value= "MT">Montana</option>
+            <option value= "NE">Nebraska</option>
+            <option value= "NV">Nevada</option>
+            <option value= "NH">New Hampshire</option>
+            <option value= "NJ">New Jersey</option>
+            <option value= "NM">New Mexico</option>
+            <option value= "NY">New York</option>
+            <option value= "NC">North Carolina</option>
+            <option value= "ND">North Dakota</option>
+            <option value= "OH">Ohio</option>
+            <option value= "OK">Oklahoma</option>
+            <option value= "OR">Oregon</option>
+            <option value= "PA">Pennsylvania</option>
+            <option value= "RI">Rhode Island</option>
+            <option value= "SC">South Carolina</option>
+            <option value= "SD">South Dakota</option>
+            <option value= "TN">Tennessee</option>
+            <option value= "TX">Texas</option>
+            <option value= "UT">Utah</option>
+            <option value= "VT">Vermont</option>
+            <option value= "VI">Virginia</option>
+            <option value= "WA">Washington State</option>
+            <option value= "WV">West Virginia</option>
+            <option value= "WI">Wisconsin</option>
+            <option value= "WY">Wyoming</option>
+          </select>
+        </form>
+        <div id = "state-dotplot">
+          <div id = "state-sentence"><p>Protests in <span id = "state-name">Florida</span> focus more on <span id = "top-protest-topic-one">guns</span><span id = "top-protest-topic-bridge"> and </span><span id = "top-protest-topic-two">the executive branch</span> than other states, and focus less on <span id = "bottom-protest-topic-one">the Supreme Court</span><span id = "bottom-protest-topic-bridge"> and </span> <span id = "bottom-protest-topic-two">healthcare</span>.</p></div>
+          <div id = "state-dot-tooltip" class = "hidden">
+            <p><span id = "state-percentile">100</span> of protests in <span id = "tooltip-state">FL</span> were about <span id = "dot-topic">topic</span></p>
+        </div>
+      </div>
+  </div>
+    <div id = "methods" class="text-block">
       <h2>Methods</h2>
       <h3>Data source</h3>
         <p>Protest data is from <a href = "https://countlove.org/">Count Love</a>, a project by Nathan Perkins and Tommy Leung. Population data is from the U.S. Census (2017 American Community Survey population estimates).</p>

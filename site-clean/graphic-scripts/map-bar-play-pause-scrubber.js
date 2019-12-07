@@ -12,12 +12,19 @@ async function mapAndBar(){
 
 //   const width = window.innerWidth * 0.75
 
-  const width = d3.min([window.innerWidth*.9, 800])
+  var width
 
+  if(window.innerWidth < 800){
+    width = d3.max([375, window.innerWidth*.75])
+  } else {
+    width = d3.min([800, window.innerWidth*.75])
+  }
+
+  console.log(window.innerWidth*.75)
 
   const dimensions = {
     map: {
-      width: width*.8,
+      width: width,
       margin: {
         top: 5,
         right: 30,
@@ -31,18 +38,18 @@ async function mapAndBar(){
       margin: {
         top: 15,
         bottom: 30,
-        left: 70,
-        right: 70
+        left: 30,
+        right: 30
         }
       },
       total:{
       },
       slider: {
         height: 70,
-        width: width+60,
+        width: width,
         margin: {
-          left: 100,
-          right: 100,
+          left: 80,
+          right: 80,
           top: 20
         }
       }
@@ -51,7 +58,7 @@ async function mapAndBar(){
    dimensions.bar.boundedHeight = dimensions.bar.height
     - dimensions.bar.margin.top - dimensions.bar.margin.bottom
    dimensions.bar.boundedWidth = dimensions.bar.width
-    - dimensions.bar.margin.left - dimensions.bar.margin.right
+    - dimensions.slider.margin.left - dimensions.slider.margin.right
 
     dimensions.slider.boundedWidth = dimensions.slider.width
       - dimensions.slider.margin.left
@@ -174,6 +181,33 @@ async function mapAndBar(){
 
     var targetValue = dimensions.slider.boundedWidth
 
+    //text wrapping from  this example from Mike Bostock: https://bl.ocks.org/mbostock/7555321
+
+    function wrap(text, width) {
+          text.each(function() {
+            var text = d3.select(this),
+                words = text.text().split(/\s+/).reverse(),
+                word,
+                line = [],
+                lineNumber = 0,
+                lineHeight = 1.1, // ems
+                y = text.attr("y"),
+                dy = parseFloat(text.attr("dy")),
+                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
+            while (word = words.pop()) {
+              line.push(word);
+              tspan.text(line.join(" "));
+              if (tspan.node().getComputedTextLength() > width) {
+                line.pop();
+                tspan.text(line.join(" "));
+                line = [word];
+                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
+              }
+            }
+          });
+        }
+
+
     var sliderTime = d3
           .sliderBottom()
           .min(startDate)
@@ -181,9 +215,22 @@ async function mapAndBar(){
           .step(1000*60*60*24*7)
           .width(dimensions.slider.boundedWidth)
           .ticks(0)
-          .tickFormat(d3.timeFormat("Week of %B %d, %Y"))
+          .tickFormat(d3.timeFormat("Week of %b %d, %Y"))
           .tickValues(xAccessor(dataset_bar))
           .default(startDate)
+
+
+
+//   var sliderTimeBottom = d3
+//           .sliderBottom()
+//           .min(startDate)
+//           .max(endDate)
+//           .step(1000*60*60*24*7)
+//           .width(dimensions.slider.boundedWidth)
+//           .ticks(0)
+//           .tickFormat(d3.timeFormat("%B %d, %Y"))
+//           .tickValues(xAccessor(dataset_bar))
+//           .default(startDate)
 
     var gTime = d3.select("div#slider-time")
           .append("svg")
@@ -290,6 +337,7 @@ async function mapAndBar(){
 
     const yAxisGenerator = d3.axisLeft()
       .scale(yAxisScale)
+      .ticks(5)
 
 
     const yAxis = bounds_bar.append("g")

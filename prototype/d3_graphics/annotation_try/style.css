@@ -31,64 +31,32 @@ footer p {
 }
 
 main{
-  margin: 0 auto;
-  padding: 0;
-  width: 100%
-}
-
-.graphic{
-  width: 75%;
-  max-width: 900px;
-  min-width: 375px;
-  margin: 0 auto;
-  padding: 0;
-}
-
-/* .static{
-  background-color: white;
-} */
-
-.graphic h3{
-text-align: center;
-}
-
-/* div svg{
-  margin: 0 auto;
-} */
-
-.text-block{
-  width: 70%;
+  max-width: 50rem;
   margin: auto;
-  min-width: 375px;
-  max-width: 800px;
+  padding: 1rem;
 }
 
 img{
+  max-width: 50rem;
   margin-left: 0;
   margin-right: 0;
 }
 
 h1{
   font-family: 'Titillium Web', sans-serif;
-  /* text-align: center; */
+  text-align: center;
   font-size: 2.5rem;
 }
 
 h2{
   font-size: 1.5rem;
   font-family: 'Titillium Web', sans-serif;
-  /* text-align: center; */
+  text-align: center;
   margin-bottom: 0;
 }
 
-h3{
-  font-size: 1.5rem;
-  font-family: 'Titillium Web', sans-serif;
-  /* text-align: center; */
-}
 
-
-p, label {
+p {
   font-family: 'Roboto', sans-serif;
   font-size: 1.2rem;
 }
@@ -155,13 +123,12 @@ p.label{
 #play-button {
   position: relative;
   top: 35px;
-  left: 10px;
+  left: 30px;
   padding-right: 26px;
-  padding-left: 0px;
   border-radius: 3px;
   border: none;
   color: black;
-  margin: 0 auto;
+  margin: 0;
   padding: 0 12px;
   width: 50px;
   cursor: pointer;
@@ -202,14 +169,6 @@ p.label{
 
 #full-bar-wrapper {
   position: relative;
-  margin-left: 0;
-  margin-right: 0;
-}
-
-#full-bar-wrapper svg {
-  display: block;
-  margin-left: auto;
-  margin-right: auto;
 }
 
 #bar-tooltip {
@@ -245,39 +204,27 @@ p.label{
 
 #state-name {
   background-color: white;
-  padding-left: 4px;
-  padding-right: 4px;
-
 }
 
 #top-protest-topic-one {
   background-color: rgb(20, 67, 127);
   color: white;
-  padding-left: 4px;
-  padding-right: 4px;
-
 }
 
 #top-protest-topic-two {
   background-color: rgb(243, 227, 211);
   color: black;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 
 #bottom-protest-topic-one {
   background-color: rgb(157, 106, 118);
   color: white;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 #bottom-protest-topic-two {
   background-color: rgb(73, 49, 118);
   color: white;
-  padding-left: 4px;
-  padding-right: 4px;
 }
 
 #const-map-wrapper{
@@ -363,7 +310,9 @@ p.label{
 }
 
 #constellation-visual{
-  text-align: center;
+  display: grid;
+  grid-template-rows: 40px 1fr;
+  justify-content: center;
 }
 
 .const-button{
@@ -378,12 +327,12 @@ p.label{
 button.const-button{
   box-shadow: 4px 2px 1px gray;
 }
-/*
+
 #police{
-  background-image: url(icons/police-icon.svg);
+  background-image: url(/icons/police-icon.svg);
   /* line-height: 100px; */
 }
-/*
+
 #education{
   background-image: url(/icons/education-icon.svg);
 }
@@ -422,10 +371,10 @@ button.const-button{
 
 #women{
   background-image: url(/icons/women-icon.svg);
-} */
+}
 
 
-div.const-button{
+div{
   /* margin: 5px; */
   padding-top: 5px;
   padding-bottom: 5px;
@@ -479,9 +428,8 @@ div.const-button img{
   font-size: .8rem;
 }
 
-
 #stream-bar-topic{
-  background-color: rgb(5, 69, 81);
+  background-color: rgb(157, 106, 118);
   color: white;
   padding-left: 4px;
   padding-right: 4px;
@@ -553,10 +501,7 @@ div.const-button img{
   font-size:.8rem;
   margin-left: 5px;
   margin-right: 5px;
-}
 
-#stream-legend-row-1{
-  margin-bottom: 10px;
 }
 
 #supreme_court-stream {

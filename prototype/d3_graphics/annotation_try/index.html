@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<head>
+<html lang = "en">
+  <meta charset = "utf-8">
+  <link rel = "stylesheet" href = "./style.css"></link>
+  <link href="https://fonts.googleapis.com/css?family=Roboto|Titillium+Web&display=swap" rel="stylesheet">
+  <title>Constellations of Protest</title>
+
+</head>
+
+<body>
+  <header>
+    <object type = "image/svg+xml" data = "img/header.svg"></object>
+  </header>
+  <main>
+
+
+    <h1>Protest Over Time</h1>
+    <p>Waves of protest swell in response to current events, sometimes appearing
+      overnight and fading quickly.</p>
+      <!-- <div id="stream-or-bar" class="btn-group"><button id="stream-all">All Protests</button><button id="stream-topic">One Topic</button></div> -->
+      <!-- <img src="img/hflip_for_site_haslegend.svg"/> -->
+
+      <!-- <form id="stream-legend" class="hidden"> -->
+        <form id="stream-legend">
+        <p>Choose a topic for more detail:</p>
+        <div id = "stream-legend-row-1">
+          <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button" type="button">Supreme Court</button>
+          <button id = "women-stream" label = "women's rights" class="stream-button">Women's Rights</button>
+          <button id = "police-stream" label = "the police" class="stream-button">Police</button>
+          <button id = "education-stream" label = "education" class="stream-button">Education</button>
+          <button id = "executive-stream" label = "the executive branch" class="stream-button">Executive branch</button>
+          <button id = "immigration-stream" label = "immigration" class="stream-button">Immigration</button>
+        </div>
+        <div id="stream-legend-row-2">
+          <button id = "guns-stream" label = "guns" class="stream-button">Guns</button>
+          <button id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button">Racial justice or white supremacy</button>
+          <button id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button">Collective bargaining</button>
+          <button id = "environment-stream" label = "the environment" class="stream-button">Environment</button>
+          <button id = "healthcare-stream" label = "healthcare" class="stream-button">Healthcare</button>
+          <button id = "other-stream" label = "other topics" class="stream-button">Other</button>
+      </div>
+      </form>
+    <div id = "streamgraph">
+      <h2 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
+    </div>
+
+  </main>
+<footer>
+  <div class = "footer"><p>Project by <a href = "www.alyssafowers.com">Alyssa Fowers</a></p>
+  <p><a href = "https://github.com/alyssafowers/protests">GitHub repository for Constellations of Protest</a></p>
+  <p>Data from <a href = "countlove.org">Count Love</a></p>
+</div>
+</footer>
+</body>
+
+<script src="./d3_v5.js"></script>
+<script src="./d3-simple-slider.js"></script>
+<script src="./d3-annotation.js"></script>
+<script src="https://d3js.org/d3-array.v2.min.js"></script>
+<script src="./graphic-scripts/annotation-try.js"></script>
+<!-- <script src = "./graphic-scripts/map-bar-play-pause-scrubber.js"></script>
+<script src = "./graphic-scripts/streamgraph_click.js"></script>
+<script src = "./graphic-scripts/constellation_draw.js"></script> -->
+<!-- can't get state dots to load from within graphic-scripts, even though it is DEFINITELY THERE and loads in other directories -->
+<!-- <script src = "./state_dot.js"></script> -->
+
+
+</html>
