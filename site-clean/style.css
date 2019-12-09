@@ -44,8 +44,19 @@ main{
   padding: 0;
 }
 
-/* .static{
-  background-color: white;
+.static{
+  max-width: 1000px;
+  width: 90%;
+}
+
+.static [data="img/edu_per_week.svg"]{
+  max-width: 900px;
+}
+
+/* #streamgraph-image{
+  width: 80%;
+  margin: auto;
+  max-width:1000px;
 } */
 
 .graphic h3:not(.choose-topic){

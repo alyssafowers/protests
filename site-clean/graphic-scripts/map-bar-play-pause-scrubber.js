@@ -17,11 +17,10 @@ async function mapAndBar(){
   var width
 
   if(window.innerWidth < 800){
-    width = d3.max([375, window.innerWidth*.75])
+    width = d3.max([375, window.innerWidth*.9])
   } else {
     width = d3.min([800, window.innerWidth*.75])
   }
-
   console.log(window.innerWidth*.75)
 
   const dimensions = {
@@ -36,7 +35,7 @@ async function mapAndBar(){
     },
     bar: {
       width: width,
-      height: width*.25,
+      height: 200,
       margin: {
         top: 15,
         bottom: 30,
@@ -156,6 +155,28 @@ async function mapAndBar(){
     const startDate = d3.min(dataset_bar, xAccessor)
     const endDate = d3.max(dataset_bar, xAccessor)
 
+    var playButton = document.querySelector("#play-button")
+    var barControl = document.querySelector("#bar-control")
+
+    console.log(barControl)
+    console.log(barControl.offsetWidth)
+
+    var buttonLeft = (width - dimensions.bar.boundedWidth)/3
+    var traceLineLeft = 0
+
+    if(barControl.offsetWidth >= 900){
+    playButton.style.left = buttonLeft + "px"
+    traceLineLeft = buttonLeft - 2
+
+    console.log(traceLineLeft)
+  }
+
+
+    // playButton.setAttribute("offsetLeft", (width - dimensions.bar.boundedWidth)/2)
+    //
+    // console.log(playButton.offsetLeft)
+
+
   // console.log(startDate)
 
     var weekCount = Math.round(((endDate - startDate)/86400000)/7)
@@ -183,33 +204,6 @@ async function mapAndBar(){
 
     var targetValue = dimensions.slider.boundedWidth
 
-    //text wrapping from  this example from Mike Bostock: https://bl.ocks.org/mbostock/7555321
-
-    function wrap(text, width) {
-          text.each(function() {
-            var text = d3.select(this),
-                words = text.text().split(/\s+/).reverse(),
-                word,
-                line = [],
-                lineNumber = 0,
-                lineHeight = 1.1, // ems
-                y = text.attr("y"),
-                dy = parseFloat(text.attr("dy")),
-                tspan = text.text(null).append("tspan").attr("x", 0).attr("y", y).attr("dy", dy + "em");
-            while (word = words.pop()) {
-              line.push(word);
-              tspan.text(line.join(" "));
-              if (tspan.node().getComputedTextLength() > width) {
-                line.pop();
-                tspan.text(line.join(" "));
-                line = [word];
-                tspan = text.append("tspan").attr("x", 0).attr("y", y).attr("dy", ++lineNumber * lineHeight + dy + "em").text(word);
-              }
-            }
-          });
-        }
-
-
     var sliderTime = d3
           .sliderBottom()
           .min(startDate)
@@ -222,18 +216,6 @@ async function mapAndBar(){
           .default(startDate)
 
 
-
-//   var sliderTimeBottom = d3
-//           .sliderBottom()
-//           .min(startDate)
-//           .max(endDate)
-//           .step(1000*60*60*24*7)
-//           .width(dimensions.slider.boundedWidth)
-//           .ticks(0)
-//           .tickFormat(d3.timeFormat("%B %d, %Y"))
-//           .tickValues(xAccessor(dataset_bar))
-//           .default(startDate)
-
     var gTime = d3.select("div#slider-time")
           .append("svg")
           .attr("width", dimensions.slider.width)
@@ -244,8 +226,10 @@ async function mapAndBar(){
 
     var pickSlider = gTime.call(sliderTime)
 
+    playButton.className = ""
+
     const traceLineWrapper = fullWrapper.append("g")
-            .attr("transform", "translate(" + dimensions.slider.margin.left + ","+ dimensions.slider.margin.top+")")
+            .attr("transform", "translate(" + (dimensions.slider.margin.left+traceLineLeft) + ","+ dimensions.slider.margin.top+")")
 
     var handleBounds = d3.select("g.parameter-value")
       .attr("id", "handle-bounds")
@@ -529,8 +513,6 @@ async function mapAndBar(){
 
     var sliderNewVal
 
-    var playButton = document.querySelector("#play-button")
-
     function playWeekChange(){
       // console.log("Play is " + play)
 
@@ -623,7 +605,7 @@ async function mapAndBar(){
       leftTransform = handle.transform.baseVal[0]["matrix"].e
 
       d3.select("#trace-line-wrapper")
-        .attr("transform", "translate(" + (leftTransform + dimensions.slider.margin.left) + ","+ (dimensions.slider.margin.top+40)+")")
+        .attr("transform", "translate(" + (leftTransform + dimensions.slider.margin.left + traceLineLeft) + ","+ (dimensions.slider.margin.top)+")")
         .attr("height", dimensions.total.height - (dimensions.slider.height/2))
         .attr("width", barWidth)
 

@@ -325,7 +325,7 @@ async function oneFunctionToRuleThemAll(){
     const dataset_const_points = await d3.csv("all_constellation_points.csv")
     const dataset_all_points = await d3.csv("all_protests_major_tags.csv")
 
-    const place_annotation = await d3.csv("constellation_annotation.csv")
+    // const place_annotation = await d3.csv("constellation_annotation.csv")
 
 
     constellationDraw("guns", "guns")

@@ -6,18 +6,18 @@ async function streamEverythingFunction(){
   var width
 
   if(window.innerWidth < 800){
-    width = d3.max([375, window.innerWidth*.7]) - 30
+    width = d3.max([375, window.innerWidth*.8]) - 30
   } else {
-    width = d3.min([600, window.innerWidth*.7]) - 30
+    width = d3.min([800, window.innerWidth*.8]) - 30
   }
 
-  const height = width*.9
+  const height = d3.max([width*.5, 400])
 
     const dimensions = {
       width: width,
       height: height,
       bar: {
-        height: width*.5,
+        height: height,
         margin: {
           top: 50,
           bottom: 30,
