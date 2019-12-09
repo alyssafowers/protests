@@ -367,30 +367,30 @@ async function mapAndBar(){
     bounds_bar.append("text")
       .text("March for Our Lives")
       .attr("x", xBarScale(parseTime("3/19/18"))+5)
-      .attr("y", dimensions.bar.boundedHeight - yBarScale(1300+lineGap*2))
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(1150+lineGap*2))
       .attr("font-size", fontSize)
 
     bounds_bar.append("text")
       .text("and school walkouts")
       .attr("x", xBarScale(parseTime("3/19/18"))+5)
-      .attr("y", dimensions.bar.boundedHeight - yBarScale(1300 +lineGap))
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(1150 +lineGap))
       .attr("font-size", fontSize)
 
     bounds_bar.append("text")
       .text("for gun control")
       .attr("x", xBarScale(parseTime("3/19/18"))+5)
-      .attr("y", dimensions.bar.boundedHeight - yBarScale(1300 ))
+      .attr("y", dimensions.bar.boundedHeight - yBarScale(1150))
       .attr("font-size", fontSize)
 
     bounds_bar.append("text")
       .text("Climate")
-      .attr("x", xBarScale(parseTime("9/16/19"))+5)
+      .attr("x", xBarScale(parseTime("9/16/19"))+10)
       .attr("y", dimensions.bar.boundedHeight - yBarScale(370))
       .attr("font-size", fontSize)
 
     bounds_bar.append("text")
       .text("Strike")
-      .attr("x", xBarScale(parseTime("9/16/19"))+5)
+      .attr("x", xBarScale(parseTime("9/16/19"))+10)
       .attr("y", dimensions.bar.boundedHeight - yBarScale(370-lineGap))
       .attr("font-size", fontSize)
 
@@ -426,23 +426,6 @@ async function mapAndBar(){
           .attr("x", xBarScale(parseTime("6/25/18"))+10)
           .attr("y", dimensions.bar.boundedHeight - yBarScale(800-lineGap*2))
           .attr("font-size", fontSize)
-
-
-
-
-
-
-
-      // const barAnnotate = annotationBounds.selectAll("text")
-      //   .data(section_annotate)
-      //   .enter()
-      //   .append("text")
-      //   .text(d => d.annotation1)
-      //   .attr("x", d => xBarScale(anDateAccessor(d))+(xAdjustAccessor(d)*barWidth))
-      //   .attr("y", d => dimensions.bar.boundedHeight - yBarScale(yAdjustAccessor(d)))
-      //   .attr("fill", d => d.fill)
-      //   .attr("text-anchor", d => d.align)
-      //   .attr("font-size", d => (.7*d.size)+"rem")
 
       ////function to draw highlight bars
 

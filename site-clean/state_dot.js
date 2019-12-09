@@ -156,8 +156,13 @@ async function stateDot(){
     const highPercentile = dataset.filter(function(d) {return +d.percentile > .8})
     const lowPercentile = dataset.filter(function(d) {return d.percentile < .25})
 
-    const width = d3.min([window.innerWidth, 800])
-    const height = width*1.25
+    if(window.innerWidth < 800){
+      width = d3.max([375, window.innerWidth*.7]) - 30
+    } else {
+      width = d3.min([800, window.innerWidth*.7]) - 30
+    }
+
+      const height = width*1.25
 
     const dimensions = {
     width: width,

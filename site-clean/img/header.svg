@@ -8,7 +8,7 @@
 	.st2{font-family:'Titillium Web';}
 	.st3{font-size:34px;}
 	.st4{fill:none;stroke:#FFFFFF;stroke-width:0.2456;stroke-linejoin:round;stroke-miterlimit:10;}
-	.st5{font-family:'MyriadPro-Regular';}
+	.st5{font-family:'ArialMT';}
 	.st6{font-size:0.5479px;}
 	.st7{fill:none;stroke:#FFFFFF;stroke-width:0.2286;stroke-linejoin:round;stroke-miterlimit:10;}
 	.st8{fill:none;stroke:#FFFFFF;stroke-width:0.3033;stroke-linejoin:round;stroke-miterlimit:10;}
@@ -37,7 +37,7 @@
 <g>
 	<g>
 
-			<linearGradient id="gradient_1_" gradientUnits="userSpaceOnUse" x1="306.03" y1="-1156.9933" x2="306.03" y2="-936.5533" gradientTransform="matrix(1 0 0 -1 0 -918)">
+			<linearGradient id="gradient_1_" gradientUnits="userSpaceOnUse" x1="304.6297" y1="1948.9933" x2="304.6297" y2="1728.5532" gradientTransform="matrix(1 0 0 1 0 -1710)">
 			<stop  offset="0.1031" style="stop-color:#ABACB7"/>
 			<stop  offset="0.1672" style="stop-color:#8F91A1"/>
 			<stop  offset="0.224" style="stop-color:#7D8093"/>
@@ -48,8 +48,8 @@
 			<stop  offset="0.8477" style="stop-color:#08080C"/>
 			<stop  offset="0.8954" style="stop-color:#000000"/>
 		</linearGradient>
-		<rect id="gradient" x="0.03" y="-1" class="st0" width="612" height="220.44"/>
-		<text transform="matrix(1 0 0 1 197.9185 140.4249)" class="st1 st2 st3">Points of Light:</text>
+		<rect id="gradient" x="-1.37" y="-1" class="st0" width="612" height="220.44"/>
+		<text transform="matrix(1 0 0 1 190.7788 140.4249)" class="st1 st2 st3">Points of Light:</text>
 	</g>
 </g>
 <g id="new-icons">
@@ -838,9 +838,9 @@
 	</g>
 </g>
 <g>
-	<text transform="matrix(1 0 0 1 152.8346 175.6478)" class="st1 st2 st26">34 Months of American Protest</text>
+	<text transform="matrix(1 0 0 1 147.4163 175.6478)" class="st1 st2 st26">34 Months of Protest in America</text>
 </g>
 <g>
-	<text transform="matrix(1 0 0 1 232.3639 206.6604)" class="st2 st27">a project by Alyssa Fowers</text>
+	<text transform="matrix(1 0 0 1 231.9939 206.6604)" class="st2 st27">a project by Alyssa Fowers</text>
 </g>
 </svg>

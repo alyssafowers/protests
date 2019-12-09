@@ -6,7 +6,11 @@ async function oneFunctionToRuleThemAll(){
 
   async function stateDraw(){
     const stateShapes = await d3.json("us-states.json")
-    const width = 700
+    if(window.innerWidth < 800){
+        width = d3.max([375, window.innerWidth*.7]) - 30
+      } else {
+        width = d3.min([800, window.innerWidth*.7]) - 30
+      }
     // const width = window.innerWidth*.9
 
     const dimensions = {
@@ -57,6 +61,32 @@ async function oneFunctionToRuleThemAll(){
         .attr("d", pathGenerator)
         .attr("fill", "black")
 
+    const topLeftAnnotationBounds = d3.select("#constellation-top-left-annotation").append("g")
+
+    const topLeftAnnotation = topLeftAnnotationBounds.append("text")
+      .text("this is where the top left annotation goes")
+        .attr("fill", "black")
+
+    const topRightAnnotationBounds = d3.select("#constellation-top-right-annotation").append("g")
+
+    const topRightAnnotation = topRightAnnotationBounds.append("text")
+      .text("this is where the top right annotation goes")
+        .attr("fill", "black")
+
+    const bottomLeftAnnotationBounds = d3.select("#constellation-bottom-left-annotation").append("g")
+
+    const bottomLeftAnnotation = bottomLeftAnnotationBounds.append("text")
+      .text("this is where the bottom left annotation goes")
+        .attr("fill", "black")
+
+    const bottomRightAnnotationBounds = d3.select("#constellation-bottom-right-annotation").append("g")
+
+    const bottomRightAnnotation = bottomRightAnnotationBounds.append("text")
+      .text("this is where the bottom right annotation goes")
+        .attr("fill", "black")
+
+    d3.select("#constellation-bottom-right-annotation").style("bottom", "200px")
+
 
   }
 
@@ -96,9 +126,6 @@ async function oneFunctionToRuleThemAll(){
     const section_const_segment = dataset_const_segment.filter(function(d) {return d.topic == focus})
     const section_const_points = dataset_const_points.filter(function(d) {return d.topic == focus})
     const section_all_points = dataset_all_points.filter(function(d) {return d[focus] == 1})
-
-
-    const width = 700
 
     const dimensions = {
       width: width,
@@ -280,6 +307,15 @@ async function oneFunctionToRuleThemAll(){
             .attr("opacity", function(d){return opacityScale(pairAccessorWeight(d))})
       },200)
 
+      bottomRightAnnotationBounds
+
+
+      bottomRightAnnotation
+
+
+
+      d3.select("#constellation-bottom-right-annotation").style("bottom", "200px")
+
   }
 
   async function chooseConstellation(){
@@ -288,6 +324,9 @@ async function oneFunctionToRuleThemAll(){
     const dataset_const_segment = await d3.csv("all_constellation_lines.csv")
     const dataset_const_points = await d3.csv("all_constellation_points.csv")
     const dataset_all_points = await d3.csv("all_protests_major_tags.csv")
+
+    const place_annotation = await d3.csv("constellation_annotation.csv")
+
 
     constellationDraw("guns", "guns")
 

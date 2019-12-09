@@ -8,7 +8,7 @@ async function streamEverythingFunction(){
   if(window.innerWidth < 800){
     width = d3.max([375, window.innerWidth*.7]) - 30
   } else {
-    width = d3.min([800, window.innerWidth*.7]) - 30
+    width = d3.min([600, window.innerWidth*.7]) - 30
   }
 
   const height = width*.9
