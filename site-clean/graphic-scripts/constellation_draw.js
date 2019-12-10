@@ -334,8 +334,6 @@ async function oneFunctionToRuleThemAll(){
 
     constSelect.addEventListener("change", function(){
 
-      console.log(constSelect)
-
       var starFade = d3.select("#wrapper").selectAll("circle")
         .transition()
         .duration(300)

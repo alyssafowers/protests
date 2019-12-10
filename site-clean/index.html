@@ -53,7 +53,7 @@
     <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p></div>
     <div class = "graphic">
       <form id="constellation-selector">
-        <label class="choose-topic">Choose a topic:</label>
+        <label class="choose-topic">Choose another topic:</label>
               <select name = "const-choose" id= "const-choose">
                 <option id = "guns" selected label = "guns" class="const-button guns">Guns</option>
                 <option id = "women" label = "women's rights" class="const-button women">Women's rights</option>
@@ -94,9 +94,10 @@
       <img src="img/streamgraph_hflip_shorter.svg" id="streamgraph-image"/>
     </div>
     <div class = "graphic">
+      <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
       <form id="stream-legend">
-          <label class="choose-topic">Choose a topic for more detail:</label>
-            <select>
+          <label class="choose-topic">Choose another topic:</label>
+            <select id="stream-dropdown">
               <option id = "women-stream" label = "women's rights" class="stream-button women">Women's Rights</option>
               <option id = "police-stream" label = "the police" class="stream-button police">Police</option>
               <option id = "education-stream" label = "education" class="stream-button education">Education</option>
@@ -112,7 +113,6 @@
             </select>
           </form>
       <div id = "streamgraph">
-        <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
       </div>
     </div>
     <div class="text-block">

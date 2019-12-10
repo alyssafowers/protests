@@ -63,18 +63,19 @@ main{
   font-size:.9rem;
 }
 
-.graphic h3:not(.choose-topic){
+.graphic h3{
 text-align: left;
+margin-bottom: 10px;
 }
 
-.choose-topic{
+/* .choose-topic{
   font-size: 1.5rem;
   font-family: 'Titillium Web', sans-serif;
   margin: 10px;
   text-align: left;
   width: 260px;
 
-}
+} */
 /* div svg{
   margin: 0 auto;
 } */
@@ -107,7 +108,6 @@ h2{
 h3{
   font-size: 1.5rem;
   font-family: 'Titillium Web', sans-serif;
-  margin: 10px;
   /* text-align: center; */
 }
 
@@ -131,6 +131,10 @@ a:hover{
 
 p.label{
   font-size: 1rem;
+}
+
+#bar-wrapper{
+  margin-top: 10px;
 }
 
 #week-tooltip {
@@ -371,10 +375,6 @@ p.label{
   width: 100px;
 }
 
-
-#constellation-selector{
-  text-align: center;
-}
 
 #constellation-selector p{
   margin: 5px;

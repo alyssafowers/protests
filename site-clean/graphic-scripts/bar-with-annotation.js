@@ -292,7 +292,7 @@ async function streamEverythingFunction(){
 
       var barWidth = (dimensions.bar.boundedWidth / monthCount) - (barPadding)
 
-      focus = "women"
+      let focus = "women"
 
       var section = dataset_bar.filter(function(d){ return d.topic == focus})
 
@@ -429,12 +429,13 @@ async function streamEverythingFunction(){
         },1500)
       }
 
-      whichTopic.addEventListener("click", function(){
-        console.log(event.target.attributes)
+      whichTopic.addEventListener("change", function(){
+        console.log(document.getElementById("stream-dropdown"))
 
         event.preventDefault()
-        stream = event.target.id
-        label = event.target.attributes.label.nodeValue
+        var stream = document.getElementById("stream-dropdown").selectedOptions[0].id
+        var label = document.getElementById("stream-dropdown").selectedOptions[0].label
+
             let focusEnd = stream.length - 7
             let focus = stream.substring(0, focusEnd)
             drawBarTopic(focus, label)
