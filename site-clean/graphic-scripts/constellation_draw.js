@@ -326,9 +326,15 @@ async function oneFunctionToRuleThemAll(){
 
     constellationDraw("guns", "guns")
 
-    var constSelect = document.querySelector("#constellation-selector")
+    var constSelect = document.getElementById("constellation-selector")
 
-    constSelect.addEventListener("click", function(){
+    // constSelect.onchange = function(){
+    //     console.log(document.getElementById("const-choose").selectedOptions[0].id)
+    //  }
+
+    constSelect.addEventListener("change", function(){
+
+      console.log(constSelect)
 
       var starFade = d3.select("#wrapper").selectAll("circle")
         .transition()
@@ -344,12 +350,9 @@ async function oneFunctionToRuleThemAll(){
           .transition().duration(300)
             .style("opacity", "0")
 
-
       event.preventDefault()
-      focus = event.target.id
-      console.log(event.target)
-      name = event.target.attributes.label.nodeValue
-      console.log(name)
+      focus = document.getElementById("const-choose").selectedOptions[0].id
+      name = document.getElementById("const-choose").selectedOptions[0].label
 
       setTimeout(function(){
         constellationDraw(focus, name)
