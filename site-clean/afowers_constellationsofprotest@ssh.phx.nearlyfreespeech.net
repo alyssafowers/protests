@@ -52,22 +52,25 @@
 
     <p>These constellations show places with unusually high numbers of protests about a particular topic, given the number of people who live in that place. Places that protest about the same topics at the same time are connected to form constellations. The small gray dots show every place where protests about this topic took place.</p></div>
     <div class = "graphic">
-      <form id="constellation-selector">
-        <label class="choose-topic">Choose another topic:</label>
-              <select name = "const-choose" id= "const-choose">
-                <option id = "guns" selected label = "guns" class="const-button guns">Guns</option>
-                <option id = "women" label = "women's rights" class="const-button women">Women's rights</option>
-                <option id = "police" label = "the police" class="const-button police">Police</option>
-                <option id = "education" label = "education" class="const-button education">Education</option>
-                <option id = "executive" label = "the executive branch" class="const-button executive">The Executive Branch</option>
-                <option id = "immigration" label = "immigration" class="const-button immigration">Immigration</option>
-                <option id = "supreme_court" label = "the Supreme Court" class="const-button supreme_court">The Supreme Court</option>
-                <option id = "race_confed" label = "racial justice or white supremacy" class="const-button race_confed">Racial justice or white supremacy</option>
-                <option id = "collective_bargaining" label = "collective bargaining" class="const-button collective_bargaining">Collective bargaining</option>
-                <option id = "environment" label = "the environment" class="const-button environment">Environment</option>
-                <option id = "healthcare" label = "healthcare" class="const-button healthcare">Healthcare</option>
-              </select>
-          </form>
+      <div id="constellation-selector">
+        <h3 class="choose-topic">Choose a topic:</p>
+          <div id="const-button-row-1">
+            <button id = "women" label = "women's rights" class="const-button women">Women's rights</button>
+            <button id = "police" label = "the police" class="const-button police">Police</button>
+            <button id = "education" label = "education" class="const-button education">Education</button>
+            <button id = "executive" label = "the executive branch" class="const-button executive">The Executive Branch</button>
+            <button id = "immigration" label = "immigration" class="const-button immigration">Immigration</button>
+            <button id = "guns" label = "guns" class="const-button guns">Guns</button>
+            <button id = "supreme_court" label = "the Supreme Court" class="const-button supreme_court">The Supreme Court</button>
+          </div>
+          <div id="const-button-row-2">
+            <button id = "race_confed" label = "racial justice or white supremacy" class="const-button race_confed">Racial justice or white supremacy</button>
+            <button id = "collective_bargaining" label = "collective bargaining" class="const-button collective_bargaining">Collective bargaining</button>
+            <button id = "environment" label = "the environment" class="const-button environment">Environment</button>
+            <button id = "healthcare" label = "healthcare" class="const-button healthcare">Healthcare</button>
+
+          </div>
+        </div>
       <h3>Where Americans protest about <span id = "constellation-topic">guns</span></h2>
       <div id = "constellation-section">
         <div id="constellation-top-left-annotation" class = "const-annotation"></div>
@@ -93,26 +96,28 @@
       <h3>Crisis and scandal drive Americans to the street</h3>
       <img src="img/streamgraph_hflip_shorter.svg" id="streamgraph-image"/>
     </div>
-    <div class = "graphic">
-      <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
       <form id="stream-legend">
-          <label class="choose-topic">Choose another topic:</label>
-            <select id="stream-dropdown">
-              <option id = "women-stream" label = "women's rights" class="stream-button women">Women's Rights</option>
-              <option id = "police-stream" label = "the police" class="stream-button police">Police</option>
-              <option id = "education-stream" label = "education" class="stream-button education">Education</option>
-              <option id = "executive-stream" label = "the executive branch" class="stream-button executive">The Executive Branch</option>
-              <option id = "immigration-stream" label = "immigration" class="stream-button immigration">Immigration</option>
-              <option id = "supreme_court-stream" label = "the Supreme Court" class="stream-button supreme_court" type="button">The Supreme Court</option>
-              <option id = "guns-stream" label = "guns" class="stream-button guns">Guns</option>
-              <option id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button race_confed">Racial justice or white supremacy</option>
-              <option id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button collective_bargaining">Collective bargaining</option>
-              <option id = "environment-stream" label = "the environment" class="stream-button environment">Environment</option>
-              <option id = "healthcare-stream" label = "healthcare" class="stream-button healthcare">Healthcare</option>
-              <option id = "other-stream" label = "other topics" class="stream-button other">Other</option>
-            </select>
-          </form>
+    <div class = "graphic">
+      <h3 class="choose-topic">Choose a topic for more detail:</h3>
+      <div id = "stream-legend-row-1">
+        <button id = "women-stream" label = "women's rights" class="stream-button women">Women's Rights</button>
+        <button id = "police-stream" label = "the police" class="stream-button police">Police</button>
+        <button id = "education-stream" label = "education" class="stream-button education">Education</button>
+        <button id = "executive-stream" label = "the executive branch" class="stream-button executive">The Executive Branch</button>
+        <button id = "immigration-stream" label = "immigration" class="stream-button immigration">Immigration</button>
+        <button id = "supreme_court-stream" label = "the Supreme Court" class="stream-button supreme_court" type="button">The Supreme Court</button>
+      </div>
+      <div id="stream-legend-row-2">
+        <button id = "guns-stream" label = "guns" class="stream-button guns">Guns</button>
+        <button id = "race_confed-stream" label = "racial justice or white supremacy" class="stream-button race_confed">Racial justice or white supremacy</button>
+        <button id = "collective_bargaining-stream" label = "collective bargaining" class="stream-button collective_bargaining">Collective bargaining</button>
+        <button id = "environment-stream" label = "the environment" class="stream-button environment">Environment</button>
+        <button id = "healthcare-stream" label = "healthcare" class="stream-button healthcare">Healthcare</button>
+        <button id = "other-stream" label = "other topics" class="stream-button other">Other</button>
+      </div>
+      </form>
       <div id = "streamgraph">
+        <h3 id="stream-bar-title">When Americans protested about <span id="stream-bar-topic">women's rights</span></h2>
       </div>
     </div>
     <div class="text-block">
@@ -213,7 +218,7 @@
       <h3>Topics</h3>
         <p>Topics are based on CountLove’s tagging system. Topics do not imply an ideological stance: for instance, “guns” includes protests for and against gun control. The topics “racial justice or white supremacy,” “police,” and “women’s rights” were created by combining sub-tags within “civil rights.” “Other topics” refers to protests that were not about the eleven main topics above, not the “other” tag used by Count Love. Many protests are tagged in more than one topic, and are counted once within each of those topics.  </p>
       <h3>Creating constellations</h3>
-        <p>Constellations were designed to highlight places with unusually high amounts of protests about a topic, given the place’s population and overall number of protests in that place. To be included in a constellation, a place had to have a high number of protests about the topic and a high number of protests per person about the topic. Additionally, a large percentage of all protests in that area needed to be about the topic. Each place within a constellation is connected to the place that most often protested about the same topic on the same weeks. For instance, San Diego-Carlsbad, CA tended to protest about immigration at the same time as El Paso, TX, so they are connected in the immigration constellation. A pair of places is also connected if it is in the 98th percentile of co-occurrence for that topic. El Paso is also connected to Austin-Round Rock TX, and Portland-Vancouver-Hillsboro, OR-WA because they very frequently protest about immigration at the same time. The white dots for each place within a constellation are scaled based on the number of protests in that place, while the weight and opacity of the connections are scaled based on the number of weeks both places protested about the same topic.</p>
+        <p>Constellations were designed to highlight places with unusually high amounts of protests about a topic, given the place’s population and overall number of protests in that place. To be included in a constellation, a place had to have a high number of protests about the topic and a high number of protests per person about the topic. Additionally, a large percentage of all protests in that area needed to be about the topic. Each place within a constellation is connected to the place that most often protested about the same topic on the same weeks. For instance, San Diego-Carlsbad, CA tended to protest about immigration at the same time as El Paso, TX, so they are connected in the immigration constellation. A pair of places is also connected if it is in the 98th percentile of co-occurrence for that topic. El Paso is also connected to Austin-Round Rock TX, and Portland-Vancouver-Hillsboro, OR-WA because they very frequently protest about immigration at the same time. The white dots for each place within a constellation are scaled based on the number of protests in that place, while the weight and opacity of the connections are scaled based on the number of weeks both places protested about the same topic. Places that protested in </p>
       <h3>Top topics by state</h3>
       <p>“Percent of protest in each state” is calculated by dividing the number of protests in a state about a topic by the total number of protests in that state. Topics are highlighted as particularly common or uncommon for each state if the percent of protests in that state were in the 80th percentile  among all states, or in the bottom 25th percentile. If a state was in the 80th or 25th percentile more than two times, the top or bottom two topics were chosen.</p>
     </div>
