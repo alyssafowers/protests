@@ -3,6 +3,7 @@ async function oneFunctionToRuleThemAll(){
   const dataset_const_segment = await d3.csv("all_constellation_lines.csv")
   const dataset_const_points = await d3.csv("all_constellation_points.csv")
   const dataset_all_points = await d3.csv("constellation_background_condensed.csv")
+  const place_annotation = await d3.csv("constellation_annotation.csv")
 
   async function stateDraw(){
     const stateShapes = await d3.json("us-states.json")
@@ -79,13 +80,8 @@ async function oneFunctionToRuleThemAll(){
       .text("this is where the bottom left annotation goes")
         .attr("fill", "black")
 
-    const bottomRightAnnotationBounds = d3.select("#constellation-bottom-right-annotation").append("g")
-
-    const bottomRightAnnotation = bottomRightAnnotationBounds.append("text")
-      .text("this is where the bottom right annotation goes")
-        .attr("fill", "black")
-
-    d3.select("#constellation-bottom-right-annotation").style("bottom", "200px")
+    const annotateLongAccessor = d => +d.longitude
+    const annotateLatAccessor = d => +d.latitude
 
 
   }
@@ -126,6 +122,8 @@ async function oneFunctionToRuleThemAll(){
     const section_const_segment = dataset_const_segment.filter(function(d) {return d.topic == focus})
     const section_const_points = dataset_const_points.filter(function(d) {return d.topic == focus})
     const section_all_points = dataset_all_points.filter(function(d) {return d[focus] == 1})
+    const section_annotation = place_annotation.filter(function(d) {return d.topic == focus})
+
 
     const dimensions = {
       width: width,
@@ -284,6 +282,31 @@ async function oneFunctionToRuleThemAll(){
         .transition().duration(300)
           .style("opacity", "1")
 
+      // bottomRightAnnotation
+      //   .text(place_annotation.place)
+
+      const bottomRightAnnotationBounds = d3.select("#constellation-bottom-right-annotation").append("g")
+
+
+      var annotationLocation
+      for(i = 0; i < section_annotation.length; i++){
+        annotationLocation = section_annotation[i].vertical + section_annotation[i].horizontal
+        if(annotationLocation == "bottomRight"){
+
+        const bottomRightAnnotation = bottomRightAnnotationBounds.append("text")
+          .text(section_annotation[i].name)
+          .attr("fill", "black")
+
+
+          var thisLong = projection([+section_annotation[i].longitude, +section_annotation[i].latitude])[1]
+
+          console.log(thisLong)
+
+          bottomRightAnnotation.text(section_annotation[i].place)
+        }
+      }
+
+      console.log(section_annotation)
 
       setTimeout(function(){
         constPlaces.transition().duration(300)
@@ -307,11 +330,6 @@ async function oneFunctionToRuleThemAll(){
             .attr("opacity", function(d){return opacityScale(pairAccessorWeight(d))})
       },200)
 
-      bottomRightAnnotationBounds
-
-
-      bottomRightAnnotation
-
 
 
       d3.select("#constellation-bottom-right-annotation").style("bottom", "200px")
@@ -324,8 +342,6 @@ async function oneFunctionToRuleThemAll(){
     const dataset_const_segment = await d3.csv("all_constellation_lines.csv")
     const dataset_const_points = await d3.csv("all_constellation_points.csv")
     const dataset_all_points = await d3.csv("all_protests_major_tags.csv")
-
-    // const place_annotation = await d3.csv("constellation_annotation.csv")
 
 
     constellationDraw("guns", "guns")
