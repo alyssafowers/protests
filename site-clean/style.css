@@ -319,7 +319,7 @@ p.label{
 #const-map-wrapper{
   position: relative;
   z-index: 1;
-  text-align: left;
+  text-align: center;
 }
 
 #const-map-tooltip{
@@ -362,6 +362,15 @@ p.label{
 
 #constellation-section{
   position: relative;
+}
+
+#constellation-right-annotation{
+  display: none;
+}
+
+
+#constellation-left-annotation{
+  display: none;
 }
 
 #constellation-top-left-annotation{
