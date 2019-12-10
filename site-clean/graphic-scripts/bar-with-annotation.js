@@ -430,6 +430,8 @@ async function streamEverythingFunction(){
       }
 
       whichTopic.addEventListener("click", function(){
+        console.log(event.target.attributes)
+
         event.preventDefault()
         stream = event.target.id
         label = event.target.attributes.label.nodeValue

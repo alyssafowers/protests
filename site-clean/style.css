@@ -67,6 +67,14 @@ main{
 text-align: left;
 }
 
+.choose-topic{
+  font-size: 1.5rem;
+  font-family: 'Titillium Web', sans-serif;
+  margin: 10px;
+  text-align: left;
+  width: 260px;
+
+}
 /* div svg{
   margin: 0 auto;
 } */
@@ -579,7 +587,7 @@ div.const-button img{
   margin-right: 5px;
 }
 
-
+/*
 .supreme_court {
   background-color: #9d6a76;
   color: white;
@@ -638,11 +646,11 @@ div.const-button img{
 .other {
   background-color: rgb(113, 118, 137);
   color: white;
-}
+} */
 
-#stream-legend{
+/* #stream-legend{
   text-align: center;
-}
+} */
 
 #stream-legend p{
   margin: 5px;
@@ -668,9 +676,8 @@ div.const-button img{
 
 /* dropdown css styling with help from https://www.filamentgroup.com/lab/select-css.html */
 
-#stateSelect {
+select {
 	display: inline-block;
-  width: 10rem;
 	font-size: .8rem;
 	font-family: "Roboto" sans-serif;
 	font-weight: 700;
@@ -693,19 +700,24 @@ div.const-button img{
 	background-position: right .7em top 50%, 0 0;
 	background-size: .65em auto, 100%;
 }
-#stateSelect::-ms-expand {
+select::-ms-expand {
 	display: none;
 }
-#stateSelect:hover {
+select:hover {
 	border-color: #888;
 }
-#stateSelect:focus {
+select:focus {
 	border-color: #aaa;
 	box-shadow: 0 0 1px 3px rgba(59, 153, 252, .7);
 	box-shadow: 0 0 0 3px -moz-mac-focusring;
 	color: #222;
 	outline: none;
 }
-#stateSelect option {
+select option {
 	font-weight:normal;
+}
+
+#stateSelect{
+  width: 10rem;
+
 }

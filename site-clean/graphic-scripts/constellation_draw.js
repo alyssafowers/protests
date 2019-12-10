@@ -307,10 +307,6 @@ async function oneFunctionToRuleThemAll(){
             .attr("opacity", function(d){return opacityScale(pairAccessorWeight(d))})
       },200)
 
-      bottomRightAnnotationBounds
-
-
-      bottomRightAnnotation
 
 
 
