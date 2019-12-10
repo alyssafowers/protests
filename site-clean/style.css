@@ -59,6 +59,10 @@ main{
   max-width:1000px;
 } */
 
+.caption{
+  font-size:.9rem;
+}
+
 .graphic h3:not(.choose-topic){
 text-align: left;
 }
@@ -95,6 +99,7 @@ h2{
 h3{
   font-size: 1.5rem;
   font-family: 'Titillium Web', sans-serif;
+  margin: 10px;
   /* text-align: center; */
 }
 
@@ -353,7 +358,6 @@ p.label{
   bottom: 10%;
 }
 
-
 .const-annotation{
   position: absolute;
   width: 100px;
@@ -451,6 +455,8 @@ div.const-button{
   padding-bottom: 5px;
   padding-left: 0;
   padding-right: 0;
+  margin-left: 0;
+  margin-right: 0;
   font-size: .7rem;
   position: inline;
 }
@@ -463,6 +469,8 @@ div.const-button img{
 .const-button{
   text-align: center;
   color: white;
+  margin-left: 1px;
+  margin-right: 1px;
 }
 
 .const-button:hover{

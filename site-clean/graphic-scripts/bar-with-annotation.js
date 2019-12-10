@@ -20,7 +20,7 @@ async function streamEverythingFunction(){
         height: height,
         margin: {
           top: 50,
-          bottom: 30,
+          bottom: 35,
           left: 60,
           right: 30
         }
@@ -121,10 +121,172 @@ async function streamEverythingFunction(){
       const xAxisGenerator = d3.axisBottom()
         .scale(xBarScale)
 
-      const xAxis = barBounds.append("g")
-        .call(xAxisGenerator)
-        .style("transform", `translateY(${dimensions.bar.boundedHeight}px)`)
-        .attr("id", "bar-x-axis")
+      // const xAxis = barBounds.append("g")
+      //   .call(xAxisGenerator)
+      //   .style("transform", `translateY(${dimensions.bar.boundedHeight}px)`)
+      //   .attr("id", "bar-x-axis")
+
+        //custom X axis to match styling elsewhere
+        var parsePreciseTime = d3.timeParse("%Y-%m-%d")
+
+      barBounds.append("line")
+          .attr("x1", xBarScale(parsePreciseTime("2017-12-16")))
+          .attr("x2", xBarScale(parsePreciseTime("2017-12-16")))
+          .attr("y1", dimensions.bar.height)
+          .attr("y2", dimensions.bar.boundedHeight)
+          .attr("stroke", "white")
+
+        barBounds.append("line")
+        .attr("x1", xBarScale(parsePreciseTime("2018-12-16")))
+        .attr("x2", xBarScale(parsePreciseTime("2018-12-16")))
+          .attr("y1", dimensions.bar.height)
+          .attr("y2", dimensions.bar.boundedHeight)
+          .attr("stroke", "white")
+
+          barBounds.append("line")
+          .attr("x1", 0)
+          .attr("x2", dimensions.bar.boundedWidth)
+            .attr("y1", dimensions.bar.boundedHeight)
+            .attr("y2", dimensions.bar.boundedHeight)
+            .attr("stroke", "white")
+
+        barBounds.append("text")
+          .text("2017")
+          .style("transform", `translate(${
+              xBarScale(parsePreciseTime("2017-6-15"))
+            }px,${
+                dimensions.bar.boundedHeight + 35
+              }px)`)
+          .style("fill", "white")
+          .style("font-size", "1rem")
+          .style("text-anchor", "middle")
+
+
+        barBounds.append("text")
+          .text("2018")
+          .style("transform", `translate(${
+              xBarScale(parsePreciseTime("2018-6-15"))
+            }px,${
+                dimensions.bar.boundedHeight + 35
+              }px)`)
+          .style("fill", "white")
+          .style("font-size", "1rem")
+          .style("text-anchor", "middle")
+
+        barBounds.append("text")
+          .text("2019")
+          .style("transform", `translate(${
+              xBarScale(parsePreciseTime("2019-5-15"))
+            }px,${
+                dimensions.bar.boundedHeight + 35
+              }px)`)
+          .style("fill", "white")
+          .style("font-size", "1rem")
+          .style("text-anchor", "middle")
+
+        var months = [
+          {letter: "J",
+          space: "2017-1"},
+          {letter: "F",
+          space: "2017-2"},
+          {letter: "M",
+          space: "2017-3"},
+          {letter: "A",
+          space: "2017-4"},
+          {letter: "M",
+          space: "2017-5"},
+          {letter: "J",
+          space: "2017-6"},
+          {letter: "J",
+          space: "2017-7"},
+          {letter: "A",
+          space: "2017-8"},
+          {letter: "S",
+          space: "2017-9"},
+          {letter: "O",
+          space: "2017-10"},
+          {letter: "N",
+          space: "2017-11"},
+          {letter: "D",
+          space: "2017-12"},
+          {letter: "J",
+          space: "2018-1"},
+          {letter: "F",
+          space: "2018-2"},
+          {letter: "M",
+          space: "2018-3"},
+          {letter: "A",
+          space: "2018-4"},
+          {letter: "M",
+          space: "2018-5"},
+          {letter: "J",
+          space: "2018-6"},
+          {letter: "J",
+          space: "2018-7"},
+          {letter: "A",
+          space: "2018-8"},
+          {letter: "S",
+          space: "2018-9"},
+          {letter: "O",
+          space: "2018-10"},
+          {letter: "N",
+          space: "2018-11"},
+          {letter: "D",
+          space: "2018-12"},
+          {letter: "J",
+          space: "2019-1"},
+          {letter: "F",
+          space: "2019-2"},
+          {letter: "M",
+          space: "2019-3"},
+          {letter: "A",
+          space: "2019-4"},
+          {letter: "M",
+          space: "2019-5"},
+          {letter: "J",
+          space: "2019-6"},
+          {letter: "J",
+          space: "2019-7"},
+          {letter: "A",
+          space: "2019-8"},
+          {letter: "S",
+          space: "2019-9"},
+          {letter: "O",
+          space: "2019-10"}
+        ]
+
+
+
+          const dateLabel = barWrapper.append("g")
+            .attr("id","month-label")
+            .style("transform", `translate(${
+                dimensions.bar.margin.left - 3
+              }px,${
+                  dimensions.bar.height - 21
+                }px)`)
+
+          dateLabel.selectAll("text")
+            .data(months)
+            .enter()
+            .append("text")
+            .data(months)
+            .text(d => d.letter)
+            .attr("x", d => xBarScale(parseTime(d.space)))
+            .attr("y", 0)
+            .style("fill", "white")
+            .style("font-size", ".5rem")
+
+
+
+          // const barYAxisLabel = barWrapper.append("text")
+          //   .text("Protests")
+          //   .style("transform", `translate(${
+          //       dimensions.bar.margin.left
+          //     }px,1rem)`)
+          //   .attr("fill", "white")
+          //   .attr("font-size", ".8rem")
+          //   .style("text-anchor", "end")
+
 
       const monthCount = 34
 

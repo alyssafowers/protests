@@ -309,12 +309,78 @@ async function mapAndBar(){
     .on("mouseout", mouseOut)
 
     const xAxisGenerator = d3.axisBottom()
-        .scale(xBarScale)
+        .scale(xBarScale);
 
-   const xAxis = bounds_bar.append("g")
-        .call(xAxisGenerator)
-        .style("transform", `translateY(${dimensions.bar.boundedHeight}px)`)
-        .attr("id", "bar-x-axis")
+//    const xAxis = bounds_bar.append("g")
+//         .call(xAxisGenerator)
+//         .style("transform", `translateY(${dimensions.bar.boundedHeight}px)`)
+//         .attr("id", "bar-x-axis");
+
+//custom x axis because I'm a crazy person
+
+    var parsePreciseTime = d3.timeParse("%Y-%m-%d");
+
+    bounds_bar.append("line")
+      .attr("x1", xBarScale(parsePreciseTime("2017-12-16")))
+      .attr("x2", xBarScale(parsePreciseTime("2017-12-16")))
+      .attr("y1", dimensions.bar.height)
+      .attr("y2", dimensions.bar.boundedHeight)
+      .attr("stroke", "white")
+
+    bounds_bar.append("line")
+    .attr("x1", xBarScale(parsePreciseTime("2018-12-16")))
+    .attr("x2", xBarScale(parsePreciseTime("2018-12-16")))
+      .attr("y1", dimensions.bar.height)
+      .attr("y2", dimensions.bar.boundedHeight)
+      .attr("stroke", "white")
+
+      bounds_bar.append("line")
+      .attr("x1", 0)
+      .attr("x2", dimensions.bar.boundedWidth)
+        .attr("y1", dimensions.bar.boundedHeight)
+        .attr("y2", dimensions.bar.boundedHeight)
+        .attr("stroke", "white")
+
+    bounds_bar.append("text")
+      .text("2017")
+      .style("transform", `translate(${
+          xBarScale(parsePreciseTime("2017-6-15"))
+        }px,${
+            dimensions.bar.boundedHeight + 30
+          }px)`)
+      .style("fill", "white")
+      .style("font-size", "1rem")
+      .style("text-anchor", "middle")
+
+
+    bounds_bar.append("text")
+      .text("2018")
+      .style("transform", `translate(${
+          xBarScale(parsePreciseTime("2018-6-15"))
+        }px,${
+            dimensions.bar.boundedHeight + 30
+          }px)`)
+      .style("fill", "white")
+      .style("font-size", "1rem")
+      .style("text-anchor", "middle")
+
+    bounds_bar.append("text")
+      .text("2019")
+      .style("transform", `translate(${
+          xBarScale(parsePreciseTime("2019-5-15"))
+        }px,${
+            dimensions.bar.boundedHeight + 30
+          }px)`)
+      .style("fill", "white")
+      .style("font-size", "1rem")
+      .style("text-anchor", "middle")
+
+      bounds_bar.append("line")
+      .attr("x1", 0)
+      .attr("x2", dimensions.bar.boundedWidth)
+        .attr("y1", dimensions.bar.boundedHeight)
+        .attr("y2", dimensions.bar.boundedHeight)
+        .attr("stroke", "white")
 
     const yAxisScale = d3.scaleLinear()
       .domain(d3.extent(dataset_bar, yAccessor))
