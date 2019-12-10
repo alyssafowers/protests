@@ -204,6 +204,12 @@ async function oneFunctionToRuleThemAll(){
 
         d3.select("#const-map-place")
         .text(pointNameAccessor(d))
+
+        d3.select("#const-protest-count")
+        .text(pointSizeAccessor(d))
+
+        d3.select("#const-tooltip-topic")
+          .text(name)
     }
 
     const mouseMove = function(d){

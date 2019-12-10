@@ -292,7 +292,7 @@ async function streamEverythingFunction(){
 
       var barWidth = (dimensions.bar.boundedWidth / monthCount) - (barPadding)
 
-      let focus = "women"
+      let focus = "immigration"
 
       var section = dataset_bar.filter(function(d){ return d.topic == focus})
 

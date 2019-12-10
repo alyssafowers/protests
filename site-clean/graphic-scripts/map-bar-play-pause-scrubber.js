@@ -156,6 +156,7 @@ async function mapAndBar(){
     const endDate = d3.max(dataset_bar, xAccessor)
 
     var playButton = document.querySelector("#play-button")
+    var playButtonText = document.querySelector("#play-button-text")
     var barControl = document.querySelector("#bar-control")
 
     console.log(barControl)
@@ -615,11 +616,19 @@ async function mapAndBar(){
       play = !play
       // console.log(play)
       if(play == true){
-        d3.select(playButton)
+        d3.select(playButtonText)
           .text("Pause")
+        d3.select("#button-pause-image")
+          .style("display", "inline")
+          d3.select("#button-play-image")
+          .style("display", "none")
       } else {
-        d3.select(playButton)
+        d3.select(playButtonText)
           .text("Play")
+        d3.select("#button-play-image")
+          .style("display", "inline")
+          d3.select("#button-pause-image")
+          .style("display", "none")
       }
     }, false)
 
@@ -627,9 +636,12 @@ async function mapAndBar(){
 
     function sliderClick(){
       play = false;
-      d3.select(playButton)
+      d3.select(playButtonText)
               .text("Play")
-      console.log("animation paused")
+      d3.select("#button-play-image")
+      .style("display", "inline")
+        d3.select("#button-pause-image")
+        .style("display", "none")
     }
 
     var traceLine = document.getElementById("trace-line")

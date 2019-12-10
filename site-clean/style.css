@@ -36,6 +36,10 @@ main{
   width: 100%
 }
 
+h1, h2{
+  color: rgb(15, 41, 90);
+}
+
 .graphic{
   width: 75%;
   max-width: 900px;
@@ -65,7 +69,7 @@ main{
 
 .graphic h3{
 text-align: left;
-margin-bottom: 10px;
+margin-bottom: 20px;
 }
 
 /* .choose-topic{
@@ -197,6 +201,10 @@ p.label{
   align-content: center;
 }
 
+#button-play-image{
+  display: none;
+}
+
 #main-chart-bounds rect:hover{
   fill: white;
 }
@@ -311,6 +319,7 @@ p.label{
 #const-map-wrapper{
   position: relative;
   z-index: 1;
+  text-align: left;
 }
 
 #const-map-tooltip{
@@ -341,6 +350,10 @@ p.label{
   font-family: sans-serif;
   font-size: 16px;
   line-height: 20px;
+}
+
+#const-map-place{
+  font-weight: bold;
 }
 
 #const-map-wrapper circle:hover{
@@ -522,7 +535,7 @@ div.const-button img{
 
 
 #stream-bar-topic{
-  background-color: rgb(5, 69, 81);
+  background-color: rgb(97, 135, 150);
   color: white;
   padding-left: 4px;
   padding-right: 4px;
