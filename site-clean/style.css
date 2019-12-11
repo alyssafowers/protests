@@ -743,3 +743,10 @@ select option {
   width: 10rem;
 
 }
+
+#environment-map{
+  display: block;
+  margin: auto;
+  width: 80%;
+  max-width: 800px;
+}
